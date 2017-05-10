@@ -15,5 +15,8 @@
 ### Datafields  
 (brief description of Datafields. Link to Datafields page.)  
 
+## Associating an Aerostat with a Category
+(brief description. Link to Aerostats page).  
+
 ## Delete Category  
 (describe. and it will delete the category from all aerostats associated with it)
