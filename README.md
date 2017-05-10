@@ -2,6 +2,8 @@ Start writing docs in this repository. Use markdown format, so you don't have to
 
 ## Introduction (Kelli)
 
-## Quickstart: (Malia) 
+## Quickstart (Malia) 
 
-## Setting up a Project: (Malia)
+## Setting up a Project (Malia)
+
+## Using the Command Line (Malia)
