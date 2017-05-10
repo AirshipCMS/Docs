@@ -15,5 +15,3 @@ Start writing docs in this repository. Use markdown format, so you don't have to
 # Schema & Data Model
 
 ### [Pages](https://github.com/AirshipCMS/Docs/blob/master/Pages.md) (Malia)
-
----
