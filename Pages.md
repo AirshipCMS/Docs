@@ -2,6 +2,8 @@
 (pages, or singletons..)
 
 ## Create / Modify Page 
+
+### Permalink
 (describe page-specific fields like permalink? I think permalink is the only one).
 
 ### Datafields  
