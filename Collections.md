@@ -2,7 +2,14 @@
 (collections are groups of things)
 
 ## Create / Modify Collection 
-(describe collection-specific fields. link to Datafields for datafields. Link to Aerostats for aerostats)
+
+### (describe each collection-specific fields)
+
+### Datafields
+(link to Datafields for datafields)
+
+### Aerostats
+(Link to Aerostats for aerostats)
 
 ## Create / Edit Aerostat
 (briefly describe item / aerostat. then Link to Aerostats).
