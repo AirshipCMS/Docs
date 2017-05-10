@@ -1,4 +1,5 @@
-Start writing docs in this repository. Use markdown format, so you don't have to think too much about formatting/structure. I'll add your name to sections assigned to you. **Aerostats** in the Documentation collection are indicated by the h3 headers.
+# Docs for AirshipCMS.io.
+This documentation is for airshipcms.io. You can also view it, along with additional illustrations and better navigation, at [airshipcms.io/documentation](https://airshipcms.io/documentation).
 
 # Setup
 
