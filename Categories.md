@@ -20,13 +20,13 @@
 
 ## Category Rendering
 
-### Categories.html template: Showing all Categories in the Collection
+### `categories.html` template: Showing all Categories in the Collection
 (brief description. Link to Category Templates page).  
 
-### Category.html template: Showing all Aerostats in the Category
+### `category.html` template: Showing all Aerostats in the Category
 (brief description. Link to Category Templates page).  
 
-### Show.html template: Listing Categories associated with the Aerostat
+### `show.html` template: Listing Categories associated with the Aerostat
 (brief description. Link to Show Templates page).  
 
 ## Delete Category  
