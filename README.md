@@ -2,8 +2,8 @@ Start writing docs in this repository. Use markdown format, so you don't have to
 
 ## [Introduction](https://github.com/AirshipCMS/Docs/blob/master/Introduction.md) (Kelli)
 
-## Quickstart (Malia) 
+## [Quickstart](https://github.com/AirshipCMS/Docs/blob/master/Quickstart.md) (Malia) 
 
-## Setting up a Project (Malia)
+## [Setting up a Project](https://github.com/AirshipCMS/Docs/blob/master/Setting-Up-an-Airship-Project.md) (Malia)
 
-## Using the Command Line (Malia)
+## [Using the Command Line](https://github.com/AirshipCMS/Docs/blob/master/Using-the-Command-Line.md) (Malia)
