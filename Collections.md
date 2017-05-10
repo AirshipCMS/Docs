@@ -5,7 +5,7 @@
 (describe collection-specific fields. link to Datafields for datafields. Link to Aerostats for aerostats)
 
 ## Create / Edit Aerostat
-(describe item / aerostat. Link to Aerostats).
+(briefly describe item / aerostat. then Link to Aerostats).
 
 ## Delete Collection
 (describe. and it will delete all aerostats. and if any aerostats are referenced as relateds they will also be deleted.)
