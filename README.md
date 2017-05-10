@@ -1,9 +1,19 @@
-Start writing docs in this repository. Use markdown format, so you don't have to think too much about formatting/structure. I'll add your name to sections assigned to you. **Pages** are indicated by the h2 headers.
+Start writing docs in this repository. Use markdown format, so you don't have to think too much about formatting/structure. I'll add your name to sections assigned to you. **Pages** are indicated by the h3 headers.
 
-## [Introduction](https://github.com/AirshipCMS/Docs/blob/master/Introduction.md) (Kelli)
+# Setup
 
-## [Quickstart](https://github.com/AirshipCMS/Docs/blob/master/Quickstart.md) (Malia) 
+### [Introduction](https://github.com/AirshipCMS/Docs/blob/master/Introduction.md) (Kelli)
 
-## [Setting up a Project](https://github.com/AirshipCMS/Docs/blob/master/Setting-Up-an-Airship-Project.md) (Malia)
+### [Quickstart](https://github.com/AirshipCMS/Docs/blob/master/Quickstart.md) (Malia) 
 
-## [Using the Command Line](https://github.com/AirshipCMS/Docs/blob/master/Using-the-Command-Line.md) (Malia)
+### [Setting up a Project](https://github.com/AirshipCMS/Docs/blob/master/Setting-Up-an-Airship-Project.md) (Malia)
+
+### [Using the Command Line](https://github.com/AirshipCMS/Docs/blob/master/Using-the-Command-Line.md) (Malia)
+
+---
+
+# Schema & Data Model
+
+### [Pages](https://github.com/AirshipCMS/Docs/blob/master/Pages.md) (Malia)
+
+---
