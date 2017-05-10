@@ -1,5 +1,5 @@
 # Categories (Malia)
-(before you can set categories for aerostats, you have to set up some categories.)
+(Categories are specific to Collections and Aerostats. before you can set categories for aerostats, you have to set up some categories.)
 
 ## Create / Edit Categories
 (describe briefly)  
