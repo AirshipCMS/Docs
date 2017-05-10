@@ -20,6 +20,11 @@ Start writing docs in this repository. Use markdown format, so you don't have to
 
 ### [Aerostats](https://github.com/AirshipCMS/Docs/blob/master/Aerostats.md) (Malia)
 
+### [Categories](https://github.com/AirshipCMS/Docs/blob/master/Categories.md) (Malia)
+
+### [Tags](https://github.com/AirshipCMS/Docs/blob/master/Tags.md) (Malia)
+
 ### [Datafields](https://github.com/AirshipCMS/Docs/blob/master/Datafields.md) (Malia)
 
 ### [Relationships](https://github.com/AirshipCMS/Docs/blob/master/Relationships.md) (Malia)
+
