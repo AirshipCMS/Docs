@@ -18,5 +18,5 @@
 ### `show.html` template: Listing tags associated with the Aerostat
 (brief description. Link to Show Templates page).  
 
-## Delete Category  
-(describe. and it will delete the category from all aerostats associated with it)
+## Delete Tag  
+(removing the tag from an aerostat will dissociate it with the aerostat. If the tag not used in any aerostats for the collection, it will not render on the tags.html and tag.html templates)
