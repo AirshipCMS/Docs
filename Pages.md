@@ -2,7 +2,7 @@
 (pages, or singletons..)
 
 ## Create / Modify Page 
-(describe pages & each field on the page)
+(describe page-specific fields. Link to Datafields for datafields part._
 
 ## Edit Page
 (describe)
