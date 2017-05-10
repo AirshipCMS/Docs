@@ -1,7 +1,7 @@
-# Setting Up an Airship Project 
+# Setting Up an Airship Project (Malia)
 
-## Starting a Project (unassigned)
-(Step by Step Skyport instructions).
+## Starting a Project
+Starting a Project (Step by Step Skyport instructions).
 
 ## Airship CMS (Malia)  
 (This is where you build your schema for your project. You should start with a sitemap/diagram. Show example).
@@ -14,20 +14,3 @@
 
 ### Create a Relationship (Malia)  
 (Create Relationship instructions. Link.)
-
-## Using the Command Line (Malia)  
-(this is how you develop locally).
-
-### Installing the CLI Tools: Linux (Malia)  
-
-### Installing the CLI Tools: Mac (Kelli)  
-
-### Logging into a Project (Malia)  
-
-### Landing a Project (Malia)
- 
-### Local Development (Malia)  
-
-### Serving Content (Malia)  
-
-### Launching a Project (Malia)  
