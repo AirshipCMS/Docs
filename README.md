@@ -1,4 +1,4 @@
-Start writing docs in this repository. Use markdown format, so you don't have to think too much about formatting/structure. I'll add your name to sections assigned to you. **Pages** are indicated by the h3 headers.
+Start writing docs in this repository. Use markdown format, so you don't have to think too much about formatting/structure. I'll add your name to sections assigned to you. **Aerostats** in the Documentation collection are indicated by the h3 headers.
 
 # Setup
 
