@@ -1,10 +1,10 @@
-# Setting Up an Airship Project (Malia)
+# Setting Up an Airship Project (Kelli)
 
 ## Starting a Project
 Starting a Project (Step by Step Skyport instructions).
 
-## Airship CMS (Malia)  
-(This is where you build your schema for your project. You should start with a sitemap/diagram. Show example).
+## Airship CMS (Kelli)  
+(This is where you build your schema for your project. Start with a sitemap/diagram blah blah blah).
 
 ### Create a Page (Malia)  
 (Create Page instructions. Add content to page.)
