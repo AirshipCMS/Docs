@@ -206,28 +206,3 @@ see Categories page.
 
 ## Property: Tags
 see Tags page.
-
-## Product Properties
-
-### Product Title
-for products and subs products.
-is always primary label for sub and prod collections.
-
-### Product Description
-
-### Price
-
-### Sale Price
-
-### Weight
-
-### Sale Status
-
-### Product Variations
-
-#### Product Variation Label
-
-#### Product Variation Inventory
-
-## Subscription Product Fields
-
