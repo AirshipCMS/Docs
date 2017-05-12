@@ -1,7 +1,7 @@
-# Aerostats (Malia)
+# Items in a Collection (Malia)
 (Items in Collection)  
 
-## Create / Edit Aerostat
+## Create / Edit Item
 (describe briefly)  
 
 ### Permalink  
