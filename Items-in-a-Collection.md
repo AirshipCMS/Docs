@@ -22,5 +22,5 @@
 ### Datafields  
 (brief description of Datafields. Link to Datafields page.)  
 
-## Delete Aerostat  
+## Delete Item  
 (describe. and it will delete all aerostats. and if any aerostats are referenced as relateds they will also be deleted.)  
