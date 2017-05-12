@@ -1,8 +1,8 @@
-# Install the CLI Tools  
+# Install Airship CLI Tools  
 (describe the ways to install)
 
-## Installing the CLI Tools: Linux (Malia)  
+## Installing Airship CLI Tools on Linux (Malia)  
 (describe & screenshots)
 
-## Installing the CLI Tools: Mac (Kelli)  
+## Installing Airship CLI Tools on Mac (Kelli)  
 (describe & screenshots)
