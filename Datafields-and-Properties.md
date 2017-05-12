@@ -1,7 +1,7 @@
-# Datafields (Malia)
+# Datafields & Properties (Malia)
 (explain)
 
-## Text
+## Datafield: Text
 (explain)
 
 ### Adding a Text Field
@@ -16,12 +16,21 @@
 ### Primary Label
 (explain that text field can be set as primary label and what that means)
 
-## Permalink
-(explain briefly. only visible if set for page / aerostat.)
+## Property: Permalink
+(explain briefly. only visible if set for aerostat.)
 (semantic rules for permalinks. how it is required).
 (repeat in CMS section)
+see Items in a collection
+see Pages
+see Categories
 
-## Textarea Feild
+## Property: Public Path
+(collections)
+(semantic rules for public path)
+(repeat in CMS section)
+see collections
+
+## Datafield: Textarea
 (explain briefly)
 
 ### Adding a Textarea Field
@@ -33,7 +42,7 @@
 ### Rendering Textarea Field Content
 (point to Templates/Rendering section)
 
-## Richtext Area Feild
+## Datafield: Richtext Area
 (explain briefly)
 
 ### Adding a Richtext Area Field
@@ -48,7 +57,7 @@
 ### Rendering Richtext Area Field Content
 (point to Templates/Rendering section)
 
-## Link Feild
+## Datafield: Link
 (explain briefly).
 
 ### Adding a Link Field
@@ -60,7 +69,7 @@
 ### Rendering Link Field Content
 (point to Templates/Rendering section)
 
-## List of Links Feild
+## Datafield: List of Links
 (explain briefly).
 
 ### Adding a List of Links Field
@@ -75,7 +84,7 @@
 ### Rendering List of Links Field Content
 (point to Templates/Rendering section)
 
-## Image Feild
+## Datafield: Image
 (explain briefly).
 
 ### Adding an Image Field
@@ -87,7 +96,7 @@
 ### Rendering Image Field Content
 (point to Templates/Rendering section)
 
-## List of Images Feild
+## Datafield: List of Images
 (explain briefly).
 
 ### Adding a List of Images Field
@@ -102,7 +111,7 @@
 ### Rendering List of Images Field Content
 (point to Templates/Rendering section)
 
-## Date Feild
+## Datafield: Date
 (explain briefly).
 
 ### Adding a Date Field
@@ -117,7 +126,7 @@
 ### Rendering Date Field Content
 (point to Templates/Rendering section)
 
-## Checkbox Feild
+## Datafield: Checkbox
 (explain briefly).
 
 ### Adding a Checkbox Field
@@ -129,7 +138,7 @@
 ### Rendering Checkbox Field Content
 (point to Templates/Rendering section)
 
-## Number Feild
+## Datafield: Number
 (explain briefly).
 
 ### Adding a Number Field
@@ -141,7 +150,7 @@
 ### Rendering Number Field Content
 (point to Templates/Rendering section)
 
-## Radio Feild
+## Datafield: Radio
 (explain briefly).
 
 ### Adding a Radio Field
@@ -153,7 +162,7 @@
 ### Rendering Radio Field Content
 (point to Templates/Rendering section)
 
-## Select Feild
+## Datafield: Select
 (explain briefly).
 
 ### Adding a Select Field
@@ -165,7 +174,7 @@
 ### Rendering Select Field Content
 (point to Templates/Rendering section)
 
-## Multiselect Feild
+## Datafield: Multiselect
 (explain briefly).
 
 ### Adding a Multiselect Field
@@ -177,7 +186,7 @@
 ### Rendering Multiselect Field Content
 (point to Templates/Rendering section)
 
-## Related Aerostats Feild
+## Datafield: Related Aerostats
 (explain briefly).
 
 ### Adding a Related Aerostats Field
@@ -191,3 +200,34 @@
 
 ### Building Complex Relationships with Related Aerostats
 (point to Relationships page)
+
+## Property: Categories
+see Categories page.
+
+## Property: Tags
+see Tags page.
+
+## Product Properties
+
+### Product Title
+for products and subs products.
+is always primary label for sub and prod collections.
+
+### Product Description
+
+### Price
+
+### Sale Price
+
+### Weight
+
+### Sale Status
+
+### Product Variations
+
+#### Product Variation Label
+
+#### Product Variation Inventory
+
+## Subscription Product Fields
+
