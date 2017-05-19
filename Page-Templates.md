@@ -36,6 +36,60 @@ The slug is the entire path to the page permalink including the `/` following th
 Example Output:  
 **/about**
 
+
+## Page Fields:
+Content entered in the Admin panel can be rendered using Propellers.
+
+Propellers follow syntax similar to: `{{variable_name}}`.
+
+For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
+
+The following examples show how to render the content from each field type on a page:
+
+
+### Field Type: `text`
+The text field is a simple text input. It's useful for content with small amount of phrasing, such as headers or titles.
+
+Example markup using a text field with the variable name `header`:
+```
+<h1>{{fields.header}}</h1>
+```
+
+Example Output:
+# Airship CMS
+
+
+### Field Type: `textarea`
+The textarea field is useful for plain multiline content, or text that is too long for the `text` field type.
+
+Example markup using a textarea with the variable name `description`:
+```
+<p>{{fields.description}}</p>
+```
+
+Example Output:
+
+**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+
+
+### Field Type: `rich text area`
+The rich text area, or WYSIWYG editor, is useful for custom formatting or adding various content other than text such as images, links, or lists.
+
+This field requires an extra set of `{}`, similar to rendering fields that contain HTML elements.
+
+Example markup using a rich text area with the variable name `animal_description`:
+```
+<div>{{{fields.animal_description}}}</div>
+```
+
+Example Output:
+
+- List Item 1
+- List Item 2
+
+**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. *Id iusto enim repellat veniam sed totam quod. Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at?* Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+
+
 ---
 
 ## What cannot be rendered on a page template?
