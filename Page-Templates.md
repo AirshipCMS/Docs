@@ -52,11 +52,12 @@ The text field is a simple text input. It's useful for content with small amount
 
 Example markup using a text field with the variable name `header`:
 ```
-<h1>{{fields.header}}</h1>
+<p>{{fields.header}}</p>
 ```
 
 Example Output:
-# Airship CMS
+
+**Airship CMS**
 
 
 ### Field Type: `textarea`
