@@ -44,6 +44,8 @@ Propellers follow syntax similar to: `{{variable_name}}`.
 
 For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
 
+Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields will be noted with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](#field-type-image), [link](#field-type-link), or [related aerostats](#field-type-related-aerostats).
+
 The following examples show how to render the content from each field type on a page:
 
 
@@ -89,6 +91,105 @@ Example Output:
 - List Item 2
 
 **Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. *Id iusto enim repellat veniam sed totam quod. Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at?* Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+
+
+### Field Type: `image`
+Example markup using an image field the variable name `animal_iamge`:
+Example Output:
+
+
+### Field Type: `link`
+Aside from links, this field is useful for simple text content as it provides more control over how the content is rendered than other text fields.
+
+For example, the link field allows each (optional) `title`, `subtitle`, `url`, and `caption` content to be rendered as separate elements, while the textarea field renders all content within the same HTML element by default.
+
+Example markup using a link field with the variable name `resource_link`:
+```
+<div class="link">
+  {{#each fields.resource_link}}
+  <a href="{{url}}">Resource: {{title}}</a>
+  <p>{{subtitle}}</p>
+  <p>{{caption}}</p>
+  {{/each}}
+</div>
+```
+
+Example Output:
+
+[Resource: Animal Info](http://https://www.google.com/search?q=cute+hedgehogs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjh4bqx9PzTAhXDy1QKHWg4BV0Q_AUIBigB&biw=1778&bih=887)
+
+**Lorem ipsum dolor illo in iure voluptas sint?**
+
+**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+
+
+### Field Type: `number`
+Example markup using a number field with the variable name `population_size`:
+```
+<p>Population Size: {{fields.population_size}}</p>
+```
+
+Example Output:
+
+**Population Size: 100,000**
+
+
+### Field Type: `radio`
+Example markup using a radio field with the variable name `is_endangered`:
+```
+<p>Endangered: {{fields.is_endangered}}</p>
+```
+
+Example Output:
+
+**Endangered: No**
+
+
+### Field Type: `select`
+Example markup using a select field with the variable name `animal_kingdom`:
+```
+<p>Animal Kingdom: {{fields.animal_kingdom}}</p>
+```
+
+Example Output:
+
+**Animal Kingdom: Animals**
+
+
+### Field Type: `multiselect`
+Example markup using a multiselect field with the variable name `things`:
+```
+<p>{{fields.thing}}</p>
+```
+
+Example Output:
+
+**Thing 1, Thing 2**
+
+
+### Field Type: `checkbox`
+Example markup using a with the variable name ``:
+Example Output:
+
+
+### Field Type: `list of images`
+Example markup using a with the variable name ``:
+Example Output:
+
+
+### Field Type: `list of links`
+Example markup using a with the variable name `things`:
+Example Output:
+
+
+### Field Type: `related aerostats`
+Example markup using a with the variable name ``:
+Example Output:
+
+
+### Field Type: `date`
+Example markup using a with the variable name ``:
+Example Output:
 
 
 ---
