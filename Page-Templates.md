@@ -8,7 +8,7 @@ The filename should match what is set in the Modify section in the admin...
 The following properties can be rendered on a Page Template:
 
 
-#### Property: `name`
+### Property: `name`
 This is the name of the page. Example Markup:
 ```
 <p>{{name}}</p>
@@ -17,7 +17,7 @@ Example Output:
 **About Airship**  
 
 
-#### Property: `permalink`
+### Property: `permalink`
 The permalink is the identifier for page following `/` in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. Example Markup:
 ```
 <p>{{permalink}}</a>
@@ -27,7 +27,7 @@ Example Output:
 **about**
 
 
-#### Property: `slug`
+### Property: `slug`
 The slug is the entire path to the page permalink including the `/` following the domain. Example Markup:
 ```
 <p>{{slug}}</a>
