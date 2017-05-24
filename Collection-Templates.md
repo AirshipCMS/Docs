@@ -1,4 +1,5 @@
 # Collection Templates
+Items in collections *must* be published to be available for rendering.
 
 ## Template filenames
 For each collection, within the `/compartments/templates/` directory, there should be a directory with the name chosen in Admin.
@@ -19,7 +20,32 @@ compartments
 ```
 
 ## `index.hmtl` template:
-- fields and accessible properties.
+The following properties and fields can be rendered on the index.html template:
+
+### Property: `params`
+These fields are for pagination.
+
+Example markup using `params` to create a query string for pagination:
+```
+<li><a href="{{create_page_query page='1' sort='permalink' order='asc' limit='15'}}">Mammals</a></li>
+```
+
+Example Output HTML:
+```
+<li><a href="?page=1&amp;limit=15&amp;sort=permalink&amp;order=asc">Mammals</a></li>
+```
+
+Example Output Query String:
+```
+/mammals?page=1&limit=15&sort=permalink&order=asc
+```
+
+For more info about pagination, see the documentation on the `{{create_page_query}}` helper.
+
+### Property: `items`
+
+### Property: `collection`
+
 
 ## `show.html` template:
 - fields and accessible properties.
