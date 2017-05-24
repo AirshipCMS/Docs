@@ -40,7 +40,7 @@ Example Output Query String:
 /mammals?page=1&limit=15&sort=permalink&order=asc
 ```
 
-For more info about pagination, see the documentation on the [create_page_query helper](Propeller-Helpers.md#create_page_query].
+For more info about pagination, see the documentation on the [create_page_query helper](Propeller-Helpers.md#create_page_query).
 
 ### Property: `items`
 
