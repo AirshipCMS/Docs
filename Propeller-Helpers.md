@@ -8,6 +8,109 @@
 
 ## {{create_page_query}}
 
+This helper is for pagination and uses the `params` property listed when rendering `{{{help}}}`.
+
+The `params` fields can be combined to create query strings that specify the page number, item limit, sort options, and other info used to traverse through pages.
+
+The following is a list of all possible fields on the `params` property and how to access them, followed by example usages:
+```
+page: {{params.page}}  // The current page number
+limit: {{params.limit}}  // The amount of items that can be displayed at a time
+offset: {{params.offset}}  // The current interval of items being displayed (limit*(page-1))
+sort: {{params.sort}}  // The field to sort by, e.g. permalink or id
+order: {{params.order}}  // Either asc (ascending) or desc (descending) order
+total_count: {{params.total_count}}  // The total amount of items
+page_count: {{params.page_count}}  // The total amount of pages required to render all items
+next_offset: {{params.next_offset}}  // The next interval of items to render
+prev_offset: {{params.prev_offset}}  // The previous interval of items to render
+next_page: {{params.next_page}}  // The next page number
+prev_page: {{params.prev_page}}  // The previous page number
+fetch_first: {{params.fetch_first}}  // The query string for the first page
+fetch_last: {{params.fetch_last}}  // The query string for the last page
+fetch_prev: {{params.fetch_prev}}  // The query string for the previous page
+fetch_next: {{params.fetch_next}}  // The query string for the next page
+fetch_first_offset: {{params.fetch_first_offset}}  // The query string for the first offset
+fetch_last_offset: {{params.fetch_last_offset}}  // The query string for the last offset
+fetch_prev_offset: {{params.fetch_prev_offset}}  // The query string for the previous offset
+fetch_next_offset: {{params.fetch_next_offset}}  // The query string for the next offset
+```
+
+### Using `{{create_page_query}}` with no options
+If not specified, the following are the default parameters for `{{create_page_query}}`:
+```
+page: 1,
+limit: 50,
+sort: id,
+order: asc
+```
+
+Example Markup:
+```
+<li><a href="mammals{{create_page_query}}">Mammals</a></li>
+```
+
+Example Output:
+```
+<li><a href="mammals?page=1&amp;limit=50&amp;sort=id&amp;order=asc">Mammals</a></li>
+```
+
+### Using `{{create_page_query}}` with `sort`, `order`, and `limit`
+Example Markup:
+```
+<li><a href="{{create_page_query sort='permalink' order='asc' limit='15'}}">Mammals</a></li>
+```
+
+Note: There is no need to specify the collection name if used within the collection's public path namespace.
+
+Example Output:
+```
+<li><a href="?page=1&amp;limit=15&amp;sort=permalink&amp;order=asc">Mammals</a></li>
+```
+
+### Traversing through pages using `params` fields
+The params fields will use default values unless any were specified.
+
+Note how `order` is `asc` in the following example output without specifying it in the markup.
+
+Example Markup:
+```
+<li><a href="{{collection.public_path}}?page=3&limit={{params.limit}}&sort={{params.sort}}&order={{params.order}}">Page 3</a></li>
+```
+
+Example Output:
+```
+<li><a href="mammals?page=3&amp;limit=15&amp;sort=permalink&amp;order=asc">Page 3</a></li>
+```
+
+### Traversing through pages using the `params` `fetch` fields
+Links can be created to traverse through the pages by either page numbers, or offset intervals.
+
+Example Markup:
+```
+<li><a href="{{params.fetch_first}}">Fetch First</a></li>
+<li><a href="{{params.fetch_last}}">Fetch Last</a></li>
+<li><a href="{{params.fetch_prev}}">Fetch Prev</a></li>
+<li><a href="{{params.fetch_next}}">Fetch Next</a></li>
+<li><a href="{{params.fetch_first_offset}}">Fetch First Offset</a></li>
+<li><a href="{{params.fetch_last_offset}}">Fetch Last Offset</a></li>
+<li><a href="{{params.fetch_next_offset}}">Fetch Next Offset</a></li>
+<li><a href="{{params.fetch_prev_offset}}">Fetch Prev Offset</a></li>
+```
+
+Example Output from the first page of a `/collection/index.html`, with `limit=15` and `sort=permalink`:
+```
+<li><a href="?page=1&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch First</a></li>
+<li><a href="?page=4&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Last</a></li>
+<li><a href="?page=1&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Prev</a></li>
+<li><a href="?page=2&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Next</a></li>
+<li><a href="?offset=0&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch First Offset</a></li>
+<li><a href="?offset=45&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Last Offset</a></li>
+<li><a href="?offset=15&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Next Offset</a></li>
+<li><a href="?offset=0&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Prev Offset</a></li>
+```
+
+
+
 ## {{#sort_list}}
 
 ## {{#if}}
