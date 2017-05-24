@@ -89,10 +89,7 @@ Example markup using a rich text area with the variable name `animal_description
 
 Example Output:
 ```
-- List Item 1
-- List Item 2
-
-**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. *Id iusto enim repellat veniam sed totam quod. Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at?* Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+<div><p><a href="http://marketing.airshipcms.io" rel="noopener noreferrer" target="_blank">marketing.airshipcms.io</a></p><p><em>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod. Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</em></p></div>
 ```
 
 
@@ -217,7 +214,7 @@ Example Output if `show_image` was checked:
 </div>
 ```
 
-Exapmle Output if `show_image` was not checked:
+Example Output if `show_image` was not checked:
 ```
 <div>
     <h3>Sorry! No image for this animal.</h3>
