@@ -58,8 +58,9 @@ Example markup using a text field with the variable name `header`:
 ```
 
 Example Output:
-
-**Airship CMS**
+```
+<h1>Cute Animals &amp; Products</h1>
+```
 
 
 ### Field Type: `textarea`
@@ -71,8 +72,9 @@ Example markup using a textarea with the variable name `description`:
 ```
 
 Example Output:
-
-**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+```
+<p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+```
 
 
 ### Field Type: `rich text area`
@@ -86,16 +88,36 @@ Example markup using a rich text area with the variable name `animal_description
 ```
 
 Example Output:
-
+```
 - List Item 1
 - List Item 2
 
 **Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. *Id iusto enim repellat veniam sed totam quod. Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at?* Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+```
 
 
 ### Field Type: `image`
 Example markup using an image field the variable name `animal_iamge`:
+```
+{{#each fields.animal_image}}
+<div class="animal-image">
+  <h6>{{title}}</h6>
+  <p>{{subtitle}}</p>
+  <img src="{{url}}" alt="">
+  <p>{{caption}}</p>
+</div>
+{{/each}}
+```
+
 Example Output:
+```
+<div class="animal-image">
+  <h6>Grumpy Hedgie</h6>
+  <p>Lorem ipsum dolor</p>
+  <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/hedgietest_rpaxih.jpg" alt="">
+  <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+</div>
+```
 
 
 ### Field Type: `link`
@@ -115,12 +137,13 @@ Example markup using a link field with the variable name `resource_link`:
 ```
 
 Example Output:
-
-[Resource: Animal Info](http://https://www.google.com/search?q=cute+hedgehogs&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjh4bqx9PzTAhXDy1QKHWg4BV0Q_AUIBigB&biw=1778&bih=887)
-
-**Lorem ipsum dolor illo in iure voluptas sint?**
-
-**Lorem ipsum dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.**
+```
+<div class="link">
+  <a href="http://marketing.airshipcms.io/">Resource: Animal Info</a>
+  <p>Dolor illo in iure voluptas sint?</p>
+  <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+</div>
+```
 
 
 ### Field Type: `number`
@@ -130,8 +153,9 @@ Example markup using a number field with the variable name `population_size`:
 ```
 
 Example Output:
-
-**Population Size: 100,000**
+```
+<p>Population Size: 100,000</p>
+```
 
 
 ### Field Type: `radio`
@@ -141,8 +165,9 @@ Example markup using a radio field with the variable name `is_endangered`:
 ```
 
 Example Output:
-
-**Endangered: No**
+```
+<p>Endangered: No</p>
+```
 
 
 ### Field Type: `select`
@@ -152,8 +177,9 @@ Example markup using a select field with the variable name `animal_kingdom`:
 ```
 
 Example Output:
-
-**Animal Kingdom: Animals**
+```
+<p>Animal Kingdom: Animals</p>
+```
 
 
 ### Field Type: `multiselect`
@@ -163,33 +189,138 @@ Example markup using a multiselect field with the variable name `things`:
 ```
 
 Example Output:
-
-**Thing 1, Thing 2**
+```
+<p>Thing 2,Thing 1</p>
+```
 
 
 ### Field Type: `checkbox`
-Example markup using a with the variable name ``:
-Example Output:
+Example markup using a checkbox with the variable name `show_image`:
+```
+<div>
+  {{#if fields.show_image}}
+    <h3>Hedgehog</h3>
+    {{#each fields.animal_image}}
+      <img src="{{url}}" alt="">
+    {{/each}}
+  {{else}}
+    <h3>Sorry! No image for this animal.</h3>
+  {{/if}}
+</div>
+```
+
+Example Output if `show_image` was checked:
+```
+<div>
+    <h3>Hedgehog</h3>
+    <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/hedgietest_rpaxih.jpg" alt="">
+</div>
+```
+
+Exapmle Output if `show_image` was not checked:
+```
+<div>
+    <h3>Sorry! No image for this animal.</h3>
+</div>
+```
 
 
 ### Field Type: `list of images`
-Example markup using a with the variable name ``:
+Example markup using a list of images with the variable name `additional_animal_images`:
+```
+<div class="image-container">
+  {{#each fields.additional_animal_images}}
+    <div class="image">
+      <h6>{{title}}</h6>
+      <img src="{{url}}" alt="">
+      <p>{{subtitle}}</p>
+      <p>{{caption}}</p>
+    </div>
+  {{/each}}
+</div>
+```
+
 Example Output:
+```
+<div class="image-container">
+    <div class="image">
+      <h6>Sleepy Hedgie</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/cute-hedgehogs-311__700_reizde.jpg" alt="">
+      <p>img from url</p>
+      <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+    </div>
+    <div class="image">
+      <h6>Hedgie Dino</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/hedgietest2_a03l7y.jpg" alt="">
+      <p>img from file</p>
+      <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+    </div>
+</div>
+```
 
 
 ### Field Type: `list of links`
-Example markup using a with the variable name `things`:
+Example markup using a list of links with the variable name `additional_resource_links`:
+```
+<div class="additional-links">
+  {{#each fields.additional_resource_links}}
+  <div class="link">
+    <a href="{{url}}">Resource: {{title}}</a>
+    <p>{{subtitle}}</p>
+    <p>{{caption}}</p>
+  </div>
+  {{/each}}
+</div>
+```
+
 Example Output:
+```
+<div class="additional-links">
+  <div class="link">
+    <a href="http://marketing.airshipcms.io/">Resource: link</a>
+    <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio</p>
+    <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+  </div>
+  <div class="link">
+    <a href="http://marketing.airshipcms.io">Resource: other link</a>
+    <p>Lorem ipsum dolor rem nam sequi ea</p>
+    <p>Lorem ipsum dolor rem nam sequi ea dolor voluptatibus ullam eius. Odit a alias fuga voluptatibus ex ab architecto ipsa? Aut adipisci iusto quia quibusdam rem dicta voluptates, placeat similique quas minima!</p>
+  </div>
+</div>
+```
 
 
 ### Field Type: `related aerostats`
-Example markup using a with the variable name ``:
+When rendering `{{{help}}}`, this field appears as `related_items`.
+
+Example markup using related aerostats with the variable name `similar_animals`:
+```
+<div class="similar-animals">
+  {{#each related_items.similar_animals}}
+  <h4><a href="{{slug}}">{{fields.name}}</a></h4>
+  {{/each}}
+</div>
+```
+
 Example Output:
+```
+<div class="similar-animals">
+  <h4><a href="/mammals/view/hedgehog">Hedgehog</a></h4>
+  <h4><a href="/mammals/view/bobcat">Bobcat</a></h4>
+</div>
+```
 
 
 ### Field Type: `date`
-Example markup using a with the variable name ``:
+Example markup using a date field with the variable name `date`:
+```
+<p>{{format_date fields.date "D" "us"}}</p>
+```
+
 Example Output:
+```
+<p>Tuesday, May 16, 2017</p>
+```
 
 
 ---
