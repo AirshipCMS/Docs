@@ -153,7 +153,9 @@ Propellers follow syntax similar to: `{{variable_name}}`.
 
 For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
 
-Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields will be noted with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](#field-type-image), [link](#field-type-link), or [related aerostats](#field-type-related-aerostats).
+Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](#field-type-image), [link](#field-type-link), or [related aerostats](#field-type-related-aerostats).
+
+`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](#field-type-list-of-images) or [list of links](#field-type-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](Propeller-Helpers.md#sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
 
 The following examples show how to render the content from each field type on a page:
 
@@ -289,7 +291,26 @@ Example Output:
 
 
 ### Field Type: `multiselect`
+While the multiselect field can be rendered the same way as other `[list]` notated fields, it can also be rendered as a comma separated list for simplicity.
+
 Example markup using a multiselect field with the variable name `things`:
+```
+<div class="all-the-things">
+  {{#each fields.thing}}
+  <p>{{this}}</p>
+  {{/each}}
+</div>
+```
+
+Example Output:
+```
+<div class="all-the-things">
+  <p>Thing 2</p>
+  <p>Thing 1</p>
+</div>
+```
+
+Example markup rendering the multiselect field as a comma separated list:
 ```
 <p>{{fields.thing}}</p>
 ```
@@ -364,6 +385,38 @@ Example Output:
 </div>
 ```
 
+Example markup rendering the list of images using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
+```
+<div class="sorted-images">
+  {{#sort_list fields.additional_animal_images sort="title" order="asc"}}
+    <div class="image">
+      <h6>{{title}}</h6>
+      <img src="{{url}}" alt="">
+      <p>{{subtitle}}</p>
+      <p>{{caption}}</p>
+    </div>
+  {{/sort_list}}
+</div>
+```
+
+Example Output:
+```
+<div class="sorted-images">
+    <div class="image">
+      <h6>Hedgie Dino</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/hedgietest2_a03l7y.jpg" alt="">
+      <p>img from file</p>
+      <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+    </div>
+    <div class="image">
+      <h6>Sleepy Hedgie</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/cute-hedgehogs-311__700_reizde.jpg" alt="">
+      <p>img from url</p>
+      <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+    </div>
+</div>
+``` 
+
 
 ### Field Type: `list of links`
 Example markup using a list of links with the variable name `additional_resource_links`:
@@ -395,6 +448,36 @@ Example Output:
 </div>
 ```
 
+Example markup rendering the list of links using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
+```
+<div class="additional-links">
+  {{#sort_list fields.additional_resource_links sort="title" order="desc"}}
+  <div class="link">
+    <a href="{{url}}">Resource: {{title}}</a>
+    <p>{{subtitle}}</p>
+    <p>{{caption}}</p>
+  </div>
+  {{/sort_list}}
+</div>
+```
+
+Example Output:
+```
+<div class="additional-links">
+  <div class="link">
+    <a href="http://marketing.airshipcms.io">Resource: other link</a>
+    <p>Lorem ipsum dolor rem nam sequi ea</p>
+    <p>Lorem ipsum dolor rem nam sequi ea dolor voluptatibus ullam eius. Odit a alias fuga voluptatibus ex ab architecto ipsa? Aut adipisci iusto quia quibusdam rem dicta voluptates, placeat similique quas minima!</p>
+  </div>
+  <div class="link">
+    <a href="http://marketing.airshipcms.io/">Resource: link</a>
+    <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio</p>
+    <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+  </div>
+</div>
+```
+
+
 
 ### Field Type: `related aerostats`
 When rendering `{{{help}}}`, this field appears as `related_items`.
@@ -413,6 +496,23 @@ Example Output:
 <div class="similar-animals">
   <h4><a href="/mammals/view/hedgehog">Hedgehog</a></h4>
   <h4><a href="/mammals/view/bobcat">Bobcat</a></h4>
+</div>
+```
+
+Example markup rendering related aerostats using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
+```
+<div class="similar-animals">
+  {{#sort_list related_items.similar_animals sort="fields.name" order="asc"}}
+  <h4><a href="{{slug}}">{{fields.name}}</a></h4>
+  {{/sort_list}}
+</div>
+```
+
+Example Output:
+```
+<div class="similar-animals">
+  <h4><a href="/mammals/view/bobcat">Bobcat</a></h4>
+  <h4><a href="/mammals/view/hedgehog">Hedgehog</a></h4>
 </div>
 ```
 
