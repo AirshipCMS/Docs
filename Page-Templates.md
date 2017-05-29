@@ -8,33 +8,142 @@ The filename should match what is set in the Modify section in the admin...
 The following properties can be rendered on a Page Template:
 
 
+### Property: `id`
+This is the id of the page.
+
+Example Markup:
+```
+<p>{{id}}</p>
+```
+
+Example Output:  
+```
+<p>182</p>
+```
+
+
+### Property: `site_id`
+This is the id of the site.
+
+Example Markup:
+```
+<p>{{site_id}}</p>
+```
+
+Example Output:  
+```
+<p>62</p>
+```
+
+
 ### Property: `name`
-This is the name of the page. Example Markup:
+This is the name of the page.
+
+Example Markup:
 ```
 <p>{{name}}</p>
 ```
+
 Example Output:  
-**About Airship**  
+```
+<p>About Airship</p>
+```
 
 
 ### Property: `permalink`
-The permalink is the identifier for page following `/` in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. Example Markup:
+The permalink is the identifier for page following `/` in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
+Example Markup:
 ```
-<p>{{permalink}}</a>
+<p>{{permalink}}</p>
 ```
 
 Example Output:  
-**about**
+```
+<p>about</p>
+```
+
+
+### Property: `layout`
+The layout property is the name of the layout, determined in Admin, for the current page. See the [layout docs](Layouts.md) for more information.
+
+Example Markup:
+```
+<p>{{layout}}</p>
+```
+
+Example Output:  
+```
+<p>application.html</p>
+```
+
+### Property: `template`
+The template property is the name of the template, determined in Admin, for the current page.
+
+Example Markup:
+```
+<p>{{template}}</p>
+```
+
+Example Output:  
+```
+<p>animals_and_products.html</p>
+```
+
+### Property: `published_on`
+This is the timestamp of when the current page was published. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+
+Example Markup:
+```
+<p>{{format_date published_on "d" "us"}}</p>
+```
+
+Example Output:  
+```
+<p>5/17/2017</p>
+```
+
+
+### Property: `created_at`
+This is the timestamp of when the current page was created. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+
+Example Markup:
+```
+<p>{{format_date created_at "G" "us"}}</p>
+```
+
+Example Output:  
+```
+<p>5/17/2017 2:42:17 AM</p>
+```
+
+
+### Property: `updated_at`
+This is the timestamp of when the current page was last updated. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+
+Example Markup:
+```
+<p>{{format_date updated_at "U" "us"}}</p>
+```
+
+Example Output:  
+```
+<p>Tuesday, May 23, 2017 11:47:04 PM</p>
+```
 
 
 ### Property: `slug`
-The slug is the entire path to the page permalink including the `/` following the domain. Example Markup:
+The slug is the entire path to the page permalink including the `/` following the domain.
+
+Example Markup:
 ```
-<p>{{slug}}</a>
+<p>{{slug}}</p>
 ```
 
 Example Output:  
-**/about**
+```
+<p>/about</p>
+```
 
 
 ## Page Fields:
