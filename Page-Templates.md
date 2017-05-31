@@ -157,6 +157,8 @@ Some fields that include multiple inputs for content require the `{{#each}}` hel
 
 `List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](#field-type-list-of-images) or [list of links](#field-type-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](Propeller-Helpers.md#sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
 
+When using helpers such as `{{#each}}` or `{{#sort_list}}`, the outer properties can still be accessed from within these helpers using the following syntax: `{{../variable_name}}`.
+
 The following examples show how to render the content from each field type on a page:
 
 
@@ -357,6 +359,7 @@ Example markup using a list of images with the variable name `additional_animal_
 ```
 <div class="image-container">
   {{#each fields.additional_animal_images}}
+  {{../fields.header}}
     <div class="image">
       <h6>{{title}}</h6>
       <img src="{{url}}" alt="">
@@ -368,14 +371,17 @@ Example markup using a list of images with the variable name `additional_animal_
 ```
 
 Example Output:
+_Note how the outer fields can still be accessued using the `{{../variable_name}}` syntax._
 ```
 <div class="image-container">
+  Cute Animals &amp; Products
     <div class="image">
       <h6>Sleepy Hedgie</h6>
       <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/cute-hedgehogs-311__700_reizde.jpg" alt="">
       <p>img from url</p>
       <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
     </div>
+  Cute Animals &amp; Products
     <div class="image">
       <h6>Hedgie Dino</h6>
       <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/hedgietest2_a03l7y.jpg" alt="">
