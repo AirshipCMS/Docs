@@ -2080,6 +2080,20 @@ Example Output:
 ```
 
 
+### Property: `slug`
+The slug is the entire path to the page permalink including the `/` following the domain.
+
+Example Markup:
+```
+<p>{{slug}}</p>
+```
+
+Example Output:
+```
+<p>/mammals/view/anteater</p>
+```
+
+
 ## `categories.hmtl` template:
 - fields and accessible properties.
 
