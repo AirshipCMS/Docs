@@ -19,7 +19,7 @@ compartments
         └── show.html
 ```
 
-## `index.hmtl` template:
+## `index.html` template:
 The following properties and fields can be rendered on the index.html template:
 
 ### Property: `params`
@@ -2092,7 +2092,7 @@ Example Output:
 
 
 
-## `categories.hmtl` template:
+## `categories.html` template:
 
 ### Property: `id`
 This is the id of the item's collection given by Airship CMS.
