@@ -1,8 +1,79 @@
 # Propeller Helpers
+While these helpers are not available in the [layout](Layouts.md) level, they are available in all template files such as [page](Page-Templates.md) or [collection](Collection-Templates.md) templates.
+
+A propeller helper is an expression wrapped in curly braces, such as `{{format_date}}`.
+
+When using these helpers within nested context, such as when rendering [image](Datafields.md#field-type-image) or [link](Datafields.md#field-type-link) fields, the syntax has a `#` preceeding the expression. See [#each](#each), or [#sort_list](#sort_list) for examples. 
+
+Check out the [HandlebarsJS](HandlebarsJS.md) documentation for additional information.
+
 
 ## {{{help}}}
+Add `{{{help}}}` to any of the template files to see which properties and fields are available for that page. All available properties and fields render as a bulleted list. Items in collections must be published in order to be accessible.
+
+This does not render in production.
+
+Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](#each) or [#sort_list](#sort_list) propellers.
+
+Any desired properties or fields that are not listed when rendering help must be accessed via API calls or other methods.
+
 
 ## {{format_date}}
+This helper is for formatting both UNIX and UTC timestamps, and expects the following syntax:
+```
+{{format_date VARIABLE_NAME "STRING_PATTERN" "LOCALE"}}
+```
+
+`STRING_PATTERN` is a string that can be a custom strftime/MS or a builtin pre-format string.
+
+Example string patterns:
+```
+April 16, 2016 // "%B %d, %Y"
+April 16, 2016 10:00am // "%B %d, %Y %l:%M%P"
+4/16/2016 // “d” or "%m/%d/%Y"
+4/16/2016 10:00am // "%m/%d/%Y %l:%M%P"
+```
+
+Here are the available options for `LOCALE`:
+```
+au, ie, gb, us, jp
+```
+
+Full Example Markup and Output:
+```
+{{ format_date published_at "D" "jp" }} => 2016年5月27日
+```
+
+Built In Patterns:
+```
+NO PATTERN: May 27, 2016
+PATTERN (d): 05/27/2016
+PATTERN (D): 2016年5月27日
+PATTERN (f): Friday, 27 May 2016 06:14
+PATTERN (F): Friday, 27 May 2016 06:14:04
+PATTERN (g): 05/27/2016 06:14
+PATTERN (G): 05/27/2016 06:14:04
+PATTERN (m): May 27
+PATTERN (M): May 27
+PATTERN (o): 2016-05-27T06:14:04.1650000+00:00
+PATTERN (O): 2016-05-27T06:14:04.1650000+00:00
+PATTERN (r): Fri, 27 May 2016 06:14:04 GMT
+PATTERN (R): 05/27/2016 06:14:04
+PATTERN (s): 2016-05-27T06:14:04
+PATTERN (t): 06:14
+PATTERN (T): 06:14:04
+PATTERN (u): 2016-05-27 06:14:04Z
+PATTERN (U): Friday, 27 May 2016 06:14:04
+PATTERN : 2016 May
+PATTERN (Y): 2016 May
+PATTERN (ddd yyyy): Fri 2016
+PATTERN (MMM): May
+PATTERN (%B %d, %Y %l:%M%P): May 27, 2016 6:14am
+PATTERN (%m/%d/%Y %l:%M%P): 05/27/2016 6:14am
+```
+
+Refer to http://thx-lib.org/lib/thx.format/ for more information.
+
 
 ## {{format_currency}}
 
@@ -109,8 +180,10 @@ Example Output from the first page of a `/collection/index.html`, with `limit=15
 <li><a href="?offset=0&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Prev Offset</a></li>
 ```
 
-
+## {{#each}}
 
 ## {{#sort_list}}
 
 ## {{#if}}
+
+## {{#unless}}
