@@ -3,9 +3,9 @@ While these helpers are not available in the [layout](Layouts.md) level, they ar
 
 A propeller helper is an expression wrapped in curly braces, such as `{{format_date}}`.
 
-When using these helpers within nested context, such as when rendering [image](Datafields.md#field-type-image) or [link](Datafields.md#field-type-link) fields, the syntax has a `#` preceeding the expression. See [#each](#each), or [#sort_list](#sort_list) for examples. 
+When using these helpers within nested context, such as when rendering [image](Datafields.md#field-type-image) or [link](Datafields.md#field-type-link) fields, the syntax has a `#` preceeding the expression. See [#each](HandlebarsJS.md#each), or [#sort_list](#sort_list) for examples. 
 
-Check out the [HandlebarsJS](HandlebarsJS.md) documentation for additional information.
+Check out the [HandlebarsJS](HandlebarsJS.md) documentation for more helpers.
 
 
 ## {{{help}}}
@@ -76,6 +76,23 @@ Refer to http://thx-lib.org/lib/thx.format/ for more information.
 
 
 ## {{format_currency}}
+This helper is used to format any content entered in Admin as currency.
+
+There are currently two formatting options for US Dollars.
+
+Example Markup:
+```
+<p>{{price.usd}}</p>
+<p>{{format_currency this.price "usd"}}</p>
+<p>{{format_currency this.price "usd" 2}}</p>
+```
+
+Example Output:
+```
+<p>500</p>
+<p>$5</p>
+<p>$5.00</p>
+```
 
 ## {{create_page_query}}
 
@@ -180,10 +197,32 @@ Example Output from the first page of a `/collection/index.html`, with `limit=15
 <li><a href="?offset=0&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Prev Offset</a></li>
 ```
 
-## {{#each}}
-
 ## {{#sort_list}}
+This is used to sort items in lists. It is used in place of the [#each](HandlebarsJS.md#each) helper.
 
-## {{#if}}
+The syntax is as follows:
+```
+{{#sort_list array sort="property" order="asc"}} 
+  <!--fields and markup--> 
+{{/sort_list}}
+```
 
-## {{#unless}}
+Where `array` is the list of items
+
+Where `property` is any property available on the items.
+
+Where `order` is either `asc` or `desc`
+
+Example on the index.html template of a collection, sorting all items by their permalink, in descending order:
+```
+{{#sort_list items sort="permalink" order="desc"}}
+  <p>{{fields.name}}</p>
+{{/sort_list}}
+```
+
+Example Output:
+```
+<p>Woodchuck</p>
+<p>walrus</p>
+<p>Wallaby</p>
+```
