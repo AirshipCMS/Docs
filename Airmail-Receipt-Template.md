@@ -85,3 +85,21 @@ Example Markup:
           Username: {{misc_data.client_info.username}}<br>
         {{/if}}
 ```
+
+
+## Property: `customer_notes`
+Example Markup:
+```
+<p style="border: 0; color: #999; font: inherit; font-family: 'Open Sans', 'Helvetica', sans-serif; font-size: 13px; font-style: italic; line-height: 20px; margin: 0; padding: 0; vertical-align: baseline;">{{customer_notes}}</p>
+```
+
+
+## Property: `shipping_type`
+Example Markup:
+```
+          {{#if_standard shipping_type}}
+            You will receive an email when your order has shipped.
+          {{else}}
+            We will process your order as soon as possible. You will receive an email as soon as your order has shipped.
+          {{/if_standard}}
+```
