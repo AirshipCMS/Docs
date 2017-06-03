@@ -3,26 +3,28 @@
 Airmail email templates only use the launched version of your templates.
 
 
-receipt.html
+## receipt.html
+See the [Receipt Email Template documentation](Airmail-Receipt-Template.md) for more information.
 
-invoice.html
 
-shipment.html
+## invoice.html
+See the [Invoice Email Template documentation](Airmail-Invoice-Template.md) for more information.
 
-receipt.html
 
-sub_receipt.html
+## shipment.html
 
-sub_active.html	
+## sub_receipt.html
 
-sub_paid.html
+## sub_active.html	
 
-sub_failed.html
+## sub_paid.html
 
-sub_cancel.html
+## sub_failed.html
 
-sub_changed.html
+## sub_cancel.html
 
-refund.html
+## sub_changed.html
 
-*_email.html
+## refund.html
+
+## *_email.html
