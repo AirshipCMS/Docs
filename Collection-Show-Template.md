@@ -58,6 +58,8 @@ Example Output:
 
 
 ## Property: `permalink`
+The permalink is the identifier for the item following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 <p>{{permalink}}</p>
@@ -70,6 +72,8 @@ Example Output:
 
 
 ## Property: `sorting_position`
+This represents the sorting position of the item, which starts at 0.
+
 Example Markup:
 ```
 <p>{{sorting_position}}</p>
@@ -542,6 +546,8 @@ Example Output:
 ```
 
 ### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each categories}}
@@ -753,6 +759,8 @@ Example Output:
 
 
 ### Property: `has_products`
+This shows whether or not the collection is a product collection and contains any products.
+
 Example Markup:
 ```
 <p>{{aerostat_collection.has_products}}</p>
@@ -820,6 +828,8 @@ Example Output:
 
 
 ### Property: `created_at`
+This is the timestamp for when the item was created. 
+
 Example Markup:
 ```
 <p>{{format_date created_at "D" "us"}}</p>
@@ -832,6 +842,8 @@ Example Output:
 
 
 ### Property: `updated_at`
+This is the timestamp for when the item was last updated.
+
 Exapmle Markup:
 ```
 <p>{{format_date updated_at "D" "us"}}</p>
@@ -907,6 +919,8 @@ Example Output:
 
 
 ### Property: `created_at`
+This is the timestamp of when the tag was created.
+
 Example Markup:
 ```
 {{#each tags}}
@@ -920,6 +934,8 @@ Example Output:
 ```
 
 ### Property: `updated_at`
+This is the timestamp of when the tag was last updated.
+
 Example Markup:
 ```
 {{#each tags}}
@@ -934,6 +950,10 @@ Example Output:
 
 
 ### Property: `related_items`
+This holds information for any related aerostats fields.
+
+For more information, see the [related aerostats](#field-type-related-aerostats) field type for more information.
+
 Example markup:
 ```
 <div class="similar-animals">
