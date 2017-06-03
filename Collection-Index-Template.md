@@ -54,6 +54,8 @@ When using propeller helpers, outside properties may still be accessed by using 
 The following examples show how to render each property or field in items:
 
 ### Property: `id`
+This is the ID of the item given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -69,6 +71,8 @@ Example Output:
 
 
 ### Property: `aerostat_collection_id`
+This is the ID of the item's collection given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -84,6 +88,8 @@ Example Output:
 
 
 ### Property: `permalink`
+The permalink is the identifier for the item following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each items}}
@@ -99,6 +105,10 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This represents the sorting position of the item.
+
+The item's sorting position can be modified by editing the sort order in Admin.
+
 Example Markup:
 ```
 {{#sort_list items sort="sorting_position" order="asc"}}
@@ -720,6 +730,8 @@ Example Output:
 ```
 
 #### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each items}}{{#each categories}}
@@ -860,6 +872,8 @@ Example Output:
 
 
 #### Property: `created_at`
+This is the timestamp of when the tag was created.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
@@ -874,6 +888,8 @@ Example Output:
 ```
 
 #### Property: `updated_at`
+This is the timestamp of when the tag was updated.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
