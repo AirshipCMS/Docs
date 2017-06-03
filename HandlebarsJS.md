@@ -76,4 +76,4 @@ Example Output _only_ if `show_image` was not checked:
 <p>Sorry! No image for this animal.</p>
 ```
 
-See the [HandlebarsJS #if documentation](http://handlebarsjs.com/builtin_helpers.html#unless) for more information.
+See the [HandlebarsJS #unless documentation](http://handlebarsjs.com/builtin_helpers.html#unless) for more information.
