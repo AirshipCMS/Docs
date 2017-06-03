@@ -53,6 +53,8 @@ When using propeller helpers, outside properties may still be accessed by using 
 The following examples show how to render each property or field in items:
 
 ### Property: `id`
+This is the ID of the item given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -68,6 +70,8 @@ Example Output:
 
 
 ### Property: `aerostat_collection_id`
+This is the ID of the item's collection given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -83,6 +87,8 @@ Example Output:
 
 
 ### Property: `product_title`
+This is the identifier or name of the item.
+
 Example Markup:
 ```
 {{#each items}}
@@ -98,6 +104,8 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This is the value of the sort order position for the item.
+
 Example Markup:
 ```
 {{#sort_list items sort="sorting_position" order="asc"}}
@@ -738,6 +746,8 @@ Example Output:
 
 
 #### Property: `created_at`
+This is the timestamp of when the tag was created.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
@@ -752,6 +762,8 @@ Example Output:
 ```
 
 #### Property: `updated_at`
+This is the timestamp of when the tag was last updated.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
@@ -769,6 +781,8 @@ Example Output:
 ### Items `product_variations`
 
 #### Property: `id`
+This is the ID of the variation given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -784,6 +798,8 @@ Example Output:
 
 
 #### Property: `aerostat_id`
+This is the ID of the variations root product given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -799,6 +815,8 @@ Example Output:
 
 
 #### Property: `product_variation_title`
+This is the identifier or name of the product variation.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -824,6 +842,8 @@ Example Output:
 
 
 #### Property: `product_variation_description`
+This is a short text description of the product variation.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -869,6 +889,8 @@ Example Output:
 
 
 #### Property: `weight`
+This is the weight of the product in pounds and/or ounces.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -880,6 +902,8 @@ Example Output:
 
 
 #### Property: `in_stock`
+This shows whether or not the product variation is in stock.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -895,6 +919,8 @@ Example Output:
 
 
 #### Property: `inventory`
+This is the available amount of product.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -910,6 +936,8 @@ Example Output:
 
 
 #### Property: `sorting_position`
+This represents the sort order value of the variation.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -925,6 +953,8 @@ Example Output:
 
 
 #### Property: `published_on`
+This is the timestamp of when the variation was published.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -940,6 +970,8 @@ Example Output:
 
 
 #### Property: `on_sale`
+This shows whether or not the variation is currently on sale for a discounted price.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -955,6 +987,8 @@ Example Output:
 
 
 #### Property: `created_at`
+This is the timestamp for when the variation was created.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -970,6 +1004,8 @@ Example Output:
 
 
 #### Property: `updated_at`
+This is the timestamp for when the variation was updated.
+
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
@@ -1021,6 +1057,8 @@ Example Output:
 ```
 
 #### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each items}}{{#each categories}}
@@ -1243,6 +1281,8 @@ Example Output:
 
 
 #### Property: `has_products`
+This shows whether or not the collection contains any products.
+
 Example Markup:
 ```
 <p>{{collection.has_products}}</p>
@@ -1310,6 +1350,8 @@ Example Output:
 
 
 #### Property: `created_at`
+This is the timestamp for when the collection was created.
+
 Example Markup:
 ```
 <p>{{format_date collection.created_at "D" "us"}}</p>
@@ -1322,6 +1364,7 @@ Example Output:
 
 
 #### Property: `updated_at`
+This is the timestamp for when the collection was last updated.
 Example Markup:
 ```
 <p>{{format_date collection.updated_at "u" "us"}}</p>
