@@ -1,6 +1,17 @@
 # Page Templates
-Your page template should be located in...
-The filename should match what is set in the Modify section in the admin...
+Your page template should be located in the `/compartments/templates/` directory.
+
+The filename should exactly match what is set as the `Template` name in the Modify section in the admin.
+
+Example project structure with an about and signup page:
+```
+compartments
+.
+└── templates
+    ├── root.html
+    ├── about.html
+    └── signup.html
+```
 
 ---
 
