@@ -4,6 +4,30 @@ This template is used to customize receipt emails.
 The following are examples of how to access available properties and fields:
 
 
+## Property: `billing_address`:
+Example Markup:
+```
+        <p style="border: 0; color: #32343C; font: inherit; font-family: 'Open Sans', 'Helvetica', sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 0; vertical-align: baseline;">
+          {{billing_address.first_name}} {{billing_address.last_name}}
+          <br>
+          {{billing_address.address_1}}
+          {{#if billing_address.address_2}}
+            <br>{{billing_address.address_2}}
+          {{/if}}
+          <br>{{billing_address.city}}, 
+          {{#if billing_address.other_location}}
+            {{billing_address.other_location_text}}, 
+          {{else}}
+            {{billing_address.state}}, 
+          {{/if}}
+          {{billing_address.country}}, {{billing_address.zipcode}}
+          {{#if billing_address.phone_number}}
+            <br>Phone: {{billing_address.phone_number}}
+          {{/if}}
+        </p>
+```
+
+
 ## Property: `shipping_address`
 Example Markup:
 ```
@@ -29,7 +53,7 @@ Example Markup:
 ```
 
 
-### Property `items`
+## Property `items`
 Example Markup:
 ```
           {{#each items}}
@@ -47,4 +71,17 @@ Example Markup:
               </td>
             </tr>
           {{/each}}
+```
+
+
+## Property `misc_data`
+Example Markup:
+```
+        Client Name: {{misc_data.client_info.first_name}} {{misc_data.client_info.last_name}}<br>
+        Email: {{misc_data.client_info.email}}<br>
+        Cell Phone: {{misc_data.client_info.cellphone}}<br>
+
+        {{#if misc_data.client_info.username}}
+          Username: {{misc_data.client_info.username}}<br>
+        {{/if}}
 ```
