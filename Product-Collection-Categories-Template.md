@@ -134,6 +134,8 @@ Example Output:
 
 
 ## Property: `has_products`
+This shows whether or not the collection contains any products.
+
 Example Markup:
 ```
 <p>{{has_products}}</p>
@@ -160,9 +162,13 @@ Example Output:
 
 
 ## Property: `cat_fields`
+This property holds information about each category field.
+
 The following are examples of how to access the cat_fields properties:
 
 ### Property: `num_options`
+This represents the amount of options the category field contains.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -177,6 +183,10 @@ Example Output:
 
 
 ### Property: `type`
+This represents the type of the category field.
+
+See the [Datafields documentation](Datafields.md) for more information.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -198,6 +208,8 @@ Example Output:
 
 
 ### Property: `title`
+This is the category field title or name.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -212,6 +224,8 @@ Example Output:
 
 
 ### Property: `variable_name`
+This is the variable name of the category field. The variable name is used with propellers when rendering the field's contents.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -226,6 +240,8 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This represents the sorting position of the category field.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -287,6 +303,8 @@ Example Output:
 
 
 ## Property: `created_at`
+This is the timestamp of when the category was created.
+
 Example Markup:
 ```
 <p>{{format_date created_at "D" "us"}}</p>
@@ -299,6 +317,8 @@ Example Output:
 
 
 ## Property: `updated_at`
+This is the timestamp of when the category was last updated.
+
 Exapmle Markup:
 ```
 <p>{{format_date updated_at "u" "us"}}</p>
@@ -356,6 +376,8 @@ Example Output:
 ```
 
 ### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each categories}}
