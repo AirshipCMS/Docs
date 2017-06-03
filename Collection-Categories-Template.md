@@ -134,6 +134,8 @@ Example Output:
 
 
 ## Property: `has_products`
+This shows whether or not the collection is a product collection and has products.
+
 Example Markup:
 ```
 <p>{{has_products}}</p>
@@ -160,9 +162,13 @@ Example Output:
 
 
 ## Property: `cat_fields`
+This property holds information about the collection's category fields.
+
 The following are examples of how to access the cat_fields properties:
 
 ### Property: `num_options`
+This represents the amount of options that are available for the field.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -177,6 +183,8 @@ Example Output:
 
 
 ### Property: `type`
+This represents the datafield type.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -198,6 +206,8 @@ Example Output:
 
 
 ### Property: `title`
+This represents the category field name.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -212,6 +222,8 @@ Example Output:
 
 
 ### Property: `variable_name`
+This represents the variable name of the category field.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -226,6 +238,8 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This represents the sorting position of the field, beginning from 0.
+
 Example Markup:
 ```
 {{#each cat_fields}}
@@ -287,6 +301,8 @@ Example Output:
 
 
 ## Property: `created_at`
+This is the timestamp of when the category was created. The timestamp can be formatted using the [format_date helper](Propeller-Helpers.md#format_date).
+
 Example Markup:
 ```
 <p>{{format_date created_at "D" "us"}}</p>
@@ -299,6 +315,8 @@ Example Output:
 
 
 ## Property: `updated_at`
+This is the timestamp of when the category was last updated. The timestamp can be formatted using the [format_date helper](Propeller-Helpers.md#format_date).
+
 Exapmle Markup:
 ```
 <p>{{format_date updated_at "D" "us"}}</p>
@@ -356,6 +374,8 @@ Example Output:
 ```
 
 ### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#each categories}}
