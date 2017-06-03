@@ -55,6 +55,8 @@ When using propeller helpers, outside properties may still be accessed by using 
 The following examples show how to render each property or field in items:
 
 ### Property: `id`
+This is the ID of the item given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -70,6 +72,8 @@ Example Output:
 
 
 ### Property: `aerostat_collection_id`
+This is the ID of the item's collection given by Airship CMS.
+
 Example Markup:
 ```
 {{#each items}}
@@ -85,6 +89,8 @@ Example Output:
 
 
 ### Property: `permalink`
+The permalink is the identifier for the item following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 {{#sort_list items sort="permalink" order="asc"}}
@@ -100,6 +106,8 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This represents the item's sorting position, which starts from 0.
+
 Example Markup:
 ```
 {{#sort_list items sort="sorting_position" order="asc"}}
@@ -747,6 +755,8 @@ Example Output:
 
 
 #### Property: `created_at`
+This is a timestamp of when the tag was created.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
@@ -761,6 +771,8 @@ Example Output:
 ```
 
 #### Property: `updated_at`
+This is a timestamp of when the tag was last updated.
+
 Example Markup:
 ```
 {{#each items}}{{#each tags}}
@@ -1034,6 +1046,8 @@ Example Output:
 
 
 ### Property: `has_products`
+This shows whether or not the collection is a product collection and contains any products.
+
 Example Markup:
 ```
 <p>{{collection.has_products}}</p>
@@ -1101,6 +1115,8 @@ Example Output:
 
 
 ### Property: `created_at`
+This is a timestamp of when the collection was created.
+
 Example Markup:
 ```
 <p>{{format_date collection.created_at "D" "us"}}</p>
@@ -1113,6 +1129,8 @@ Example Output:
 
 
 ### Property: `updated_at`
+This is a timestamp of when the collection was last updated.
+
 Example Markup:
 ```
 <p>{{format_date collection.updated_at "D" "us"}}</p>
@@ -1137,8 +1155,13 @@ Example Output:
 
 
 ## Property: `category`
+This property holds information about the current category.
+
+The following are examples of how to render each property and field on category:
 
 ### Property: `id`
+This is the ID of the category given by Airship CMS.
+
 Example Markup:
 ```
 <p>{{category.id}}</p>
@@ -1151,6 +1174,8 @@ Example Output:
 
 
 ### Property: `title`
+This is the title, or name, of the category.
+
 Example Markup:
 ```
 <p>{{category.title}}</p>
@@ -1163,6 +1188,8 @@ Example Output:
 
 
 ### Property: `permalink`
+The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
+
 Example Markup:
 ```
 <p>{{category.permalink}}</p>
@@ -1181,6 +1208,8 @@ Example Output:
 
 
 ### Property: `aerostat_collection_id`
+This is the ID of the category's collection given by Airship CMS.
+
 Example Markup:
 ```
 <p>{{category.aerostat_collection_id}}</p>
@@ -1193,6 +1222,8 @@ Example Output:
 
 
 ### Property: `created_at`
+This is the timestamp of when the category was created.
+
 Example Markup:
 ```
 <p>{{format_date category.created_at "D" "us"}}</p>
@@ -1205,6 +1236,8 @@ Example Output:
 
 
 ### Property: `updated_at`
+This is a timestamp of when the category was last updated.
+
 Example Markup:
 ```
 <p>{{format_date category.updated_at "D" "us"}}</p>
@@ -1217,6 +1250,10 @@ Example Output:
 
 
 ### Property: `sorting_position`
+This represents the sorting position of the category.
+
+The sorting position of each category can be modified in Admin from the `Categories` tab by clicking `sort order` at the right, clicking on the pencil icon within the `sort order` button, then dragging the categories to the desired order.
+
 Example Markup:
 ```
 <p>{{category.sorting_position}}</p>
