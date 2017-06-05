@@ -47,7 +47,7 @@ For more information and example usages, see the documentation on [Datafields](D
 
 
 ## Modify Page
-In order to change the title, permalink, layout, template, or fields on a page, you must Modify the page. To change field content, see the [Edit Page](#Edit-Page) section for more information.
+In order to change the title, permalink, layout, template, or fields on a page, you must Modify the page. To change field content, see the [Edit Page](#edit-page) section for more information.
 
 To modify a page, navigate to `Pages` within Admin from the sidebar at the left, and click the wrench tool icon on the page you would like to modify. The `Modify` tab at the top right should be the active tab, and the page title at the top should now include the text `(Modify)`. This page can also be reached from the Edit Page tab by clicking the Modify tab.
 
@@ -68,4 +68,4 @@ To delete a page, navigate to the Modify page for the page you would like to del
 
 At the bottom of the page, click the `Delete Page` link. When prompted, click `Confirm Delete`.
 
-For more information about navigating to the Modify Page, see the [Modify Page section](#Modify-Page).
+For more information about navigating to the Modify Page, see the [Modify Page section](#modify-page).
