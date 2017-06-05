@@ -5,6 +5,8 @@ The following are examples of how to access available properties and fields:
 
 
 ## Property: `billing_address`
+This is the custommer's billing address information, such as name, addresses and phone numbers.
+
 Example Markup:
 ```
       <p style="border: 0; color: #676767; font: inherit; font-family: 'Open Sans', 'Helvetica', sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 0; vertical-align: baseline;">
@@ -27,6 +29,8 @@ Example Markup:
 
 
 ## Property: `shipping_address`
+This is the customer's shipping address information, such as name, addresses and phone numbers.
+
 Example Markup:
 ```
         <p style="border: 0; color: #32343C; font: inherit; font-family: 'Open Sans', 'Helvetica', sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 0; vertical-align: baseline;">
@@ -52,6 +56,8 @@ Example Markup:
 
 
 ## Property: `items`
+This is a list of items that the customer purchased. 
+
 Example Markup:
 ```
           {{#each items}}
@@ -74,6 +80,8 @@ Example Markup:
 
 
 ## Property: `misc_data`
+This holds miscellaneous information about the customer.
+
 Example Markup
 ```
         Client Name: {{misc_data.client_info.first_name}} {{misc_data.client_info.last_name}}<br>
@@ -87,6 +95,8 @@ Example Markup
 
 
 ## Property: `customer_notes`
+These are notes written by the customer when placing an order.
+
 Example Markup:
 ```
 <p style="border: 0; color: #999; font: inherit; font-family: 'Open Sans', 'Helvetica', sans-serif; font-size: 13px; font-style: italic; line-height: 20px; margin: 0; padding: 0; vertical-align: baseline;">{{customer_notes}}</p>
@@ -94,6 +104,8 @@ Example Markup:
 
 
 ## Property: `shipping_type`
+This is the shipping type chosen by the customer.
+
 Example Markup:
 ```
           {{#if_standard shipping_type}}
