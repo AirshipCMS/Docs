@@ -1,8 +1,23 @@
 # Public Make Email Templates
  To use public make email templates, you must create a collection in Admin with public make enabled, and with fields that will hold each item of information you would like submitted.
 
-The following examples show how to render different properties and types of data fields:
+Example Markup of a public make email template:
+```
+<h3>You have a new Contact Form Inquiry.</h3>
+<p>Submitted: <strong>{{created_at}}</strong></p>
+<hr /> 
+<h3>Customer Details:</h3>
+<p>Name: <strong>{{fields.name}}</strong>
+<br>Email: <strong>{{fields.email}}</strong>
+<br>Phone: <strong>{{fields.phone}}</strong>
+<hr /> 
+<h3>Message:</h3>
+<p>{{fields.message}}</p>
+<hr /> 
+<p><em>Please do not reply to this automated email.</em></p>
+```
 
+The following examples show how to render different properties and types of data fields:
 
 ## Property: `id`
 This is the id of the page.
@@ -65,7 +80,7 @@ The text field is a simple text input. It's useful for content with small amount
 
 Example markup using a text field with the variable name `first_name`:
 ```
-<p>Name: {{fields.first_name}}</p>
+<h1>Name: {{fields.first_name}}</h1>
 ```
 
 Example Output:
