@@ -1,6 +1,7 @@
 # Public Make Email Templates
+ To use public make email templates, you must create a collection in Admin with public make enabled, and with fields that will hold each item of information you would like submitted.
 
-The following examples show how to render different types of properties and data fields:
+The following examples show how to render different properties and types of data fields:
 
 
 ## Property: `id`
@@ -14,20 +15,6 @@ Example Markup:
 Example Output:  
 ```
 <p>182</p>
-```
-
-
-## Property: `permalink`
-The permalink is the identifier for page following `/` in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
-
-Example Markup:
-```
-<p>{{permalink}}</p>
-```
-
-Example Output:  
-```
-<p>about</p>
 ```
 
 
@@ -50,12 +37,12 @@ This is the timestamp of when the current page was created. It can be formatted 
 
 Example Markup:
 ```
-<p>{{format_date created_at "G" "us"}}</p>
+<p>Submitted: {{format_date created_at "G" "us"}}</p>
 ```
 
 Example Output:  
 ```
-<p>5/17/2017 2:42:17 AM</p>
+<p>Submitted: 5/17/2017 2:42:17 AM</p>
 ```
 
 
@@ -64,49 +51,35 @@ This is the timestamp of when the current page was last updated. It can be forma
 
 Example Markup:
 ```
-<p>{{format_date updated_at "U" "us"}}</p>
+<p>Last updated: {{format_date updated_at "U" "us"}}</p>
 ```
 
 Example Output:  
 ```
-<p>Tuesday, May 23, 2017 11:47:04 PM</p>
-```
-
-
-## Property: `slug`
-The slug is the entire path to the page permalink including the `/` following the domain.
-
-Example Markup:
-```
-<p>{{slug}}</p>
-```
-
-Example Output:  
-```
-<p>/about</p>
+<p>Last updated: Tuesday, May 23, 2017 11:47:04 PM</p>
 ```
 
 
 ## Field Type: `text`
 The text field is a simple text input. It's useful for content with small amount of phrasing, such as headers or titles.
 
-Example markup using a text field with the variable name `header`:
+Example markup using a text field with the variable name `first_name`:
 ```
-<p>{{fields.header}}</p>
+<p>Name: {{fields.first_name}}</p>
 ```
 
 Example Output:
 ```
-<h1>Cute Animals &amp; Products</h1>
+<h1>Name: John Doe</h1>
 ```
 
 
 ## Field Type: `textarea`
 The textarea field is useful for plain multiline content, or text that is too long for the `text` field type.
 
-Example markup using a textarea with the variable name `description`:
+Example markup using a textarea with the variable name `message`:
 ```
-<p>{{fields.description}}</p>
+<p>{{fields.message}}</p>
 ```
 
 Example Output:
@@ -120,9 +93,9 @@ The rich text area, or WYSIWYG editor, is useful for custom formatting or adding
 
 This field requires an extra set of `{}`, similar to rendering fields that contain HTML elements.
 
-Example markup using a rich text area with the variable name `animal_description`:
+Example markup using a rich text area with the variable name `description`:
 ```
-<div>{{{fields.animal_description}}}</div>
+<div>{{{fields.description}}}</div>
 ```
 
 Example Output:
@@ -132,10 +105,10 @@ Example Output:
 
 
 ## Field Type: `image`
-Example markup using an image field the variable name `animal_iamge`:
+Example markup using an image field the variable name `image`:
 ```
-{{#each fields.animal_image}}
-<div class="animal-image">
+{{#each fields.image}}
+<div class="image">
   <h6>{{title}}</h6>
   <p>{{subtitle}}</p>
   <img src="{{url}}" alt="">
@@ -146,10 +119,10 @@ Example markup using an image field the variable name `animal_iamge`:
 
 Example Output:
 ```
-<div class="animal-image">
-  <h6>Grumpy Hedgie</h6>
+<div class="image">
+  <h6>Client Photo</h6>
   <p>Lorem ipsum dolor</p>
-  <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/hedgietest_rpaxih.jpg" alt="">
+  <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/client.jpg" alt="">
   <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
 </div>
 ```
@@ -174,7 +147,7 @@ Example markup using a link field with the variable name `resource_link`:
 Example Output:
 ```
 <div class="link">
-  <a href="http://marketing.airshipcms.io/">Resource: Animal Info</a>
+  <a href="http://marketing.airshipcms.io/">Resource: Info</a>
   <p>Dolor illo in iure voluptas sint?</p>
   <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
 </div>
@@ -182,38 +155,38 @@ Example Output:
 
 
 ## Field Type: `number`
-Example markup using a number field with the variable name `population_size`:
+Example markup using a number field with the variable name `expected_guest_count`:
 ```
-<p>Population Size: {{fields.population_size}}</p>
+<p>Expected Guest Count: {{fields.expected_guest_count}}</p>
 ```
 
 Example Output:
 ```
-<p>Population Size: 100,000</p>
+<p>Expected Guest Count: 100,000</p>
 ```
 
 
 ## Field Type: `radio`
-Example markup using a radio field with the variable name `is_endangered`:
+Example markup using a radio field with the variable name `event_type`:
 ```
-<p>Endangered: {{fields.is_endangered}}</p>
+<p>Type of Event: {{fields.event_type}}</p>
 ```
 
 Example Output:
 ```
-<p>Endangered: No</p>
+<p>Type of Event: Wedding</p>
 ```
 
 
 ## Field Type: `select`
-Example markup using a select field with the variable name `animal_kingdom`:
+Example markup using a select field with the variable name `venue_type`:
 ```
-<p>Animal Kingdom: {{fields.animal_kingdom}}</p>
+<p>Venue Type: {{fields.venue_type}}</p>
 ```
 
 Example Output:
 ```
-<p>Animal Kingdom: Animals</p>
+<p>Venue Type: Hotel/Resort</p>
 ```
 
 
@@ -253,12 +226,11 @@ Example markup using a checkbox with the variable name `show_image`:
 ```
 <div>
   {{#if fields.show_image}}
-    <h3>Hedgehog</h3>
-    {{#each fields.animal_image}}
+    {{#each fields.image}}
       <img src="{{url}}" alt="">
     {{/each}}
   {{else}}
-    <h3>Sorry! No image for this animal.</h3>
+    <h3>Sorry! No image available.</h3>
   {{/if}}
 </div>
 ```
@@ -266,25 +238,23 @@ Example markup using a checkbox with the variable name `show_image`:
 Example Output if `show_image` was checked:
 ```
 <div>
-    <h3>Hedgehog</h3>
-    <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/hedgietest_rpaxih.jpg" alt="">
+    <img src="http://res.cloudinary.com/airship/image/upload/v1494989137/media/image.jpg" alt="">
 </div>
 ```
 
 Example Output if `show_image` was not checked:
 ```
 <div>
-    <h3>Sorry! No image for this animal.</h3>
+    <h3>Sorry! No image available.</h3>
 </div>
 ```
 
 
 ## Field Type: `list of images`
-Example markup using a list of images with the variable name `additional_animal_images`:
+Example markup using a list of images with the variable name `additional_images`:
 ```
 <div class="image-container">
-  {{#each fields.additional_animal_images}}
-  {{../fields.header}}
+  {{#each fields.additional_images}}
     <div class="image">
       <h6>{{title}}</h6>
       <img src="{{url}}" alt="">
@@ -296,21 +266,18 @@ Example markup using a list of images with the variable name `additional_animal_
 ```
 
 Example Output:
-_Note how the outer fields can still be accessued using the `{{../variable_name}}` syntax._
 ```
 <div class="image-container">
-  Cute Animals &amp; Products
     <div class="image">
-      <h6>Sleepy Hedgie</h6>
-      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/cute-hedgehogs-311__700_reizde.jpg" alt="">
-      <p>img from url</p>
+      <h6>Client Image</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/client.jpg" alt="">
+      <p>Image subtitle</p>
       <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
     </div>
-  Cute Animals &amp; Products
     <div class="image">
-      <h6>Hedgie Dino</h6>
-      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/hedgietest2_a03l7y.jpg" alt="">
-      <p>img from file</p>
+      <h6>Other Image</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/other-image.jpg" alt="">
+      <p>Image subtitle</p>
       <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
     </div>
 </div>
@@ -319,7 +286,7 @@ _Note how the outer fields can still be accessued using the `{{../variable_name}
 Example markup rendering the list of images using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
 ```
 <div class="sorted-images">
-  {{#sort_list fields.additional_animal_images sort="title" order="asc"}}
+  {{#sort_list fields.additional_images sort="title" order="asc"}}
     <div class="image">
       <h6>{{title}}</h6>
       <img src="{{url}}" alt="">
@@ -334,15 +301,15 @@ Example Output:
 ```
 <div class="sorted-images">
     <div class="image">
-      <h6>Hedgie Dino</h6>
-      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/hedgietest2_a03l7y.jpg" alt="">
-      <p>img from file</p>
+      <h6>Client Image</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989296/media/client.jpg" alt="">
+      <p>Image subtitle</p>
       <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
     </div>
     <div class="image">
-      <h6>Sleepy Hedgie</h6>
-      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/cute-hedgehogs-311__700_reizde.jpg" alt="">
-      <p>img from url</p>
+      <h6>Other Image</h6>
+      <img src="http://res.cloudinary.com/airship/image/upload/v1494989229/media/other-image.jpg" alt="">
+      <p>Image subtitle</p>
       <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
     </div>
 </div>
