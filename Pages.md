@@ -60,7 +60,7 @@ To edit the content entered for any page field, navigate to `Pages` within Admin
 
 The `Edit Page` tab at the top right should be the active tab, and the page title at the top should now be preceded by the text `Edit Page:`. This page can also be reached from the Modify Page tab by clicking the Edit Page tab.
 
-To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit Page. Use the`Save & Close` button to save and return to the `Pages` page. 
+To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit Page. Use the `Save & Close` button to save and return to the `Pages` page. 
 
 
 ## Delete Page
