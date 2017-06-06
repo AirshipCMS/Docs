@@ -1,11 +1,11 @@
 # Pages
 In Airship CMS, each website has a _Homepage_ page created by default. The permalink for this page is always `__root__` and **cannot** be modified.
 
-To view all of the pages within a site, navigate to the Admin panel and click the `Pages` link on the sidebar at the left. Ensure that you have the proper access rights and contacting the site owner if necessary.
+To view all of the pages within the site, navigate to the Admin panel, then click the `Pages` link on the sidebar at the left. Ensure that you have the proper access rights and contacting the site owner if necessary.
 
 
 ## Create Page
-To create a new page, navigate to `Pages` within Admin from the sidebar at the left, and click the `New Page` button at the top right.
+To create a new page, navigate to `Pages` within Admin from the sidebar at the left, then click the `New Page` button at the top right.
 
 ### Page Setup
 The first property to fill out is the `Title` under `Page Setup`. This will be the identifier for this page. You may also manually enter the `Permalink` as well, though by default it is the same as the Title but with only lowercase letters, numbers, underscores, and dashes.
@@ -20,7 +20,7 @@ A single layout can be used for multiple templates. The layout file is the outer
 
 Templates can also be used by multiple pages or collections that have the same markup but different content. This is where [Propeller Helpers](Propeller-Helpers.md) and [Handlebars](HandlebarsJS.md) can be used to render the content that is filled out in Admin.
 
-For both the layout and template, you can either choose existing HTML files within the dropdown, or create new ones. Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/tepmlates/` directories when executing `airship land` at the command line.
+For both the layout and template, you can either choose existing HTML files within the dropdown, or create new ones. Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when executing `airship land` at the command line.
 
 For more information, check out the documentation on the following topics: [Layouts](Layouts.md), [Page Templates](Page-Templates.md), [Using the Command Line](Using-the-Command-Line.md).
 
