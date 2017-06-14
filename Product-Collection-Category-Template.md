@@ -922,14 +922,18 @@ This shows whether or not the product is in stock.
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
-<p>{{in_stock}}</p>
+  {{#if in_stock}}
+  <p>{{product_variation_title}}</p>
+  {{else}}
+  <p class="sold-out">{{product_variation_title}}</p>
+  {{/if}}
 {{/each}}{{/each}}
 ```
 
 Example Output:
 ```
-<p>false</p>
-<p>true</p>
+<p class="sold-out">Bird Toy</p>
+<p>Hedgehog Toy</p>
 ```
 
 
@@ -990,14 +994,18 @@ This represents whether or not the product variation has a sale price.
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
-<p>{{id}}</p>
+  {{#if on_sale}}
+  <p>{{product_variation_title}} for <span class="sale-price">{{format_currency this.sale_price "usd" 2}}</span></p>
+  {{else}}
+  <p>{{product_variation_title}} for {{format_currency this.price "usd" 2}}</p>
+  {{/if}}
 {{/each}}{{/each}}
 ```
 
 Example Output:
 ```
-<p>false</p>
-<p>true</p>
+<p>Bird Toy for <span class="sale-price">$8.00</span></p>
+<p>Dog Food for $5.00</p>
 ```
 
 
