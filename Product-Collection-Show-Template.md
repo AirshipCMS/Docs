@@ -1169,33 +1169,35 @@ Example Output:
 
 
 ### Property: `price`
-The following examples show how to render the properties on price:
-
-#### Property: `usd`
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
 Example Markup:
 ```
 {{#each product_variations}}
-<p>{{format_currency price.usd "usd"}}</p>
+<p>Price: {{format_currency price "usd"}}</p>
 {{/each}}
 ```
 
 Example Output:
+```
+<p>Price: $5</p>
+```
 
 
 ### Property: `sale_price`
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
-#### Property: `usd`
 Example Markup:
 ```
 {{#each product_variations}}
-<p>{{format_currency sale_price.usd "usd" 2}}</p>
+<p>Sale Price: {{format_currency sale_price "usd"}}</p>
 {{/each}}
 ```
 
 Example Output:
+```
+<p>Sale Price: $3</p>
+```
 
 
 ### Property: `weight`
@@ -1216,19 +1218,23 @@ This shows whether or not the product variation is in stock.
 
 Example Markup:
 ```
-{{#each items}}{{#each product_variations}}
+{{#each product_variations}}
   {{#if in_stock}}
   <p>{{product_variation_title}}</p>
   {{else}}
   <p class="sold-out">{{product_variation_title}}</p>
   {{/if}}
-{{/each}}{{/each}}
+{{/each}}
 ```
 
-Example Output:
+Example Output if `in_stock` is true:
+```
+<p>Bird Toy</p>
+```
+
+Example Output if `in_stock` is false:
 ```
 <p class="sold-out">Bird Toy</p>
-<p>Hedgehog Toy</p>
 ```
 
 
@@ -1288,19 +1294,23 @@ This shows whether or not the variation is on sale for a discounted price.
 
 Example Markup:
 ```
-{{#each items}}{{#each product_variations}}
+{{#each product_variations}}
   {{#if on_sale}}
   <p>{{product_variation_title}} for <span class="sale-price">{{format_currency this.sale_price "usd" 2}}</span></p>
   {{else}}
   <p>{{product_variation_title}} for {{format_currency this.price "usd" 2}}</p>
   {{/if}}
-{{/each}}{{/each}}
+{{/each}}
 ```
 
-Example Output:
+Example Output if `on_sale` is true:
 ```
-<p>Bird Toy for <span class="sale-price">$8.00</span></p>
-<p>Dog Food for $5.00</p>
+<p>Bird Toy for <span class="sale-price">$5.00</span></p>
+```
+
+Example Output if `on_sale` is false:
+```
+<p>Bird Toy for $8.00</p>
 ```
 
 
