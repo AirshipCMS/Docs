@@ -859,33 +859,35 @@ Example Output:
 
 
 #### Property: `price`
-The following examples show how to render the properties on price:
-
-#### Property: `usd`
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
-<p>{{format_currency price.usd "usd"}}</p>
+<p>Price: {{format_currency price "usd"}}</p>
 {{/each}}{{/each}}
 ```
 
 Example Output:
+```
+<p>Price: $5</p>
+```
 
 
 #### Property: `sale_price`
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
-#### Property: `usd`
 Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
-<p>{{format_currency sale_price.usd "usd" 2}}</p>
+<p>Sale Price: {{format_currency sale_price "usd" 2}}</p>
 {{/each}}{{/each}}
 ```
 
 Example Output:
+```
+<p>Sale Price: $3.00</p>
+```
 
 
 #### Property: `weight`
@@ -908,7 +910,7 @@ Example Markup:
 ```
 {{#each items}}{{#each product_variations}}
   {{#if in_stock}}
-  <p>{{product_variation_title}}jjjjjjj</p>
+  <p>{{product_variation_title}}</p>
   {{else}}
   <p class="sold-out">{{product_variation_title}}</p>
   {{/if}}
