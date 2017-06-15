@@ -859,6 +859,8 @@ Example Output:
 
 
 #### Property: `price`
+This is the regular price of the product.
+
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
 Example Markup:
@@ -875,6 +877,8 @@ Example Output:
 
 
 #### Property: `sale_price`
+This represents the products sale price if available.
+
 The `{{format_currency}}` helper is useful for fields that contain currency values. For more information, see the [format_currency](Propeller-Helpers.md#format_currency) documentation.
 
 Example Markup:
