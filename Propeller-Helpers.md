@@ -13,7 +13,7 @@ Add `{{{help}}}` to any of the template files to see which properties and fields
 
 This does not render in production.
 
-Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](#each) or [#sort_list](#sort_list) propellers.
+Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](HandlebarsJS.md#each) or [#sort_list](#sort_list) propellers.
 
 Any desired properties or fields that are not listed when rendering help must be accessed via API calls or other methods.
 
@@ -199,6 +199,8 @@ Example Output from the first page of a `/collection/index.html`, with `limit=15
 
 ## {{#sort_list}}
 This is used to sort items in lists. It is used in place of the [#each](HandlebarsJS.md#each) helper.
+
+When using this helper, you can set the list to sort by any "first level" alphabetical or date properties such as [permalink](Properties.md#permalink), [public path](Properties.md#public-path), [published_on](Properties.md#published-on) or [created_at](Properties.md#created-at). Currently, it is not possible to use any nested properties for sorting, such as those in `fields`. Use the [help propeller](#help) to check for available first level properties.
 
 The syntax is as follows:
 ```
