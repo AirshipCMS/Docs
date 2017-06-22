@@ -215,16 +215,16 @@ Where `property` is any property available on the items.
 
 Where `order` is either `asc` or `desc`
 
-Example on the index.html template of a collection, sorting all items by their permalink, in descending order:
+Example on the index.html template of a collection, sorting all items by their sorting position, in ascending order:
 ```
-{{#sort_list items sort="permalink" order="desc"}}
-  <p>{{fields.name}}</p>
+{{#sort_list items sort="sorting_position" order="asc"}}
+  <a href="{{slug}}">{{fields.name}}</a>
 {{/sort_list}}
 ```
 
 Example Output:
 ```
-<p>Woodchuck</p>
-<p>walrus</p>
-<p>Wallaby</p>
+<a href="/mammals/view/hedgehog">hedgehog</a>
+<a href="/mammals/view/hedgehog">rabbit</a>
+<a href="/mammals/view/hedgehog">cheetah</a>
 ```
