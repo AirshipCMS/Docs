@@ -228,3 +228,18 @@ Example Output:
 <a href="/mammals/view/rabbit">rabbit</a>
 <a href="/mammals/view/cheetah">cheetah</a>
 ```
+
+
+Example on the index.html template of a collection, sorting all items by their permalink, in descending order:
+```
+{{#sort_list items sort="permalink" order="desc"}}
+  <p>{{fields.name}}</p>
+{{/sort_list}}
+```
+
+Example Output:
+```
+<p>Woodchuck</p>
+<p>walrus</p>
+<p>Wallaby</p>
+```
