@@ -375,6 +375,8 @@ This field is not rendered the way the other datafields are. When rendering `{{{
 
 Each aerostat is an item from a collection. Items must be published in order to be available for rendering. The content entered in Admin for each item is accessible through the `related_items.related_aerostats_variable_name` field. The order of which the items are rendered can be controlled by either dragging each item into the proper order while editing the page, or by using the [#sort_list](Propeller-Helpers.md#sort_list) propeller.
 
+Related items attached to a page or item will only render via propellers on the page's template or the item's *show.html* template. Related items will not render on a list index.html or category.html template for a collection. Related items will also not render recursively, for example when an item has related items, and those items have related items.
+
 Example markup using related aerostats with the variable name `similar_animals`:
 ```
 <div class="similar-animals">
