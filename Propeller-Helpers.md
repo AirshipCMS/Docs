@@ -211,7 +211,7 @@ The syntax is as follows:
 
 Where `array` is the list of items
 
-Where `property` is any property available on the items.
+Where `property` is any first level property available on the items.
 
 Where `order` is either `asc` or `desc`
 
