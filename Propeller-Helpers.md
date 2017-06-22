@@ -225,6 +225,6 @@ Example on the index.html template of a collection, sorting all items by their s
 Example Output:
 ```
 <a href="/mammals/view/hedgehog">hedgehog</a>
-<a href="/mammals/view/hedgehog">rabbit</a>
-<a href="/mammals/view/hedgehog">cheetah</a>
+<a href="/mammals/view/rabbit">rabbit</a>
+<a href="/mammals/view/cheetah">cheetah</a>
 ```
