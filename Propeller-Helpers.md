@@ -7,7 +7,6 @@ When using these helpers within nested context, such as when rendering [image](D
 
 Check out the [HandlebarsJS](HandlebarsJS.md) documentation for more helpers.
 
-
 ## {{{help}}}
 Add `{{{help}}}` to any of the template files to see which properties and fields are available for that page. All available properties and fields render as a bulleted list. Items in collections must be published in order to be accessible.
 
@@ -196,6 +195,10 @@ Example Output from the first page of a `/collection/index.html`, with `limit=15
 <li><a href="?offset=15&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Next Offset</a></li>
 <li><a href="?offset=0&amp;limit=15&amp;sort=permalink&amp;order=asc">Fetch Prev Offset</a></li>
 ```
+
+## {{each}}
+This is used to render items in a list. For more control use `{{#sort_list}}` instead. By default, if you use `{{#each}}` to render items in a collection on the collection `index.html` or `categories.html` view, items will be rendered by their permalink order.
+[BUG --- retrieves first 50 items created, then sorts. instead of sorting then retrieving]
 
 ## {{#sort_list}}
 This is used to sort items in lists. It is used in place of the [#each](HandlebarsJS.md#each) helper.
