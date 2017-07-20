@@ -1,5 +1,3 @@
-# Setting Up an Airship Project (Kelli)
-
 ## Starting a Project
 Starting a Project (Step by Step Skyport instructions).
 
