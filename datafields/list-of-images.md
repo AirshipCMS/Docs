@@ -1,4 +1,6 @@
-The `list of images` field requires the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the order of items set in Airship CMS. Example markup using a list of images with the variable name `additional_animal_images`. _Note how the outer fields can still be accessued using the `{{../variable_name}}` syntax._:
+The `list of images` field requires the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the order of items set in Airship CMS.
+
+Example markup using a list of images with the variable name `additional_animal_images`:
 ```
 <div class="image-container">
   {{#each fields.additional_animal_images}}
@@ -64,3 +66,5 @@ Example Output:
     </div>
 </div>
 ``` 
+
+_Note how the outer fields can still be accessed using the `{{../variable_name}}` syntax._
