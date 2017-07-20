@@ -67,4 +67,4 @@ Example Output:
 </div>
 ``` 
 
-_Note how the outer fields can still be accessed using the `{{../variable_name}}` syntax._
+Note: Fields such as `{{permalink}}` which contain content outside the `{{#each}}` can still be accessed by prepending `../` to the variable name, like this: `{{../permalink}}`
