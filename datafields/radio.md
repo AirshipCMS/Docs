@@ -1,3 +1,5 @@
+A `radio` field is useful for providing a several options to choose from as the value.
+
 Example markup using a radio field and:
 - variable name: `is_endangered`
 - radio options: `Yes`, `No`
