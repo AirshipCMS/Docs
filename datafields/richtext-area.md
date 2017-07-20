@@ -1,6 +1,6 @@
-The rich text area, or WYSIWYG editor, is useful for custom formatting or adding various content other than text such as images, links, or lists.
+The `richtext area`, or WYSIWYG editor, is useful for custom formatting or adding various content other than text such as images, links, or lists.
 
-This field requires an extra set of `{}`, similar to rendering fields that contain HTML elements.
+This field requires triple curly brackets to render.
 
 Example markup using a rich text area with the variable name `animal_description`:
 ```
