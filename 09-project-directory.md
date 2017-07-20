@@ -4,34 +4,34 @@ contains .name  which identifies your project, the next time you login/serve/lau
 ### compartments
 do not add any other files or directories at the first level of compartments.
 
-### compartments/airmail
+### airmail
 contains templates for emails. html files only. should not contain any other filetypes or directories.
 templates in here have specific names and functions.
 see rendering/templating for specific airmail templates as well as how to call/reference data within a template.
 
-### compartments/assets
+### assets
 do not add any other files or directories at the first level of compartments.
 
-### compartments/assets/media
+### media
 can add any file type except ZYX. can add directories. cannot exceed X size.
 
-### compartments/assets/scripts
+### scripts
 can scripts such as XYZ. can add directories. cannot exceed X size. no server-side scripts. they will be ignored.
 
-### compartments/assets/styles
+### styles
 styles ok. (is that only css??) can add directories. 
 
-### compartments/layouts
+### layouts
 only html. no directories. layouts should match those set in modify in admin panel (or they will simply be unused layouts. see template rendering
 
-### compartments/layouts/airmail.html
+#### airmail.html
 special layout for rendering airmail templates. (can you modify this and does it affect emails when you put stuff here?? @jon) see template rendering
 
-### compartments/layouts/application.html
+#### application.html
 generic layout
 
-### compartments/templates
+### templates
 only html files and directories here. see page templates and template directories.
 
-### compartments/templates/root.html
+#### root.html
 the only template you get when you generate a site.
