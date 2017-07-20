@@ -16,7 +16,7 @@ Example Output:
 <div class="link">
   <a href="http://marketing.airshipcms.io/">Resource: Animal Info</a>
   <p>Dolor illo in iure voluptas sint?</p>
-  <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+  <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque.</p>
 </div>
 ```
 
@@ -37,7 +37,7 @@ Example Output:
 <div class="link">
   <a href="http://marketing.airshipcms.io/">Resource: Animal Info</a>
   <p>Dolor illo in iure voluptas sint?</p>
-  <p>Dolor illo in iure voluptas sint? Doloribus quae quos doloremque quae odio sequi facere animi at? Velit odit delectus optio dignissimos animi. Id iusto enim repellat veniam sed totam quod.</p>
+  <p>Dolor illo in iure voluptas sint? Doloribus quae quos.</p>
   <p>animal-info</p>
 </div>
 ```
