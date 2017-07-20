@@ -39,3 +39,6 @@ Example Output:
 Notes: 
 - Fields such as `{{permalink}}` which contain content outside the `{{#each}}` can still be accessed by prepending `../` to the variable name, like this: `{{../permalink}}`
 - On an `index.html` and `category.html` the list of `items` will hide `related_items` content.
+
+---
+MORE: Schema Creation
