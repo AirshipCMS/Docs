@@ -8,4 +8,4 @@ Example Output:
 <p>Tuesday, May 16, 2017</p>
 ```
 ---
-MORE: Format Date
+/documentation/view/propeller-helpers#user-content-format_date
