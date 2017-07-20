@@ -1,5 +1,3 @@
-# Airship CLI Commands  
-
 ## `airship login`
 Logging into a Project (Malia)  
 
