@@ -1,5 +1,3 @@
-# project-directory
-
 ## .airship
 contains .name  which identifies your project, the next time you login/serve/launch. if you change this, you will be unsyncing to your airship project.
 
@@ -29,12 +27,8 @@ only html. no directories. layouts should match those set in modify in admin pan
 #### airmail.html
 special layout for rendering airmail templates. (can you modify this and does it affect emails when you put stuff here?? @jon) see template rendering
 
+#### application.html
+generic layout
+
 ### templates
-only html files and directories here.
-
-#### Page Templates
-only html. should match those set in modify in admin panel (or they will simply be unused templates and template dirs.). these are for pages. see template rendering
-
-#### Template Directories
-template directories should match those set in modify in admin panel (or they will simply be unused templates and template dirs.). these are for collections.
-see template rendering
+only html files and directories here. see page templates and template directories.
