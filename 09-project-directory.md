@@ -35,3 +35,6 @@ only html files and directories here. see page templates and template directorie
 
 #### root.html
 the only template you get when you generate a site.
+
+### custom files
+you can add any custom files outside the compartments directory. etc. 
