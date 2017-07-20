@@ -9,7 +9,3 @@ Example Output:
 ```
 <p>application.html</p>
 ```
-
-----
-
-MORE: Layouts
