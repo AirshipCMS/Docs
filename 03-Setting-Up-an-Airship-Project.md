@@ -1,7 +1,7 @@
-## Starting a Project
+## Starting an Airship Project
 Starting a Project (Step by Step Skyport instructions).
 
-## Airship CMS (Kelli)  
+## Airship CMS
 (This is where you build your schema for your project. Start with a sitemap/diagram blah blah blah).
 
 ### Create a Page (Malia)  
