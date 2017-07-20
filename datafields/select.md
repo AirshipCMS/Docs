@@ -1,3 +1,5 @@
+A `select` field is useful for providing a list of options to choose from as the value.
+
 Example markup using a select field and:
 - variable name: `animal_kingdom`
 - select options: `Plants`, `Animals`, and `Fungi`
