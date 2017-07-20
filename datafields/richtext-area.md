@@ -1,4 +1,4 @@
-The `richtext area`, or WYSIWYG editor, is useful for custom formatting or adding various content other than text such as images, links, or lists.
+A `richtext area`, or WYSIWYG editor, is useful for custom formatting or adding various content other than text such as images, links, or lists.
 
 This field requires triple curly brackets to render.
 
