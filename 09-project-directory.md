@@ -32,3 +32,6 @@ generic layout
 
 ### templates
 only html files and directories here. see page templates and template directories.
+
+#### root.html
+the only template you get when you generate a site.
