@@ -11,4 +11,4 @@ Example Output:
 ```
 
 ---
-MORE: Format Date
+/documentation/view/propeller-helpers#user-content-format_date
