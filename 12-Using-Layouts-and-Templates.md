@@ -1,4 +1,4 @@
-## Classic Server-Side Rendered Pages & Collections
+## Server-Side Rendering
 classically rendered websites  
 
 ### 1. set layout & template for page or collection.
@@ -7,7 +7,7 @@ classically rendered websites
 ### 4. run {{{ help }}}
 ### 5. modify markup / see changes
 
-## Client-Side Rendered Pages & Collections
+## Client-Side Rendering
 single-page applications, complex interactions that use javascript.
 
 ### 1. set layout & template for page or collection.
