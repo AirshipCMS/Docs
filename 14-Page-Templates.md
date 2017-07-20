@@ -1,4 +1,4 @@
-# Page Templates
+## Page Templates Location
 Your page template should be located in the `/compartments/templates/` directory.
 
 The filename should exactly match what is set as the `Template` name in the Modify section in the admin.
@@ -17,7 +17,6 @@ compartments
 
 ## Page Properties:
 The following properties can be rendered on a Page Template:
-
 
 ### Property: `id`
 This is the id of the page.
