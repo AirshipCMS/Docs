@@ -37,4 +37,4 @@ only html files and directories here. see page templates and template directorie
 the only template you get when you generate a site.
 
 ### custom files
-you can add any custom files outside the compartments directory. etc. 
+you can add any custom files outside the compartments directory. etc. they won't be landed/launched with your project. (good idea to use scm)
