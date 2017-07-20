@@ -1,9 +1,5 @@
 ## Page Templates Location
-Your page template should be located in the `/compartments/templates/` directory.
-
-The filename should exactly match what is set as the `Template` name in the Modify section in the admin.
-
-Example project structure with an about and signup page:
+Your page template should be located in the `/compartments/templates/` directory. The filename of the template should exactly match what is set as the `template` name in the Modify section for the page in Airship CMS. If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. Here is an example of a project with `about` and `signup` pages:
 ```
 compartments
 .
@@ -18,156 +14,34 @@ compartments
 ## Page Properties:
 The following properties can be rendered on a Page Template:
 
-### Property: `id`
-This is the id of the page.
+### `id`
 
-Example Markup:
-```
-<p>{{id}}</p>
-```
+### `site_id`
 
-Example Output:  
-```
-<p>182</p>
-```
+### `name`
 
+### `permalink`
 
-### Property: `site_id`
-This is the id of the site.
+### `layout`
 
-Example Markup:
-```
-<p>{{site_id}}</p>
-```
+### `template`
 
-Example Output:  
-```
-<p>62</p>
-```
+### `published_on`
 
+### `created_at`
 
-### Property: `name`
-This is the name of the page.
+### `updated_at`
 
-Example Markup:
-```
-<p>{{name}}</p>
-```
+### `slug`
 
-Example Output:  
-```
-<p>About Airship</p>
-```
-
-
-### Property: `permalink`
-The permalink is the identifier for page following `/` in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
-
-Example Markup:
-```
-<p>{{permalink}}</p>
-```
-
-Example Output:  
-```
-<p>about</p>
-```
-
-
-### Property: `layout`
-The layout property is the name of the layout, determined in Admin, for the current page. See the [layout docs](Layouts.md) for more information.
-
-Example Markup:
-```
-<p>{{layout}}</p>
-```
-
-Example Output:  
-```
-<p>application.html</p>
-```
-
-### Property: `template`
-The template property is the name of the template, determined in Admin, for the current page.
-
-Example Markup:
-```
-<p>{{template}}</p>
-```
-
-Example Output:  
-```
-<p>animals_and_products.html</p>
-```
-
-### Property: `published_on`
-This is the timestamp of when the current page was published. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-<p>{{format_date published_on "d" "us"}}</p>
-```
-
-Example Output:  
-```
-<p>5/17/2017</p>
-```
-
-
-### Property: `created_at`
-This is the timestamp of when the current page was created. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-<p>{{format_date created_at "G" "us"}}</p>
-```
-
-Example Output:  
-```
-<p>5/17/2017 2:42:17 AM</p>
-```
-
-
-### Property: `updated_at`
-This is the timestamp of when the current page was last updated. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-<p>{{format_date updated_at "U" "us"}}</p>
-```
-
-Example Output:  
-```
-<p>Tuesday, May 23, 2017 11:47:04 PM</p>
-```
-
-
-### Property: `slug`
-The slug is the entire path to the page permalink including the `/` following the domain.
-
-Example Markup:
-```
-<p>{{slug}}</p>
-```
-
-Example Output:  
-```
-<p>/about</p>
-```
-
+---
 
 ## Page Fields:
-Content entered in the Admin panel can be rendered using Propellers.
+Content entered in Airship CMS Admin Panel can be rendered on a page template using propellers markup. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
 
-Propellers follow syntax similar to: `{{variable_name}}`.
+Propellers markup is wrapped by double or triple curly brackets. Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
-For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
-
-Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](#field-type-image), [link](#field-type-link), or [related aerostats](#field-type-related-aerostats).
-
-`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](#field-type-list-of-images) or [list of links](#field-type-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](Propeller-Helpers.md#sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
-
-When using helpers such as `{{#each}}` or `{{#sort_list}}`, the outer properties can still be accessed from within these helpers using the following syntax: `{{../variable_name}}`.
+Some fields that include a list of content requires an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
 
 The following examples show how to render the content from each field type on a page:
 
