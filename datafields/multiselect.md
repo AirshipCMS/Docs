@@ -1,4 +1,6 @@
-Example markup using a multiselect field and:
+A `multiselect` field is useful for providing a list of options to choose multiple values from.
+
+Example markup using a `multiselect` field and:
 - variable name: `things`
 - multiselect options: `Thing 1`, `Thing 2`, and `Thing 3`
 - The admin has set the value to `Thing 2` and `Thing 3`
@@ -19,7 +21,7 @@ Example Output:
 </div>
 ```
 
-Alternatively, the values for a multiselect field can also be rendered as a comma separated list for simplicity. Example:
+Alternatively, the values for a `multiselect` field can also be rendered as a comma separated list for simplicity. Example:
 ```
 <p>{{fields.thing}}</p>
 ```
