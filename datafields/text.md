@@ -9,3 +9,5 @@ Example Output:
 ```
 <h1>Cute Animals &amp; Products</h1>
 ```
+
+Note: Only a `text` field can be set as a Primary Label.
