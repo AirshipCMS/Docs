@@ -1,4 +1,4 @@
-Example markup using a checkbox with the variable name `show_image`:
+A `checkbox` field is useful for creating a setting that can be turned on or off. Example markup using a checkbox with the variable name `show_image`:
 ```
 <div>
   {{#if fields.show_image}}
