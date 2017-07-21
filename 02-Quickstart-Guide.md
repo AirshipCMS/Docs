@@ -6,7 +6,7 @@
 
 Links:
 - Airship CMS Developer Portal
-- Not ready to create a site? Just create a login, then skip project setup and try out the Developer Workflow using a Demo Site
+- Not ready to create a site? Skip creating a site and Try out the Developer Workflow using one of our Demo Sites
 
 ## 2. Build your Schema in Airship CMS.
 1. **Sketch a Plan.** Before you start setting up pages and collections, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
