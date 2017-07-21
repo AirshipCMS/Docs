@@ -66,12 +66,18 @@ airship serve
 </pre>
 You need to leave this terminal open during development in order to keep an active connection to the airship server.
 
-## 7. Edit templates, files, & content.
+## 7. View your site in local development.
 In a browser, navigate to <span class="code">localhost:9001</span>. You will see actual site content, rendered with your local development files.
+
+## 8. Edit files & content.
 **{{{help}}}** Within the html markup on any layout or template, add the markup <span class="code">{{{help}}}</span> to generate a list of all data that is available for rendering on athe specific layout or template.
+
 **Render Content** To render a piece of content, add the markup with the exact variable name listed in <span class="code">{{{help}}}</span> within double curly braces.
+
 **Edit Templates & Layouts** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+
 **Add Files** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+
 **Edit Content** Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
 
 ## 8. <span class="code">airship launch</span> to publish your project.
