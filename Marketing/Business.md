@@ -1,5 +1,5 @@
 
-# Build Uniquely Custom Experiences
+# Create Uniquely Custom Experiences
 
 [grid of many different projects]
 
@@ -19,8 +19,13 @@ And this is the niche where Airship might be a good fit. It's a platform that al
 Think Airship might be a fit? See how the platform measures up to your needs >
 
 # Build More Efficiently
-Airship CMS is just a small component of Airship, where the power of the platform exists with the developer workflow tools.
-Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
-This doesn't mean that the project is _cheaper_, though it means you can spend more of the bucks building the website and application glamour... the stuff you really want to shine.
+[illustration of doubled efficiency]
+Airship CMS is just a small component of the Airship platform. The full power of working with Airship exists with how the developer workflow is streamlined and decoupled from the end-user experince of content creators.
+
+Once the [Project Schema] is set up, developers can start building, and content creators can start editing. QA Testers can review faster, and the project as a whole can be completed more efficiently and cost-effectively. 
+
+You no longer need to wait for an entire custom project to be completed, _then_ handoff to the content editor to write the final copy.
+
+Development isn't _cheaper_, it's more efficient. With time and costs saved, developers can spend more time building the website and application glamour... the stuff you really want to shine.
 
 Legos instead of Duct Tape >
