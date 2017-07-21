@@ -1,7 +1,17 @@
 # Fits Your Developer Workflow
-[build with legos instead of duct tape]
-Build with Legos instead of Duct Tape. We built Airship because we really hate building workarounds. Working with other content management systems, customization requires _a lot of effort_ for seemingly simple things. Sometimes the controls are clunky, or the output is ugly. Some examples:
+We built Airship because we needed a better workflow. We were using Wordpress as a headless CMS for some projects, though the flow was disjointed.
 
-[screenshots of generated code and interfaces]
+Airship is a CMS builder. You can craft your backend not just work with it.
 
-Building pages, collections in Airship CMS, and connecting them with relationships allows you to create a schema that is architected from the ground up, instead of patched together from an existing framework. This works really well for organizing user-managed content.
+## Developer Tools
+[Airship CMS for superadmins.]
+Schemas are created in the GUI, because they are directly tied to editable content fields. As a superadmin, you have access to controls that determind fileds and layouts. Content Creators cannot change anything "dangerous".
+
+[local development]
+Most other work is done locally with Airship CLI and in your text editor. serve content from the database.
+
+[use your frontend tools]
+Angular whatever output to compartments.
+
+[launch]
+launch. fully hosted, no maintenance needed. no updates needed. no babysitting the server.
