@@ -12,14 +12,12 @@ However. 10% of those projects might have a really simple backend, with a unique
 - a complex form, where you have to gather a lot of data and a form-builder just doesn't get you there (or you don't want to spend the time to figure it out).
 - something else.
 
-That's the niche where Airship might be a good tool. It's a platform that allows the developer to scaffold a pretty standard project schema and database, then generate build off of that architecture to focus on a unique frontend.
+That's the niche where Airship might be a good tool. It's a platform that allows the developer to scaffold a pretty standard project schema and database infrastructure, then generate build off of that architecture to focus on a uniquely custom frontend. 
 
+Unlike cookie-cutter solutions, Airship CMS has no interface for modifying a logo, font, or x, y, z. Design and development controls are left soley to the developer (though custom controls for these elements can be exposed if it is necessary for the project). 
 
+# Developer-centric Workflow
 
-
-
-though Airship gives a developer schema creation tools to make it fast to scaffold a project infrastructure.
-
-Airship is more than just a CMS. It is a development and hosting platform that allows a developer to build rapidly, in whatever stack they choose, and nearly any workflow they choose. How does this benefit you? Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. 
-Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
+Airship CMS is just a small component of Airship, where the power of the platform exists with the developer workflow tools.
+Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
 This doesn't mean that the project is _cheaper_, though it means you can spend more of the bucks building the website and application glamour... the stuff you really want to shine.
