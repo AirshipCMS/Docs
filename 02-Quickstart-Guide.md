@@ -1,11 +1,25 @@
 ## 1. Start a Project.
-<p>If you don't have a free Airship account yet, <a href="/signup">sign up</a> for one to access the Skyport Developer Portal. Launch a new site, then follow the link in the confirmation email to the Airship CMS Admin panel. This is where you can manage your users (accounts for content creators or other developers), and set up the data structure for the site.</p>
+1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_. [IMAGE - SKYPORT]
+2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_. [IMAGE - EMAIL]
+3. Create your First Site. [IMAGE - CREATE SITE INPUTS]
+4. After a few minutes, your site will be ready, and you can login to your site's Airship CMS admin panel. [IMAGE - YOUR SITE IS READY]
 
-## 2. Build your schema & relationships.
-<p>Plan out the sitemap and sketch quick wireframes for each unique page or collection in your project. If you need to see some examples, we have some demo <a href="/use-cases">use cases</a> to share that are schemas from our own actual projects.</p>
-<p>In Airship CMS, define the dynamic datafields needed for each Page and Collection. Remember that any datafield that you define directly maps to a piece of content or value that you would want your Content Creator to be able to update by themselves at any time.</p>
-<p>If you aren't sure about the exact datafields you need, don't worry! Just start with the Landing Page and the example Collection that are defined for you. You can make changes and additions to the site at any time.</p>
-<p>Once you are done setting up the site structure, add some demo content to each Page and add some placeholder items to each Collection. Be sure to do this step, so you will be able to see content on the scren when you are developing your project.</p>
+Links:
+- Airship CMS Developer Portal
+- Not ready to create a site? Just create a login, then skip project setup and try out the Developer Workflow using a Demo Site
+
+## 2. Build your Schema in Airship CMS.
+1. **Sketch a Plan.** Before you start setting up pages and collections, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
+2. **Set up Collections.** In the Airship CMS admin panel, create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Remember that any datafield that you define directly maps to a piece of content or a value that the Content Creator can update.
+3. **Create Relationships.** If you add the **Related** datafield type to a page or collection, you are able to create `one-to-many` relationships between pages and collections in your site.
+4. Add some placeholder content to each page field on your pages, and add placeholder items in each collection.
+
+Links:
+- Demo Use Cases
+- Sketches to Case Studies of Complex Custom Products
+- Setting up a Page
+- Setting up a Collection
+- Creating Relationships
 
 ## 3. Install Airship Launcher.
 <p>Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally.</p>
