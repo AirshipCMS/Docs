@@ -1,3 +1,7 @@
+Set up your first site with Airship CMS. Not ready to create a site yet? Just create a login, and try out the Developer Workflow and CLI using one of our Open Source Demo Sites.
+
+---
+
 ## 1. Start a Project.
 1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_. [IMAGE - SKYPORT]
 2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_. [IMAGE - EMAIL]
@@ -6,13 +10,12 @@
 
 Links:
 - Airship CMS Developer Portal
-- Not ready to create a site? Skip creating a site and Try out the Developer Workflow using one of our Demo Sites
 
 ## 2. Build your Schema in Airship CMS.
 1. **Sketch a Plan.** Before you start setting up pages and collections, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
 2. **Set up Collections.** In the Airship CMS admin panel, create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Remember that any datafield that you define directly maps to a piece of content or a value that the Content Creator can update.
 3. **Create Relationships.** If you add the **Related** datafield type to a page or collection, you are able to create `one-to-many` relationships between pages and collections in your site.
-4. Add some placeholder content to each page field on your pages, and add placeholder items in each collection.
+4. **Add Content.** Add some placeholder content to each page field on your pages, and add placeholder items in each collection.
 
 Links:
 - Demo Use Cases
@@ -22,15 +25,19 @@ Links:
 - Creating Relationships
 
 ## 3. Install Airship Launcher.
-<p>Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally.</p>
-<p><em>You can skip this step if you already have airship launcher installed. Not sure? Type this in your terminal. If you see a version number, you are already good to go!</em></p>
+Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type this in your terminal. If you see a version number, you are already good to go!
 <pre>airship version</pre>
-<p><b>Quick Install</b></p>
+
+**Quick Install**
 <pre>
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
 </pre>
-<p><b>Slow Install</b>
-For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at <a href="https://install.airshipcms.io">install.airshipcms.io</a>.
+
+**Slow Install**
+For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at install.airshipcms.io.
+
+Links:
+- install.airshipcms.io
 
 ## 4. <span class="code">airship login</span> to access your project content.
 <p>Create a new empty directory for your project.</p>
