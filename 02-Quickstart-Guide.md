@@ -39,24 +39,25 @@ For those of you that want to see exactly what tools are being installed on your
 Links:
 - install.airshipcms.io
 
-## 4. <span class="code">airship login</span> to access your project content.
-<p>Create a new empty directory for your project.</p>
+## 4. Create a local directory for your project.
+Create a new empty directory for your project.
 <pre>
 mkdir ~/MyFirstAirshipSite
 cd ~/MyFirstAirshipSite
 </pre>
-<p>If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.</p>
-<p>Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command (replace "yourairshipsubdomain" with your actual subdomain:</p>
+If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.
+
+## 5. <span class="code">airship login</span> to access your project content.
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command (replace "yourairshipsubdomain" with your actual subdomain:
 <pre>
 airship login yourairshipsubdomain</span>
 </pre>
-<p>A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.</p>
+A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 5. <span class="code">airship land</span> to retrieve files.
-<p>Once you are logged in, you need to sync your local project directory with the templates and files generated when you set up your site schema in Airship CMS. All airship commands should be done inside of your <span class="code">~/MyFirstAirshipSite</span> directory.</p>
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to sync your local project directory with the templates that were generated when you set up your site schema in Airship CMS:
 <pre>airship land</pre>
-<p>This command will generate a <span class="code">compartments</span> directory containing critical Airship files that are necessary for building out your project templates. Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so please be very aware of when you run this command, and back up local files often! You will typically only need to <span class="code">airship land</span> once per project during this setup phase. After your files are landed, you will be working locally on your project (and hopefully backing up code to an SCM), so you probably won't need to land the project again.</p>
-<p>Now that you have synced all the files that were on the server, you can start developing!</p>
+This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so please be very aware of when you run this command, and back up local files often! You will typically only need to <span class="code">airship land</span> once per project during this setup phase. After your files are landed, you will be working locally on your project for a while (and hopefully backing up code to an SCM), so you probably won't need to land the project again.
 
 ## 6. <span class="code">airship serve</span> for local development.
 <p>You can start a local development server by using the Airship Launcher serve command.</p>
