@@ -19,11 +19,11 @@ And this is the niche where Airship might be a good fit. It's a platform that al
 Think Airship might be a fit? See how the platform measures up to your needs >
 
 # Build More Efficiently
-[illustration of doubled efficiency]
+[illustration of bargraphs of time efficiency]
 Airship CMS is just a small component of the Airship platform. The full power of working with Airship exists with how the developer workflow is streamlined and decoupled from the end-user experince of content creators.
 
 Once the [Project Schema] is set up, developers can start building, and content creators can start editing. QA Testers can review faster, and the project as a whole can be completed more efficiently and cost-effectively. 
-
+[illustration of workflow]
 You no longer need to wait for an entire custom project to be completed, _then_ handoff to the content editor to write the final copy.
 
 Development isn't _cheaper_, it's more efficient. With time and costs saved, developers can spend more time building the website and application glamour... the stuff you really want to shine.
