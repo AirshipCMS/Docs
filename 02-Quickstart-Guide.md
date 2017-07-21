@@ -24,16 +24,16 @@ Links:
 - Setting up a Collection
 - Creating Relationships
 
-## 3. Install Airship Launcher.
-Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type this in your terminal. If you see a version number, you are already good to go!
+## 3. Install Airship Launcher CLI Tools.
+Currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type this in your terminal. If you see a version number, you are already good to go!
 <pre>airship version</pre>
 
-**Quick Install**
+**Quick Install**  
 <pre>
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
 </pre>
 
-**Slow Install**
+**Slow Install**  
 For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at install.airshipcms.io.
 
 Links:
