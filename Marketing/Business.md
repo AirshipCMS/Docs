@@ -18,12 +18,6 @@ And this is the niche where Airship might be a good fit. It's a platform that al
 
 Think Airship might be a fit? See how the platform measures up to your needs >
 
-# Build with Legos instead of Duct Tape
-[build with legos instead of duct tape]
-We built Airship because we really hate building workarounds. Working with other content management systems, it takes _a lot_ of effort to do seemingly simple things. The controls are clunky, or the output is ugly. Some examples:
-
-[screenshots of generated code and interfaces]
-
 # Build More Efficiently
 Airship CMS is just a small component of Airship, where the power of the platform exists with the developer workflow tools.
 Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
