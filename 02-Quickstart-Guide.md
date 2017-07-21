@@ -1,21 +1,21 @@
-Set up your first site with Airship CMS. Not ready to create a site yet? Just create a login, and try out the Developer Workflow and CLI using one of our Open Source Demo Sites.
+Follow this Quickstart Guide for setting up your first site with Airship CMS. Not ready to create a site yet? Just create a Free login, and try out the Developer Workflow and CLI tools using one of our Open Source Demo Sites.
 
 ---
 
 ## 1. Start a Project.
-1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_. [IMAGE - SKYPORT]
-2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_. [IMAGE - EMAIL]
-3. Create your First Site. [IMAGE - CREATE SITE INPUTS]
-4. After a few minutes, your site will be ready, and you can login to your site's Airship CMS admin panel. [IMAGE - YOUR SITE IS READY]
+1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_.
+2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
+3. Create your First Site.
+4. After a few minutes, you will receive a notification that your site is ready, and you can log in to your site's Airship CMS admin panel.
 
 Links:
 - Airship CMS Developer Portal
 
 ## 2. Build your Schema in Airship CMS.
-1. **Sketch a Plan.** Before you start setting up pages and collections, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
-2. **Set up Collections.** In the Airship CMS admin panel, create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Remember that any datafield that you define directly maps to a piece of content or a value that the Content Creator can update.
-3. **Create Relationships.** If you add the **Related** datafield type to a page or collection, you are able to create `one-to-many` relationships between pages and collections in your site.
-4. **Add Content.** Add some placeholder content to each page field on your pages, and add placeholder items in each collection.
+1. **Sketch a Plan.** Before you start setting up anything in the CMS, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
+2. **Set up Collections.** In the Airship CMS admin panel, create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that the Content Creator can update.
+3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project.
+4. **Add Content.** Add some placeholder content to each page field on your pages, and add items with placeholder content to each collection.
 
 Links:
 - Demo Use Cases
@@ -25,16 +25,16 @@ Links:
 - Creating Relationships
 
 ## 3. Install Airship Launcher CLI Tools.
-Currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type this in your terminal. If you see a version number, you are already good to go!
-<pre>airship version</pre>
+Command-line development tools are currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type `airship version` in your terminal. If you see a version number, you are already good to go!
 
 **Quick Install**  
+Easily install the command line tools by entering this into your terminal:
 <pre>
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
 </pre>
 
 **Slow Install**  
-For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at install.airshipcms.io.
+For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at `install.airshipcms.io`.
 
 Links:
 - install.airshipcms.io
