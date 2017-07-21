@@ -24,7 +24,7 @@ We built Airship because we really hate building workarounds. Working with other
 
 [screenshots of generated code and interfaces]
 
-# Build Faster & More Efficiently
+# Build More Efficiently
 Airship CMS is just a small component of Airship, where the power of the platform exists with the developer workflow tools.
 Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
 This doesn't mean that the project is _cheaper_, though it means you can spend more of the bucks building the website and application glamour... the stuff you really want to shine.
