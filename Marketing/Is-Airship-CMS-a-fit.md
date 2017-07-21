@@ -1,4 +1,4 @@
-# Who are you?
+# Is Airship CMS a fit?
 
 [infographic / color spectrum of users]
 
