@@ -25,7 +25,7 @@ Links:
 - Creating Relationships
 
 ## 3. Install Airship Launcher CLI Tools.
-Command-line development tools are currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type `airship version` in your terminal. If you see a version number, you are already good to go!
+Command-line development tools are currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type <span class="code">airship version</span> in your terminal. If you see a version number, you are already good to go!
 
 **Quick Install**  
 Easily install the command line tools by entering this into your terminal:
@@ -34,7 +34,7 @@ Easily install the command line tools by entering this into your terminal:
 </pre>
 
 **Slow Install**  
-For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at `install.airshipcms.io`.
+For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at <span class="code">install.airshipcms.io</span>.
 
 Links:
 - install.airshipcms.io
@@ -59,21 +59,23 @@ Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this
 <pre>airship land</pre>
 This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so please be very aware of when you run this command, and back up local files often! You will typically only need to <span class="code">airship land</span> once per project during this setup phase. After your files are landed, you will be working locally on your project for a while (and hopefully backing up code to an SCM), so you probably won't need to land the project again.
 
-## 6. <span class="code">airship serve</span> for local development.
-<p>You can start a local development server by using the Airship Launcher serve command.</p>
+## 6. <span class="code">airship serve</span> to serve your site locally.
+You can start a local development server by using the Airship Launcher serve command.
 <pre>
 airship serve
 </pre>
-<p>You must leave this terminal open during development in order to access the local server, so you probably want to have at least two terminals open.
-</p>
+You need to leave this terminal open during development in order to keep an active connection to the airship server.
 
-## 7. Change files & link to content fields.
-<p>While the server is running, you can test out your site locally by navigating to <span class="code">localhost:9001</span>.
-<p>The local development site pulls live content from the Airship database, so internet access is required.</p>
-<p>You can add and update layouts, templates, and media assets during development, refresh the local server, and see the local changes right away.</p>
+## 7. Edit templates, files, & content.
+In a browser, navigate to <span class="code">localhost:9001</span>. You will see actual site content, rendered with your local development files.
+**{{{help}}}** Within the html markup on any layout or template, add the markup <span class="code">{{{help}}}</span> to generate a list of all data that is available for rendering on athe specific layout or template.
+**Render Content** To render a piece of content, add the markup with the exact variable name listed in <span class="code">{{{help}}}</span> within double curly braces.
+**Edit Templates & Layouts** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+**Add Files** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+**Edit Content** Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
 
 ## 8. <span class="code">airship launch</span> to publish your project.
-<p>Once a version of your site is ready to launch to production, run this command to deploy your templates and assets:</p>
+<p>Once you are ready to launch your site, run this command to deploy your templates and assets:</p>
 <pre>airship launch</pre>
 <p>In your terminal, you will be presented with a preview of the actions that will occur when you run <span class="code">airship launch</span>. Review the actions carefully before confirming, then enter <span class="code">y</span> or <span class="code">yes</span>.
 <p>Once you confirm and launch, then your site will be updated immediately!</p>
