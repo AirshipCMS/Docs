@@ -14,7 +14,7 @@ However. 10% of those projects might have a really simple backend, with a unique
 
 That's the niche where Airship might be a good tool. It's a platform that allows the developer to scaffold a pretty standard project schema and database infrastructure, then generate build off of that architecture to focus on a uniquely custom frontend. 
 
-Unlike cookie-cutter solutions, Airship CMS has no interface for modifying a logo, font, or x, y, z. Design and development controls are left soley to the developer (though custom controls for these elements can be exposed if it is necessary for the project). 
+Think Airship might be a fit? See how the platform measures up to your needs >
 
 # Developer-centric Workflow
 
