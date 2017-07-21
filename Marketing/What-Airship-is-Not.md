@@ -1,5 +1,11 @@
+# How to make your Project More [SOMETHING]
+Airship is more than just a CMS. It is a development and hosting platform that allows a developer to build rapidly, in whatever stack they choose, and nearly any workflow they choose. How does this benefit you? Devs can develop faster, QA can review faster, Editors can create content, and the project can be completed more efficiently and cost-effectively. 
 
-Airship CMS is a Web Development Platform for building websites and client-side applications. Airship is a flexible, fully-hosted solution with server-side rendering, API, CMS, and eCommerce functionality. 
+This doesn't mean that the project is _cheaper_, though it means you can spend more of the bucks building the website and application glamour... the stuff you really want to shine.
+
+90% of building a project (any project) is nearly the same. Airship gives a developer schema creation tools to make it fast to scaffold a project infrastructure.
+
+Double your Speed. Once the project schema is completed, the content of the project can be sent off to the content editor to work on, while the developers can work on the functionality. Isn't that better than waiting for the entire project to be completed, _then_ starting on final content?
 
 [infographic / slider of relevant users]
 
@@ -13,3 +19,6 @@ If you are someone who is growing your business, and you are focusing on YOUR BU
 
 Different because we Don't Give you a GUI.
 What does Airship provide? A playground for developers to build. Unlike the solutions that exist out there, we _don't_ give you a GUI for drag and drop. Let's be honest... the 4 hours it would take you to "customize your site" will get you close, you will be 75% happy, and you could have used those 4 hours to do whatever your core expertise is... and just pay a web designer or developer to craft your site to your specifications. THat is the kind of relationship we are interested in.
+
+Still there are cases where Airship ISN'T a good fit. And we need to address that.
+Data heavy, requires websocks.
