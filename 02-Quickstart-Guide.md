@@ -119,6 +119,8 @@ This will output:
 ```
 <h1>Landing Page</h1>
 ```
+There are a lot of things you can render. See the Docs for more information about rendering.
+
 Links:
 - Layouts
 - Page Templates
