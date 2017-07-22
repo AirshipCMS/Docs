@@ -48,9 +48,9 @@ cd ~/MyFirstAirshipSite
 If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.
 
 ## 5. <span class="code">airship login</span> to access your project content.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command (replace "yourairshipsubdomain" with your actual subdomain:
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command (replace "subdomain" with your actual subdomain:
 ```
-airship login yourairshipsubdomain</span>
+airship login subdomain
 ```
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
@@ -94,7 +94,7 @@ This will output something like this:
 - slug
 ```
 
-### Render Content.
+### Render content.
 To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span>, contained by double curly braces. Example on the _root.html_ template:
 ```
 <h1>{{name}}</h1>
@@ -103,23 +103,25 @@ This will output:
 ```
 <h1>Landing Page</h1>
 ```
+Links:
+- Layouts
+- Page Templates
+- Collection Template Directories
 
-### Edit Templates & Layouts.
-You can add and edit templates, layouts and files locally without changes affecting the live version of your site. Templates and files changed locally will only be synced the airship server when you run <span class="code">airship launch</span>.
+### Edit templates, layouts, and files.
+You can add and edit templates, layouts, and files locally without affecting the live version of your site.
 
-### Add Files.
-Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+Links:
+- Project Directory Structure
 
 ### Edit Content.
 Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
 
 ## 10. <span class="code">airship launch</span> to publish your project.
-Once you are ready to launch your site, run this command to sync your templates and assets to the live site:
+Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```airship launch```
 
-In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming, then enter <span class="code">y</span> or <span class="code">yes</span>.
-
-In seconds, your site will be published!
+In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter <span class="code">y</span> or <span class="code">yes</span> and in seconds, your site will be published!
 
 ## 11. Back up files with your own source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can put any files you want in your main repository directory, as long as the <span class="code">compartments</span> directory maintains proper files and structure.
