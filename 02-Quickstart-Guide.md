@@ -143,7 +143,7 @@ Once you are ready to launch your site, run this command to upload your local te
 airship launch
 ```
 
-In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter <span class="code">y</span> or <span class="code">yes</span> and in seconds, your site will be published!
+In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter <span class="code">y</span> or <span class="code">yes</span> and in seconds, your project will be published!
 
 ## 11. Back up files with your own source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can put any files you want in your main repository directory, as long as the <span class="code">compartments</span> directory maintains proper files and structure.
