@@ -12,20 +12,20 @@ Links:
 - Airship CMS Developer Portal
 
 ## 2. Build your Schema in Airship CMS.
-1. **Sketch a Plan.** Before you start setting up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
-2. **Set up Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that the Content Creator can update.
+1. **Sketch a Schema.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
+2. **Set up Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit.
 3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project.
-4. **Add Content.** Add some placeholder content to each page field on your pages, and add items with placeholder content to each collection.
+4. **Add Content.** Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. You need placeholder content so that something renders on the page when you run the site locally.
 
 Links:
 - Demo Use Cases
-- Sketches to Case Studies of Complex Custom Products
+- (Demo Schemas)
 - Setting up a Page
 - Setting up a Collection
 - Creating Relationships
 
 ## 3. Install Airship Launcher CLI Tools.
-Command-line development tools are currently available for _Mac_ and _Linux_. Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally. You can skip this step if you already have airship launcher installed. Not sure? Type <span class="code">airship version</span> in your terminal. If you see a version number, you are already good to go!
+Command-line tools are currently available for _Mac_ and _Linux_ development environments. You must install the Airship Launcher in order to login and sync files between your local development environment and the Airship server. 
 
 **Quick Install**  
 Easily install the command line tools by entering this into your terminal:
