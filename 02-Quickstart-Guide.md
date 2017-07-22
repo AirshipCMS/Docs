@@ -134,7 +134,7 @@ You can add and edit templates, layouts, and files locally without affecting the
 Links:
 - Project Directory Structure
 
-### Edit Content.
+### Sync content managed by Airship CMS.
 Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
 
 ## 10. <span class="code">airship launch</span> to publish your project.
