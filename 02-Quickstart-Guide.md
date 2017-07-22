@@ -59,7 +59,9 @@ A browser window will pop up prompting you to login through Auth0 (our authentic
 
 ## 6. <span class="code">airship land</span> to retrieve files.
 Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated from your site schema:  
-```airship land```  
+```
+airship land
+```  
 
 This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. 
 
@@ -137,7 +139,9 @@ Content updated in the Airship CMS admin panel automatically syncs to your local
 
 ## 10. <span class="code">airship launch</span> to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
-```airship launch```
+```
+airship launch
+```
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter <span class="code">y</span> or <span class="code">yes</span> and in seconds, your site will be published!
 
