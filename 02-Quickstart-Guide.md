@@ -60,7 +60,7 @@ airship login subdomain
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated from your site schema:  
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
 ```  
