@@ -68,11 +68,11 @@ Running <span class="code">airship land</span> will overwrite any files in the <
 Using Git? If you are working on a team and another developer has already landed and committed the base project files, you don't need to run <span class="code">airship land</span>. Just be sure you have navigated to the root directory of your project before running the next step.
 
 ## 7. <span class="code">airship serve</span> to serve your site locally.
-You can start a local development server by using the Airship Launcher serve command.
+Start a local development server by using the Airship Launcher serve command.
 ```
 airship serve
 ```
-You need to leave this terminal open during development in order to keep an active connection to the airship server.
+Leave this terminal open during development in order to maintain an active connection to the airship server.
 
 ## 8. View your local site in a browser.
 In a browser, navigate to <span class="code">localhost:9001</span>. You will see actual site content, rendered with your local development files.
