@@ -58,9 +58,12 @@ airship login subdomain
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to sync your local project directory with the templates that were generated when you set up your site schema in Airship CMS:
-```airship land```
-This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so please be very aware of when you run this command, and back up local files often! You will typically only need to <span class="code">airship land</span> once per project during this setup phase. After your files are landed, you will be working locally on your project for a while (and hopefully backing up code to an SCM), so you probably won't need to land the project again.
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to sync your local project directory with the templates that were generated when you set up your site schema in Airship CMS:  
+```airship land```  
+
+This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. 
+
+Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so be very aware of when you run this command, and back up local files often (hopefully with a SCM tool)! You will typically only need to <span class="code">airship land</span> once per project during this setup phase.
 
 ## 7. <span class="code">airship serve</span> to serve your site locally.
 You can start a local development server by using the Airship Launcher serve command.
