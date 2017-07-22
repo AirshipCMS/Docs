@@ -16,7 +16,7 @@ Links:
 ## 2. Build your Schema in Airship CMS.
 1. **Sketch a Schema.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
 2. **Set up Pages & Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit. 
-When you set up each page and collection for rendering:
+3. **Rendering for Pages & Collections.** When you set up the rendering section for pages and collections:
 - Set the existing `application.html` **layout** for every page and collection.  
 - Create unique **templates** for pages.  
 - Create unique **template directories** for collections.  
