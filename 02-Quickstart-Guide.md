@@ -76,6 +76,23 @@ Within the html markup on any layout or template, add the markup <span class="co
 ```
 {{{help}}}
 ```
+This will output something like this:
+```
+- id
+- site_id
+- name
+- permalink
+- fields
+  - header
+  - body
+  - ...
+- layout
+- template
+- published_on
+- created_at
+- updated_at
+- slug
+```
 
 ### Render Content.
 To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span>, contained by double curly braces. Example on the _root.html_ template:
