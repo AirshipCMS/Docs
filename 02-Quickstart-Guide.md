@@ -5,15 +5,15 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 ## 1. Start a Project.
 1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_.
 2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
-3. Choose a Plan and create your First Site.
-4. After a few minutes, you will receive a notification that your site is ready, and you can log in to your site's Airship CMS admin panel.
+3. Choose a Plan and create your first project.
+4. After a few minutes, you will receive a notification that your project is ready.
 
 Links:
 - Airship CMS Developer Portal
 
 ## 2. Build your Schema in Airship CMS.
-1. **Sketch a Plan.** Before you start setting up anything in the CMS, sketch a sitemap of key pages, collections, and data on each page and collection in your project.
-2. **Set up Collections.** In the Airship CMS admin panel, create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that the Content Creator can update.
+1. **Sketch a Plan.** Before you start setting up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
+2. **Set up Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that the Content Creator can update.
 3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project.
 4. **Add Content.** Add some placeholder content to each page field on your pages, and add items with placeholder content to each collection.
 
