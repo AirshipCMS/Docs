@@ -58,7 +58,7 @@ airship login subdomain
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to sync your local project directory with the templates that were generated when you set up your site schema in Airship CMS:  
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to generate the base set of files for your site schema:
 ```airship land```  
 
 This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. 
