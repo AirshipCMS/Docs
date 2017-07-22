@@ -80,26 +80,34 @@ In a browser, navigate to <span class="code">localhost:9001</span>. You will see
 ## 9. Edit files & content.
 
 ### Render {{{help}}}.
-Within the html markup on any layout or template, add the markup <span class="code">{{{help}}}</span> and save the file to render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
+Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span> and save the file to render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
 ```
-{{{help}}}
+<div>
+  {{{help}}}
+</div>
 ```
 This will output something like this:
 ```
-- id
-- site_id
-- name
-- permalink
-- fields
-  - header
-  - body
-  - ...
-- layout
-- template
-- published_on
-- created_at
-- updated_at
-- slug
+<div>
+<ul>
+  <li>id</li>
+  <li>site_id</li>
+  <li>name</li>
+  <li>permalink</li>
+  <li>fields
+    <ul>
+      <li>header</li>
+      <li>body</li>
+    </ul>
+  </li>
+  <li>layout</li>
+  <li>template</li>
+  <li>published_on</li>
+  <li>created_at</li>
+  <li>updated_at</li>
+  <li>slug</li>
+</ul>
+<div>
 ```
 
 ### Render content.
