@@ -155,4 +155,4 @@ In your terminal, you will be presented with a preview of the actions that will 
 ## 11. Back up files with your own source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as they are outside of the <span class="code">compartments</span> directory.
 
-All files are safe to commit with your project, including the `.airship` directory containing the `name` file.
+Commit all Airship files with your project, including `compartments` and the `.airship` directory containing the `name` file.
