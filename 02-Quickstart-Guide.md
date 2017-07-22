@@ -111,7 +111,7 @@ This will output something like this:
 ```
 
 ### Render content.
-To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span>, contained by double curly braces. Example for the _root.html_ template:
+To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span> list, contained by double curly braces. Example for the _root.html_ template:
 ```
 <h1>{{name}}</h1>
 ```
