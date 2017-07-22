@@ -15,8 +15,12 @@ Links:
 
 ## 2. Build your Schema in Airship CMS.
 1. **Sketch a Schema.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
-2. **Set up Pages & Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit. Set the existing `application.html` **layout** for every page and collection, create unique **templates** for pages, and create unique **template directories** for collections.
-3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project.
+2. **Set up Pages & Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Any datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit. 
+When you set up each page and collection for rendering:
+- Set the existing `application.html` **layout** for every page and collection.  
+- Create unique **templates** for pages.  
+- Create unique **template directories** for collections.  
+3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project. See the Docs for more about Relationships.
 4. **Add Content.** Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
 
 Links:
