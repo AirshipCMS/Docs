@@ -121,7 +121,7 @@ This will output:
 ```
 <h1>Landing Page</h1>
 ```
-See the Airship Docs for more information about rendering lists, page templates, and collection template directories.
+See the Airship Docs for more information about rendering for lists, pages, collections.
 
 Links:
 - Layouts
