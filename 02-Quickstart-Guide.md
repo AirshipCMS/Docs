@@ -20,7 +20,7 @@ When you set up each page and collection for rendering:
 - Set the existing `application.html` **layout** for every page and collection.  
 - Create unique **templates** for pages.  
 - Create unique **template directories** for collections.  
-3. **Create Relationships.** When you add a **Related** datafield to a page or collection, this sets up the framework to create `one-to-many` relationships between pages and collections in your project. See the Docs for more about Relationships.
+You can also add **Related** datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project. See the Docs for more about Relationships.
 4. **Add Content.** Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
 
 Links:
