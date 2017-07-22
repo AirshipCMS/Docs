@@ -43,12 +43,15 @@ Links:
 Create a new empty directory for your project.
 ```
 mkdir ~/MyFirstAirshipSite
-cd ~/MyFirstAirshipSite
 ```
 If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.
 
 ## 5. <span class="code">airship login</span> to access your project content.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command (replace "subdomain" with your actual subdomain:
+Navigate to your project directory:
+```
+cd ~/MyFirstAirshipSite
+```
+Inside your project directory, run this command (replace "subdomain" with your actual subdomain:
 ```
 airship login subdomain
 ```
