@@ -129,7 +129,7 @@ Links:
 - Collection Template Directories
 
 ### Edit templates, layouts, and files.
-You can add and edit templates, layouts, and files locally without affecting the live version of your site. See the Airship Docs for more information about project directory structure.
+You can add and edit templates, layouts, and files locally without affecting the live version of your site. See the Airship Docs for more information about project directory structure and file types.
 
 Links:
 - Project Directory Structure
