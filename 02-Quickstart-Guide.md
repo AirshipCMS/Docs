@@ -70,15 +70,25 @@ You need to leave this terminal open during development in order to keep an acti
 In a browser, navigate to <span class="code">localhost:9001</span>. You will see actual site content, rendered with your local development files.
 
 ## 8. Edit files & content.
-**{{{help}}}** Within the html markup on any layout or template, add the markup <span class="code">{{{help}}}</span> to generate a list of all data that is available for rendering on athe specific layout or template.
+**Render {{{help}}}.** Within the html markup on any layout or template, add the markup <span class="code">{{{help}}}</span> and save the file to render a list of all data that is available for displaying on athe specific layout or template. Example on the _root.html_ template:
+<pre>
+{{{help}}}
+</pre>
 
-**Render Content** To render a piece of content, add the markup with the exact variable name listed in <span class="code">{{{help}}}</span> within double curly braces.
+**Render Content.** To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span>, contained by double curly braces. Example on the _root.html_ template:
+<pre>
+<h1>{{name}}</h1>
+</pre>
+This will output:
+<pre>
+<h1>Landing Page</h1>
+</pre>
 
-**Edit Templates & Layouts** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+**Edit Templates & Layouts.** You can add and edit templates, layouts and files locally without changes affecting the live version of your site. Templates and files changed locally will only be synced the airship server when you run <span class="code">airship launch</span>.
 
-**Add Files** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
+**Add Files.** Templates and files changed locally will only be synced to the published version of your site when you run <span class="code">airship launch</span>.
 
-**Edit Content** Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
+**Edit Content.** Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
 
 ## 8. <span class="code">airship launch</span> to publish your project.
 <p>Once you are ready to launch your site, run this command to deploy your templates and assets:</p>
