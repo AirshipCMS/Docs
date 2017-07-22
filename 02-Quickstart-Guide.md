@@ -82,13 +82,13 @@ In a browser, navigate to <span class="code">localhost:9001</span>. You will see
 ## 9. Edit files & content.
 
 ### Render {{{help}}}.
-Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span>, then save the file and refresh the browser window for <span class="code">localhost:9001</span>. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
+Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span>, then save the file and refresh the browser window displaying <span class="code">localhost:9001</span>. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
 ```
 <div>
   {{{help}}}
 </div>
 ```
-This will output something like this:
+This will output something similar to this:
 ```
 <div>
 <ul>
@@ -113,7 +113,7 @@ This will output something like this:
 ```
 
 ### Render content.
-To render content, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span> list, contained by double curly braces. Example for the _root.html_ template:
+To render content managed by Airship CMS, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span> list, contained by double curly braces. Example for the _root.html_ template:
 ```
 <h1>{{name}}</h1>
 ```
@@ -121,7 +121,7 @@ This will output:
 ```
 <h1>Landing Page</h1>
 ```
-There are a lot of things you can render. See the Docs for more information about rendering.
+See the Airship Docs for more information about rendering lists, page templates, and collection template directories.
 
 Links:
 - Layouts
