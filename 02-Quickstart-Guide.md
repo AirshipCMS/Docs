@@ -34,7 +34,7 @@ Easily install the command line tools by entering this into your terminal:
 ```
 
 **Slow Install**  
-For those of you that want to see exactly what tools are being installed on your machine, read and follow the instructions at <span class="code">install.airshipcms.io</span>.
+Developers that want to see exactly what tools are being installed can read and follow the instructions at <span class="code">install.airshipcms.io</span>.
 
 Links:
 - install.airshipcms.io
