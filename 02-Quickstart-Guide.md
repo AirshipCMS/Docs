@@ -41,7 +41,7 @@ Easily install the command line tools by entering this into your terminal:
 ```
 
 **Slow Install**  
-Developers that want to see exactly what tools are being installed can read and follow the instructions at <span class="code">install.airshipcms.io</span>.
+Developers that want to see exactly what tools are being installed can read and follow the instructions at `install.airshipcms.io`.
 
 Links:
 - install.airshipcms.io
@@ -53,7 +53,7 @@ mkdir ~/MyFirstAirshipSite
 ```
 If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.
 
-## 5. <span class="code">airship login</span> to access your project content.
+## 5. `airship login`to access your project content.
 Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
@@ -64,19 +64,19 @@ airship login subdomain
 ```
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
-## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
+## 6. `airship land` to retrieve files.
+Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
 ```  
 
-This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. 
+This command will generate a `compartments`directory containing all the Airship files that are necessary for building out your project templates. 
 
-Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so be very careful when you run this command.
+Running `airship land` will overwrite any files in the `compartments` directory, so be very careful when you run this command.
 
-Using Git? If you are working on a team and another developer has already landed and committed the base project files, you don't need to run <span class="code">airship land</span>. Just be sure you have navigated to the root directory of your project before running the next step.
+Using Git? If you are working on a team and another developer has already landed and committed the base project files, you don't need to run `airship land`. Just be sure you have navigated to the root directory of your project before running the next step.
 
-## 7. <span class="code">airship serve</span> to serve your site locally.
+## 7. `airship serve<` to serve your site locally.
 Start a local development server by using the Airship Launcher serve command.
 ```
 airship serve
@@ -84,12 +84,12 @@ airship serve
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
 ## 8. View your local site in a browser.
-In a browser, navigate to <span class="code">localhost:9001</span>. You will see actual site content, rendered with your local development files.
+In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local development files.
 
 ## 9. Edit files & content.
 
-### Render {{{help}}}.
-Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span>, then save the file and refresh the browser window displaying <span class="code">localhost:9001</span>. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
+### Render `{{{help}}}`.
+Within the html markup of any layout or template, add the code `{{{help}}}`, then save the file and refresh the browser window displaying `localhost:9001`. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
 ```
 <div>
   {{{help}}}
@@ -120,7 +120,7 @@ This will output something similar to this:
 ```
 
 ### Render content.
-To render content managed by Airship CMS, add markup with the exact variable name listed in the <span class="code">{{{help}}}</span> list, contained by double curly braces. Example for the _root.html_ template:
+To render content managed by Airship CMS, add markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. Example for the _root.html_ template:
 ```
 <h1>{{name}}</h1>
 ```
@@ -142,17 +142,17 @@ Links:
 - Project Directory Structure
 
 ### Sync content managed by Airship CMS.
-Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as <span class="code">airship serve</span> is running.
+Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as `airship serve` is running.
 
-## 10. <span class="code">airship launch</span> to publish your project.
+## 10. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
 ```
 
-In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter <span class="code">y</span> or <span class="code">yes</span> and in seconds, your project will be published!
+In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
 ## 11. Back up files with your own source code management tool.
-Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as they are outside of the <span class="code">compartments</span> directory.
+Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as they are outside of the `compartments` directory.
 
 Commit all Airship files with your project, including `compartments` and the `.airship` directory containing the `name` file.
