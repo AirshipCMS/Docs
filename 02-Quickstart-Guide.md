@@ -82,7 +82,7 @@ In a browser, navigate to <span class="code">localhost:9001</span>. You will see
 ## 9. Edit files & content.
 
 ### Render {{{help}}}.
-Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span> and save the file to render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
+Within the html markup of any layout or template, add the code <span class="code">{{{help}}}</span>, then save the file and refresh the browser window for <span class="code">localhost:9001</span>. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
 ```
 <div>
   {{{help}}}
