@@ -5,7 +5,7 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 ## 1. Start a Project.
 1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_.
 2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
-3. Create your First Site.
+3. Choose a Plan and create your First Site.
 4. After a few minutes, you will receive a notification that your site is ready, and you can log in to your site's Airship CMS admin panel.
 
 Links:
