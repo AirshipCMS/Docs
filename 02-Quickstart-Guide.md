@@ -1,4 +1,4 @@
-Follow this Quickstart Guide to set up your first site with Airship CMS. Not ready to create a site yet? Just create a Free login, and try out the Developer Workflow and CLI tools using one of our Open Source Demo Sites.
+Follow this Quickstart Guide to set up your first project with Airship CMS. Not ready to create a project yet? Just create a Free login, and try out the Developer Workflow and CLI tools using one of our Open Source Demo Sites.
 
 ---
 
