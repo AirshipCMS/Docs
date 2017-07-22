@@ -58,14 +58,14 @@ Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
 ```
-Inside your project directory, run this command (replace "subdomain" with your actual subdomain:
+Inside your project directory, run this command (replace "subdomain" with your actual subdomain):
 ```
 airship login subdomain
 ```
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated when you set layouts and templates for your pages and collections:  
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
 ```  
@@ -154,3 +154,5 @@ In your terminal, you will be presented with a preview of the actions that will 
 
 ## 11. Back up files with your own source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as they are outside of the <span class="code">compartments</span> directory.
+
+All files are safe to commit with your project, including the `.airship` directory containing the `name` file.
