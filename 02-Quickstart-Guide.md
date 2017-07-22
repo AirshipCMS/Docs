@@ -58,14 +58,14 @@ airship login subdomain
 A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
 
 ## 6. <span class="code">airship land</span> to retrieve files.
-Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated from your site schema:
+Inside of the <span class="code">~/MyFirstAirshipSite directory</span>, run this command to download the base set of files generated from your site schema:  
 ```airship land```  
 
 This command will generate a <span class="code">compartments</span> directory containing all the Airship files that are necessary for building out your project templates. 
 
 Running <span class="code">airship land</span> will overwrite any files in the <span class="code">compartments</span> directory, so be very careful when you run this command.
 
-Using Git? If you are working on a team and someone else has already landed and committed the base projecrt files, you don't need to land the project again. You just need to login to the root directory and run `airship serve` to start up the local project.
+Using Git? If you are working on a team and another developer has already landed and committed the base project files, you don't need to run <span class="code">airship land</span>. Just be sure you have navigated to the root directory of your project before running the next step.
 
 ## 7. <span class="code">airship serve</span> to serve your site locally.
 You can start a local development server by using the Airship Launcher serve command.
