@@ -1,5 +1,5 @@
 # Page Templates
-Page Templates contain html markup and [Page Propellers](#user-content-page-propellers) markup that renders site content. Templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content on the page.
+Page Templates contain html markup and [Page Propellers](#user-content-page-propellers) markup that renders site content. Templates are not generated with any pre-defined markup in order to give developers the most flexibility when structuring content on a page.
 
 ## Page Templates in your local directory
 Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
