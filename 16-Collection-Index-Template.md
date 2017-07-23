@@ -1,145 +1,19 @@
 # Collection `index.html` template:
 The following properties and fields can be rendered on the index.html template:
 
-
 ## Property: `params`
-This property is for pagination.
-
-The following fields are available from the index.html template:
-```
-page
-limit
-offset
-sort
-order
-total_count
-page_count
-next_offset
-prev_offset
-next_page
-prev_page
-fetch_first
-fetch_last
-fetch_prev
-fetch_next
-fetch_first_offset
-fetch_last_offset
-fetch_prev_offset
-fetch_next_offset
-```
-
-For more info about how to use these for pagination, see the documentation on the [create_page_query helper](Propeller-Helpers.md#create_page_query).
-
-Example markup using the `{{create_page_query}}` helper with fields from `params` to create a link with a query string for pagination:
-```
-<li><a href="{{create_page_query page='1' sort=params.sort order=params.order limit='15'}}">Mammals</a></li>
-```
-
-Example Output HTML:
-```
-<li><a href="?page=1&amp;limit=15&amp;sort=id&amp;order=asc">Mammals</a></li>
-```
-
-Example Output Query String:
-```
-/mammals?page=1&limit=15&sort=id&order=asc
-```
-
 
 ## Property: `items`
-Each item in the collection can be accessed through the items property. Because `items` is an array of items, the `{{#each items}}{{/each}}` wrapper is required to render the content. Alternatively, the [#sort_list](Propeller-Helpers.md#sort_list) helper may also be used.
-
-When using propeller helpers, outside properties may still be accessed by using the following syntax: `{{../variable_name}}`.
-
-The following examples show how to render each property or field in items:
 
 ### Property: `id`
-This is the ID of the item given by Airship CMS.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{id}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>3449</p>
-<p>3443</p>
-```
-
 
 ### Property: `aerostat_collection_id`
-This is the ID of the item's collection given by Airship CMS.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{aerostat_collection_id}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>305</p>
-<p>305</p>
-```
-
 
 ### Property: `permalink`
-The permalink is the identifier for the item following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{permalink}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>anteater</p>
-<p>bobcat</p>
-```
-
 
 ### Property: `sorting_position`
-This represents the sorting position of the item.
-
-The item's sorting position can be modified by editing the sort order in Admin.
-
-Example Markup:
-```
-{{#sort_list items sort="sorting_position" order="asc"}}
-<p>{{sorting_position}}</p>
-{{/sort_list}}
-```
-
-Example Output:
-```
-<p>1</p>
-<p>2</p>
-<p>3</p>
-```
-
 
 ### Property: `published_on`
-This is the timestamp of when the current item was published. The publish date can be set in the Admin panel. The timestamp can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{format_date published_on "r" "us"}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>Sat, 20 May 2017 00:00:00 GMT</p>
-<p>Mon, 22 May 2017 00:00:00 GMT</p>
-```
-
 
 ### Property: `created_at`
 This is the timestamp of when the current item was created. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
