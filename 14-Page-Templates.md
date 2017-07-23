@@ -1,7 +1,7 @@
 ## Page Templates
 Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
 
-Using either creation method, the page template needs to located in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page
+Using either creation method, the page template needs to end up in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page:
 ```
 compartments
 └── templates
