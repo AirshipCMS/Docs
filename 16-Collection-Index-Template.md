@@ -42,18 +42,211 @@ The following properties can be rendered on the `index.html` template:
 
 ### `params`
 
+### `collection`
+The following properties and fields are available on the index.html's `collection` property:
+
+##### `id`
+This is the collection's id.
+
+Example Markup:
+```
+<p>{{collection.id}}</p>
+```
+
+Example Output:
+```
+<p>305</p>
+```
+
+##### `site_id`
+This is the id of the website given by Airship CMS.
+
+Example Markup:
+```
+<p>{{collection.site_id}}</p>
+```
+
+Example Output:
+```
+<p>62</p>
+```
+
+##### `title`
+This is the title of the collection. The title is set when creating each collection, and can be edited at any time in the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.title}}</p>
+```
+
+Example Output:
+```
+<p>Mammals</p>
+```
+
+##### `name`
+This is the identifier used to refer to each item in the collection. By default, it is the same as the collection's title. It can be found and edited in the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.name}}</p>
+```
+
+Example Output:
+```
+<p>mammals</p>
+```
+
+##### `public_path`
+The public path is the identifier for collection following / in the url. The public path contains only lowercase letters, numbers, underscores, and dashes. By default, it is the same as the title or name, and can be edited in the Admin panel at any time.
+
+Example Markup:
+```
+<p>{{collection.public_path}}</p>
+```
+
+Example Output:
+```
+<p>mammals</p>
+```
+
+##### `has_public_make`
+This shows whether or not public make is enabled for the current collection. The public make setting can be enabled/disabled in the Modify panel in Admin.
+
+Public make must be enabled for user submissions, such as creating new Contact items within a Sign Up collection via sign up form. 
+
+Example Markup:
+```
+<p>{{collection.has_public_make}}</p>
+```
+
+Example Output:
+```
+<p>false</p>
+```
+
+##### `has_categories`
+This shows whether or not categories are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.has_categories}}</p>
+```
+
+Example Output:
+```
+<p>true</p>
+```
+
+##### `has_tags`
+This shows whether or not tags are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.has_tags}}</p>
+```
+
+Example Output:
+```
+<p>true</p>
+```
+
+##### `has_comments`
+Example Markup:
+```
+<p>{{collection.has_comments}}</p>
+```
+
+Example Output:
+```
+<p>false</p>
+```
+
+##### `has_publish_date`
+Example Markup:
+```
+<p>{{collection.has_publish_date}}</p>
+```
+
+Example Output:
+
+
+##### `show_permalink`
+This shows whether or not user's are allowed to edit the permalink for each item in the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.show_permalink}}</p>
+```
+
+Example Output:
+```
+<p>true</p>
+```
+
+##### `layout`
+This shows which layout is being used to render the current collection. This can be set within the Modify panel in Admin. 
+
+Example Markup:
+```
+<p>{{collection.layout}}</p>
+```
+
+Example Output:
+```
+<p>mammals.html</p>
+```
+
+##### `primary_label`
+This shows which field is being used as the primary identifier when listing each item in a collection. This can be set within the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.primary_label}}</p>
+```
+
+Example Output:
+```
+<p>Name</p>
+```
+
+##### `template_directory`
+This shows the name of the template directory being used for the current collection, and which holds the collection's index, show, categories, and/or category html files. The directory name in the project structure must exactly match this value. This can be set within the Modify panel in Admin.
+
+Example Markup:
+```
+<p>{{collection.template_directory}}</p>
+```
+
+Example Output:
+```
+<p>mammals</p>
+```
+
+##### `has_plans`
+Example Markup:
+```
+<p>{{collection.has_plans}}</p>
+```
+
+Example Output:
+```
+<p>false</p>
+```
+
 ### `{{#each items}}`
 
 ---
 
-## Limitations to data rendered by `{{#each items}}`
+## Data rendered inside `{{#each items}}`
+For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
+
 - any items in the collection that are in _Draft Mode_ will not render on the template.
 - items exceeding the [`Collection Limit`](#) set in the Airship CMS Admin will not render on the template. Pagination should be used to create links to additonal pages of content in the collection.
 - if any items contain _Related_ type datafields, the related fields data will not render on the `index.html` template.
 
-For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
-
 ## Additional Properties inside `{{#each items}}`
+The following properties are renderable on the `index.html` template, though not necessarily available on the `show.html` template:
 
 ### `aerostat_collection.id`
 This is the id of the item's collection given by Airship CMS.
@@ -87,13 +280,10 @@ Example Output:
 <p>mammals</p>
 ```
 
-!! LEFT OFF HERE BECAUSE DIFFERENT FOR LIST VS SHOW !!
-
 ### `categories`
 To use these properties, categories must be enabled in the Admin panel for the collection. The following examples show how to render the available categories properties for each item:
 
-
-#### Categories `id`
+##### `id`
 This is the ID of the category.
 
 Example Markup:
@@ -109,7 +299,7 @@ Example Output:
 <p>319</p>
 ```
 
-#### Categories `title`
+##### `title`
 This is the category name.
 
 Example Markup:
@@ -125,7 +315,7 @@ Example Output:
 <p>Fluffy</p>
 ```
 
-#### Categories `permalink`
+##### `permalink`
 The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
 
 Example Markup:
@@ -141,13 +331,13 @@ Example Output:
 <p>fluffy</p>
 ```
 
-!! OMIT??
+!! OMIT??====
 #### Categories `fields`
 Example Markup:
 Example Output:
+=========
 
-
-#### Categories `aerostat_collection_id`
+##### `aerostat_collection_id`
 This is the ID of the collection given by Airship CMS.
 
 Example Markup:
@@ -163,7 +353,7 @@ Example Output:
 <p>305</p>
 ```
 
-#### Categories `created_at`
+##### `created_at`
 This is the timestamp of when the category was created.
 
 Example Markup:
@@ -179,7 +369,7 @@ Example Output:
 <p>Wed, 17 May 2017 04:02:10 GMT</p>
 ```
 
-#### Categories `updated_at`
+##### `updated_at`
 This is the timestamp of when the category was last updated.
 
 Example Markup:
@@ -195,7 +385,7 @@ Example Output:
 <p>2017-05-30 06:22:59Z</p>
 ```
 
-#### Categories `sorting_position`
+##### `sorting_position`
 This is the value of the category's sorting position.
 
 Example Markup:
@@ -214,7 +404,7 @@ Example Output:
 ### `tags`
 To use these properties, tags must be enabled in the Admin panel for the collection. The following examples show how to render the available tag properties for each item:
 
-#### Tags `id`
+##### `id`
 This is the ID of the tag given by Airship CMS.
 
 Example Markup:
@@ -230,7 +420,7 @@ Example Output:
 <p>593</p>
 ```
 
-#### Tags `site_id`
+##### `site_id`
 This is the ID of the website that the tag belongs to.
 
 Example Markup:
@@ -246,7 +436,7 @@ Example Output:
 <p>62</p>
 ```
 
-#### Tags `name`
+##### `name`
 This is the tag name.
 
 Example Markup:
@@ -262,7 +452,7 @@ Example Output:
 <p>fluffy</p>
 ```
 
-#### Tags `created_at`
+##### `created_at`
 This is the timestamp of when the tag was created.
 
 Example Markup:
@@ -278,7 +468,7 @@ Example Output:
 <p>2017-05-17T04:02:03.1730000+00:00</p>
 ```
 
-#### Tags `updated_at`
+##### `updated_at`
 This is the timestamp of when the tag was updated.
 
 Example Markup:
@@ -292,198 +482,6 @@ Example Output:
 ```
 <p>2017-05-24 06:15:52Z</p>
 <p>2017-05-17 04:02:03Z</p>
-```
-
-## `collection`
-The following properties and fields are available on the index.html's `collection` property:
-
-### Collection `id`
-This is the collection's id.
-
-Example Markup:
-```
-<p>{{collection.id}}</p>
-```
-
-Example Output:
-```
-<p>305</p>
-```
-
-### Collection `site_id`
-This is the id of the website given by Airship CMS.
-
-Example Markup:
-```
-<p>{{collection.site_id}}</p>
-```
-
-Example Output:
-```
-<p>62</p>
-```
-
-### Collection `title`
-This is the title of the collection. The title is set when creating each collection, and can be edited at any time in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.title}}</p>
-```
-
-Example Output:
-```
-<p>Mammals</p>
-```
-
-### Collection `name`
-This is the identifier used to refer to each item in the collection. By default, it is the same as the collection's title. It can be found and edited in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.name}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-### Collection `public_path`
-The public path is the identifier for collection following / in the url. The public path contains only lowercase letters, numbers, underscores, and dashes. By default, it is the same as the title or name, and can be edited in the Admin panel at any time.
-
-Example Markup:
-```
-<p>{{collection.public_path}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-### Collection `has_public_make`
-This shows whether or not public make is enabled for the current collection. The public make setting can be enabled/disabled in the Modify panel in Admin.
-
-Public make must be enabled for user submissions, such as creating new Contact items within a Sign Up collection via sign up form. 
-
-Example Markup:
-```
-<p>{{collection.has_public_make}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-### Collection `has_categories`
-This shows whether or not categories are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.has_categories}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-### Collection `has_tags`
-This shows whether or not tags are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.has_tags}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-### Collection `has_comments`
-Example Markup:
-```
-<p>{{collection.has_comments}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-### Collection `has_publish_date`
-Example Markup:
-```
-<p>{{collection.has_publish_date}}</p>
-```
-
-Example Output:
-
-
-### Collection `show_permalink`
-This shows whether or not user's are allowed to edit the permalink for each item in the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.show_permalink}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-### Collection `layout`
-This shows which layout is being used to render the current collection. This can be set within the Modify panel in Admin. 
-
-Example Markup:
-```
-<p>{{collection.layout}}</p>
-```
-
-Example Output:
-```
-<p>mammals.html</p>
-```
-
-### Collection `primary_label`
-This shows which field is being used as the primary identifier when listing each item in a collection. This can be set within the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.primary_label}}</p>
-```
-
-Example Output:
-```
-<p>Name</p>
-```
-
-### Collection `template_directory`
-This shows the name of the template directory being used for the current collection, and which holds the collection's index, show, categories, and/or category html files. The directory name in the project structure must exactly match this value. This can be set within the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{collection.template_directory}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-### Collection `has_plans`
-Example Markup:
-```
-<p>{{collection.has_plans}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
 ```
 
 ---
