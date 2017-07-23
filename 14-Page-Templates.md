@@ -11,7 +11,7 @@ compartments
 ## Setting a Page Template in Airship CMS
 By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template for the page you are creating.
 
-In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
+In Airship CMS, in the `Page Rendering` section of the page you are creating or modifying, the `Template` filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
 
 ![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
 
@@ -27,12 +27,18 @@ Add some placeholder text to the blank `about.html` template:
 ```
 <h1>Hello!</h1>
 ```
-When you navigate to the page in your browser, you should see the contents of the bew `about.html` template rendered on the page.
-
-[ screenshot of browser ]  
 
 ### Method 2: Downloading a Generated Page Template
 If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
+
+## Viewing the Page Locally
+In Airship CMS, in the `Page Setup` section of the page you want to view locally check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
+
+[ screenshot of page setup ]  
+
+When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered on the page.
+
+[ screenshot of browser ]  
 
 ---
 
