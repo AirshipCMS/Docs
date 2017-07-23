@@ -2,7 +2,6 @@
 Your page template should be located in the `/compartments/templates/` directory. The filename of the template should exactly match what is set as the `template` name in the Modify section for the page in Airship CMS. If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. Here is an example of a project with `about` and `signup` pages:
 ```
 compartments
-.
 └── templates
     ├── root.html
     ├── about.html
@@ -12,7 +11,7 @@ compartments
 ---
 
 ## Page Properties:
-The following properties can be rendered on a Page Template:
+The following properties can be rendered on a page template:
 
 ### `id`
 
