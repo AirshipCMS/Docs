@@ -53,7 +53,7 @@ The following properties can be rendered on the `index.html` template:
 
 For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
-## Additional Properties rendered by `{{#each items}}` only on the `index.html` template
+## Additional Properties inside `{{#each items}}`
 
 ### `aerostat_collection.id`
 This is the id of the item's collection given by Airship CMS.
