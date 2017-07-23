@@ -26,22 +26,23 @@ compartments
 The `index.html` template is used to display all items within a collection.
 The public path of the collection, e.g. `/blog`, routes to this page.
 
-Check out the [`index.html`](/documentation/view/collection-index-template) for all available properties and fields that can be accessed from the `index.html` template, and examples of how to render them.
+Check out the docs for rendering [`index.html`](/documentation/view/collection-index-template), and all available properties and fields that can be accessed from this template.
 
 ## `show.html` template:
 The `show.html` template renders a single item in a collection.
 The url for a post is a collection follows the format: `/collection-public-path/view/item-permalink`.
 
-Check out the [`show.html`](/documentation/view/collection-show-template) for all available properties and fields that can be accessed from the `show.html` template, and examples of how to render them.
+Check out the docs for rendering [`show.html`](/documentation/view/collection-show-template), and all available properties and fields that can be accessed from this template.
+
 
 ## `categories.html` template:
 The `categories.html` template is used as an index for all categories within a collection.
 The url for the categories in a collection follows the format: `/collection-public-path/categories`.
 
-Check out the [`categories.html`](/documentation/view/collection-categories-template) for all available properties and fields that can be accessed from the `categories.html` template, and examples of how to render them.
+Check out the docs for rendering [`categories.html`](/documentation/view/collection-categories-template), and all available properties and fields that can be accessed from this template.
 
 ## `category.html` template:
 The `category.html` template is used as an index for a sinle category within a collection.
 The url for a category in a collection follows the format: `/collection-public-path/categories/category-permalink`.
 
-Check out the [`category.html`](/documentation/view/collection-category-template) for all available properties and fields that can be accessed from the `category.html` template, and examples of how to render them.
+Check out the docs for rendering [`category.html`](/documentation/view/collection-category-template), and all available properties and fields that can be accessed from this template.
