@@ -10,5 +10,18 @@ Example Output:
 <p>5/17/2017</p>
 ```
 
+Another Example:
+```
+{{#each items}}
+<p>{{format_date published_on "r" "us"}}</p>
+{{/each}}
+```
+
+And Example Output:
+```
+<p>Sat, 20 May 2017 00:00:00 GMT</p>
+<p>Mon, 22 May 2017 00:00:00 GMT</p>
+```
+
 ---
 /documentation/view/propeller-helpers#user-content-format_date
