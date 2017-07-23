@@ -1,4 +1,4 @@
-This represents the sorting position of an item in a colleciton.
+This represents the sorting position of an item in a collection.
 The item's `sorting_position` can be modified by editing the sort order in the Airship CMS admin panel.
 
 Example on the `index.html` or `category.html` template for the collection, where the `sorting_position` property is listed, within an `{{#each items}}` helper:
