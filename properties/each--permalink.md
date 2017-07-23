@@ -13,13 +13,3 @@ Output:
 <p>cat</p>
 <p>fish</p>
 ```
-
-Example markup on the `show.html` template:
-```
-<p>{{permalink}}</p>
-```
-
-Output:
-```
-<p>dog</p>
-```
