@@ -1,62 +1,47 @@
 # Collection Templates
-Collection Templates include the following pages: index.html, show.html, categories.html, and category.html. They are similar to [Page Templates](Page-Templates.md), though have properties that are specifically for collections.
+Collection Templates include a pre-determined set of the following templates: [`index.html`](/documentation/view/collection-index-template), [`show.html`](/documentation/view/collection-show-template), [`categories.html`](/documentation/view/collection-categories-template), and [`category.html`](/documentation/view/collection-category-template). 
 
-Items in collections *must* be published to be available for rendering.
+Collection Templates may contain html markup plus Airship Page Propellers code that renders content from the Airship CMS admin portal. By design, collection templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content within the collection.
 
-Check out the [Collections documentation](Collections.md) for more information about collections.
+## Rendering Items
+Items in collections *must* be published in order for them to render on collection templates.
 
+## Collection Templates in your local directory
+Whenever you create a collection, the corresponding set of collection templates can be generated in the CMS and downloaded, or manually created in your local project directory.
 
-
-## Template filenames
-For each collection, within the `/compartments/templates/` directory, there should be a directory with the name chosen in Admin.
-
-The filenames within these collection directories should be exactly index, show, categories, and category with the `html` extension.
-
-Example collection directory:
+Using either creation method, the collection template directory is saved in the `/compartments/templates/ directory` containing `index.html`, `show.html`, `categories.html`, and `category.html`, as needed. Here is an example of a local project directory with a `blog` collection:
 ```
 compartments
 .
 └── templates
     ├── root.html
-    └── collection-subdir
+    └── blog
         ├── categories.html
         ├── category.html
         ├── index.html
         └── show.html
 ```
 
-
-
 ## `index.html` template:
-The index.html template is used to display all items within a collection.
+The [`index.html`](/documentation/view/collection-index-template) template is used to display all items within a collection.
+The public path of the collection, e.g. `/blog`, routes to this page.
 
-The public path of the collection, e.g. `/blogs`, routes to this page.
-
-Check out the [index.html page documentation](Collection-Index-Template.md) for all available properties and fields, and examples of how to render them.
-
-
+Check out the [`index.html`](/documentation/view/collection-index-template) for all available properties and fields that can be accessed from the `index.html` template, and examples of how to render them.
 
 ## `show.html` template:
-The show.html template is used for pages that focus on one specific item in the collection.
+The [`show.html`](/documentation/view/collection-show-template) template renders a single item in a collection.
+The url for a post is a collection follows the format: `/collection-public-path/view/item-permalink`.
 
-The path for this page is `/collection-public-path/view/item-permalink`.
-
-Check out the [show.html page documentation](Collection-Show-Template.md) for all available properties and fields, and examples of how to render them.
-
-
+Check out the [`show.html`](/documentation/view/collection-show-template) for all available properties and fields that can be accessed from the `show.html` template, and examples of how to render them.
 
 ## `categories.html` template:
-The categories.html template is used as an index for all categories in a collection. This page has information about each category within the collection.
+The [`categories.html`](/documentation/view/collection-categories-template) template is used as an index for all categories within a collection.
+The url for the categories in a collection follows the format: `/collection-public-path/categories`.
 
-The path for this page is `/collection-public-path/categories`.
-
-Check out the [categories.html page documentation](Collection-Categories-Template.md) for all available properties and fields, and examples of how to render them.
-
-
+Check out the [`categories.html`](/documentation/view/collection-categories-template) for all available properties and fields that can be accessed from the `categories.html` template, and examples of how to render them.
 
 ## `category.html` template:
-The category.html template is used as an index for one specific category in a collection. This page shows all items within a certain category in the collection.
+The[`category.html`](/documentation/view/collection-category-template) template is used as an index for a sinle category within a collection.
+The url for a category in a collection follows the format: `/collection-public-path/categories/category-permalink`.
 
-The path for this page is `/collection-public-path/categories/category-permalink`.
-
-Check out the [category.html page documentation](Collection-Category-Template.md) for all available properties and fields, and examples of how to render them.
+Check out the [`category.html`](/documentation/view/collection-category-template) for all available properties and fields that can be accessed from the `category.html` template, and examples of how to render them.
