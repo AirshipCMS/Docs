@@ -46,22 +46,20 @@ The following properties can be rendered on the `index.html` template:
 
 ---
 
-## Properties Rendered inside `items`
-For a list of all `properties` and `fields` that can be rendered within the list of items, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. Any `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
-
 ## Limitations to items rendered on `index.html`
 - any items in the collection that are in _Draft Mode_ will not render on the template.
 - items exceeding the [`Collection Limit`](#) set in the Airship CMS Admin will not render on the template. Pagination should be used to create links to additonal pages of content in the collection.
 - if any items contain _Related_ type datafields, the related fields data will not render on the `index.html` template.
 
-!! LEFT OFF HERE !!
+## Basic Properties Rendered inside `items` and on the `show.html` template
+For a list of all `properties` that can be rendered within the list of items, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. Most `properties` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
-### Items `aerostat_collection`
-These properties can also be accessed directly from the [collection](#property-collection) property.
+## Fields Rendered inside `items` and on the `show.html` template
+For a list of all `fields` that can be rendered within the list of items, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. Any `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
-The following examples show how to render each property from the item aerostat_collection field:
+## Properties Rendered inside `items` on the `index.html` template
 
-#### Property: `id`
+### `aerostat_collection.id`
 This is the id of the item's collection given by Airship CMS.
 
 Example Markup:
@@ -77,8 +75,7 @@ Example Output:
 <p>305</p>
 ```
 
-
-#### Property: `public_path`
+### `aerostat_collection.public_path`
 This is the identifier for the item's collection following / in the url. The public path contains only lowercase letters, numbers, underscores, and dashes. By default, it is the same as the title or name, and can be edited in the Admin panel at any time.
 
 Example Markup:
@@ -94,12 +91,13 @@ Example Output:
 <p>mammals</p>
 ```
 
+!! LEFT OFF HERE BECAUSE DIFFERENT FOR LIST VS SHOW !!
 
-### Items `categories`
+### `categories`
 To use these properties, categories must be enabled in the Admin panel for the collection. The following examples show how to render the available categories properties for each item:
 
 
-#### Property: `id`
+#### Categories `id`
 This is the ID of the category.
 
 Example Markup:
@@ -115,7 +113,7 @@ Example Output:
 <p>319</p>
 ```
 
-#### Property: `title`
+#### Categories `title`
 This is the category name.
 
 Example Markup:
@@ -131,7 +129,7 @@ Example Output:
 <p>Fluffy</p>
 ```
 
-#### Property: `permalink`
+#### Categories `permalink`
 The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
 
 Example Markup:
@@ -147,13 +145,13 @@ Example Output:
 <p>fluffy</p>
 ```
 
-
-#### Property: `fields`
+!! OMIT??
+#### Categories `fields`
 Example Markup:
 Example Output:
 
 
-#### Property: `aerostat_collection_id`
+#### Categories `aerostat_collection_id`
 This is the ID of the collection given by Airship CMS.
 
 Example Markup:
@@ -169,7 +167,7 @@ Example Output:
 <p>305</p>
 ```
 
-#### Property: `created_at`
+#### Categories `created_at`
 This is the timestamp of when the category was created.
 
 Example Markup:
@@ -185,7 +183,7 @@ Example Output:
 <p>Wed, 17 May 2017 04:02:10 GMT</p>
 ```
 
-#### Property: `updated_at`
+#### Categories `updated_at`
 This is the timestamp of when the category was last updated.
 
 Example Markup:
@@ -201,8 +199,7 @@ Example Output:
 <p>2017-05-30 06:22:59Z</p>
 ```
 
-
-#### Property: `sorting_position`
+#### Categories `sorting_position`
 This is the value of the category's sorting position.
 
 Example Markup:
@@ -218,11 +215,10 @@ Example Output:
 <p>0</p>
 ```
 
-### Items `tags`
+### `tags`
 To use these properties, tags must be enabled in the Admin panel for the collection. The following examples show how to render the available tag properties for each item:
 
-
-#### Property: `id`
+#### Tags `id`
 This is the ID of the tag given by Airship CMS.
 
 Example Markup:
@@ -238,8 +234,7 @@ Example Output:
 <p>593</p>
 ```
 
-
-#### Property: `site_id`
+#### Tags `site_id`
 This is the ID of the website that the tag belongs to.
 
 Example Markup:
@@ -255,8 +250,7 @@ Example Output:
 <p>62</p>
 ```
 
-
-#### Property: `name`
+#### Tags `name`
 This is the tag name.
 
 Example Markup:
@@ -272,8 +266,7 @@ Example Output:
 <p>fluffy</p>
 ```
 
-
-#### Property: `created_at`
+#### Tags `created_at`
 This is the timestamp of when the tag was created.
 
 Example Markup:
@@ -289,7 +282,7 @@ Example Output:
 <p>2017-05-17T04:02:03.1730000+00:00</p>
 ```
 
-#### Property: `updated_at`
+#### Tags `updated_at`
 This is the timestamp of when the tag was updated.
 
 Example Markup:
@@ -305,11 +298,10 @@ Example Output:
 <p>2017-05-17 04:02:03Z</p>
 ```
 
-## Property: `collection`
+## `collection`
 The following properties and fields are available on the index.html's `collection` property:
 
-
-### Property: `id`
+### Collection `id`
 This is the collection's id.
 
 Example Markup:
@@ -322,8 +314,7 @@ Example Output:
 <p>305</p>
 ```
 
-
-### Property: `site_id`
+### Collection `site_id`
 This is the id of the website given by Airship CMS.
 
 Example Markup:
@@ -336,8 +327,7 @@ Example Output:
 <p>62</p>
 ```
 
-
-### Property: `title`
+### Collection `title`
 This is the title of the collection. The title is set when creating each collection, and can be edited at any time in the Modify panel in Admin.
 
 Example Markup:
@@ -350,8 +340,7 @@ Example Output:
 <p>Mammals</p>
 ```
 
-
-### Property: `name`
+### Collection `name`
 This is the identifier used to refer to each item in the collection. By default, it is the same as the collection's title. It can be found and edited in the Modify panel in Admin.
 
 Example Markup:
@@ -364,8 +353,7 @@ Example Output:
 <p>mammals</p>
 ```
 
-
-### Property: `public_path`
+### Collection `public_path`
 The public path is the identifier for collection following / in the url. The public path contains only lowercase letters, numbers, underscores, and dashes. By default, it is the same as the title or name, and can be edited in the Admin panel at any time.
 
 Example Markup:
@@ -378,8 +366,7 @@ Example Output:
 <p>mammals</p>
 ```
 
-
-### Property: `has_public_make`
+### Collection `has_public_make`
 This shows whether or not public make is enabled for the current collection. The public make setting can be enabled/disabled in the Modify panel in Admin.
 
 Public make must be enabled for user submissions, such as creating new Contact items within a Sign Up collection via sign up form. 
@@ -394,8 +381,7 @@ Example Output:
 <p>false</p>
 ```
 
-
-### Property: `has_categories`
+### Collection `has_categories`
 This shows whether or not categories are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
 
 Example Markup:
@@ -408,7 +394,7 @@ Example Output:
 <p>true</p>
 ```
 
-### Property: `has_tags`
+### Collection `has_tags`
 This shows whether or not tags are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
 
 Example Markup:
@@ -421,7 +407,7 @@ Example Output:
 <p>true</p>
 ```
 
-### Property: `has_comments`
+### Collection `has_comments`
 Example Markup:
 ```
 <p>{{collection.has_comments}}</p>
@@ -432,7 +418,7 @@ Example Output:
 <p>false</p>
 ```
 
-### Property: `has_publish_date`
+### Collection `has_publish_date`
 Example Markup:
 ```
 <p>{{collection.has_publish_date}}</p>
@@ -441,7 +427,7 @@ Example Markup:
 Example Output:
 
 
-### Property: `show_permalink`
+### Collection `show_permalink`
 This shows whether or not user's are allowed to edit the permalink for each item in the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
 
 Example Markup:
@@ -454,8 +440,7 @@ Example Output:
 <p>true</p>
 ```
 
-
-### Property: `layout`
+### Collection `layout`
 This shows which layout is being used to render the current collection. This can be set within the Modify panel in Admin. 
 
 Example Markup:
@@ -468,7 +453,7 @@ Example Output:
 <p>mammals.html</p>
 ```
 
-### Property: `primary_label`
+### Collection `primary_label`
 This shows which field is being used as the primary identifier when listing each item in a collection. This can be set within the Modify panel in Admin.
 
 Example Markup:
@@ -481,8 +466,7 @@ Example Output:
 <p>Name</p>
 ```
 
-
-### Property: `template_directory`
+### Collection `template_directory`
 This shows the name of the template directory being used for the current collection, and which holds the collection's index, show, categories, and/or category html files. The directory name in the project structure must exactly match this value. This can be set within the Modify panel in Admin.
 
 Example Markup:
@@ -495,8 +479,7 @@ Example Output:
 <p>mammals</p>
 ```
 
-
-### Property: `has_plans`
+### Collection `has_plans`
 Example Markup:
 ```
 <p>{{collection.has_plans}}</p>
