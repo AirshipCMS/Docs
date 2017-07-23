@@ -30,9 +30,9 @@ Add some placeholder text to the blank `about.html` template:
 ```
 
 ### Method 2: Downloading a Generated Page Template
-If you set a new `Template` for a page in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated template file that corresponds to the template set in Airship CMS.
+When you set a new `Template` for a page in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated template file that corresponds to the template set in Airship CMS.
 
-[ image ]
+![page-template-generated](https://user-images.githubusercontent.com/1865400/28495713-96f8549e-6ef3-11e7-9a60-18e677e87a45.png)
 
 When you run `airship land` the file will download into your local `compartments/templates` directory.
 ```
