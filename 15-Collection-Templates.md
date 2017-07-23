@@ -90,7 +90,7 @@ In Airship CMS, in the `Collection Setup` section of the collection you want to 
 
 ![collection-setup](https://user-images.githubusercontent.com/1865400/28496774-534f94a2-6f0f-11e7-9a13-8128c1d827bf.png)
 
-When you are developing locally, the url of the page will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
+When you are developing locally, the url of the index will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
 
 ---
 
@@ -114,7 +114,6 @@ The `show.html` template renders a single item in a collection.
 The url for a post is a collection follows the format: `/collection-public-path/view/item-permalink`.
 
 Check out the docs for rendering [`show.html`](/documentation/view/collection-show-template), and all available properties and fields that can be accessed from this template.
-
 
 ## `categories.html` template:
 The `categories.html` template is used as an index for all categories within a collection.
