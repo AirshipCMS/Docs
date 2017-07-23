@@ -1,3 +1,5 @@
+# `{{#each items}}{{/each}}`
+
 Each item in a collection can be accessed through the `items` property. The markup `{{items}}` alone will not render anything because it is simply a wrapper for the items it contains. It must be rendered as a wrapper `{{#each items}}{{/each}}` to display the content within `items`. Alternatively, the `{{#sort_list items}}` helper may also be used in place of `{{#each items}}`.
 
 Example using `{{#each items}}`:
