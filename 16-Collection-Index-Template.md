@@ -1,7 +1,44 @@
-# Collection `index.html` template:
-The following properties and fields can be rendered on the index.html template:
+# Collection `index.html` Template
+The `index.html` template is used to display all items within a collection.
+The public path of the collection, e.g. `/blog`, routes to this page.
 
-## Collection Items Properties:
+The collection `index.html` template may contain html markup and Collection Propellers markup that renders site content. This template is not generated with any pre-defined markup in order to give developers the most flexibility when structuring content for this page.
+
+## Location in your local directory
+The `index.html` template for a collection should be located in the appropriate subdirectory within the `templates` directory. For a collection named `blog`, the `index.html` template location would be:
+```
+compartments
+.
+└── templates
+    └── blog
+        └── index.html
+```
+
+---
+
+## Setting a Collection Template Directory in Airship CMS
+See [Collection Templates](/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
+
+## Viewing the Collection index locally
+In Airship CMS, in the `Collection Setup` section of the collection you want to view locally, check that the `Public Path` is written exactly as you want it to appear when someone navigates to your page.
+
+![collection-setup](https://user-images.githubusercontent.com/1865400/28496774-534f94a2-6f0f-11e7-9a13-8128c1d827bf.png)
+
+When you are developing locally, the url of the index will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
+
+---
+
+## Collection index Propellers
+"Propellers" is the Airship name for the markup used to render CMS content. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
+
+On the collection `index.html`, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the properties and datafields that can be rendered on each template. 
+
+Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
+
+Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
+
+## Collection Properties:
+The following properties can be rendered on the `index.html` template:
 
 ### Property: `params`
 
@@ -23,19 +60,19 @@ The following properties and fields can be rendered on the index.html template:
 
 ### Property: `slug`
 
-!! LEFT OFF HERE !!
+---
 
-## Collection Items `fields`
-The content endered in the Admin panel for each item is accessible through the item's `fields` property. These fields are similar to [Page fields](Page-Templates.md#page-fields), though the related_items field for each item is not available within the collection index.html. 
+## Collection Items Fields:
+Most content for items can be rendered on the `index.html` template. Some exceptions include:
+- any items in the collection that are in _Draft Mode_ will not render in the list of items.
+- if any items contain _Related_ type datafields, the related fields data will not render on the `index.html` template.
 
-For fields that contain HTML content, use triple braces: `{{{variable_name}}}`.
+Remember that all of the following fields are contained within a _list of items_ so on the `index.html` template they should be wrapped in a containing `{{#each}}` or `{{#sort_list}}` helper that will return a list of items.
 
-Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](#field-type-image), [link](#field-type-link), or [related aerostats](#field-type-related-aerostats).
+The following item field types can be rendered on the `index.html` template:
 
-`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](#field-type-list-of-images) or [list of links](#field-type-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](Propeller-Helpers.md#sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
 
-The following examples show how to render the content from each field type on items:
-
+!! LEFT OFF HERE... need to create new fields for all of these?? !!-----------
 
 #### Field Type: `text`
 The text field is a simple text input. It's useful for content with small amount of phrasing, such as headers or titles.
@@ -939,3 +976,8 @@ Example Output:
 ```
 <p>false</p>
 ```
+
+---
+
+## Properties you can't access from the `index.html` template
+Data from X will not render with Airship Propellers. Alternatively, if you want to render content that exists outside of the page, you can do an Airship API call and render the content with a script.
