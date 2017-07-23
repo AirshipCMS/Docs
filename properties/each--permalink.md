@@ -1,6 +1,6 @@
 The permalink is the identifier for an item in a collection. The permalink contains only lowercase letters, numbers, underscores, and dashes.
 
-Example markup on the `index.html` or `category.html` template:
+Example markup:
 ```
 {{#each items}}
 <p>{{permalink}}</p>
