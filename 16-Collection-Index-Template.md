@@ -44,7 +44,7 @@ The following properties can be rendered on the `index.html` template:
 
 ### `collection`
 
-### `{{#each items}}`
+### `items`
 
 ---
 
