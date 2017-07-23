@@ -23,25 +23,25 @@ compartments
 ```
 
 ## `index.html` template:
-The [`index.html`](/documentation/view/collection-index-template) template is used to display all items within a collection.
+The `index.html` template is used to display all items within a collection.
 The public path of the collection, e.g. `/blog`, routes to this page.
 
 Check out the [`index.html`](/documentation/view/collection-index-template) for all available properties and fields that can be accessed from the `index.html` template, and examples of how to render them.
 
 ## `show.html` template:
-The [`show.html`](/documentation/view/collection-show-template) template renders a single item in a collection.
+The `show.html` template renders a single item in a collection.
 The url for a post is a collection follows the format: `/collection-public-path/view/item-permalink`.
 
 Check out the [`show.html`](/documentation/view/collection-show-template) for all available properties and fields that can be accessed from the `show.html` template, and examples of how to render them.
 
 ## `categories.html` template:
-The [`categories.html`](/documentation/view/collection-categories-template) template is used as an index for all categories within a collection.
+The `categories.html` template is used as an index for all categories within a collection.
 The url for the categories in a collection follows the format: `/collection-public-path/categories`.
 
 Check out the [`categories.html`](/documentation/view/collection-categories-template) for all available properties and fields that can be accessed from the `categories.html` template, and examples of how to render them.
 
 ## `category.html` template:
-The[`category.html`](/documentation/view/collection-category-template) template is used as an index for a sinle category within a collection.
+The `category.html` template is used as an index for a sinle category within a collection.
 The url for a category in a collection follows the format: `/collection-public-path/categories/category-permalink`.
 
 Check out the [`category.html`](/documentation/view/collection-category-template) for all available properties and fields that can be accessed from the `category.html` template, and examples of how to render them.
