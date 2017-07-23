@@ -8,13 +8,14 @@ compartments
     └──  root.html
 ```
 
-### Manually creating a template file in your local directory
-By default, a layout and template are not autoset when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
+## Setting a Page Template in Airship CMS
+By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
 
-In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local directory. In this example, the template is named `about.html`:
+In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
 
 ![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
 
+### Method 1: Manually create a template file in your local project directory
 In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
 ```
 compartments
@@ -30,7 +31,7 @@ When you navigate to the page in your browser, you should see the contents of th
 
 [ screenshot of browser ]  
 
-### Setting the Template for a Page & downloading the generated tempalte
+### Method 2: Downloading a generated template to your local project directory
 If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
 
 ---
