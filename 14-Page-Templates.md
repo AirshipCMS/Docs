@@ -34,7 +34,7 @@ If you set the template in Airship CMS, you can immediately `airship land` the p
 ## Viewing the Page Locally
 In Airship CMS, in the `Page Setup` section of the page you want to view locally check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
 
-[ screenshot of page setup ]  
+![page-setup](https://user-images.githubusercontent.com/1865400/28495696-2ddafaa2-6ef3-11e7-989d-fdd5a644800a.png)  
 
 When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered on the page.
 
