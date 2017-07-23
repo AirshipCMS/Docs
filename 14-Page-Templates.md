@@ -15,7 +15,7 @@ In the `Page Rendering` section of the page you are creating or modifying, the t
 
 ![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
 
-### Method 1: Manually create a template file in your local project directory
+### Method 1: Manually Create a Page Template
 In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
 ```
 compartments
@@ -31,7 +31,7 @@ When you navigate to the page in your browser, you should see the contents of th
 
 [ screenshot of browser ]  
 
-### Method 2: Downloading a generated template to your local project directory
+### Method 2: Downloading a Generated Page Template
 If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
 
 ---
