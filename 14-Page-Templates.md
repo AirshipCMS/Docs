@@ -4,11 +4,11 @@ Page Templates may contain html markup plus Airship [Page Propellers](#user-cont
 ## Page Templates in your local directory
 Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
 
-Using either creation method, the page template needs to end up in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page:
+Using either creation method, the page template is saved in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page:
 ```
 compartments
 └── templates
-    └──  root.html
+    └── root.html
 ```
 
 ## Setting a Page Template in Airship CMS
@@ -16,7 +16,7 @@ By default, a layout and template are not automatically set when you create a ne
 
 In Airship CMS, in the `Page Rendering` section of the page you are creating or modifying, the `Template` filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
 
-![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
+![page-template-about](https://user-images.githubusercontent.com/1865400/28495841-061792e2-6ef7-11e7-8882-a38d050eace5.png)  
 
 ### Method 1: Manually Create a Page Template
 In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
@@ -24,7 +24,7 @@ In your local project directory, create a new html file called `about.html` and 
 compartments
 └── templates
     ├── root.html
-    └──  about.html
+    └── about.html
 ```
 
 Add some placeholder text to the blank `about.html` template:
@@ -35,14 +35,14 @@ Add some placeholder text to the blank `about.html` template:
 ### Method 2: Downloading a Generated Page Template
 When you set a new `Template` for a page in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated template file that corresponds to the template set in Airship CMS.
 
-![page-template-generated](https://user-images.githubusercontent.com/1865400/28495713-96f8549e-6ef3-11e7-9a60-18e677e87a45.png)
+![page-template-about-new](https://user-images.githubusercontent.com/1865400/28495840-0616a706-6ef7-11e7-8ffc-c344fdd8b6ee.png)
 
 When you run `airship land` the file will download into your local `compartments/templates` directory.
 ```
 compartments
 └── templates
     ├── root.html
-    └──  about.html
+    └── about.html
 ```
 
 The generated markup on the page will look something like this:
