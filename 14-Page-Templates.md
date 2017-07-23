@@ -1,5 +1,5 @@
 # Page Templates
-Page Templates may contain html markup plus Airship [Page Propellers[(#user-content-page-propellers) code that renders content from the Airship CMS admin portal. By design, templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content on the page.
+Page Templates may contain html markup plus Airship [Page Propellers](#user-content-page-propellers) code that renders content from the Airship CMS admin portal. By design, templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content on the page.
 
 ## Page Templates in your local directory
 Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
