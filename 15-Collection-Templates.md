@@ -1,7 +1,7 @@
 # Collection Templates
 Collection Templates include a pre-determined set of the following templates: [`index.html`](/documentation/view/collection-index-template), [`show.html`](/documentation/view/collection-show-template), [`categories.html`](/documentation/view/collection-categories-template), and [`category.html`](/documentation/view/collection-category-template). 
 
-Collection Templates may contain html markup plus Airship Page Propellers code that renders content from the Airship CMS admin portal. By design, collection templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content within the collection.
+Collection Templates may contain html markup and Collection Propellers markup that renders site content. Templates are not generated with any pre-defined markup in order to give developers the most flexibility when structuring content on a page.
 
 ## Rendering Items
 Items in collections *must* be published in order for them to render on collection templates.
