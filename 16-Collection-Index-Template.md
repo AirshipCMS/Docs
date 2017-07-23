@@ -40,24 +40,20 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection Properties:
 The following properties can be rendered on the `index.html` template:
 
-### Property: `params`
+### `params`
 
-### Property: `items`
+### `{{#each items}}`
 
 ---
 
-## Limitations to items rendered on `index.html`
+## Limitations to data rendered by `{{#each items}}`
 - any items in the collection that are in _Draft Mode_ will not render on the template.
 - items exceeding the [`Collection Limit`](#) set in the Airship CMS Admin will not render on the template. Pagination should be used to create links to additonal pages of content in the collection.
 - if any items contain _Related_ type datafields, the related fields data will not render on the `index.html` template.
 
-## Basic Properties Rendered inside `items` and on the `show.html` template
-For a list of all `properties` that can be rendered within the list of items, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. Most `properties` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
+For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
-## Fields Rendered inside `items` and on the `show.html` template
-For a list of all `fields` that can be rendered within the list of items, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. Any `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
-
-## Properties Rendered inside `items` on the `index.html` template
+## Additional Properties rendered by `{{#each items}}` only on the `index.html` template
 
 ### `aerostat_collection.id`
 This is the id of the item's collection given by Airship CMS.
