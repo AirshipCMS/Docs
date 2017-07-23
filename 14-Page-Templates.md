@@ -12,6 +12,8 @@ compartments
     └── root.html
 ```
 
+---
+
 ## Setting a Page Template in Airship CMS
 By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template for the page you are creating.
 
@@ -70,9 +72,7 @@ On any page, you can add the code `{{{help}}}` within the html markup. This will
 
 Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
-Some fields that include a list of content requires an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
-
----
+Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
 
 ## Page Properties:
 The following properties can be rendered on a page template:
