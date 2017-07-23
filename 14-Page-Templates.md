@@ -23,13 +23,30 @@ compartments
     ├── root.html
     └──  about.html
 ```
+
 Add some placeholder text to the blank `about.html` template:
 ```
 <h1>Hello!</h1>
 ```
 
 ### Method 2: Downloading a Generated Page Template
-If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
+If you set a new `Template` for a page in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated template file that corresponds to the template set in Airship CMS.
+
+[ image ]
+
+When you run `airship land` the file will download into your local `compartments/templates` directory.
+```
+compartments
+└── templates
+    ├── root.html
+    └──  about.html
+```
+
+The generated markup on the page will look something like this:
+```
+<p>about Template</p>
+{{{ help }}}
+```
 
 ## Viewing the Page Locally
 In Airship CMS, in the `Page Setup` section of the page you want to view locally check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
@@ -38,7 +55,7 @@ In Airship CMS, in the `Page Setup` section of the page you want to view locally
 
 When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered on the page.
 
-[ screenshot of browser ]  
+![page-template-about-browser](https://user-images.githubusercontent.com/1865400/28495755-daa33442-6ef4-11e7-9712-7fef3db36fe9.png)  
 
 ---
 
