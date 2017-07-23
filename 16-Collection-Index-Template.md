@@ -22,7 +22,7 @@ When you are developing locally, the url of the index will be `localhost:9001/pu
 
 ---
 
-## Collection index Propellers
+## Collection `index.html` Propellers
 "Propellers" is the Airship name for the markup used to render CMS content. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
 
 On the collection `index.html`, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the properties and datafields that can be rendered on each template. 
@@ -31,7 +31,7 @@ Propellers markup is wrapped by double or triple curly brackets. Properties and 
 
 Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
 
-## Collection Properties:
+## Collection `index.html` Properties:
 The following properties can be rendered on the `index.html` template:
 
 ### `params`
