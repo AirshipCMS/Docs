@@ -241,6 +241,7 @@ Example Output:
 ## Data rendered inside `{{#each items}}`
 For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
+## Not renderable inside `{{#each items}}`
 - any items in the collection that are in _Draft Mode_ will not render on the template.
 - items exceeding the [`Collection Limit`](#) set in the Airship CMS Admin will not render on the template. Pagination should be used to create links to additonal pages of content in the collection.
 - if any items contain _Related_ type datafields, the related fields data will not render on the `index.html` template.
