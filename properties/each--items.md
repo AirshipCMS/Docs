@@ -30,5 +30,3 @@ Output:
 
 ---
 /documentation/view/propeller-helpers#user-content-format_date
-
-The following properties show examples of using `{{#each items}}`.
