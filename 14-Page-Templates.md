@@ -1,16 +1,36 @@
-## Location of Templates
-Your page template is located in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page and `about` page:
+## Page Templates
+Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
+
+Using either creation method, the page template needs to located in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page
+```
+compartments
+└── templates
+    └──  root.html
+```
+
+### Setting the Template for a Page & creating a corresponding file in your local directory
+By default, a layout and template are not set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
+
+In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local directory. In this example, the template is named `about.html`:
+
+![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
+
+In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
 ```
 compartments
 └── templates
     ├── root.html
     └──  about.html
 ```
+Add some placeholder text to the blank `about.html` template:
+```
+<h1>Hello!</h1>
+```
+When you navigate to the page in your browser, you should see the contents of the bew `about.html` template rendered on the page.
 
-The filename of the template should exactly match what is set as the `Template` in the `Page Rendering` section for the page in Airship CMS. 
+[ screenshot of browser ]  
 
-![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
-
+### Setting the Template for a Page & downloading the generated tempalte
 If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
 
 ---
