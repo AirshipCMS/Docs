@@ -48,7 +48,7 @@ The following properties can be rendered on the `index.html` template:
 
 ---
 
-## Data rendered inside `{{#each items}}`
+# Data rendered inside `{{#each items}}`
 For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for the collection [`show.html`](/documentation/view/collection-show-template) template. All `properties` and `fields` listed as renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper.
 
 ## Not renderable inside `{{#each items}}`
