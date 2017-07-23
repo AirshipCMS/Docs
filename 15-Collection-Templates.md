@@ -21,54 +21,76 @@ compartments
 
 ---
 
-## Setting a Page Template in Airship CMS
-By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template for the page you are creating.
+## Setting a Collection Template Directory in Airship CMS
+By default, a layout and template directory are not automatically set when you create a new collection. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template directory for the collection you are creating.
 
-In Airship CMS, in the `Page Rendering` section of the page you are creating or modifying, the `Template` filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
+In Airship CMS, in the `Collection Rendering` section of the collection you are creating or modifying, the `Template Directory` path should be written exactly the way you want it to appear when you reference the collection template files in your local project directory. In this example, the template directory is named `blog`:
 
-![page-template-about](https://user-images.githubusercontent.com/1865400/28495841-061792e2-6ef7-11e7-8882-a38d050eace5.png)  
+![collection-template-dir](https://user-images.githubusercontent.com/1865400/28496728-33406c5a-6f0e-11e7-8b37-96d704d52e75.png)  
 
 ### Method 1: Manually Create a Page Template
-In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
+In your local project directory, create a new directory called `blog` inside the `templates` directory.
 ```
 compartments
 .
 └── templates
     ├── root.html
-    └── about.html
+    └── blog
 ```
-
-Add some placeholder text to the blank `about.html` template:
-```
-<h1>Hello!</h1>
-```
-
-### Method 2: Downloading a Generated Page Template
-When you set a new `Template` for a page in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated template file that corresponds to the template set in Airship CMS.
-
-![page-template-about-new](https://user-images.githubusercontent.com/1865400/28495840-0616a706-6ef7-11e7-8ffc-c344fdd8b6ee.png)
-
-When you run `airship land` the file will download into your local `compartments/templates` directory.
+As needed, create the templates `index.html`, `show.html`, `categories.html`, and `category.html`. You only need to create the templates you need for rendering.
 ```
 compartments
 .
 └── templates
     ├── root.html
-    └── about.html
+    └── blog
+        ├── index.html
+        ├── categories.html
+        ├── category.html
+        └── show.html
 ```
 
-The generated markup on the page will look something like this:
+Add some placeholder text to each template.
 ```
-<p>about Template</p>
-{{{ help }}}
+<h1>Hello! This is the Index!</h1>
 ```
 
-## Viewing the Page Locally
-In Airship CMS, in the `Page Setup` section of the page you want to view locally, check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
+### Method 2: Downloading a Generated Collection Template Directory
+When you set a new `Template Directory` for a collection in Airship CMS, a message will alert you that you can immediately `airship land` the project to download the generated templates that correspond to the template directory set in Airship CMS.
 
-![page-setup](https://user-images.githubusercontent.com/1865400/28495696-2ddafaa2-6ef3-11e7-989d-fdd5a644800a.png)  
+![collection-template-dir-new](https://user-images.githubusercontent.com/1865400/28496727-333ffa5e-6f0e-11e7-89ab-2556e74ac5e2.png)  
 
-When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered in the browser.
+When you run `airship land` the templates will download into your local `compartments/templates` directory.
+```
+compartments
+.
+└── templates
+    ├── root.html
+    └── blog
+        ├── index.html
+        ├── categories.html
+        ├── category.html
+        └── show.html
+```
+
+The generated markup on each template will look something like this:
+```
+<h1>Aerostat Collection template</h1>
+<h2>index.html</h2>
+
+<code>
+  <pre>
+{{{help}}}
+  </pre>
+</code>
+```
+
+## Viewing the Collection Locally
+In Airship CMS, in the `Collection Setup` section of the collection you want to view locally, check that the `Public Path` is written exactly as you want it to appear when someone navigates to your page.
+
+![collection-setup](https://user-images.githubusercontent.com/1865400/28496774-534f94a2-6f0f-11e7-9a13-8128c1d827bf.png)
+
+When you are developing locally, the url of the page will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
 
 ---
 
