@@ -56,14 +56,18 @@ In Airship CMS, in the `Page Setup` section of the page you want to view locally
 
 ![page-setup](https://user-images.githubusercontent.com/1865400/28495696-2ddafaa2-6ef3-11e7-989d-fdd5a644800a.png)  
 
-When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered on the page.
-
-![page-template-about-browser](https://user-images.githubusercontent.com/1865400/28495755-daa33442-6ef4-11e7-9712-7fef3db36fe9.png)  
+When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered in the browser.
 
 ---
 
 ## Page Propellers
-briefly. and help.
+"Propellers" is the Airship name for the markup used to render CMS content. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
+
+On any page, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the [Page Properties](#user-content-page-properties) and [Page Datafields](#user-content-page-datafields) that can be rendered on a page. 
+
+Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
+
+Some fields that include a list of content requires an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
 
 ---
 
@@ -93,13 +97,7 @@ The following properties can be rendered on a page template:
 ---
 
 ## Page Fields:
-Content entered in Airship CMS Admin Panel can be rendered on a page template using propellers markup. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
-
-Propellers markup is wrapped by double or triple curly brackets. Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
-
-Some fields that include a list of content requires an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access.
-
-The following examples show how to render the content from each field type on a page:
+The following field types can be rendered on a page template:
 
 ### `text`
 
@@ -132,6 +130,4 @@ The following examples show how to render the content from each field type on a 
 ---
 
 ## Properties you can't access from a page template
-Only page properties render on pages with propellers. Data from other pages or collections will not render with propellers, unless you relate them to the page with a "related datafield."
-
-If you want to render content outside of the page, you need to do an api call and render with a script.
+Data from other pages or collections will not render with Airship Propellers, unless a relationship is created with a "related datafield." Alternatively, if you want to render content that exists outside of the page, you can do an Airship API call and render the content with a script.
