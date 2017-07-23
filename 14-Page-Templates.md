@@ -8,8 +8,8 @@ compartments
     └──  root.html
 ```
 
-### Setting the Template for a Page & creating a corresponding file in your local directory
-By default, a layout and template are not set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
+### Manually creating a template file in your local directory
+By default, a layout and template are not autoset when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
 
 In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local directory. In this example, the template is named `about.html`:
 
