@@ -3,9 +3,6 @@ Collection Templates include a pre-determined set of the following templates: [`
 
 Collection Templates may contain html markup and Collection Propellers markup that renders site content. Templates are not generated with any pre-defined markup in order to give developers the most flexibility when structuring content on a page.
 
-## Rendering Items
-Items in collections *must* be published in order for them to render on collection templates.
-
 ## Collection Templates in your local directory
 Whenever you create a collection, the corresponding set of collection templates can be generated in the CMS and downloaded, or manually created in your local project directory.
 
