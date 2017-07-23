@@ -9,7 +9,7 @@ compartments
 ```
 
 ## Setting a Page Template in Airship CMS
-By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and page template for the page you are creating.
+By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template for the page you are creating.
 
 In the `Page Rendering` section of the page you are creating or modifying, the template filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
 
