@@ -7,6 +7,7 @@ Whenever you create a page, the corresponding page template can be generated in 
 Using either creation method, the page template is saved in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page:
 ```
 compartments
+.
 └── templates
     └── root.html
 ```
@@ -22,6 +23,7 @@ In Airship CMS, in the `Page Rendering` section of the page you are creating or 
 In your local project directory, create a new html file called `about.html` and save it into the `templates` directory.
 ```
 compartments
+.
 └── templates
     ├── root.html
     └── about.html
@@ -40,6 +42,7 @@ When you set a new `Template` for a page in Airship CMS, a message will alert yo
 When you run `airship land` the file will download into your local `compartments/templates` directory.
 ```
 compartments
+.
 └── templates
     ├── root.html
     └── about.html
