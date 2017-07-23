@@ -27,4 +27,8 @@ Output:
 <p>22</p>
 <p>23</p>
 ```
-The following properties show examples of using `{{#each items}}.
+
+---
+/documentation/view/propeller-helpers#user-content-format_date
+
+The following properties show examples of using `{{#each items}}`.
