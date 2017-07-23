@@ -1,4 +1,4 @@
-This is the id of the current item.
+This is the id of the an item or page.
 
 Example Markup:
 ```
