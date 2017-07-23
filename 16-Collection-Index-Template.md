@@ -4,7 +4,7 @@ The public path of the collection, e.g. `/blog`, routes to this page.
 
 The collection `index.html` template may contain html markup and Collection Propellers markup that renders site content. This template is not generated with any pre-defined markup in order to give developers the most flexibility when structuring content for this page.
 
-## Location in your local directory
+## Location & Setup
 The `index.html` template for a collection should be located in the appropriate subdirectory within the `templates` directory. For a collection named `blog`, the `index.html` template location would be:
 ```
 compartments
@@ -16,13 +16,7 @@ compartments
 
 ---
 
-## Setting a Collection Template Directory in Airship CMS
 See [Collection Templates](/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
-
-## Viewing the Collection index locally
-In Airship CMS, in the `Collection Setup` section of the collection you want to view locally, check that the `Public Path` is written exactly as you want it to appear when someone navigates to your page.
-
-![collection-setup](https://user-images.githubusercontent.com/1865400/28496774-534f94a2-6f0f-11e7-9a13-8128c1d827bf.png)
 
 When you are developing locally, the url of the index will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
 
