@@ -66,8 +66,3 @@ The following properties are renderable on the `index.html` template, though not
 ### `categories`
 
 ### `tags`
-
----
-
-## Properties you can't access from the `index.html` template
-Data from X will not render with Airship Propellers. Alternatively, if you want to render content that exists outside of the page, you can do an Airship API call and render the content with a script.
