@@ -9,6 +9,8 @@ compartments
 
 The filename of the template should exactly match what is set as the `Template` in the `Page Rendering` section for the page in Airship CMS. 
 
+![page-rendering-680x223](https://user-images.githubusercontent.com/1865400/28495584-5cccb5ea-6eed-11e7-99ff-ba2b5a227e8b.png)
+
 If you set the template in Airship CMS, you can immediately `airship land` the project to generate a template file with the proper name. 
 
 ---
