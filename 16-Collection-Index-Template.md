@@ -1,9 +1,11 @@
 # Collection `index.html` template:
 The following properties and fields can be rendered on the index.html template:
 
-## Property: `params`
+## Collection Items Properties:
 
-## Property: `items`
+### Property: `params`
+
+### Property: `items`
 
 ### Property: `id`
 
@@ -16,55 +18,14 @@ The following properties and fields can be rendered on the index.html template:
 ### Property: `published_on`
 
 ### Property: `created_at`
-This is the timestamp of when the current item was created. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{format_date created_at "o" "us"}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>2017-05-17T07:01:45.9940000+00:00</p>
-<p>2017-05-17T06:47:16.2810000+00:00</p>
-```
-
 
 ### Property: `updated_at`
-This is the timestamp of when the current item was last updated. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
-
-Example Markup:
-```
-{{#each items}}
-<p>{{format_date updated_at "u" "us"}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>2017-05-24 06:15:52Z</p>
-<p>2017-05-30 06:22:59Z</p>
-```
 
 ### Property: `slug`
-The slug is the entire path to the page permalink including the `/` following the domain.
 
-Example Markup:
-```
-{{#each items}}
-<p>{{slug}}</p>
-{{/each}}
-```
+!! LEFT OFF HERE !!
 
-Example Output:
-```
-<p>/mammals/view/anteater</p>
-<p>/mammals/view/bobcat</p>
-```
-
-### Items `fields`
+## Collection Items `fields`
 The content endered in the Admin panel for each item is accessible through the item's `fields` property. These fields are similar to [Page fields](Page-Templates.md#page-fields), though the related_items field for each item is not available within the collection index.html. 
 
 For fields that contain HTML content, use triple braces: `{{{variable_name}}}`.
