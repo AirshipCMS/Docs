@@ -1,4 +1,7 @@
-## Page Templates
+# Page Templates
+Page Templates may contain html markup plus Airship Propellers code that renders content from the Airship CMS admin portal. By design, templates do not contain pre-defined markup. This gives developers the most flexibility when structuring content on the page.
+
+## Page Templates in your local directory
 Whenever you create a page, the corresponding page template can be generated in the CMS and downloaded, or manually created in your local project directory.
 
 Using either creation method, the page template needs to end up in the `/compartments/templates/` directory. Here is an example of a local project directory with a `root` page:
@@ -49,13 +52,18 @@ The generated markup on the page will look something like this:
 ```
 
 ## Viewing the Page Locally
-In Airship CMS, in the `Page Setup` section of the page you want to view locally check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
+In Airship CMS, in the `Page Setup` section of the page you want to view locally, check that the `Permalink` is written exactly as you want it to appear when someone navigates to your page.
 
 ![page-setup](https://user-images.githubusercontent.com/1865400/28495696-2ddafaa2-6ef3-11e7-989d-fdd5a644800a.png)  
 
 When you are developing locally, the url of the page will be `localhost:9001/permalink`, where `permalink` is the value you set for the page in Airship CMS. In this example, the permalink for the About page was set to `about` so the full url is `localhost:9001/about`. When you navigate to this url, you should see the contents of the `about.html` template rendered on the page.
 
 ![page-template-about-browser](https://user-images.githubusercontent.com/1865400/28495755-daa33442-6ef4-11e7-9712-7fef3db36fe9.png)  
+
+---
+
+## Propellers
+briefly. and help.
 
 ---
 
