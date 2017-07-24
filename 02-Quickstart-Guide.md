@@ -72,7 +72,7 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 If you go to the [pencil] Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
-Edit some content, and save the page. Wait a few seconds, then refresh both your live site url `(https://subdomain.airshipcms.io)` and local site url `(http://localhost:9001)` and you will see the content update on both after a few seconds.
+Edit some content, and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and local site url in another tab `(http://localhost:9001)` and you will see the content update on both after a few seconds.
 
 (_replace "subdomain" with your actual subdomain_)
 
