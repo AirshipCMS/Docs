@@ -12,7 +12,7 @@ Note: In the following guide, replace all isntances of "subdomain" with your act
 2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
-5. If you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
+5. When you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
 Links:
