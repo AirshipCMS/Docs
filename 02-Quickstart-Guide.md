@@ -7,6 +7,8 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
+5. If you navigate to your project url, it will look something like this:  
+![first-site](https://user-images.githubusercontent.com/1865400/28547799-49c66fce-706c-11e7-8243-b33c1dd48b43.png)
 
 Links:
 - Airship CMS Developer Portal
@@ -60,9 +62,18 @@ airship serve
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
 ## 7. View your local site in a browser.
-In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets.
+In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:
+[ live site ]
 
-## 8. Edit files & content.
+## 8. Edit content.
+If you go to the [pencil] Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
+![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
+
+Edit some content, and save the page. Wait a few seconds, then refresh both your live site url `(https://subdomain.airshipcms.io)` and local site url `(http://localhost:9001)` and you will see the content update on both after a few seconds.
+
+(_replace "subdomain" with your actual subdomain_)
+
+## 9. Edit templates & files.
 
 ### Render `{{{help}}}`.
 Somewhere within the html markup of the `root.html` template, add the code `{{{help}}}`, then save the file and refresh the browser window. This will render a list of all data that is available for rendering on the page. For example, on the _root.html_ template, add this markup at the very top of the page:
@@ -77,13 +88,9 @@ In your browser, this will output the following list above all other page conten
   <ul> <li> id  </li> <li> site_id  </li> <li> name  </li> <li> permalink  </li> <li> fields <ul> <li> header  </li> <li> admin_portal_notes  </li> <li> example_rendering  </li> <li> setup_instructions  [list]<ul> <li> title  </li> <li> caption  </li></ul> </li> <li> color_theme  </li> <li> example_multiselect [list] </li> <li> show_featured_project_example  </li> <li> featured_project_example  [list]<ul> <li> title  </li> <li> subtitle  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> layout  </li> <li> template  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> related_items <ul> <li> related_items_example  [list]<ul> <li> id  </li> <li> aerostat_collection_id  </li> <li> permalink  </li> <li> product_title  </li> <li> fields <ul> <li> header  </li> <li> feature_date  </li> <li> short_description  </li> <li> body  </li> <li> relevant_proficiencies [list] </li> <li> contact_person  </li> <li> featured_project  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li> <li> subtitle  </li></ul> </li> <li> show_featured_project  </li> <li> color_theme  </li> <li> other_resources  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> sorting_position  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> aerostat_collection <ul> <li> id  </li> <li> public_path  </li> <li> title  </li></ul> </li> <li> product_variations [list] (empty) </li> <li> slug  </li></ul> </li></ul> </li> <li> slug  </li></ul>
 </div>
 
-Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the Airship CMS admin.
+Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the Airship CMS admin:  
 
-In the admin for your site `(https://subdomain.airshipcms.io/admin)`, you can see that the list of properties correspond to the `Page Fields` set in the [wrench] Setup section for the page:
 ![page-setup](https://user-images.githubusercontent.com/1865400/28547380-4a2518c8-706a-11e7-8a9c-2652b4752009.png)  
-
-And the content for each field, corresponds to the content in the [pencil] Content section for the page:
-![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
 ### Render content.
 To render content managed by Airship CMS, add markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. Example for the _root.html_ template:
