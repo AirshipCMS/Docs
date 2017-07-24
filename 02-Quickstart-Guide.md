@@ -78,17 +78,17 @@ Edit some content and save the page. Wait a few seconds, then refresh both your 
 ## 9. Edit templates & files.
 
 ### Render `{{{help}}}`.
-Somewhere within the html markup of the `root.html` template, add the code `{{{help}}}`, then save the file and refresh the browser window. This will render a list of all data that is available for rendering on the page. For example, on the _root.html_ template, add this markup at the very top of the page:
+Above the other html markup on the `root.html` template, add following markup:  
 ```
 <div>
   {{{help}}}
 </div>
 <hr>
 ```
-In your browser, this will output the following list above all other page content:
-<div>
-  <ul> <li> id  </li> <li> site_id  </li> <li> name  </li> <li> permalink  </li> <li> fields <ul> <li> header  </li> <li> admin_portal_notes  </li> <li> example_rendering  </li> <li> setup_instructions  [list]<ul> <li> title  </li> <li> caption  </li></ul> </li> <li> color_theme  </li> <li> example_multiselect [list] </li> <li> show_featured_project_example  </li> <li> featured_project_example  [list]<ul> <li> title  </li> <li> subtitle  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> layout  </li> <li> template  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> related_items <ul> <li> related_items_example  [list]<ul> <li> id  </li> <li> aerostat_collection_id  </li> <li> permalink  </li> <li> product_title  </li> <li> fields <ul> <li> header  </li> <li> feature_date  </li> <li> short_description  </li> <li> body  </li> <li> relevant_proficiencies [list] </li> <li> contact_person  </li> <li> featured_project  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li> <li> subtitle  </li></ul> </li> <li> show_featured_project  </li> <li> color_theme  </li> <li> other_resources  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> sorting_position  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> aerostat_collection <ul> <li> id  </li> <li> public_path  </li> <li> title  </li></ul> </li> <li> product_variations [list] (empty) </li> <li> slug  </li></ul> </li></ul> </li> <li> slug  </li></ul>
-</div>
+
+Then save the file and refresh the browser window. This will render a list of all data that is available for rendering on the page. In your browser, this will output the following list above all other page content:  
+
+![help](https://user-images.githubusercontent.com/1865400/28548652-de46ac96-7070-11e7-8bba-32de4d1268b3.png)  
 
 Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> Page Modify section in Airship CMS admin:  
 
