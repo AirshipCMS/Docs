@@ -8,7 +8,7 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
 5. If you navigate to your project url, it will look something like this:  
-![first-site](https://user-images.githubusercontent.com/1865400/28547799-49c66fce-706c-11e7-8243-b33c1dd48b43.png)
+![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
 Links:
 - Airship CMS Developer Portal
@@ -62,8 +62,9 @@ airship serve
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
 ## 7. View your local site in a browser.
-In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:
-[ live site ]
+In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
+
+![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
 ## 8. Edit content.
 If you go to the [pencil] Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
