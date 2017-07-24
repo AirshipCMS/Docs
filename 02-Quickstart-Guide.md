@@ -8,16 +8,13 @@ Note: In the following guide, replace all isntances of "subdomain" with your act
 ---
 
 ## 1. Start a Project.
-1. Sign up for a free Airship account to access the _Airship CMS Developer Portal_.
-2. Check your email to verify your account, then log in to the _Airship CMS Developer Portal_.
+1. Sign up for a free Airship account to access the [Airship CMS Developer Portal](https://skyport.airshipcms.io).
+2. Check your email to verify your account, then log in to the [Airship CMS Developer Portal](https://skyport.airshipcms.io).
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
 5. When you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
 
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
-
-Links:
-- Airship CMS Developer Portal
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are currently available for _Mac_ and _Linux_ development environments. You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools.
@@ -29,10 +26,7 @@ Easily install the command line tools by entering this into your terminal:
 ```
 
 **Slow Install**  
-Developers that want to see exactly what tools are being installed can read and follow the instructions at `install.airshipcms.io`.
-
-Links:
-- install.airshipcms.io
+Developers that want to see exactly what tools are being installed can read and follow the instructions at [install.airshipcms.io](https://install.airshipcms.io).
 
 ## 3. Create a local directory for your project.
 Create a new empty directory for your project.
