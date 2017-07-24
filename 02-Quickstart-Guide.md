@@ -2,7 +2,7 @@ Follow this Quickstart Guide to set up your first project with Airship CMS.
 
 Not quite ready to create a project yet? Just create a Free login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io) then and try out the Developer Workflow and CLI tools using one of our [Open Source Demo Projects](#).
 
-Note: In the following guide, replace all isntances of "subdomain" with your actual subdomain for the site:  
+Note: In the following guide, replace all instances of "subdomain" with your actual subdomain for the site:  
 - `https://subdomain.airshipcms.io`
 - `https://subdomain.airshipcms.io/admin`
 - `airship login subdomain`
@@ -35,7 +35,7 @@ Create a new empty directory for your project.
 ```
 mkdir ~/MyFirstAirshipSite
 ```
-If you use an SCM like Git, then you can initialize this directory as a versioned project.
+If you use a source code management tool like Git, then you can initialize this directory as a versioned project.
 
 ## 4. `airship login`to access your project content.
 Navigate to your project directory:
@@ -69,10 +69,11 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
 ## 8. Edit content.
-If you go to the <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
+In the Airship CMS admin panel for your site, go to the <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> **Content Editing** section of the "Homepage" of your site, you will see all the dynamic content for the site:  
+
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
-Edit some content, and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and local site url in another tab `(http://localhost:9001)` and you will see the content update on both after a few seconds.
+Edit some content and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
 ## 9. Edit templates & files.
 
