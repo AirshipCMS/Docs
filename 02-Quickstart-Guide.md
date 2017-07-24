@@ -72,7 +72,7 @@ Somewhere within the html markup of the `root.html` template, add the code `{{{h
 </div>
 <hr>
 ```
-This will output something similar to this:
+This will output the following list above the other page content:
 <div>
   <ul> <li> id  </li> <li> site_id  </li> <li> name  </li> <li> permalink  </li> <li> fields <ul> <li> header  </li> <li> admin_portal_notes  </li> <li> example_rendering  </li> <li> setup_instructions  [list]<ul> <li> title  </li> <li> caption  </li></ul> </li> <li> color_theme  </li> <li> example_multiselect [list] </li> <li> show_featured_project_example  </li> <li> featured_project_example  [list]<ul> <li> title  </li> <li> subtitle  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> layout  </li> <li> template  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> related_items <ul> <li> related_items_example  [list]<ul> <li> id  </li> <li> aerostat_collection_id  </li> <li> permalink  </li> <li> product_title  </li> <li> fields <ul> <li> header  </li> <li> feature_date  </li> <li> short_description  </li> <li> body  </li> <li> relevant_proficiencies [list] </li> <li> contact_person  </li> <li> featured_project  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li> <li> subtitle  </li></ul> </li> <li> show_featured_project  </li> <li> color_theme  </li> <li> other_resources  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> sorting_position  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> aerostat_collection <ul> <li> id  </li> <li> public_path  </li> <li> title  </li></ul> </li> <li> product_variations [list] (empty) </li> <li> slug  </li></ul> </li></ul> </li> <li> slug  </li></ul>
 </div>
