@@ -69,7 +69,7 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
 ## 8. Edit content.
-If you go to the [pencil] Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
+If you go to the <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> Content Editing section for the _root_ page of your site, you will see all the dynamic content for the site:
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
 Edit some content, and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and local site url in another tab `(http://localhost:9001)` and you will see the content update on both after a few seconds.
@@ -91,7 +91,7 @@ In your browser, this will output the following list above all other page conten
   <ul> <li> id  </li> <li> site_id  </li> <li> name  </li> <li> permalink  </li> <li> fields <ul> <li> header  </li> <li> admin_portal_notes  </li> <li> example_rendering  </li> <li> setup_instructions  [list]<ul> <li> title  </li> <li> caption  </li></ul> </li> <li> color_theme  </li> <li> example_multiselect [list] </li> <li> show_featured_project_example  </li> <li> featured_project_example  [list]<ul> <li> title  </li> <li> subtitle  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> layout  </li> <li> template  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> related_items <ul> <li> related_items_example  [list]<ul> <li> id  </li> <li> aerostat_collection_id  </li> <li> permalink  </li> <li> product_title  </li> <li> fields <ul> <li> header  </li> <li> feature_date  </li> <li> short_description  </li> <li> body  </li> <li> relevant_proficiencies [list] </li> <li> contact_person  </li> <li> featured_project  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li> <li> subtitle  </li></ul> </li> <li> show_featured_project  </li> <li> color_theme  </li> <li> other_resources  [list]<ul> <li> title  </li> <li> url  </li> <li> caption  </li></ul> </li></ul> </li> <li> sorting_position  </li> <li> published_on  </li> <li> created_at  </li> <li> updated_at  </li> <li> aerostat_collection <ul> <li> id  </li> <li> public_path  </li> <li> title  </li></ul> </li> <li> product_variations [list] (empty) </li> <li> slug  </li></ul> </li></ul> </li> <li> slug  </li></ul>
 </div>
 
-Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the Airship CMS admin:  
+Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> Page Modify section in Airship CMS admin:  
 
 ![page-setup](https://user-images.githubusercontent.com/1865400/28547380-4a2518c8-706a-11e7-8a9c-2652b4752009.png)  
 
