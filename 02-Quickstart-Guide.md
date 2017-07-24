@@ -8,36 +8,10 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
 
-_Not ready to build your own project? Test out the Developer Tools on an Open Source Demo Project, then skip to #3._
-
 Links:
 - Airship CMS Developer Portal
 
-## 2. Build your Schema in Airship CMS.
-1. **Create a Sitemap Sketch.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
-2. **Create Pages & Collections.** Log in to the Airship CMS admin panel for your project. Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Every datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit. 
-3. **Page & Collection Rendering.** When you set up the rendering section for pages and collections:  
- - Set the existing `application.html` **layout** for every page and collection.  
- - Create a new unique **template** for each page.  
- - Create a new unique **template directory** for each collection.  
-You can also add **Related** datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project. See the Docs for more about Relationships.
-4. **Add Content.** Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
-
-Use Case Links:
-- Demo Use Cases
-- Demo Schemas
-
-Airship CMS Links:
-- Pages
-- Collections
-- Relationships
-
-Templating Links:
-- Layouts
-- Page Templates
-- Collection Templates
-
-## 3. Install Airship Launcher CLI Tools.
+## 2. Install Airship Launcher CLI Tools.
 Command line tools are currently available for _Mac_ and _Linux_ development environments. You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools.
 
 **Quick Install**  
@@ -52,25 +26,25 @@ Developers that want to see exactly what tools are being installed can read and 
 Links:
 - install.airshipcms.io
 
-## 4. Create a local directory for your project.
+## 3. Create a local directory for your project.
 Create a new empty directory for your project.
 ```
 mkdir ~/MyFirstAirshipSite
 ```
-If you use an SCM like Git (you should be!), then you can initialize this directory as a versioned project.
+If you use an SCM like Git, then you can initialize this directory as a versioned project.
 
-## 5. `airship login`to access your project content.
+## 4. `airship login`to access your project content.
 Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
 ```
-Inside your project directory, run this command (replace "subdomain" with your actual subdomain):
+Inside your project directory, run this command (_replace "subdomain" with your actual subdomain_):
 ```
 airship login subdomain
 ```
-A browser window will pop up prompting you to login through Auth0 (our authentication provider). Once you log in successfully, you can close the browser window.
+A browser window will pop up prompting you to login. Once you log in successfully, you can close the browser window.
 
-## 6. `airship land` to retrieve files.
+## 5. `airship land` to retrieve files.
 Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
@@ -78,24 +52,20 @@ airship land
 
 This command will generate a `compartments`directory containing all the Airship files that are necessary for building out your project templates. 
 
-Running `airship land` will overwrite any files in the `compartments` directory, so be very careful when you run this command.
-
-Using Git? If you are working on a team and another developer has already landed and committed the base project files, you don't need to run `airship land`. Just be sure you have navigated to the root directory of your project before running the next step.
-
-## 7. `airship serve<` to serve your site locally.
+## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
 ```
 airship serve
 ```
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
-## 8. View your local site in a browser.
-In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local development files.
+## 7. View your local site in a browser.
+In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets.
 
-## 9. Edit files & content.
+## 8. Edit files & content.
 
 ### Render `{{{help}}}`.
-Within the html markup of any layout or template, add the code `{{{help}}}`, then save the file and refresh the browser window displaying `localhost:9001`. This will render a list of all data that is available for rendering on the specific layout or template you are editing. Example for the _root.html_ template:
+Somewhere within the html markup of the `root.html` template, add the code `{{{help}}}`, then save the file and refresh the browser window. This will render a list of all data that is available for rendering on the page. For example, on the _root.html_ template, add this markup:
 ```
 <div>
   {{{help}}}
@@ -112,7 +82,17 @@ This will output something similar to this:
   <li>fields
     <ul>
       <li>header</li>
-      <li>body</li>
+      <li>admin_portal_notes</li>
+      <li>example_rendering</li>
+      <li>setup_instructions[list]</li>
+      <li>color_theme</li>
+      <li>example_multiselect</li>
+      <li>show_featured_project_example</li>
+    </ul>
+  </li>
+  <li>related
+    <ul>
+      <li>related_items_example[list]</li>
     </ul>
   </li>
   <li>layout</li>
@@ -124,6 +104,7 @@ This will output something similar to this:
 </ul>
 <div>
 ```
+Items in the list are the variable names for properties that can be rendered on the template you are rendering. The items inside the `fields` property correspond to fields that were added to the _root_ page in Airship CMS.
 
 ### Render content.
 To render content managed by Airship CMS, add markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. Example for the _root.html_ template:
@@ -162,3 +143,41 @@ In your terminal, you will be presented with a preview of the actions that will 
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as they are outside of the `compartments` directory.
 
 Commit all Airship files with your project, including `compartments` and the `.airship` directory containing the `name` file.
+
+
+
+
+
+
+
+
+
+
+## 2. Build your Schema in Airship CMS.
+This section describes how to set up pages & collections for your project. By default, Airship Projects are set up with 1 demo page and 1 demo collection. You can skip Step #2, if you want to see what the example page and collection files look like. You can always r
+
+1. **Create a Sitemap Sketch.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
+2. **Create Pages & Collections.** 
+ - Log in to the Airship CMS admin panel for your project.  
+ - Modofu
+ - Create the pages and collections for your project and define the dynamic datafields needed for each Page and Collection. Every datafield that you create directly maps to a piece of content or a value that you want to allow an admin to be able to edit. 
+3. **Page & Collection Rendering.** When you set up the rendering section for pages and collections:  
+ - Set the existing `application.html` **layout** for every page and collection.  
+ - Create a new unique **template** for each page.  
+ - Create a new unique **template directory** for each collection.  
+You can also add **Related** datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project.
+4. **Add Content.** Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
+
+Use Case Links:
+- Demo Use Cases
+- Demo Schemas
+
+Airship CMS Links:
+- Pages
+- Collections
+- Relationships
+
+Templating Links:
+- Layouts
+- Page Templates
+- Collection Templates
