@@ -94,32 +94,23 @@ Items in this list are the variable names for data that can be rendered on the _
 
 ![page-setup](https://user-images.githubusercontent.com/1865400/28547380-4a2518c8-706a-11e7-8a9c-2652b4752009.png)  
 
-### Render content.
-To render content managed by Airship CMS, add markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. Example for the _root.html_ template:
+Content from Airship CMS is rendered by adding markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. For example:
 ```
-<h1>{{name}}</h1>
+<h1>{{fields.header}}</h1>
 ```
-This will output:
+Will output:
 ```
-<h1>Landing Page</h1>
+<h1>Airship CMS</h1>
 ```
-See the Airship Docs for more information about rendering for lists, pages, collections.
+Take a look at all the markup on the `root.html` template, and you can see which parts of the page are hardcoded in the markup, versus pulled from the CMS.
 
-Links:
-- Layouts
-- Page Templates
-- Collection Template Directories
+You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally.
 
-### Edit templates, layouts, and files.
-You can add and edit templates, layouts, and files locally without affecting the live version of your site. See the Airship Docs for more information about project directory structure and file types.
-
-Links:
-- Project Directory Structure
-
-### Sync content managed by Airship CMS.
-Content updated in the Airship CMS admin panel automatically syncs to your local development environment as long as `airship serve` is running.
+See the Airship Docs for more information about rendering for Layouts, Pages, and Collections.
 
 ## 10. `airship launch` to publish your project.
+While you are working locally, you can add and edit templates, layouts, and files locally without affecting the live version of your site.
+
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
@@ -132,16 +123,9 @@ Part of your regular development workflow probably involves using a Source Code 
 
 Commit all Airship files with your project, including `compartments` and the `.airship` directory containing the `name` file.
 
+---
 
-
-
-
-
-
-
-
-
-## 2. Build your Schema in Airship CMS.
+# Buildinf your own Schema in Airship CMS.
 This section describes how to set up pages & collections for your project. By default, Airship Projects are set up with 1 demo page and 1 demo collection. You can skip Step #2, if you want to see what the example page and collection files look like. You can always r
 
 1. **Create a Sitemap Sketch.** Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project.
