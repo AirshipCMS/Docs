@@ -1,5 +1,10 @@
 Follow this Quickstart Guide to set up your first project with Airship CMS. Not ready to create a project yet? Just create a Free login, and try out the Developer Workflow and CLI tools using one of our Open Source Demo Projects.
 
+Note: In the following guide, replace all isntances of "subdomain" with your actual subdomain for the site:  
+- `https://subdomain.airshipcms.io`
+- `https://subdomain.airshipcms.io/admin`
+- `airship login subdomain`
+
 ---
 
 ## 1. Start a Project.
@@ -9,8 +14,6 @@ Follow this Quickstart Guide to set up your first project with Airship CMS. Not 
 4. After a few minutes, you will receive a notification that your project is ready.
 5. If you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
-
-(_For your project url, replace "subdomain" with your actual subdomain_)
 
 Links:
 - Airship CMS Developer Portal
@@ -73,8 +76,6 @@ If you go to the <img width="27" alt="pencil" src="https://user-images.githubuse
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
 Edit some content, and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and local site url in another tab `(http://localhost:9001)` and you will see the content update on both after a few seconds.
-
-(_replace "subdomain" with your actual subdomain_)
 
 ## 9. Edit templates & files.
 
