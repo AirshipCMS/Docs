@@ -5,8 +5,8 @@ Simple steps for making your site live.
 
 ## DNS Settings
 - Log in to your DNS Provider (Namecheap, GoDaddy, Google Domains, etc).
-- Create a CNAME to point "www.yourdomain.com" to your Airship site subdomain "subdomain.airshipcms.io".
-- Create a Temporary 302 Redirect to point your root domain "yourdomain.com" to the subdomain "www.yourdomain.com".*
+- Create a CNAME for *www* to point to the value: *subdomain.airshipcms.io*
+- Create a Temporary 302 Redirect to point your root domain *yourdomain.com* to your subdomain *www.yourdomain.com*
 
 ---
 
