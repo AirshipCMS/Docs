@@ -1,3 +1,10 @@
+# Project Directory
+intro
+
+---
+
+## Project Directories & Subdirectories 
+
 ### .airship
 contains .name  which identifies your project, the next time you login/serve/launch. if you change this, you will be unsyncing to your airship project.
 
@@ -36,5 +43,7 @@ only html files and directories here. see page templates and template directorie
 #### root.html
 the only template you get when you generate a site.
 
-### custom files
+---
+
+## Other Files
 you can add any custom files outside the compartments directory. etc. they won't be landed/launched with your project. (good idea to use scm)
