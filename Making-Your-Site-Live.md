@@ -43,12 +43,7 @@ For my site "doodlipoop.com":
 - Following the instructions at [redirect.name](http://redirect.name), I added the TXT record `_redirect` with the value `Redirects to http://www.doodlipoop.com`
 - Following the instructions at [redirect.name](http://redirect.name), I added the A record for the root domain with the value `45.55.72.95`
 
-**Example:**  
-For my site "doodlipoop.com", set:
-- Temporary 302 Redirect for `doodlipoop.com`
-- Point to `www.doodlipoop.com`
-
-Result: `doodlipoop.com` points to `www.doodlipoop.com` and serves `doodlipoop-shop.airshipcms.io`.
+Result: `doodlipoop.com` points to `45.55.72.95` which is set to redirect to `www.doodlipoop.com` and serves `doodlipoop-shop.airshipcms.io`.
 
 ---
 
