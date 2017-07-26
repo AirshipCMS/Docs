@@ -1,4 +1,4 @@
-## Starting an Airship Project
+## Starting a New Airship Project
 1. Sign up for a free Airship account to access the [Airship CMS Developer Portal](https://skyport.airshipcms.io).
 2. Check your email to verify your account, then log in to the [Airship CMS Developer Portal](https://skyport.airshipcms.io).
 3. Choose a Plan and create your first project.
