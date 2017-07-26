@@ -10,10 +10,24 @@ Simple steps for making your site live.
 Create a CNAME:  
 - Subdomain: **www**
 - Value: **subdomain.airshipcms.io**  
-Where _subdomain_ is your subdomain on AirshipCMS.io.
+
+In the above value, the _subdomain_ is your subdomain on AirshipCMS.io.
+
+**Example:**  
+For my site "doodlipoop.com"  
+- Subdomain: **www**
+- Value: **doodlipoop-shop.airshipcms.io**
+
+Result: "www.doodlipoop.com" points to and serves "doodlipoop-shop.airshipcms.io".
   
 ## Create a Redirect
 Create a Temporary 302 Redirect to point your root domain **yourdomain.com** to your "www" subdomain **www.yourdomain.com**
+
+**Example:**  
+For my site "doodlipoop.com"  
+- Set Temporary 302 Redirect for "doodlipoop.com" to point to "www.doodlipoop.com".
+
+Result: "doodlipoop.com" points to "www.doodlipoop.com" and serves "doodlipoop-shop.airshipcms.io".
 
 ---
 
