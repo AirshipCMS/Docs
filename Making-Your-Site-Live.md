@@ -24,8 +24,9 @@ Result: `www.doodlipoop.com` points to and serves `doodlipoop-shop.airshipcms.io
 Create a Temporary 302 Redirect to point your root domain `yourdomain.com` to your `www` subdomain `www.yourdomain.com`
 
 **Example:**  
-For my site "doodlipoop.com"  
-- Set Temporary 302 Redirect for `doodlipoop.com` to point to `www.doodlipoop.com`.
+For my site "doodlipoop.com", set:
+- Temporary 302 Redirect for `doodlipoop.com`
+- Point to `www.doodlipoop.com`
 
 Result: `doodlipoop.com` points to `www.doodlipoop.com` and serves `doodlipoop-shop.airshipcms.io`.
 
