@@ -1,5 +1,5 @@
-# Properties
-These properties are available on various template pages. The following are examples of how to render them.
+# Collection Item Properties
+Properties available for Items in a Collection
 
 
 ## Categories
@@ -139,3 +139,5 @@ Example Output:
 ```
 <p>Tuesday, May 23, 2017 11:47:04 PM</p>
 ```
+
+## Fields
