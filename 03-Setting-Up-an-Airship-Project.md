@@ -1,14 +1,21 @@
 ## Starting an Airship Project
-Starting a Project (Step by Step Skyport instructions).
+@jon Grab items #1-4 from Quickstart page and put here.
 
 ## Airship CMS
-(This is where you build your schema for your project. Start with a sitemap/diagram blah blah blah).
+@jon Very brief explanation of this.
+
+For more information, see [Introduction to Airship CMS](http://airshipcms.io/documentation/view/introduction-to-airship-cms).
 
 ## Create a Page
-(Create Page instructions. Add content to page.)
+@jon Very brief explanation.
+For more information, see [Pages](http://airshipcms.io/documentation/view/pages).
 
 ## Create a Collection
-(Create Collection instructions. Create aerostats instructions.)
+@jon Very brief explanation.
+
+For more information, see [Collections](http://airshipcms.io/documentation/view/collections).
 
 ## Create a Relationship
-(Create Relationship instructions. Link.)
+@jon Very brief explanation.
+
+For more information, see [Relationships](http://airshipcms.io/documentation/view/relationships).
