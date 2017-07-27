@@ -3,7 +3,7 @@ While these helpers are not available in the [layout](/documentation/view/layout
 
 A propeller helper is an expression wrapped in curly braces, such as `{{format_date}}`.
 
-When using these helpers within nested context, such as when rendering [image](/documentation/view/datafields#user-content-image) or [link](/documentation/view/datafields#user-content-link) fields, the syntax has a `#` preceeding the expression. See [#each](/documentation/view/handlebarsjs#user-content-each), or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) for examples. 
+When using these helpers within nested context, such as when rendering [image](/documentation/view/datafields#user-content-image) or [link](/documentation/view/datafields#user-content-link) fields, the syntax has a `#` preceeding the expression. See [#each](/documentation/view/handlebarsjs#user-content-each), or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) for examples. 
 
 Check out the [HandlebarsJS](/documentation/view/handlebarsjs) documentation for more helpers.
 
@@ -12,7 +12,7 @@ Add `{{{help}}}` to any of the template files to see which properties and fields
 
 This does not render in production.
 
-Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](/documentation/view/handlebarsjs#user-content-each) or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) propellers.
+Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](/documentation/view/handlebarsjs#user-content-each) or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propellers.
 
 Any desired properties or fields that are not listed when rendering help must be accessed via API calls or other methods.
 
