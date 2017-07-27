@@ -298,7 +298,7 @@ Example Output:
 </div>
 ```
 
-Example markup rendering the list of images using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) propeller:
+Example markup rendering the list of images using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller:
 ```
 <div class="sorted-images">
   {{#sort_list fields.additional_images sort="title" order="asc"}}
@@ -361,7 +361,7 @@ Example Output:
 </div>
 ```
 
-Example markup rendering the list of links using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) propeller:
+Example markup rendering the list of links using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller:
 ```
 <div class="additional-links">
   {{#sort_list fields.additional_resource_links sort="title" order="desc"}}
