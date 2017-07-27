@@ -87,11 +87,6 @@ The following properties can be rendered on a page template:
 - `updated_at`
 - `slug`
 
-To see examples of how each property renders, see Page Properties.
-
----
-
-## Page Fields:
 The following field types can be rendered on a page template:
 - `text`
 - `textarea`
@@ -108,7 +103,7 @@ The following field types can be rendered on a page template:
 - `related aerostats`
 - `date`
 
-To see examples of how each property renders, see Page Fields.
+To see examples of how each property and field renders, see [Page Properties](/documentation/view/page-properties).
 
 ---
 
