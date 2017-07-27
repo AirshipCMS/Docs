@@ -1,6 +1,30 @@
 # Collection Item Properties
 Properties available for Items in a Collection
 
+---
+
+The following properties can be rendered for items: (UPDATE)
+- `id`
+- list all the others
+
+The following field types can be rendered on a page template:
+- `text`
+- `textarea`
+- `richtext area`
+- `image`
+- `link`
+- `number`
+- `radio`
+- `select`
+- `multiselect`
+- `checkbox`
+- `list of images`
+- `list of links`
+- `date`
+
+- `related aerostats` (only renders on `show.html` and is not listed within fields.)
+
+----
 
 ## Categories
 When categories are enabled on [collections](Collections.md), this property holds information such as `title` or `permalink`, that can be used with propellers for rendering.
