@@ -76,59 +76,39 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 
 ## Page Properties:
 The following properties can be rendered on a page template:
+- `id`
+- `site_id`
+- `name`
+- `permalink`
+- `layout`
+- `template`
+- `published_on`
+- `created_at`
+- `updated_at`
+- `slug`
 
-### `id`
-
-### `site_id`
-
-### `name`
-
-### `permalink`
-
-### `layout`
-
-### `template`
-
-### `published_on`
-
-### `created_at`
-
-### `updated_at`
-
-### `slug`
+To see examples of how each property renders, see Page Properties.
 
 ---
 
 ## Page Fields:
 The following field types can be rendered on a page template:
+- `text`
+- `textarea`
+- `richtext area`
+- `image`
+- `link`
+- `number`
+- `radio`
+- `select`
+- `multiselect`
+- `checkbox`
+- `list of images`
+- `list of links`
+- `related aerostats`
+- `date`
 
-### `text`
-
-### `textarea`
-
-### `richtext area`
-
-### `image`
-
-### `link`
-
-### `number`
-
-### `radio`
-
-### `select`
-
-### `multiselect`
-
-### `checkbox`
-
-### `list of images`
-
-### `list of links`
-
-### `related aerostats`
-
-### `date`
+To see examples of how each property renders, see Page Fields.
 
 ---
 
