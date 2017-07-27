@@ -12,19 +12,19 @@ The `Refer to a single item in this collection as a(n)...` and `Public Path` fie
 
 For example, if you choose the title `Event Services`, the Refer to field will then become `event_services`, and the public path will become `event-services` by default. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
 
-For more information about the different collection pages such as index, check out the [Collection Templates](Collection-Templates.md) documentation.
+For more information about the different collection pages such as index, check out the [Collection Templates](/documentation/view/collection-templates) documentation.
 
 
 ### Collection Layout & Template Directory
 Under this section, there are two dropdowns: Layout and Template Directory.
 
-A single layout can be used for multiple template or template directories. The layout file is the outer HTML wrapper. Since [Propeller Helpers](Propeller-Helpers.md) and [Handlebars](HandlebarsJS.md) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
+A single layout can be used for multiple template or template directories. The layout file is the outer HTML wrapper. Since [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
 
-Template Directories can also be used by multiple pages or collections that have the same markup but different content. This will be the name of the directory that holds the collection's HTML pages, such as index.html, show.html, categories.html, or category.html. These files are where [Propeller Helpers](Propeller-Helpers.md) and [Handlebars](HandlebarsJS.md) can be used to render the content that is filled out in Admin for each item.
+Template Directories can also be used by multiple pages or collections that have the same markup but different content. This will be the name of the directory that holds the collection's HTML pages, such as index.html, show.html, categories.html, or category.html. These files are where [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) can be used to render the content that is filled out in Admin for each item.
 
 For both the layout and template directory, you can either choose existing options within the dropdown, or create new ones. Any files or directories that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when executing `airship land` at the command line.
 
-For more information, check out the documentation on the following topics: [Layouts](Layouts.md), [Collection Templates](Collection-Templates.md), [Using the Command Line](Using-the-Command-Line.md).
+For more information, check out the documentation on the following topics: [Layouts](/documentation/view/layouts), [Collection Templates](/documentation/view/collection-templates), [Airship CLI Commands](/documentation/view/airship-cli-commands).
 
 
 ### Collection Settings
@@ -43,13 +43,13 @@ The following are fields that are only available on Collections.
 #### Categories
 Categories are used to create other, more specific, groups within each collection. When categories are enabled, the use of the categories.html and category.html pages can be used to render different category specific views in your site.
 
-For more information, see the [Categories](Categories.md) documentation.
+For more information, see the [Categories](/documentation/view/categories) documentation.
 
 
 #### Tags
 Tags are used to attach keywords to each aerostat, which can then be used for either other grouping or indexing purposes.
 
-For more information, see the [Tags](Tags.md) documentation.
+For more information, see the [Tags](/documentation/view/tags) documentation.
 
 
 ### Datafields
@@ -59,20 +59,20 @@ When adding new fields, each field requires a Title, Variable Name, and Type. Th
 
 The Title is the identifier for the field. When editing the Page, each field will have this identifier directly above the field input.
 
-The Variable Name is the same as the Title, but _only_ contains lowercase letters, numbers, dashes, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](Propeller-Helpers.md).
+The Variable Name is the same as the Title, but _only_ contains lowercase letters, numbers, dashes, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](/documentation/view/propeller-helpers).
 
 The Type of the field is optional and varies from text inputs to lists of images.
 
-For more information and example usages, see the documentation on [Datafields](Datafields.md).
+For more information and example usages, see the documentation on [Datafields](/documentation/view/datafields).
 
 ### Aerostats
 Aerostats are items in each collection.
 
-See the [Aerostats](Aerostats.md) documentation for more information.
+See the [Collection Item Properties](/documentation/view/collection-item-properties) documentation for more information.
 
 
 ## Modify a Collection
-In order to change the title, public path, layout, template, settings or fields on a collection, you must Modify the collection. To change the content for an item, see the [Edit an Aerostat](#edit-an-aerostat) section for more information.
+In order to change the title, public path, layout, template, settings or fields on a collection, you must Modify the collection. To change the content for an item, see the [Edit an Aerostat](/documentation/view/collections#user-content-edit-an-aerostat) section for more information.
 
 To modify a collection, navigate to `Collections` within Admin from the sidebar at the left, and click the wrench tool icon on the collection you would like to modify. The Modify tab at the top right should be the active tab, and the collection title at the top should now include the text `(Modify)`.
 
@@ -86,7 +86,7 @@ Fill in the desired fields, categories, or tags, then click `Create` at either t
 
 In order for each item to be publicly available on the site, the item must have a Publish Date set to one that is not in the future. Set a publish date by toggling the `Draft Item` at the right when creating/editing the item, and then choose a date for when it should be published.
 
-See the [Aerostats](Aerostats.md) documentation for more information.
+See the [Collection Item Properties](/documentation/view/collection-item-properties) documentation for more information.
 
 
 ## Edit an Aerostat
@@ -96,10 +96,10 @@ To save your changes, use either the `Save` button, or the `Save & Close` button
 
 
 ## Delete Collection
-When deleting a collection, **all** aerostats within the collection will also be deleted. If any of the aerostats are being referenced by a [related aerostats field](Datafields.md#field-type-related-aerostats), they will be deleted as well.
+When deleting a collection, **all** aerostats within the collection will also be deleted. If any of the aerostats are being referenced by a [related aerostats field](/documentation/view/datafields#user-content-related-items), they will be deleted as well.
 
 To delete a collection, navigate to the Modify view for the collection you would like to delete.
 
 At the bottom of the page, click the `Delete Collection` link. When prompted, click `Confirm Delete`.
 
-For more information about navigating to the Modify view, see the [Modify a Collection](#modify-a-collection) section.
+For more information about navigating to the Modify view, see the [Modify a Collection](/documentation/view/collections#user-content-modify-a-collection) section.
