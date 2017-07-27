@@ -16,13 +16,13 @@ For example, if you choose the title `About the Company`, the permalink will the
 ### Page Layout & Template
 Under this section, there are two dropdowns: Layout and Template. By default, an `application.html` layout and `root.html` template are created for each site, and is used by the Homepage page that is also created by default.
 
-A single layout can be used for multiple templates. The layout file is the outer HTML wrapper. Since [Propeller Helpers](Propeller-Helpers.md) and [Handlebars](HandlebarsJS.md) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
+A single layout can be used for multiple templates. The layout file is the outer HTML wrapper. Since [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
 
-Templates can also be used by multiple pages or collections that have the same markup but different content. This is where [Propeller Helpers](Propeller-Helpers.md) and [Handlebars](HandlebarsJS.md) can be used to render the content that is filled out in Admin.
+Templates can also be used by multiple pages or collections that have the same markup but different content. This is where [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) can be used to render the content that is filled out in Admin.
 
 For both the layout and template, you can either choose existing HTML files within the dropdown, or create new ones. Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when executing `airship land` at the command line.
 
-For more information, check out the documentation on the following topics: [Layouts](Layouts.md), [Page Templates](Page-Templates.md), [Using the Command Line](Using-the-Command-Line.md).
+For more information, check out the documentation on the following topics: [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), [Airship CLI Commands](/documentation/view/airship-cli-commands).
 
 
 ### Page Specific Fields
@@ -39,15 +39,15 @@ When adding new fields, each field requires a Title, Variable Name, and Type. Th
 
 The Title is the identifier for the field. When editing the Page, each field will have this identifier directly above the field input.
 
-The Variable Name is the same as the Title, but _only_ contains lowercase letters, numbers, dashes, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](Propeller-Helpers.md).
+The Variable Name is the same as the Title, but _only_ contains lowercase letters, numbers, dashes, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](/documentation/view/propeller-helpers).
 
 The Type of the field is optional and varies from text inputs to lists of images.
 
-For more information and example usages, see the documentation on [Datafields](Datafields.md).
+For more information and example usages, see the documentation on [Datafields](/documentation/view/datafields).
 
 
 ## Modify Page
-In order to change the title, permalink, layout, template, or fields on a page, you must Modify the page. To change field content, see the [Edit Page](#edit-page) section for more information.
+In order to change the title, permalink, layout, template, or fields on a page, you must Modify the page. To change field content, see the [Edit Page](/documentation/view/pages#user-content-edit-page) section for more information.
 
 To modify a page, navigate to `Pages` within Admin from the sidebar at the left, and click the wrench tool icon on the page you would like to modify. The `Modify` tab at the top right should be the active tab, and the page title at the top should now include the text `(Modify)`. This page can also be reached from the Edit Page tab by clicking the Modify tab.
 
@@ -68,4 +68,4 @@ To delete a page, navigate to the Modify page for the page you would like to del
 
 At the bottom of the page, click the `Delete Page` link. When prompted, click `Confirm Delete`.
 
-For more information about navigating to the Modify Page, see the [Modify Page section](#modify-page).
+For more information about navigating to the Modify Page, see the [Modify Page section](/documentation/view/pages#user-content-modify-page).
