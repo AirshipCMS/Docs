@@ -7,7 +7,7 @@ For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
 
 Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](/documentation/view/datafields#user-content-image), [link](/documentation/view/datafields#user-content-link), or [related aerostats](/documentation/view/datafields#user-content-related-items).
 
-`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](/documentation/view/datafields#user-content-list-of-images) or [list of links](/documentation/view/datafields#user-content-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
+`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](/documentation/view/datafields#user-content-list-of-images) or [list of links](/documentation/view/datafields#user-content-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
 
 The following examples show how to render the content from each field type:
 
@@ -83,7 +83,7 @@ Example Output:
 
 
 ## Field Type: List of Links
-This field is an array of links. The order in which the links are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller.
+This field is an array of links. The order in which the links are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller.
 
 Example markup using a list of links with the variable name `additional_resource_links`:
 ```
@@ -115,7 +115,7 @@ Example Output:
 ```
 
 
-Example markup using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller:
+Example markup using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller:
 ```
 <div class="additional-links">
   {{#sort_list fields.additional_resource_links sort="title" order="desc"}}
@@ -174,7 +174,7 @@ Example Output:
 
 
 ## Field Type: List of Images
-This field is an array of images. The order in which the images are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller.
+This field is an array of images. The order in which the images are rendered can be controlled either in Admin, or using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller.
 
 Example markup using a list of images with the variable name `additional_animal_images`:
 ```
@@ -212,7 +212,7 @@ _Note how the outer fields can still be accessed using the `{{../variable_name}}
 </div>
 ```
 
-Example markup rendering the list of images using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller:
+Example markup rendering the list of images using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller:
 ```
 <div class="sorted-images">
   {{#sort_list fields.additional_animal_images sort="title" order="asc"}}
@@ -262,7 +262,7 @@ Example Output:
 ## Field Type: Checkbox
 This field renders `true` if checked, and `false` if not.
 
-The checkbox is useful for adding flags that can be used in combination with propellers, such as [#if](/documentation/view/propeller-helpers#user-content-if-if) or [#unless](/documentation/view/propeller-helpers#user-content-unless), in order to conditionally render content.
+The checkbox is useful for adding flags that can be used in combination with propellers, such as [#if](/documentation/view/propeller-helpers#user-content-if) or [#unless](/documentation/view/propeller-helpers#user-content-unless), in order to conditionally render content.
 
 Example markup using a checkbox with the variable name `show_image`:
 ```
@@ -373,7 +373,7 @@ Example Output:
 ## Field Type: Related Aerostats
 This field is not rendered the way the other datafields are. When rendering `{{{help}}}`, this field appears as `related_items`.
 
-Each aerostat is an item from a collection. Items must be published in order to be available for rendering. The content entered in Admin for each item is accessible through the `related_items.related_aerostats_variable_name` field. The order of which the items are rendered can be controlled by either dragging each item into the proper order while editing the page, or by using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller.
+Each aerostat is an item from a collection. Items must be published in order to be available for rendering. The content entered in Admin for each item is accessible through the `related_items.related_aerostats_variable_name` field. The order of which the items are rendered can be controlled by either dragging each item into the proper order while editing the page, or by using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller.
 
 Related items attached to a page or item will only render via propellers on the page's template or the item's *show.html* template. Related items will not render on a list index.html or category.html template for a collection. Related items will also not render recursively, for example when an item has related items, and those items have related items.
 
@@ -394,7 +394,7 @@ Example Output:
 </div>
 ```
 
-Example markup rendering related aerostats using the [#sort_list](/documentation/view/related-items#user-content-sort_list) propeller:
+Example markup rendering related aerostats using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller:
 ```
 <div class="similar-animals">
   {{#sort_list related_items.similar_animals sort="fields.name" order="asc"}}
