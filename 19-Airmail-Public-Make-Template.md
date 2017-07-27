@@ -34,7 +34,7 @@ Example Output:
 
 
 ## Property: `published_on`
-This is the timestamp of when the current page was published. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+This is the timestamp of when the current page was published. It can be formatted using the [format_date](/documentation/view/propeller-helpers#user-content-format_date) helper.
 
 Example Markup:
 ```
@@ -48,7 +48,7 @@ Example Output:
 
 
 ## Property: `created_at`
-This is the timestamp of when the current page was created. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+This is the timestamp of when the current page was created. It can be formatted using the [format_date](/documentation/view/propeller-helpers#user-content-format_date) helper.
 
 Example Markup:
 ```
@@ -62,7 +62,7 @@ Example Output:
 
 
 ## Property: `updated_at`
-This is the timestamp of when the current page was last updated. It can be formatted using the [format_date](Propeller-Helpers.md#format_date) helper.
+This is the timestamp of when the current page was last updated. It can be formatted using the [format_date](/documentation/view/propeller-helpers#user-content-format_date) helper.
 
 Example Markup:
 ```
@@ -298,7 +298,7 @@ Example Output:
 </div>
 ```
 
-Example markup rendering the list of images using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
+Example markup rendering the list of images using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) propeller:
 ```
 <div class="sorted-images">
   {{#sort_list fields.additional_images sort="title" order="asc"}}
@@ -361,7 +361,7 @@ Example Output:
 </div>
 ```
 
-Example markup rendering the list of links using the [#sort_list](Propeller-Helpers.md#sort_list) propeller:
+Example markup rendering the list of links using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list-sort_list) propeller:
 ```
 <div class="additional-links">
   {{#sort_list fields.additional_resource_links sort="title" order="desc"}}
