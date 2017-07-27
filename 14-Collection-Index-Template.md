@@ -18,7 +18,7 @@ compartments
 
 See [Collection Templates](/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
 
-When you are developing locally, the url of the index will be `localhost:9001/pubic_path`, where `pubic_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
+When you are developing locally, the url of the index will be `localhost:9001/public_path`, where `public_path` is the value you set for the collection in Airship CMS. In this example, the public_path for the Blog collection was set to `blog` so the full url is `localhost:9001/blog`. When you navigate to this url, you should see the contents of the `index.html` collection template rendered in the browser.
 
 ---
 
