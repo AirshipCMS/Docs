@@ -27,9 +27,9 @@ The following field types can be rendered on a page template:
 ----
 
 ## Categories
-When categories are enabled on [collections](Collections.md), this property holds information such as `title` or `permalink`, that can be used with propellers for rendering.
+When categories are enabled on [collections](/documentation/view/collections), this property holds information such as `title` or `permalink`, that can be used with propellers for rendering.
 
-To see what is accessible on `categories`, add `{{{help}}}` to the collection template page to see the list of properties and fields. See the [collection template documentation](Collection-Templates.md) for more information and examples.
+To see what is accessible on `categories`, add `{{{help}}}` to the collection template page to see the list of properties and fields. See the [collection template documentation](/documentation/view/collection-templates) for more information and examples.
 
 Example Markup rendering the categories permalink property:
 ```
@@ -47,7 +47,7 @@ Example Output:
 ## Created At
 This is a timestamp of when the item or page was created.
 
-To render this property with a different time format, use the [format_date helper](Propeller-Helpers.md#format_date).
+To render this property with a different time format, use the [format_date helper](/documentation/view/propeller-helpers#user-content-format_date).
 
 Example Markup:
 ```
@@ -103,7 +103,7 @@ Example Markup:
 ## Published On
 This is a timestamp of when the item was published.
 
-To render this property with a different time format, use the [format_date helper](Propeller-Helpers.md#format_date).
+To render this property with a different time format, use the [format_date helper](/documentation/view/propeller-helpers#user-content-format_date).
 
 Example Markup:
 ```
@@ -116,9 +116,9 @@ Example Output:
 ```
 
 ## Tags
-When tags are enabled on [collections](Collections.md), this property holds information such as the tag name, that can be used with propellers for rendering.
+When tags are enabled on [collections](/documentation/view/collections), this property holds information such as the tag name, that can be used with propellers for rendering.
 
-To see what is accessible on `tags`, add `{{{help}}}` to the collection template page to see the list of properties and fields. See the [collection template documentation](Collection-Templates.md) for more information and examples.
+To see what is accessible on `tags`, add `{{{help}}}` to the collection template page to see the list of properties and fields. See the [collection template documentation](/documentation/view/collection-templates) for more information and examples.
 
 Example Markup rendering the tag name on a collections index.html page:
 ```
@@ -152,7 +152,7 @@ Example Markup:
 ## Updated At
 This is a timestamp of when the item was published.
 
-To render this property with a different time format, use the [format_date helper](Propeller-Helpers.md#format_date).
+To render this property with a different time format, use the [format_date helper](/documentation/view/propeller-helpers#user-content-format_date).
 
 Example Markup:
 ```
