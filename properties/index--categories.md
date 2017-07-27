@@ -47,29 +47,7 @@ Example Output:
 ```
 <p>common</p>
 <p>fluffy</p>
-```
 
-!! OMIT??====
-#### Categories `fields`
-Example Markup:
-Example Output:
-=========
-
-##### `aerostat_collection_id`
-This is the ID of the collection given by Airship CMS.
-
-Example Markup:
-```
-{{#each items}}{{#each categories}}
-<p>{{aerostat_collection_id}}</p>
-{{/each}}{{/each}}
-```
-
-Example Output:
-```
-<p>305</p>
-<p>305</p>
-```
 
 ##### `created_at`
 This is the timestamp of when the category was created.
