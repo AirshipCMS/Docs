@@ -16,7 +16,7 @@ However, 10% of those projects might have a very standard backend, with a unique
 
 And this is the niche where Airship might be a good fit. It's a platform that allows the developer to scaffold a pretty standard project schema and database infrastructure, then from the ground up, be able to build a uniquely custom frontend. 
 
-Think Airship might be a fit? See how the platform measures up to your needs >
+Think Airship might be a fit? See how the platform measures up to your needs > (CMS FEatures link)
 
 # Build More Efficiently
 [illustration of bargraphs of time efficiency]
@@ -28,4 +28,4 @@ You no longer need to wait for an entire custom project to be completed, _then_ 
 
 Development isn't _cheaper_, it's more efficient. With time and costs saved, developers can spend more time building the website and application glamour... the stuff you really want to shine.
 
-Legos instead of Duct Tape >
+Legos instead of Duct Tape > (Developer-Centric Link)
