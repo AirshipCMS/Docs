@@ -53,8 +53,16 @@ Inside of the `~/MyFirstAirshipSite directory`, run this command to download the
 ```
 airship land
 ```  
-
 This command will generate a `compartments`directory containing all the Airship files that are necessary for building out your project templates. 
+
+## 6. Open your local files in a text editor.
+Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
+```
+markup
+```
+In SublimeText 3 it looks like this:
+
+![open-sublime](https://user-images.githubusercontent.com/1865400/28698953-6711a8aa-72e2-11e7-99c9-dcb97056db5d.png)
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
@@ -68,14 +76,24 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
-## 8. Edit content.
-In the Airship CMS admin panel for your site, go to the <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> **Content Editing** section of the "Homepage" of your site, you will see all the dynamic content for the site:  
+## 8. Edit content & see it update locally & live.
+Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the Content Editingsection of the "Homepage" of your site. It should look like this:  
 
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
-Edit some content and save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
+Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
-## 9. Edit templates & files.
+## 9. Edit templates & files & see it update locally.
+Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some markup on the page. For instance, on the `root.html` template, add a new header above all the other page content:
+```
+<!--start test-->
+<h1>Hello! I'm testing out Airship CMS! ^__^</h1>
+<hr>
+<!--end test-->
+```
+In SublimeText 3, it will look like this:
+
+![edit-root](https://user-images.githubusercontent.com/1865400/28698954-671335ee-72e2-11e7-95a1-cfe6d5268526.png)
 
 ### Render `{{{help}}}`.
 Above the other html markup on the `root.html` template, add following markup:  
