@@ -38,20 +38,6 @@ The following properties can be rendered on the `show.html` template:
 
 ### `params`
 
-### `id`
-
-### `aerostat_collection_id`
-
-### `permalink`
-
-### `sorting_position`
-
-### `published_on`
-
-### `created_at`
-
-### `updated_at`
-
 ### `aerostat_collection`
 
 ### `tags`
@@ -59,8 +45,6 @@ The following properties can be rendered on the `show.html` template:
 ### `categories`
 
 ### `related_items`
-
-### `slug`
 
 For more information about these properties and their available fields, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
 
