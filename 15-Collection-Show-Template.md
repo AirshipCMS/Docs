@@ -53,4 +53,4 @@ For more information about these properties and their available fields, check ou
 ## Data rendered on the `show.html` template
 For a list of all `properties` and `fields` that can be rendered within the `show.html` template, see the docs for [Collection Item Properties](/documentation/view/collection-item-properties).
 
-Items must be _published_ in order to be renderable. To publish an item in a collection, navigate to the Edit Item page in the Admin portal at `yoursubdomain.airshipcms.io/admin`, click the `Draft Item` switch at the right of the page, select a publish date, then save the item. 
+Items must be _published_ in order to be renderable. To publish an item in a collection, navigate to the Edit Item page in the Admin portal at `yoursubdomain.airshipcms.io/admin`, click the `Draft Item` switch at the right of the page, select a publish date, then save the item. The item will be considered _published_ on and after the selected publish date.
