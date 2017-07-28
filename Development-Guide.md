@@ -4,6 +4,11 @@
 
 Once you have set up your schema, you can land the project to pull down new templates and template directories. Warning that this will overwrite anything you were working on locally. 
 
+Workflow is:
+- develop
+- backup with scm
+- deploy
+
 ---
 
 Explain possibilities for Development flow. How you can put stuff outside the compartments directory.
