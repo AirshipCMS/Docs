@@ -8,7 +8,26 @@ Before starting, be sure to study how [Pages](/documentation/view/pages), [Colle
 ## Draw a Sitemap Sketch
 Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project. If items from one section should reference another section, map out those relationships as well.
 
-[ EXAMPLE SKETCH ]
+![sitemap](https://user-images.githubusercontent.com/1865400/28704107-27985f58-7304-11e7-9593-db9734f8046e.png)
+
+Also sketch out a wireframe for each page or collection to show what data will be editable and connected to the CMS:  
+
+![thumbnail-sketch](https://user-images.githubusercontent.com/1865400/28704098-145b0e86-7304-11e7-9f49-435b6ac106a2.png)
+
+In this example, there will be:
+- **Header Image** (`image`)
+- **Header** (`text`)
+- **Section 1 Image** (`image`)
+- **Section 1 Header** (`text`)
+- **Section 1 Description** (`textarea`)
+- **Section 2 Image** (`image`)
+- **Section 2 Header** (`text`)
+- **Section 2 Description** (`textarea`)
+- **Section 3 Image** (`image`)
+- **Section 3 Header** (`text`)
+- **Section 3 Description** (`textarea`)
+- **News** (3 posts from "News" collection, `related`)
+- **Products** (2 items from "Products collection, `related`)
 
 For more examples, see some [Use Cases](/use-cases) and [Site Map Sketches](/site-map-sketches)
 
