@@ -1,6 +1,28 @@
 # Development Guide
 
-## Airship CMS
-Your Airship CMS Admin Panel URL will be: `(https://subdomain.airshipcms.io/admin)`. _(where "subdomain" is your subdomain)_
+---
 
-Once you have mapped out your project schema, you can start setting up the Pages and Collections for your project in your project's Airship CMS Admin Portal. For more information, see [Introduction to Airship CMS](/documentation/view/introduction-to-airship-cms) about how to use the CMS.
+Once you have set up your schema, you can land the project to pull down new templates and template directories. Warning that this will overwrite anything you were working on locally. 
+
+---
+
+Explain possibilities for Development flow. How you can put stuff outside the compartments directory.
+Also include links in the broad descriptions below, to the Git OSS projects.
+
+### Gulp Example
+Explain what that might look like.
+Runs scss.
+
+### Angular Example
+Explain what that might look like.
+Runs scss.
+
+### React Example
+Explain what that might look like.
+Runs scss.
+
+### Design Files
+Explain what that might look like.
+
+### Source Code Management
+Explain what that might look like.
