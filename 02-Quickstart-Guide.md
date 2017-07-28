@@ -165,4 +165,4 @@ That's the basic Airship Developer Workflow!
 From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
 
 ### Project Architecture
-Review [Schema & Data Model](/documentation/view/schema-and-data-model), [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) to find out how data in an Airship project can be set up and manipulated. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
+Study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
