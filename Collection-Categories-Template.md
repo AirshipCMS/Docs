@@ -40,13 +40,5 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection `categories.html` Properties:
 The following properties can be rendered on the `categories.html` template:
 
-### `categories`
-
-For more information about this property and its available fields, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
-
----
-
-## Data rendered on the `categories.html` template
-For a list of all `properties` and `fields` that can be rendered within the `categories.html` template, see the docs for [Collection Item Properties](/documentation/view/collection-item-properties).
-
-This page does not have access to data for items within the collection.
+- `categories` [single--categories]
+- @MALIA what other properties render here?
