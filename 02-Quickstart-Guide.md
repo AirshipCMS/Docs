@@ -86,15 +86,17 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 
 ![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
 
-## 8. Edit content & see it update locally & live.
-Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the Content Editingsection of the "Homepage" of your site. It should look like this:  
+## 8. Edit content. See it update locally & live.
+Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
 
 ![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
 
 Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
-## 9. Edit templates & files & see it update locally.
-Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some markup on the page. For instance, on the `root.html` template, add a new header above all the other page content:
+## 9. Edit templates & files. See it update locally (and _not_ update live).
+Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some markup on the file. Save the file.
+
+On the `root.html` template, add a new header above all the other page content:
 ```
 <!--start test-->
 <h1>Hello! I'm testing out Airship CMS! ^__^</h1>
@@ -105,16 +107,21 @@ In SublimeText 3, it will look like this:
 
 ![edit-root](https://user-images.githubusercontent.com/1865400/28699019-c3912dda-72e2-11e7-9787-86059fcc542c.png)
 
-### Render `{{{help}}}`.
-Above the other html markup on the `root.html` template, add following markup:  
-```
-<div>
-  {{{help}}}
-</div>
-<hr>
-```
+Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you make your site live? See #XX.
 
-Then save the file and refresh the browser window. This will render a list of all data that is available for rendering on the page. In your browser, this will output the following list above all other page content:  
+### 10. Render `{{{help}}}` on the template to see all the data that you have access to.
+On the `root.html` template, replace the header test you did in #9 and add following markup:  
+```
+<!--start test-->
+{{{help}}}
+<hr>
+<!--end test-->
+```
+In SublimeText 3, it will look like this:
+
+![help-root](https://user-images.githubusercontent.com/1865400/28699367-c7d8e75a-72e4-11e7-916b-271a62b36cd8.png)
+
+Be sure your file is Saved. Then, refresh your local site url `(http://localhost:9001)` and you will see a list of properties. In your browser, it will look like this:  
 
 ![help](https://user-images.githubusercontent.com/1865400/28548652-de46ac96-7070-11e7-8bba-32de4d1268b3.png)  
 
@@ -145,6 +152,8 @@ airship launch
 ```
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
+
+Note: `{{{help}}}` will not render anything when you launch a site. This helper only renders a list of properties in local development.
 
 ## 11. Back up files with your own source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
