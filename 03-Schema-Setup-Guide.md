@@ -16,14 +16,22 @@ For more examples, see some [Use Cases](/use-cases) and [Site Map Sketches](/sit
 Log in to the Airship CMS admin panel `(https://subdomain.airshipcms.io/admin)` for your project.  
 
 ## Remove Demo Content from Airship CMS
-- The `root` page (title "Homepage") is the only page you cannot delete in an Airship project. In Airship CMS, click the [ WRENCH ] to Modify the page. Delete all the demo fields. Only the uneditable properties should be left:
+- The `root` page (title "Homepage") is the only page you cannot delete in an Airship project. In Airship CMS, click the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> to Modify the page.
 
-[ PICTURE ]  
+![demo-page](https://user-images.githubusercontent.com/1865400/28703362-56aa7844-72ff-11e7-910e-b0d69899fa28.png)
+
+- Delete all the demo fields. Only the uneditable properties should be left:
+
+![uneditable-fields](https://user-images.githubusercontent.com/1865400/28703393-7f098f50-72ff-11e7-9ac1-ed4cb1cf0d11.png)
 
 - Save the page.
 - Go to Collections and click the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> to Modify the demo "Articles" Collection.
-- Click "Delete Collection": ![articles-collection](https://user-images.githubusercontent.com/1865400/28703286-cef5e7ee-72fe-11e7-982e-cf7ad896dc6b.png)
-- Confirm to delete the collection: ![delete-collection](https://user-images.githubusercontent.com/1865400/28703307-ecadaede-72fe-11e7-8985-2ad9a1c881b0.png)
+
+![articles-collection](https://user-images.githubusercontent.com/1865400/28703286-cef5e7ee-72fe-11e7-982e-cf7ad896dc6b.png)
+
+- Click "Delete Collection": ![delete-collection](https://user-images.githubusercontent.com/1865400/28703307-ecadaede-72fe-11e7-8985-2ad9a1c881b0.png)
+
+- Confirm to delete the collection: ![confirm-delete-collection](https://user-images.githubusercontent.com/1865400/28703311-fd539776-72fe-11e7-8292-dbd588f845f2.png)
 
 ## Set up Pages
  - Modify the "Homepage" fields to change what shows for the root page of your site.
