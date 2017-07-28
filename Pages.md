@@ -11,7 +11,7 @@ In the context of a web application, it's useful to use a page to contain some d
 
 ---
 
-## Pages in Airship CMS 
+## View All Pages
 To view all of the pages within the site, navigate to the Admin panel, then click the Pages link on the sidebar at the left. 
 
 ### Root Page
