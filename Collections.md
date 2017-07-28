@@ -32,30 +32,34 @@ To create a new collection, click the New Collection button at the top right of 
 #### Title
 This is the identifier for the collection.
 
-#### Name
-The `Refer to a single item in this collection as a(n)...` and 
-
 #### Public Path
-`Public Path` fields will be entered as you fill out the Title field by default, though you can still edit them to the desired values. The Public Path contains only lowercase letters, numbers, dashes, or underscores. 
+The Public Path is the identifier for collection following / in the url. The Public Path contains only lowercase letters, numbers, underscores, and dashes. By default, the Public Path is generated from the Title except that it contains only lowercase letters, numbers, underscores, and dashes. You may also modify the Public Path to change the default value.
 
-For example, if you choose the title `Event Services`, the Refer to field will then become `event_services`, and the public path will become `event-services` by default. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
+Example: If you choose the title `Event Services`, the public path will autofill to be `event-services`. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
 
-For more information about the different collection pages such as index, check out the [Collection Templates](/documentation/view/collection-templates) documentation.
+#### Name
+The Name is what a single item in the collection is called. By default, the name is generated from the Title, except you might want to edit it to be more human-readible.
+
+Example: If you choose the title `Event Services`, the Name will autofill to be `event_services`, though you may want to rename it to be `service`. To see if you have set a good Name, check if it makes sense in the sentence: "A single item in the collection **Event Services** is a(n) **service**."
 
 #### Collection Rendering
-Under this section, there are two dropdowns: Layout and Template Directory.
+The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
-A single layout can be used for multiple template or template directories. The layout file is the outer HTML wrapper. Since [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
+#### Layout
+A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages and collections of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](/documentation/view/layouts).
 
-Template Directories can also be used by multiple pages or collections that have the same markup but different content. This will be the name of the directory that holds the collection's HTML pages, such as index.html, show.html, categories.html, or category.html. These files are where [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) can be used to render the content that is filled out in Admin for each item.
+Choose an existing layout, or create a new one.
 
-For both the layout and template directory, you can either choose existing options within the dropdown, or create new ones. Any files or directories that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when executing `airship land` at the command line.
+When you create a new layout, it will automatically be generated on the Airship Server. When you execute the command `airship land` the file will download to the `/compartments/layouts/` directory.
 
-For more information, check out the documentation on the following topics: [Layouts](/documentation/view/layouts), [Collection Templates](/documentation/view/collection-templates), [Airship CLI Commands](/documentation/view/airship-cli-commands).
+#### Template Directory
+A template directory contains a set of four templates specific to the collection: `index.html`, `show.html`, `categories.html`, and `category.html`. Each template displays properties and fields for the collection. For more information, see [Collection Templates](/documentation/view/collection-templates).
+
+Choose an existing template directory, or create a new one.
+
+When you create a new template directory, it will automatically be generated on the Airship Server. When you execute the command `airship land` the directory and four templates will download to the `/compartments/templates/` directory.
 
 #### Collection Settings
-There are four options to enable or disable within the Collection Settings.
-
 The first two are whether or not the collection will have Categories or Tags. If categories are enabled, each item can be put into smaller groups, such as categorizing blogs under various topics. When categories are enabled, the categories.html and category.html page can then be used for category specific views on the site. If tags are enabled, each item can then be tagged with keywords, which can be used for filtering or other indexing purposes. Each item can have multiple categories and tags.
 
 The third option, `Is the Permalink field editable by Admin Users?`, is the option to enable or disable whether or not Admin users can customize each item's permalink.
