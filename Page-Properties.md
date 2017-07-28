@@ -28,5 +28,5 @@ The following field types can be rendered on a page template:
 - `checkbox`
 - `list of images`
 - `list of links`
-- `related aerostats`
+- `related`
 - `date`
