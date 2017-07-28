@@ -24,7 +24,7 @@ The flexibility of Airship Collections lets you build a very complex project arc
 ## View All Collections
 To view all of the pages within the site, navigate to the Admin panel, then click the Collections link on the sidebar at the left.
 
-## Create a New Collection (superadmin)
+## Create a New Collection (Superadmins Only)
 To create a new collection, click the New Collection button at the top right of the Collections section in Airship CMS.
 
 ### Collection Setup
@@ -42,7 +42,7 @@ The Name is what a single item in the collection is called. By default, the name
 
 Example: If you choose the title `Event Services`, the Name will autofill to be `event_services`, though you may want to rename it to be `service`. To see if you have set a good Name, check if it makes sense in the sentence: "A single item in the collection **Event Services** is a(n) **service**."
 
-#### Collection Rendering
+### Collection Rendering
 The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
 #### Layout
@@ -59,52 +59,54 @@ Choose an existing template directory, or create a new one.
 
 When you create a new template directory, it will automatically be generated on the Airship Server. When you execute the command `airship land` the directory and four templates will download to the `/compartments/templates/` directory.
 
-#### Collection Settings
-The first two are whether or not the collection will have Categories or Tags. If categories are enabled, each item can be put into smaller groups, such as categorizing blogs under various topics. When categories are enabled, the categories.html and category.html page can then be used for category specific views on the site. If tags are enabled, each item can then be tagged with keywords, which can be used for filtering or other indexing purposes. Each item can have multiple categories and tags.
+### Collection Settings
 
-The third option, `Is the Permalink field editable by Admin Users?`, is the option to enable or disable whether or not Admin users can customize each item's permalink.
+#### Will this Collection have Categories?
+This turns on Categories for the collection. Admins will be able to add/edit/delete categories and sort items in the collection into categories.
 
-The fourth option, `Will this Collection allow user submissions?`, is the option to enable or disable Public Make. When public make is enabled, items or posts can be created from the site rather than just in Admin, such as through contact forms or other methods using POST requests.
+#### Will this Collection have Tags?
+This turns on Tags for the collection. Admins will be able to add and delete tags for items in the collection.
 
-#### Post Fields
+#### Is the Permalink field editable by Admin Users?
+When enabled, this shows the Permalink field in the Edit Content view of an item in the collection. By default, this field is enabled.
 
-##### Categories
-Categories are used to create other, more specific, groups within each collection. When categories are enabled, the use of the categories.html and category.html pages can be used to render different category specific views in your site.
+#### Will this Collection allow user submissions?
+When public make is enabled, anonymous users can create POST requests to the collection.
 
-For more information, see the [Categories](/documentation/view/categories) documentation.
+### Post Fields
+The Post Fields section displays data specific to the collection. There are three properties that are created by default and cannot be removed: `ID`, `Created At`, and `Updated At`. If Categories are enabled for the collection `Categories` will show in the list. If Tags are enabled for the collection `Tags` will show in the list. 
 
-##### Tags
-Tags are used to attach keywords to each aerostat, which can then be used for either other grouping or indexing purposes.
+When you add custom fields, each field requires a `Title`, `Variable Name`, and `Type`. The order of these datafields can be changed by dragging and dropping each field into the desired order.
 
-For more information, see the [Tags](/documentation/view/tags) documentation.
+#### Title
+The `Title` is the identifier for the field. When editing the content for a page, this displays as the label directly above the field input.
 
+#### Variable Name
+The `Variable Name` is the same as the Title, but only_contains lowercase letters, numbers, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](/documentation/view/propeller-helpers).
 
-### Datafields
-The Post Fields section includes a variety of datafields to use in order to start creating page content. There are four fields that are created by default and cannot be modified: ID, Created At, Updated At, and Title.
+#### Type
+The `Type` of the field sets what content fields display in the CMS.
 
-When adding new fields, each field requires a Title, Variable Name, and Type. The order of these datafields can be changed by dragging each field into the proper position.
+For more information on datafields and example uses, see the documentation on [Datafields](/documentation/view/datafields).
 
-The Title is the identifier for the field. When editing the Page, each field will have this identifier directly above the field input.
+---
 
-The Variable Name is the same as the Title, but _only_ contains lowercase letters, numbers, dashes, and underscores. The variable name is not editable, and is the identifier used when rendering the content from each field when using [Propeller Helpers](/documentation/view/propeller-helpers).
+## Modify a Collection (Superadmins Only)
+To change properties and fields for a page, click the [ICON] Modify icon of the page you want to modify. Make changes to the page fields and properties and click the Modify Collection button.
 
-The Type of the field is optional and varies from text inputs to lists of images.
+## Delete a Collection (Superadmins Only)
+To change properties and fields for a page, click the [ICON] Modify icon of the page you want to delete. At the bottom of the page, click the `Delete Collection` link. When prompted, click `Confirm Delete`.
 
-For more information and example usages, see the documentation on [Datafields](/documentation/view/datafields).
+When deleting a collection, **all** items within the collection will also be deleted. If any of the items are being referenced by a [related aerostats field](/documentation/view/datafields#user-content-related-items), they will be deleted as well.
 
-### Aerostats
-Aerostats are items in each collection.
+---
 
-See the [Collection Item Properties](/documentation/view/collection-item-properties) documentation for more information.
+# LEFT OFF HERE!
 
+## Items / Posts / Aerostats in a Collection
+An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](/documentation/view/collection-item-properties) Docs.
 
-## Modify a Collection
-In order to change the title, public path, layout, template, settings or fields on a collection, you must Modify the collection. To change the content for an item, see the [Edit an Aerostat](/documentation/view/collections#user-content-edit-an-aerostat) section for more information.
-
-To modify a collection, navigate to `Collections` within Admin from the sidebar at the left, and click the wrench tool icon on the collection you would like to modify. The Modify tab at the top right should be the active tab, and the collection title at the top should now include the text `(Modify)`.
-
-Be sure to click the `Modify Collection` button at either the top or bottom of the page after making all desired changes.
-
+## View all Items in a Collection (Admins & Superadmins)
 
 ## Create an Aerostat
 To create an Aerostat, navigate to the List All view of the collection in which the new Aerostat should belong to, then click `New Item` at the top right. To get to the List All view of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
@@ -120,13 +122,3 @@ See the [Collection Item Properties](/documentation/view/collection-item-propert
 To edit an Aerostat, navigate to the List All view of the collection in which the Aerostat belongs to, then click the pencil icon at the far right of the item. To get to the List View of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
 
 To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit page. Use the `Save & Close` button to save and return to the List All view of the collection.
-
-
-## Delete Collection
-When deleting a collection, **all** aerostats within the collection will also be deleted. If any of the aerostats are being referenced by a [related aerostats field](/documentation/view/datafields#user-content-related-items), they will be deleted as well.
-
-To delete a collection, navigate to the Modify view for the collection you would like to delete.
-
-At the bottom of the page, click the `Delete Collection` link. When prompted, click `Confirm Delete`.
-
-For more information about navigating to the Modify view, see the [Modify a Collection](/documentation/view/collections#user-content-modify-a-collection) section.
