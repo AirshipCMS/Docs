@@ -1,4 +1,4 @@
-## Schema Setup Guide
+# Schema Setup Guide
 This schema setup guide is for someone who has completed the [Quickstart Guide](/documentation/view/quickstart-guide) and is ready to set up their first actual project. 
 
 Before starting, be sure to study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship.
