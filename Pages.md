@@ -26,8 +26,6 @@ This is the identifier for the page.
 #### Permalink
 The permalink is the identifier for page following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. By default, the permalink is generated from the Title except that it contains only lowercase letters, numbers, underscores, and dashes. You may also modify the permalink to change the default value. 
 
-For example, if you choose the title `About the Company`, the permalink will then become `about-the-company`, and the page is accessible at `/yourwebsitename.com/about-the-company`.
-
 Example:
 If you choose the title "About the Company" , the permalink will then become `about-the-company`, and the page is accessible at `http://yourwebsitename.com/about-the-company`.
 
