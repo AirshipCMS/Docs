@@ -8,6 +8,7 @@ In the context of a website, an Airship Page directly translates to a page of th
 In the context of a web application, it's useful to use a page to contain some data that you want to allow a content manager to edit, even though that content shows up in just a small part of the application. Using Airship API you can access the page data and display the content from the CMS within your app. 
 
 [image] 
+
 ---
 
 ## Pages in Airship CMS 
