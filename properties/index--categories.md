@@ -47,6 +47,7 @@ Example Output:
 ```
 <p>common</p>
 <p>fluffy</p>
+```
 
 
 ##### `created_at`
