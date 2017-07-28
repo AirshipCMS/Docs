@@ -1,38 +1,45 @@
 # Pages
-In Airship CMS, each website has a _Homepage_ page created by default. The permalink for this page is always `__root__` and **cannot** be modified.
 
+---
+
+## Pages
 To view all of the pages within the site, navigate to the Admin panel, then click the `Pages` link on the sidebar at the left. Ensure that you have the proper access rights and contacting the site owner if necessary.
 
+## Root Page
+Each site has a _Homepage_ page created by default. The permalink for this page is always `__root__` and **cannot** be modified. (_Note: We may change this soon, so that it can be modified_)
 
-## Create Page
-To create a new page, navigate to `Pages` within Admin from the sidebar at the left, then click the `New Page` button at the top right.
+## Create a New Page
+To create a new page, click the `New Page` button at the top right. [ IMAGE ]
 
 ### Page Setup
-The first property to fill out is the `Title` under `Page Setup`. This will be the identifier for this page. You may also manually enter the `Permalink` as well, though by default it is the same as the Title but with only lowercase letters, numbers, underscores, and dashes.
+The first property to fill out is the `Title` under `Page Setup`. This will be the identifier for this page.
+
+#### Permalink
+The permalink is the identifier for page following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. You may also manually enter the `Permalink` as well, although by default it is generated from the Title except with only lowercase letters, numbers, underscores, and dashes.
 
 For example, if you choose the title `About the Company`, the permalink will then become `about-the-company`, and the page is accessible at `/yourwebsitename.com/about-the-company`.
 
+### Page Rendering
+Layouts and Templates refer to the html filenames that should be referenced for the page.
 
-### Page Layout & Template
-Under this section, there are two dropdowns: Layout and Template. By default, an `application.html` layout and `root.html` template are created for each site, and is used by the Homepage page that is also created by default.
+#### Layout
+A `layout` is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers).
 
-A single layout can be used for multiple templates. The layout file is the outer HTML wrapper. Since [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
+A single layout can be used for multiple pages and collections on an Airship site.
 
-Templates can also be used by multiple pages or collections that have the same markup but different content. This is where [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) can be used to render the content that is filled out in Admin.
+By default, `application.html` layout and `root.html` template are set as the defaults for the `__root__` page.
 
-For both the layout and template, you can either choose existing HTML files within the dropdown, or create new ones. Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when executing `airship land` at the command line.
+#### Template
+A `template` contains markup unique to the page. Templates can page properties and fields that are set for the page.
 
-For more information, check out the documentation on the following topics: [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), [Airship CLI Commands](/documentation/view/airship-cli-commands).
+#### Set a Layout and Template
+Choose an existing layout and template, or create new ones.
 
+Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when you execute the `airship land` command in your terminal.
 
-### Page Specific Fields
-The following properties and fields are only available on Pages.
+For more information, see [Layouts](/documentation/view/layouts) and [Page Templates](/documentation/view/page-templates).
 
-#### Permalink
-The permalink is the identifier for page following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. By default, it is equivalent to the page title with any invalid characters parsed out, but can also be modified when creating or editing the page.
-
-
-### Datafields  
+### Page Fields
 The Page Fields section includes a variety of datafields to use in order to start creating page content. There are four fields that are created by default and cannot be modified: ID, Created At, Updated At, and Title.
 
 When adding new fields, each field requires a Title, Variable Name, and Type. The order of these datafields can be changed by dragging each field into the proper position.
@@ -45,25 +52,23 @@ The Type of the field is optional and varies from text inputs to lists of images
 
 For more information and example usages, see the documentation on [Datafields](/documentation/view/datafields).
 
+---
 
-## Modify Page
+## Modify Page (Superadmins Only)
 In order to change the title, permalink, layout, template, or fields on a page, you must Modify the page. To change field content, see the [Edit Page](/documentation/view/pages#user-content-edit-page) section for more information.
 
 To modify a page, navigate to `Pages` within Admin from the sidebar at the left, and click the wrench tool icon on the page you would like to modify. The `Modify` tab at the top right should be the active tab, and the page title at the top should now include the text `(Modify)`. This page can also be reached from the Edit Page tab by clicking the Modify tab.
 
 Be sure to click the `Modify Page` button at either the top or bottom of the page after making all desired changes.
 
-
-
-## Edit Page
+## Edit Page (Admins)
 To edit the content entered for any page field, navigate to `Pages` within Admin from the sidebar at the left, and click the pencil icon on the page you would like to edit.
 
 The `Edit Page` tab at the top right should be the active tab, and the page title at the top should now be preceded by the text `Edit Page:`. This page can also be reached from the Modify Page tab by clicking the Edit Page tab.
 
 To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit Page. Use the `Save & Close` button to save and return to the `Pages` page. 
 
-
-## Delete Page
+## Delete Page (Superadmins Only)
 To delete a page, navigate to the Modify page for the page you would like to delete.
 
 At the bottom of the page, click the `Delete Page` link. When prompted, click `Confirm Delete`.
