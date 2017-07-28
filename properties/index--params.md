@@ -1,4 +1,4 @@
-The `params` property is for pagination. It contains the following data:
+The `params` property is for pagination. It contains the following data on the index.html and category.html pages:
 ```
 page
 limit
