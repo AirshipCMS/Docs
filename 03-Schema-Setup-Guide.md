@@ -8,16 +8,16 @@ Before starting, be sure to study how [Pages](/documentation/view/pages), [Colle
 ## Draw a Sitemap
 Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project. If items from one section should reference another section, map out those relationships as well. If you cannot think of a particular project, you can use this sitemap:
 
-![sitemap](https://user-images.githubusercontent.com/1865400/28704107-27985f58-7304-11e7-9593-db9734f8046e.png)
+[ SITEMAP ]
 
 ## Draw Wireframes
 Sketch out a wireframe for each page and collection to show what data will be editable and connected to the CMS.
 
-Example "Homepage":
+Example "Homepage" and "News" Collection:
 
-![thumbnail-sketch](https://user-images.githubusercontent.com/1865400/28704098-145b0e86-7304-11e7-9f49-435b6ac106a2.png)
+[ SKETCH ]
 
-Based on the above sketch, the page will contain the following data that can be managed through the CMS:
+The new "Homepage" will contain the following data:
 - **Header Image** (`image`)
 - **Header** (`text`)
 - **Section 1 Image** (`image`)
@@ -32,15 +32,12 @@ Based on the above sketch, the page will contain the following data that can be 
 - **News** (3 posts from "News" collection, `related`)
 - **Products** (2 items from "Products collection, `related`)
 
-Example "News":
-
-[ IMAGE ]
-
-Based on the above sketches, the collection list page (`/news`) will show the following data for each item:
-[ LIST ]
-
-And the detail page for a single news item (`/news/view/item-permalink-here`) will show the following data for each item:
-[ LIST ]
+Each item in the "News" collection will contian the following data:
+- **Header Image** (`image`)
+- **Header** (`text`)
+- **Author** (`text`)
+- **Body** (`richtext area`)
+- **Short Description** (`textarea`)
 
 For more examples, see some [Use Cases](/use-cases) and [Site Map Sketches](/site-map-sketches).
 
@@ -68,38 +65,46 @@ Confirm to delete the collection: ![confirm-delete-collection](https://user-imag
 ## Modify the Homepage
 Modify the "Homepage" fields to add fields appropriate for your project:  
  
-[ IMAGE ]
+[ IMAGE OF FIELDS ]
 
 Save the page.
  
 ## Create Additional Pages
 Create additional pages and define the fields for those pages.
 
-#### Page Permalink
-This defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/permalink` (_where subdomain is your site subdomain_).
+#### Page Setup
+The permalink defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/permalink` (_where subdomain is your site subdomain_).
 
 #### Page Rendering
 Set the existing `application.html` **layout** for every page. This means all pages in the site will references the same outer "container" markup typically used for the header and footer of the page. You can change this later, though it's easiest to set it to use the default `application.html` layout for now.
 
 Create a new unique **template** for each new page.
 
+#### Page Fields
+Define the fields for the page (explain more).
+
 ## Create Collections
 Create collections and define the fields for items in those collections.
 
-#### Name
-define.
-
-#### Public Path
-define.
+#### Collection Setup
+- collection title (explain more).
+- collection name (explain more).
+- collection public path (explain more).
 
 #### Collection Rendering
 Set the existing `application.html` **layout** for every collection.
 Create a new unique **template directory** for each new collection.
 
 When you are get familiar with how pages and collections render, you can start to edit your project to more efficiently share layouts and templates accross pages and collections on your site. See [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates) and [Collection Templates](/documentation/view/collection-templates) for more information.
+
+#### Collection Fields
+Define the fields for an item in the collection (explain more).
+
+#### Primary Label
+Set a property for the primary label. This is the main label that will display on the list view for items in this collection in the Admin Panel. (explain more).
  
 ## Set up Relationships
-define. Needs to be done after colletions are setup.
+Needs to be done after colletions are setup. (explain more).
 Can relate a collection to a page, or a collection to items in a collection. Cannot relate a page to a pge.
 Add related datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project. If you aren't sure what the relationships are for your project, you can come back to do this later. For more information about relationships, see the [Relationships](/documentation/view/relationships) Docs.
 
@@ -108,5 +113,7 @@ Add related datafields to pages and collections in order to set up the framework
 ## Add Content
 Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
 
+---
+
 ## Start Developing
-explain
+Link to Developer Guide.
