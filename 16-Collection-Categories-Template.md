@@ -1,451 +1,50 @@
 # Collection `categories.html` Template:
-The following properties and fields are available on the categories.html template:
+The `categories.html` template is used as an index for all categories within a collection. The url for the categories in a collection follows the format: `/collection-public-path/categories`.
 
-## Property: `id`
-This is the id of the item's collection given by Airship CMS.
+The collection `categories.html` template may contain html markup and Collection Propellers markup that renders site content. This template is not generated with any pre-defined markup in order to give developers the most flexibility when structuring content for this page.
 
-Example Markup:
-```
-<p>{{id}}</p>
-```
-
-Example Output:
-```
-<p>305</p>
-```
-
-
-## Property: `site_id`
-This is the ID of the website given by Airship CMS.
-
-Example Markup:
-```
-<p>{{site_id}}</p>
-```
-
-Example Output:
-```
-<p>62</p>
-```
-
-
-## Property: `title`
-This is the title of the collection. The title is set when creating each collection, and can be edited at any time in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{title}}</p>
-```
-
-Example Output:
-```
-<p>Mammals</p>
-```
-
-
-## Property: `name`
-This is the identifier used to refer to each item in the collection. By default, it is the same as the collection's title. It can be found and edited in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{name}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-
-## Property: `public_path`
-The public path is the identifier for collection following / in the url. The public path contains only lowercase letters, numbers, underscores, and dashes. By default, it is the same as the title or name, and can be edited in the Admin panel at any time.
-
-Example Markup:
-```
-<p>{{public_path}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-
-## Property: `has_public_make`
-This shows whether or not public make is enabled for the current collection. The public make setting can be enabled/disabled in the Modify panel in Admin.
-
-Public make must be enabled for user submissions, such as creating new Contact items within a Sign Up collection via sign up form. 
-
-Example Markup:
-```
-<p>{{has_public_make}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-
-## Property: `has_categories`
-This shows whether or not categories are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{has_categories}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-## Property: `has_tags`
-This shows whether or not tags are enabled for the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{has_tags}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-## Property: `has_comments`
-Example Markup:
-```
-<p>{{has_comments}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-## Property: `has_publish_date`
-Example Markup:
-```
-<p>{{has_publish_date}}</p>
-```
-
-Example Output:
-
-
-## Property: `has_products`
-This shows whether or not the collection is a product collection and has products.
-
-Example Markup:
-```
-<p>{{has_products}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-
-## Property: `show_permalink`
-This shows whether or not user's are allowed to edit the permalink for each item in the current collection. This setting can be enabled/disabled in the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{show_permalink}}</p>
-```
-
-Example Output:
-```
-<p>true</p>
-```
-
-
-## Property: `cat_fields`
-This property holds information about the collection's category fields.
-
-The following are examples of how to access the cat_fields properties:
-
-### Property: `num_options`
-This represents the amount of options that are available for the field.
-
-Example Markup:
-```
-{{#each cat_fields}}
-<p>{{num_options}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>0</p>
-```
-
-
-### Property: `type`
-This represents the datafield type.
-
-Example Markup:
-```
-{{#each cat_fields}}
-<p>{{type}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>number</p>
-```
-
-
-### Property: `options`
-
-Example Markup:
 
-Example Output:
+## Location & Setup
+To use this page, categories must be enabled within the collection. Categories can be enabled at anytime. To enable categories, click the checkbox for `Has Categories` within the `Collection Settings` section in the `New Collection` or `Modify Collection` pages in the Admin portal.
 
-
-### Property: `title`
-This represents the category field name.
-
-Example Markup:
-```
-{{#each cat_fields}}
-<p>{{title}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>Population Size</p>
-```
-
-
-### Property: `variable_name`
-This represents the variable name of the category field.
-
-Example Markup:
-```
-{{#each cat_fields}}
-<p>{{variable_name}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>population_size</p>
-```
-
-
-### Property: `sorting_position`
-This represents the sorting position of the field, beginning from 0.
-
-Example Markup:
-```
-{{#each cat_fields}}
-<p>{{sorting_position}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>0</p>
-```
-
-
-## Property: `variations`
-Example Markup:
-
-Example Output:
-
-
-## Property: `layout`
-This shows which layout is being used to render the current collection. This can be set within the Modify panel in Admin. 
-
-Example Markup:
-```
-<p>{{layout}}</p>
-```
-
-Example Output:
-```
-<p>mammals.html</p>
-```
-
-## Property: `primary_label`
-This shows which field is being used as the primary identifier when listing each item in a collection. This can be set within the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{primary_label}}</p>
-```
-
-Example Output:
-```
-<p>Name</p>
-```
-
-
-## Property: `template_directory`
-This shows the name of the template directory being used for the current collection, and which holds the collection's index, show, categories, and/or category html files. The directory name in the project structure must exactly match this value. This can be set within the Modify panel in Admin.
-
-Example Markup:
-```
-<p>{{template_directory}}</p>
-```
-
-Example Output:
-```
-<p>mammals</p>
-```
-
-
-## Property: `created_at`
-This is the timestamp of when the category was created. The timestamp can be formatted using the [format_date helper](Propeller-Helpers.md#format_date).
-
-Example Markup:
-```
-<p>{{format_date created_at "D" "us"}}</p>
-```
-
-Example Output:
-```
-<p>Wednesday, May 17, 2017</p>
-```
-
-
-## Property: `updated_at`
-This is the timestamp of when the category was last updated. The timestamp can be formatted using the [format_date helper](Propeller-Helpers.md#format_date).
-
-Exapmle Markup:
-```
-<p>{{format_date updated_at "D" "us"}}</p>
-```
-
-Example Output:
-```
-<p>Wednesday, May 31, 2017</p>
-```
-
-
-## Property: `has_plans`
-Example Markup:
-```
-<p>{{collection.has_plans}}</p>
-```
-
-Example Output:
-```
-<p>false</p>
-```
-
-
-## Property: `categories`
-To use these properties, categories must be enabled in the Admin panel for the collection. The following examples show how to render the available categories properties for each item:
-
-### Property: `id`
-This is the ID of the category.
-
-Example Markup:
-```
-{{#each categories}}
-<p>{{id}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>319</p>
-```
-
-### Property: `title`
-This is the category name.
-
-Example Markup:
-```
-{{#each categories}}
-<p>{{title}}</p>
-{{/each}}
-```
-
-Example Output:
-```
-<p>Fluffy</p>
+The `categories.html` template for a collection should be located in the appropriate subdirectory within the `templates` directory. For a collection named `blog`, the `categories.html` template location would be:
 ```
-
-### Property: `permalink`
-The permalink is the identifier for the category following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes.
-
-Example Markup:
-```
-{{#each categories}}
-<p>{{permalink}}</p>
-{{/each}}
+compartments
+.
+└── templates
+    └── blog
+        └── categories.html
 ```
 
-Example Output:
-```
-<p>fluffy</p>
-```
+---
 
+See [Collection Templates](/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
 
-### Property: `aerostat_collection_id`
-This is the ID of the collection given by Airship CMS.
+When you are developing locally the url of the categories page will be `localhost:9001/public_path/categories`, where `public_path` is the value you set for the collection in Airship CMS.
 
-Example Markup:
-```
-{{#each categories}}
-<p>{{aerostat_collection_id}}</p>
-{{/each}}
-```
+In this example, the public_path for the Blog collection was set to `blog`, so the full url is `localhost:9001/blog/categories`. When you navigate to this url, you should see the contents of the `categories.html` collection template rendered in the browser.
 
-Example Output:
-```
-<p>305</p>
-```
+---
 
-### Property: `created_at`
-This is the timestamp of when the category was created.
+## Collection `categories.html` Propellers
+"Propellers" is the Airship name for the markup used to render CMS content. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
 
-Example Markup:
-```
-{{#each categories}}
-<p>{{format_date created_at "D" "us"}}</p>
-{{/each}}
-```
+On the collection `categories.html`, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the properties and datafields that can be rendered on each template. 
 
-Example Output:
-```
-<p>Wednesday, May 17, 2017</p>
-```
+Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
-### Property: `updated_at`
-This is the timestamp of when the category was last updated.
+Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
 
-Example Markup:
-```
-{{#each categories}}
-<p>{{format_date updated_at "D" "us"}}</p>
-{{/each}}
-```
+## Collection `categories.html` Properties:
+The following properties can be rendered on the `categories.html` template:
 
-Example Output:
-```
-<p>Wednesday, May 31, 2017</p>
-```
+### `categories`
 
+For more information about this property and its available fields, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
 
-### Property: `sorting_position`
-This is the value of the category's sorting position.
+---
 
-Example Markup:
-```
-{{#each categories}}
-<p>{{sorting_position}}</p>
-{{/each}}
-```
+## Data rendered on the `categories.html` template
+For a list of all `properties` and `fields` that can be rendered within the `categories.html` template, see the docs for [Collection Item Properties](/documentation/view/collection-item-properties).
 
-Example Output:
-```
-<p>0</p>
-```
+This page does not have access to data for items within the collection.
