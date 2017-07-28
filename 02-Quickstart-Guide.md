@@ -62,7 +62,7 @@ markup
 ```
 In SublimeText 3 it looks like this:
 
-![open-sublime](https://user-images.githubusercontent.com/1865400/28698953-6711a8aa-72e2-11e7-99c9-dcb97056db5d.png)
+![open-sublime](https://user-images.githubusercontent.com/1865400/28698994-97c1f0c2-72e2-11e7-9ecf-25cc0c9d9cb9.png)
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
@@ -93,7 +93,7 @@ Back in your text editor, open the `root.html` template located in `/compartment
 ```
 In SublimeText 3, it will look like this:
 
-![edit-root](https://user-images.githubusercontent.com/1865400/28698954-671335ee-72e2-11e7-95a1-cfe6d5268526.png)
+![edit-root](https://user-images.githubusercontent.com/1865400/28699019-c3912dda-72e2-11e7-9787-86059fcc542c.png)
 
 ### Render `{{{help}}}`.
 Above the other html markup on the `root.html` template, add following markup:  
