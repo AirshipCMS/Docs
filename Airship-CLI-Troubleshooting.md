@@ -1,3 +1,6 @@
+## You do not have permission to do anything...
+you probably have to login again. a session expires after 24 hours.
+
 ## `airship login` doesn't work
 are you in the right directory?  
 did you forget the subdomain?  
