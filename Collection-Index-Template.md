@@ -37,6 +37,7 @@ The following properties can be rendered on the `index.html` template:
 - `params`
 - `collection`
 - `items [list]`
+- @malia any more?
 
 ---
 
