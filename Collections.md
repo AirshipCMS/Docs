@@ -1,13 +1,36 @@
 # Collections
-Collections are groups of things. In Airship CMS, you can create a collection for any group of things that your site might require such as blogs, provided services, or even to hold contact form submissions. Collections can also include categories or tags if enabled.
+In Airship, a collection is **a group of items, where each item in the group shares the same structure of data**.
 
+In the context of a website, an Airship Collection could be a Blog, a Collection of Photo Galleries, or a Directory of Team Members.
 
-## Create a Collection
-To create a new collection, navigate to Collections within Admin from the sidebar at the left, then click the `New Collection` button at the top right.
+[image]
 
-### Collection Setup
-The first field to fill out is the `Title` under Collection Setup. This will be the identifier for this collection.
+An Airship Collection could function as a Form, where every form submission is an item in the collection. The only difference between a public collection such as a blog and a contact form collection, is whether or not posts can be submitted by public visitors and whether or not posts are published.
 
+[image]
+
+Even Products are a Collection (a special collection that we call a "Product Collection") since products can be grouped by their data structure.
+
+[image]
+
+In the context of a web application, collections can be used to manage and display user generated content.
+
+[image]
+
+The flexibility of Airship Collections lets you build a very complex project architecture based on fairly simple blocks of data.
+
+---
+
+## View All Collections
+To view all of the pages within the site, navigate to the Admin panel, then click the Collections link on the sidebar at the left.
+
+## Create a New Collection (superadmin)
+To create a new collection, click the New Collection button at the top right of the Collections section in Airship CMS.
+
+### Title
+This is the identifier for the collection.
+
+### Name
 The `Refer to a single item in this collection as a(n)...` and `Public Path` fields will be entered as you fill out the Title field by default, though you can still edit them to the desired values. The Public Path contains only lowercase letters, numbers, dashes, or underscores. 
 
 For example, if you choose the title `Event Services`, the Refer to field will then become `event_services`, and the public path will become `event-services` by default. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
