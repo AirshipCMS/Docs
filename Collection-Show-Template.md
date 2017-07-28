@@ -33,24 +33,34 @@ Propellers markup is wrapped by double or triple curly brackets. Properties and 
 
 Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
 
-## Collection `show.html` Properties:
+## Collection Item Properties rendered on `show.html`:
 The following properties can be rendered on the `show.html` template:
+- `params`
+- `aerostat_collection`
+- `tags`
+- `categories`
+- `related_items [list]`
+- INCOMPLETE LIST -- halp me fix @malia
 
-### `params`
+The following field types can be rendered on a page template:
+- `text`
+- `textarea`
+- `richtext area`
+- `image`
+- `link`
+- `number`
+- `radio`
+- `select`
+- `multiselect`
+- `checkbox`
+- `list of images`
+- `list of links`
+- `date`
 
-### `aerostat_collection`
-
-### `tags`
-
-### `categories`
-
-### `related_items`
-
-For more information about these properties and their available fields check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
+To see examples of how each property and field renders, see [Collection Item Properties](/documentation/view/collection-item-properties).
 
 ---
 
-## Data rendered on the `show.html` template
-For a list of all `properties` and `fields` that can be rendered within the `show.html` template, see the docs for [Collection Item Properties](/documentation/view/collection-item-properties).
+##Properties you can't access from `show.html`:
 
 Items must be _published_ in order to be renderable. To publish an item in a collection, navigate to the Edit Item page in the Admin portal at `yoursubdomain.airshipcms.io/admin`, click the `Draft Item` switch at the right of the page, select a publish date, then save the item. Note that the item will not be considered published and renderable until on or after the selected publish date.
