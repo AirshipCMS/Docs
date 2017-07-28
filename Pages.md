@@ -1,29 +1,40 @@
 # Pages
+In Airship, a page represents **a single instance of a set of data**. 
 
+In the context of a website, an Airship Page directly translates to a page of the website. 
+
+[image] 
+
+In the context of a web application, it's useful to use a page to contain some data that you want to allow a content manager to edit, even though that content shows up in just a small part of the application. Using Airship API you can access the page data and display the content from the CMS within your app. 
+
+[image] 
 ---
 
-## Pages
-To view all of the pages within the site, navigate to the Admin panel, then click the `Pages` link on the sidebar at the left. Ensure that you have the proper access rights and contacting the site owner if necessary.
+## Pages in Airship CMS 
+To view all of the pages within the site, navigate to the Admin panel, then click the Pages link on the sidebar at the left. 
 
-## Root Page
-Each site has a _Homepage_ page created by default. The permalink for this page is always `__root__` and **cannot** be modified. (_Note: We may change this soon, so that it can be modified_)
+### Root Page
+Each site includes a default "Homepage". The permalink for this page is always `__root__`. This cannot be modified. 
 
-## Create a New Page
-To create a new page, click the `New Page` button at the top right. [ IMAGE ]
+## Create a New Page (superadmin)
+To create a new page, click the New Page button at the top right of the Pages section in Airship CMS. 
 
-### Page Setup
-The first property to fill out is the `Title` under `Page Setup`. This will be the identifier for this page.
+#### Title
+This is the identifier for the page.
 
 #### Permalink
-The permalink is the identifier for page following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. You may also manually enter the `Permalink` as well, although by default it is generated from the Title except with only lowercase letters, numbers, underscores, and dashes.
+The permalink is the identifier for page following / in the url. The permalink contains only lowercase letters, numbers, underscores, and dashes. By default, the permalink is generated from the Title except that it contains only lowercase letters, numbers, underscores, and dashes. You may also modify the permalink to change the default value. 
 
 For example, if you choose the title `About the Company`, the permalink will then become `about-the-company`, and the page is accessible at `/yourwebsitename.com/about-the-company`.
 
+Example:
+If you choose the title "About the Company" , the permalink will then become `about-the-company`, and the page is accessible at `http://yourwebsitename.com/about-the-company`.
+
 ### Page Rendering
-Layouts and Templates refer to the html filenames that should be referenced for the page.
+The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
 #### Layout
-A `layout` is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers).
+A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers).
 
 A single layout can be used for multiple pages and collections on an Airship site.
 
