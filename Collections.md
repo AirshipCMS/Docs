@@ -27,18 +27,22 @@ To view all of the pages within the site, navigate to the Admin panel, then clic
 ## Create a New Collection (superadmin)
 To create a new collection, click the New Collection button at the top right of the Collections section in Airship CMS.
 
-### Title
+### Collection Setup
+
+#### Title
 This is the identifier for the collection.
 
-### Name
-The `Refer to a single item in this collection as a(n)...` and `Public Path` fields will be entered as you fill out the Title field by default, though you can still edit them to the desired values. The Public Path contains only lowercase letters, numbers, dashes, or underscores. 
+#### Name
+The `Refer to a single item in this collection as a(n)...` and 
+
+#### Public Path
+`Public Path` fields will be entered as you fill out the Title field by default, though you can still edit them to the desired values. The Public Path contains only lowercase letters, numbers, dashes, or underscores. 
 
 For example, if you choose the title `Event Services`, the Refer to field will then become `event_services`, and the public path will become `event-services` by default. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
 
 For more information about the different collection pages such as index, check out the [Collection Templates](/documentation/view/collection-templates) documentation.
 
-
-### Collection Layout & Template Directory
+#### Collection Rendering
 Under this section, there are two dropdowns: Layout and Template Directory.
 
 A single layout can be used for multiple template or template directories. The layout file is the outer HTML wrapper. Since [Propeller Helpers](/documentation/view/propeller-helpers) and [Handlebars](/documentation/view/handlebarsjs) are not available on this level, this should be for static content around the page such as headers, navigation bars, or footers that should look the same across different pages in the site.
@@ -49,8 +53,7 @@ For both the layout and template directory, you can either choose existing optio
 
 For more information, check out the documentation on the following topics: [Layouts](/documentation/view/layouts), [Collection Templates](/documentation/view/collection-templates), [Airship CLI Commands](/documentation/view/airship-cli-commands).
 
-
-### Collection Settings
+#### Collection Settings
 There are four options to enable or disable within the Collection Settings.
 
 The first two are whether or not the collection will have Categories or Tags. If categories are enabled, each item can be put into smaller groups, such as categorizing blogs under various topics. When categories are enabled, the categories.html and category.html page can then be used for category specific views on the site. If tags are enabled, each item can then be tagged with keywords, which can be used for filtering or other indexing purposes. Each item can have multiple categories and tags.
@@ -59,17 +62,14 @@ The third option, `Is the Permalink field editable by Admin Users?`, is the opti
 
 The fourth option, `Will this Collection allow user submissions?`, is the option to enable or disable Public Make. When public make is enabled, items or posts can be created from the site rather than just in Admin, such as through contact forms or other methods using POST requests.
 
+#### Post Fields
 
-### Collection Specific Fields
-The following are fields that are only available on Collections.
-
-#### Categories
+##### Categories
 Categories are used to create other, more specific, groups within each collection. When categories are enabled, the use of the categories.html and category.html pages can be used to render different category specific views in your site.
 
 For more information, see the [Categories](/documentation/view/categories) documentation.
 
-
-#### Tags
+##### Tags
 Tags are used to attach keywords to each aerostat, which can then be used for either other grouping or indexing purposes.
 
 For more information, see the [Tags](/documentation/view/tags) documentation.
