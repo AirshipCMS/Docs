@@ -8,14 +8,14 @@ Before starting, be sure to study how [Pages](/documentation/view/pages), [Colle
 ## Draw a Sitemap
 Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project. If items from one section should reference another section, map out those relationships as well. If you cannot think of a particular project, you can use this sitemap:
 
-[ SITEMAP ]
+![sitemap](https://user-images.githubusercontent.com/1865400/28704107-27985f58-7304-11e7-9593-db9734f8046e.png)  
 
 ## Draw Wireframes
 Sketch out a wireframe for each page and collection to show what data will be editable and connected to the CMS.
 
 Example "Homepage" and "News" Collection:
 
-[ SKETCH ]
+![thumbnails](https://user-images.githubusercontent.com/1865400/28706552-857d5b9e-7310-11e7-814f-dc55014b9c78.png)
 
 The new "Homepage" will contain the following data:
 - **Header Image** (`image`)
@@ -65,7 +65,7 @@ Confirm to delete the collection: ![confirm-delete-collection](https://user-imag
 ## Modify the Homepage
 Modify the "Homepage" fields to add fields appropriate for your project:  
  
-[ IMAGE OF FIELDS ]
+[ SCREENSHOT OF FIELDS ADDED to Homepage to make it match the list ]
 
 Save the page.
  
@@ -104,9 +104,12 @@ Define the fields for an item in the collection (explain more).
 Set a property for the primary label. This is the main label that will display on the list view for items in this collection in the Admin Panel. (explain more).
  
 ## Set up Relationships
-Needs to be done after colletions are setup. (explain more).
+This needs to be done after colletions are setup. (explain more).
 Can relate a collection to a page, or a collection to items in a collection. Cannot relate a page to a pge.
 Add related datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project. If you aren't sure what the relationships are for your project, you can come back to do this later. For more information about relationships, see the [Relationships](/documentation/view/relationships) Docs.
+
+Example:
+(talk about the example from the sketches, how posts feed from news and products to homepage). show screenshots of process.
 
 ---
 
