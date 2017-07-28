@@ -55,10 +55,6 @@ For a list of all `properties` and `fields` that can be rendered within `{{#each
 ## Additional Properties inside `{{#each items}}` on the `index.html` template
 The following properties are renderable on the `index.html` template, though not necessarily available on the `show.html` template:
 
-### `aerostat_collection.id`
-
-### `aerostat_collection.public_path`
-
 ### `categories`
 
 ### `tags`
