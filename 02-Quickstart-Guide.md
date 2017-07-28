@@ -156,6 +156,8 @@ Part of your regular development workflow probably involves using a Source Code 
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
+---
+
 ## That's it! 
 That's the basic Airship Developer Workflow! 
 
@@ -164,17 +166,3 @@ From here you might want to learn more about [Layouts](/documentation/view/layou
 
 ### Project Architecture
 Review [Schema & Data Model](/documentation/view/schema-and-data-model), [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) to find out how data in an Airship project can be set up and manipulated. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
-
----
-
-## Developer Notes
-
-#### What do `airship launch` and `airship land` do?
-`airship launch` uploads all **local templates and files** and **replaces the server copies**. 
-
-`airship land` downloads all **server templates and files** and **replaces your local copies**. 
-
-`airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. For a typical project, you only need to run `airship land` once. After that you will just be running `airship launch` to add changes to your live site.
-
-#### Debugging
-If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If _that_ doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other issue. See the [Airship Documentation](/documentation/view/airship-cli-troubleshooting) for debugging help.
