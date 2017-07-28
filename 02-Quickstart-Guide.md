@@ -161,7 +161,9 @@ That's the basic Airship Developer Workflow! From here you might want to learn m
 
 If you are finally ready to remove all the placeholder content on your files & replace them with your own project content and markup, then review the [Schema & Data Model](/documentation/view/schema-and-data-model) to turn your project idea into an actual project.
 
-## Some Notes
+---
+
+## Developer Notes
 
 #### What do `airship launch` and `airship land` do?
 `airship launch` uploads all **local templates and files** and **replaces the server copies**. 
