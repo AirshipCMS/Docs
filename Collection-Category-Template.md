@@ -39,21 +39,16 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection `category.html` Properties:
 The following properties can be rendered on the `categories.html` template:
 
-### `params`
-
-### `items`
-
-### `collection`
-
-### `category`
-
-For more information about these properties and their available fields, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
+- `params`
+- `items [list]`
+- `collection`
+- `category`
+- @Malia any more?
 
 ---
 
-## Data rendered on the `category.html` template
-For a list of all `properties` and `fields` that can be rendered within the `categories.html` template, see the docs for [Collection Item Properties](/documentation/view/collection-item-properties).
-
+## Data rendered inside `{{#each items}}` on the `category.html` template
+For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for `Collection Item Properties`. Most `properties` and `fields` renderable on the `show.html` template can be rendered on the `category.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper (see below for exceptions).
 
 ### Not renderable inside `{{#each items}}` on the `category.html` template
 - any items in the collection that are in _Draft Mode_ will not render on the template.
