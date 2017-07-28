@@ -46,7 +46,7 @@ The following properties can be rendered on the `show.html` template:
 
 ### `related_items`
 
-For more information about these properties and their available fields, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
+For more information about these properties, their available fields, and other general properties, check out the [Collection Item Properties](/documentation/view/collection-item-properties) docs.
 
 ---
 
