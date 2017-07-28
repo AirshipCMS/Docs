@@ -151,7 +151,9 @@ airship launch
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
-**Note**: Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project downloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
+**Notes**: 
+- Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project downloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
+- If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If _that_ doesn't work either, and it has been more than 5 minutes since you have launched your site, contact us about your `airship launch` issue.
 
 ## 12. Back up files with a source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
