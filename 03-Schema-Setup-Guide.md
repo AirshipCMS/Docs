@@ -14,7 +14,7 @@ Also sketch out a wireframe for each page or collection to show what data will b
 
 ![thumbnail-sketch](https://user-images.githubusercontent.com/1865400/28704098-145b0e86-7304-11e7-9f49-435b6ac106a2.png)
 
-In this example, there will be:
+In this example of a new "Homepage", there will be:
 - **Header Image** (`image`)
 - **Header** (`text`)
 - **Section 1 Image** (`image`)
