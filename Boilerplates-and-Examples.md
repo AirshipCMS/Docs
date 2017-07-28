@@ -6,12 +6,12 @@ The following is a list of Boilerplate Starter Kits, Open Source Projects, and P
 ## Boilerplate Starter Kits
 Feel free to use these as examples to build off of and start your own projects.
 
-### [Angular 1.x](https://angular-1.airshipcms.io)
+### Angular 1.x
 This is a demo of an Airship CMS project that uses Angular 1.x to render all pages.
 - [Demo](https://angular-1.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/angular-1.airshipcms.io)
 
-### [Angular 1.x + Gulp + Babel + Airship CMS](https://angular-1-gulp-babel.airshipcms.io)
+### Angular 1.x + Gulp + Babel + Airship CMS
 This is a demo of an Airship CMS project that uses Angular 1.x + Gulp + Babel to render all pages.
 - [Demo](https://http://angular-1-gulp-babel.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/angular-1.airshipcms.io)
