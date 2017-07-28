@@ -60,7 +60,7 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 .
 ├── .airship
-   └── name
+│  └── name
 └── compartments
    ├── airmail
    ├── assets
