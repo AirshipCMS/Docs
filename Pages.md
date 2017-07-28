@@ -17,7 +17,7 @@ To view all of the pages within the site, navigate to the Admin panel, then clic
 ### Root Page
 Each site includes a default "Homepage". The permalink for this page is always `__root__`. This cannot be modified. 
 
-## Create a New Page (superadmin)
+## Create a New Page (Superadmins Only)
 To create a new page, click the New Page button at the top right of the Pages section in Airship CMS. 
 
 #### Title
