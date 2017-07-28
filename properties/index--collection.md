@@ -1,5 +1,5 @@
 ### `collection`
-The following properties and fields are available on the index.html's `collection` property:
+The following properties and fields are available on the index.html's and category.html's `collection` property:
 
 ##### `id`
 This is the collection's id.
