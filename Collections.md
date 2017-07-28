@@ -101,15 +101,16 @@ When deleting a collection, **all** items within the collection will also be del
 
 ---
 
-# LEFT OFF HERE!
-
 ## Items / Posts / Aerostats in a Collection
 An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](/documentation/view/collection-item-properties) Docs.
 
 ## View all Items in a Collection (Admins & Superadmins)
+To view all of the items within the collection, navigate to the Admin panel, then click the Collection link on the sidebar at the left then click the [ICON] List All icon for the collection.
 
-## Create an Aerostat
-To create an Aerostat, navigate to the List All view of the collection in which the new Aerostat should belong to, then click `New Item` at the top right. To get to the List All view of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
+# LEFT OFF HERE!
+
+## Create an Item (Admins & Superadmins)
+To create an item, navigate to the List All view of the collection in which the new Aerostat should belong to, then click `New Item` at the top right. To get to the List All view of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
 
 Fill in the desired fields, categories, or tags, then click `Create` at either the top or bottom right of the page.
 
@@ -117,8 +118,9 @@ In order for each item to be publicly available on the site, the item must have 
 
 See the [Collection Item Properties](/documentation/view/collection-item-properties) documentation for more information.
 
-
-## Edit an Aerostat
-To edit an Aerostat, navigate to the List All view of the collection in which the Aerostat belongs to, then click the pencil icon at the far right of the item. To get to the List View of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
+## Edit an Item (Admins & Superadmins)
+To edit an item, navigate to the List All view of the collection in which the Aerostat belongs to, then click the pencil icon at the far right of the item. To get to the List View of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
 
 To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit page. Use the `Save & Close` button to save and return to the List All view of the collection.
+
+## Delete an Item (Admins & Superadmins)
