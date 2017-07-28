@@ -1,30 +1,32 @@
-# Development Guide
+# Development Guide @Malia
+Look at this after schema setup guide (fix wording and include a nice link backwards).
+---
+
+## Develop Locally @Malia
+Once you have set up your schema, you can land the project to pull down new templates and template directories. 
+
+Note: whenever you land that this will overwrite anything you were working on locally so be sure to backup files/use scm tool.
+
+Describe workflow more verbosely and with numbered step headers
+- login
+- serve
+- develop (you might also be running other dev processes. see examples below)
+- make backups/commit files
+- launch
 
 ---
 
-Once you have set up your schema, you can land the project to pull down new templates and template directories. Warning that this will overwrite anything you were working on locally. 
-
-Workflow is:
-- develop
-- backup with scm
-- deploy
-
----
-
-Explain possibilities for Development flow. How you can put stuff outside the compartments directory.
-Also include links in the broad descriptions below, to the Git OSS projects.
+## Local Development Flows
+Explain possibilities for Development flow. How you can put stuff outside the compartments directory. 
 
 ### Gulp Example
-Explain what that might look like.
-Runs scss.
+Explain a stack that uses gulp, scsss and node to build css and output into x directories.
 
 ### Angular Example
 Explain what that might look like.
-Runs scss.
 
 ### React Example
 Explain what that might look like.
-Runs scss.
 
 ### Design Files
 Explain what that might look like.
