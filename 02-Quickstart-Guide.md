@@ -107,9 +107,9 @@ In SublimeText 3, it will look like this:
 
 ![edit-root](https://user-images.githubusercontent.com/1865400/28699019-c3912dda-72e2-11e7-9787-86059fcc542c.png)
 
-Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you make your site live? See #XX.
+Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there in #11.
 
-### 10. Render `{{{help}}}` on the template to see all the data that you have access to.
+### 10. Render `{{{help}}}` on a template to see a list of data.
 On the `root.html` template, replace the header test you did in #9 and add following markup:  
 ```
 <!--start test-->
@@ -139,13 +139,11 @@ Will output:
 ```
 Take a look at all the markup on the `root.html` template, and you can see which parts of the page are hardcoded in the markup, versus pulled from the CMS.
 
-You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally.
+You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. In fact, `{{{help}}}` will not render anything when you launch a site. It will only render a list of properties in local development.
 
-See the Airship Docs for more information about rendering for Layouts, Pages, and Collections.
+See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
 
-## 10. `airship launch` to publish your project.
-While you are working locally, you can add and edit templates, layouts, and files locally without affecting the live version of your site.
-
+## 11. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
@@ -153,13 +151,14 @@ airship launch
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
-Note: `{{{help}}}` will not render anything when you launch a site. This helper only renders a list of properties in local development.
+**Warning**: Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project dowbloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the functionality of a source code management tool. Typically, you only need to land a project once. After that, you will typically be launching new changes.
 
-## 11. Back up files with your own source code management tool.
-Part of your regular development workflow probably involves using a Source Code Management tool like Git, where you can maintain your own versioning and backups. SCM tools work seamlessly with Airship projects. You can store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
+## 12. Back up files with a own source code management tool.
+Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files as long as they are located outside of the `compartments` directory.
 
-Commit all Airship files with your project, including `compartments` and the `.airship` directory.
+When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
----
+## That's it! 
+That's the basic Airship Developer Workflow! From here you might want to learn more about Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates), or explore the [Airship CMS Admin Portal](/documentation/view/introduction-to-airship-cms).
 
-Once you are familiar with the Airship development workflow, you can start changing your files to fit your project content. See the [Schema & Data Model](/documentation/view/schema-and-data-model) docs to get started.
+If you are finally ready to remove all the placeholder content on your files & replace them with your own project content and markup, then review the [Schema & Data Model](/documentation/view/schema-and-data-model) to turn your project idea into an actual project.
