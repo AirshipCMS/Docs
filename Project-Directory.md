@@ -3,7 +3,10 @@ intro
 
 ---
 
-## Project Directories & Subdirectories 
+## Directory Structure
+```
+diagram here
+```
 
 ### .airship
 contains .name  which identifies your project, the next time you login/serve/launch. if you change this, you will be unsyncing to your airship project.
