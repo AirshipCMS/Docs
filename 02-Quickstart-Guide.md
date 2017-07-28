@@ -172,8 +172,5 @@ If you are finally ready to remove all the placeholder content on your files & r
 
 `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
 
-#### Keep Structure separate from Content
-If you are using Airship's CMS capabilities, all your content should be hosted and managed through the Airship CMS Admin Portal. Anything that is structural or permanently static should be located in the layout and template files for your project.
-
-#### Launch Debug
-If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If _that_ doesn't work either, and it has been more than 5 minutes since you have launched your site there might be some other issue. See the docs.
+#### Debugging
+If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If _that_ doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other issue. See the [Airship Documentation](/documentation/view/airship-cli-troubleshooting) for debugging help.
