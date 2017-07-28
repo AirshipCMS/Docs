@@ -33,21 +33,18 @@ If you choose the title "About the Company" , the permalink will then become `ab
 The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
 #### Layout
-A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers).
+A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](/documentation/view/layouts).
 
-A single layout can be used for multiple pages and collections on an Airship site.
+Choose an existing layout, or create a new one.
 
-By default, `application.html` layout and `root.html` template are set as the defaults for the `__root__` page.
+When you create a new layout, it will automatically be generated on the Airship Server. When you execute the command `airship land` the file will download to the `/compartments/layouts/` directory.
 
 #### Template
-A `template` contains markup unique to the page. Templates can page properties and fields that are set for the page.
+A template contains markup unique to the page. Templates can display page properties and fields that are set for the page. For more information, see [Page Templates](/documentation/view/page-templates).
 
-#### Set a Layout and Template
-Choose an existing layout and template, or create new ones.
+Choose an existing template, or create a new one.
 
-Any files that are listed in the dropdowns will be automatically created in your project's `/compartments/layouts/` and `/compartments/templates/` directories when you execute the `airship land` command in your terminal.
-
-For more information, see [Layouts](/documentation/view/layouts) and [Page Templates](/documentation/view/page-templates).
+When you create a new template, it will automatically be generated on the Airship Server. When you execute the command `airship land` the file will download to the `/compartments/templates/` directory.
 
 ### Page Fields
 The Page Fields section displays data specific to the page. There are four properties that are created by default and cannot be removed: `ID`, `Created At`, `Updated At`, and `Title`.
