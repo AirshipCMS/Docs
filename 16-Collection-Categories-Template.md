@@ -5,7 +5,9 @@ The collection `categories.html` template may contain html markup and Collection
 
 
 ## Location & Setup
-To use this page, categories must be enabled within the collection. Categories can be enabled at anytime. To enable categories, click the checkbox for `Has Categories` within the `Collection Settings` section in the `New Collection` or `Modify Collection` pages in the Admin portal.
+To use this page, categories must be enabled within the collection.
+
+Categories can be enabled at anytime. To enable categories, click the checkbox for `Has Categories` within the `Collection Settings` section in the `New Collection` or `Modify Collection` pages in the Admin portal.
 
 The `categories.html` template for a collection should be located in the appropriate subdirectory within the `templates` directory. For a collection named `blog`, the `categories.html` template location would be:
 ```
