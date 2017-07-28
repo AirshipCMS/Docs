@@ -151,7 +151,7 @@ airship launch
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
-**Warning**: Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project dowbloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the functionality of a source code management tool. Typically, you only need to land a project once. After that, you will typically be launching new changes.
+**Note**: Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project dowbloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
 
 ## 12. Back up files with a source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files as long as they are located outside of the `compartments` directory.
