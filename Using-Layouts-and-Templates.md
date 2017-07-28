@@ -1,17 +1,22 @@
-## Server-Side Rendering
-classically rendered websites  
+# Layouts & Templates
+layouts and templates are for rendering classic websites. 
 
-### 1. set layout & template for page or collection.
-### 2. add placeholder content
-### 3. serve / develop locally
-### 4. run {{{ help }}}
-### 5. modify markup / see changes
+## Layouts
+exmplain briefly and link to layouts
 
-## Client-Side Rendering
-single-page applications, complex interactions that use javascript.
+## Templates
+exmplain briefly
 
-### 1. set layout & template for page or collection.
-### 2. set up spa routes(?)
-### 3. api / etc etc.
-### More examples
-see the API.
+### Page Templates
+exmplain briefly and link to page templates
+
+### Collection Template Directories
+exmplain briefly and link to page templates
+
+### Airmail Templates
+exmplain briefly and link
+
+---
+
+## Client-Side Rendering for SPAs
+if you are building a single page application, you probably only need a template that loads on the root url for the spa. in airship, you can set which pages should behave like a spa.
