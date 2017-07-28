@@ -86,6 +86,7 @@ The following properties can be rendered on a page template:
 - `created_at`
 - `updated_at`
 - `slug`
+- `related_items [list]`
 
 The following field types can be rendered on a page template:
 - `text`
@@ -100,7 +101,6 @@ The following field types can be rendered on a page template:
 - `checkbox`
 - `list of images`
 - `list of links`
-- `related aerostats`
 - `date`
 
 To see examples of how each property and field renders, see [Page Properties](/documentation/view/page-properties).
