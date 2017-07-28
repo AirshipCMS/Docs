@@ -170,7 +170,7 @@ If you are finally ready to remove all the placeholder content on your files & r
 
 `airship land` downloads all **server templates and files** and **replaces your local copies**. 
 
-`airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
+`airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. For a typical project, you only need to run `airship land` once. After that you will just be running `airship launch` to add changes to your live site.
 
 #### Debugging
 If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If _that_ doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other issue. See the [Airship Documentation](/documentation/view/airship-cli-troubleshooting) for debugging help.
