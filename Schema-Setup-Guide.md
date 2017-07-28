@@ -64,8 +64,8 @@ Confirm to delete the collection: ![confirm-delete-collection](https://user-imag
 
 ## Modify the Homepage
 Modify the "Homepage" fields to add fields appropriate for your project:  
- 
-[ SCREENSHOT OF FIELDS ADDED to Homepage to make it match the list ]
+
+![modified_homepage_fields](https://user-images.githubusercontent.com/16835553/28737399-0342c644-738a-11e7-8b96-2b024592eba6.png)
 
 Save the page.
  
@@ -76,12 +76,20 @@ Create additional pages and define the fields for those pages.
 The permalink defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/permalink` (_where subdomain is your site subdomain_).
 
 #### Page Rendering
-Set the existing `application.html` **layout** for every page. This means all pages in the site will references the same outer "container" markup typically used for the header and footer of the page. You can change this later, though it's easiest to set it to use the default `application.html` layout for now.
+Set the existing `application.html` **layout** for every page. This means all pages in the site will reference the same outer "container" markup typically used for the header and footer of the page. You can change this later, though it's easiest to set it to use the default `application.html` layout for now.
 
 Create a new unique **template** for each new page.
 
 #### Page Fields
-Define the fields for the page (explain more).
+Define the fields for each page.
+
+These fields will contain all of the data that will be rendered on your site using Airship [Propellers](/documentation/view/propeller-helpers). You can create as many fields as needed as long as each `variable name` is unique. By default, the `variable name` is the `title` in lowercase, with spaces converted to underscores. You may customize each variable name, however, keep in mind that having consistency between the title and variable name makes it easier to remember what value to use when rendering data with Propellers.
+
+While the variable name and field type are not editable, you can edit the field `title` by clicking the <img width="27" alt="grey-pencil" src="https://user-images.githubusercontent.com/16835553/28738624-2d7928f8-7390-11e7-9993-61a68b2844ae.png"> at the right of the field. Each field can also be reordered by clicking and dragging the field into the desired position within the list.
+
+Pages that share the same template should have consistent fields in order to use the same Propeller markup.
+
+For more information about each field type, check out the documentation on [Datafields](/documentation/view/datafields).
 
 ## Create Collections
 Create collections and define the fields for items in those collections.
