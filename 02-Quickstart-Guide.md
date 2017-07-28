@@ -159,7 +159,7 @@ When you use a SCM tool, commit all Airship files with your project, including `
 ## That's it! 
 That's the basic Airship Developer Workflow! From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates), or explore the [Airship CMS Admin Portal](/documentation/view/introduction-to-airship-cms).
 
-If you are finally ready to remove all the placeholder content on your files & replace them with your own project content and markup, then review the [Schema & Data Model](/documentation/view/schema-and-data-model) Docs to turn your project idea into an actual project.
+If you are finally ready to remove all the placeholder content on your files & replace them with your own project content and markup, then review [Schema & Data Model](/documentation/view/schema-and-data-model), [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) and then setup your project in Airship CMS by following the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project idea into an actual project.
 
 ---
 
