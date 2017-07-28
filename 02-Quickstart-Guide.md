@@ -58,7 +58,17 @@ This command will generate a `compartments`directory containing all the Airship 
 ## 6. Open your local files in a text editor.
 Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
 ```
-markup
+.
+├── .airship
+   └── name
+└── compartments
+   ├── airmail
+   ├── assets
+   ├── layouts
+   │   └── application.html
+   ├── partials
+   └── templates
+       └── root.html
 ```
 In SublimeText 3 it looks like this:
 
