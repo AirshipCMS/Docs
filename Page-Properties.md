@@ -1,7 +1,7 @@
 # Page Properties
+Description.
 
 ---
-@KELLI actually list all the properties and fields here.
 
 The following properties can be rendered on a page template:
 - `id`
