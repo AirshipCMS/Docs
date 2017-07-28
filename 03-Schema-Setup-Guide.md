@@ -5,7 +5,7 @@ Before starting, be sure to study how [Pages](/documentation/view/pages), [Colle
 
 ---
 
-## Draw a Sitemap Sketch
+## Draw a Sitemap
 Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project. If items from one section should reference another section, map out those relationships as well.
 
 ![sitemap](https://user-images.githubusercontent.com/1865400/28704107-27985f58-7304-11e7-9593-db9734f8046e.png)
