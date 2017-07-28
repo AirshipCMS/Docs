@@ -154,11 +154,11 @@ In your terminal, you will be presented with a preview of the actions that will 
 **Note**: Be very careful because _launching_ a project uploads all templates and files you have locally and replaces the server copies. Conversely, _landing_ a project downloads all the templates and files from the server and replaces what you have locally. `airship land` and `airship launch` are meant to be publishing and syncing tools only. They do not replace the purpose of a source code management tool. Typically, you only need to land a project once. After that, you will usually just be launching new changes.
 
 ## 12. Back up files with a source code management tool.
-Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential filesare located outside of the `compartments` directory.
+Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
 ## That's it! 
-That's the basic Airship Developer Workflow! From here you might want to learn more about Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates), or explore the [Airship CMS Admin Portal](/documentation/view/introduction-to-airship-cms).
+That's the basic Airship Developer Workflow! From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates), or explore the [Airship CMS Admin Portal](/documentation/view/introduction-to-airship-cms).
 
 If you are finally ready to remove all the placeholder content on your files & replace them with your own project content and markup, then review the [Schema & Data Model](/documentation/view/schema-and-data-model) to turn your project idea into an actual project.
