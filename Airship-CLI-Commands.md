@@ -18,7 +18,8 @@ airship login subdomain.airshipcms.io
 
 Example: If your airshipcms.io project subdomain is "marketing" and the site is "marketing.airshipcms.io", you would enter 
 ```
-airship login marketing```
+airship login marketing
+```
 or
 ```
 airship login marketing.airshipcms.io
