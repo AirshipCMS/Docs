@@ -89,10 +89,15 @@ The `Type` of the field sets what content fields display in the CMS.
 
 For more information on datafields and example uses, see the documentation on [Datafields](/documentation/view/datafields).
 
+### Primary Label
+(describe)
+
 ---
 
 ## Modify a Collection (Superadmins Only)
 To change properties and fields for a page, click the [ICON] Modify icon of the page you want to modify. Make changes to the page fields and properties and click the Modify Collection button.
+
+---
 
 ## Delete a Collection (Superadmins Only)
 To change properties and fields for a page, click the [ICON] Modify icon of the page you want to delete. At the bottom of the page, click the `Delete Collection` link. When prompted, click `Confirm Delete`.
@@ -119,3 +124,18 @@ Edit the desired files, then click either the `Save` button, or the `Save & Clos
 
 ## Delete an Item (Admins & Superadmins)
 To delete an item, navigate to the [ICON] List All view of the collection, then click the [ICON] Edit Content icon for the item. At the bottom left of the page, then click the `Delete` button, then Confirm to delete.
+
+---
+
+## Collection Categories
+Items in a collection can be organized into Categories. See the [Categories](/documentation/view/categories) Docs for more information.
+
+---
+
+## Display Order of Collection Items
+In the Admin, items in a collection can be displayed by their Publish Date, Created Date, Permalink or Sort Order.
+
+### Change the Sort Order of Collection Items
+To change the sort order of collection items, click the `Sort Order` filter, then click the [ICON] Edit Icon that appears within the Sort Order filter. Drag and drop items into the desired order, then click Save Sort Order.
+
+The sort order changes the order of items in the Admin. However, the final display order of items displayed in your project is determined by how the developer chooses to set the sort order for items in a collection.
