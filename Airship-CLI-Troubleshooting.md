@@ -1,5 +1,7 @@
 ## CLI: You do not have permission to perform this action.
-A session expires after 24 hours. Login again and continue to run airship cli commands.
+One of these cases is true:
+- Your session expired. Login again and continue to run airship cli commands.
+- You are logged in but you don't have superadmin privledges for the site.
 
 ## CLI: `airship login` doesn't work
 - Are you in the right directory?
