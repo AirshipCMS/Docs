@@ -35,12 +35,19 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 
 ## Collection Item Properties rendered on `show.html`:
 The following properties can be rendered on the `show.html` template:
-- `params`
-- `aerostat_collection`
-- `tags`
-- `categories`
-- `related_items [list]`
-- INCOMPLETE LIST -- halp me fix @malia
+- `params` [show--params]
+- `id` [single--id]
+- `aerostat_collection_id` [single--aerostat_collection_id]
+- `permalink` [single--permalnk]
+- `sorting_position` [single--sorting_position]
+- `published_on` [single--published_on]
+- `created_at` [single--created_at]
+- `updated_at` [single--updated_at]
+- `aerostat_collection` [show--aerostat_collection]
+- `tags` [show--tags]
+- `categories` [each--categories]
+- `related_items` [datafields/related-aerostats]
+- `slug` [single--slug]
 
 The following field types can be rendered on a page template:
 - `text`
@@ -61,6 +68,6 @@ To see examples of how each property and field renders, see [Collection Item Pro
 
 ---
 
-##Properties you can't access from `show.html`:
+## Properties you can't access from `show.html`:
 
 Items must be _published_ in order to be renderable. To publish an item in a collection, navigate to the Edit Item page in the Admin portal at `yoursubdomain.airshipcms.io/admin`, click the `Draft Item` switch at the right of the page, select a publish date, then save the item. Note that the item will not be considered published and renderable until on or after the selected publish date.
