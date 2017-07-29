@@ -39,11 +39,10 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection `category.html` Properties:
 The following properties can be rendered on the `categories.html` template:
 
-- `params`
-- `items [list]`
-- `collection`
-- `category`
-- @Malia any more?
+- `params` [index--params]
+- `items [list]` [each--items]
+- `collection` [index--collection]
+- `category` [category--category]
 
 ---
 
