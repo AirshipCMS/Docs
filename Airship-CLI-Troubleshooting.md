@@ -31,18 +31,30 @@ When I refresh the browser, it returns:
 ```
 {"statusCode":401,"error":"Unauthorized","message":"Invalid token","attributes":{"error":"Invalid token"}}
 ```
-Your auth token may have expired (it refreshes every 24hours). Login again.
+Your session expired. Login again and continue to run airship cli commands. Then refresh the browser.
 
 ## CLI: I'm getting a 413 error for `airship launch`  
 - You might be uploading too many things and have exceeded the cap of 10mb load size per item for assets.
 - You might have exceeded the cap of 5mb for templates & layouts. (This is really hard to do with text files. You may be putting files you aren't supposed be adding in these directories). 
 
-no layout or template set.
+## Browser: 501 Not Implemented Error
+When I load a page or collection, I get this error:
+```
+{"statusCode":501,"error":"Not Implemented","message":"Error: EISDIR: illegal operation on a directory, read"}
+```
+You have not set a layout and/or template for the page or collection you are rendering. Set a layout and template in Airship CMS and refresh the page.
 
-Debugging after `airship launch`
-If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If that doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other issue.
+## Browser: I launched my site and my styles have not updated
+If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. 
 
-hitting api over https
+If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. 
+
+If that doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other file syncing issue. Add an arbitrary change to the style file (such as a comment) and run `airship launch` again.
+
+If that doesn't work, you can try running `airship land` then making an arbitrary change to the style file, then run `airship launch` again.
+
+## Browser: My site doesn't load over https
+You may be making calls to the API over an http connection. Always do API calls over an https connection.
 
 ## I'm logged in to the wrong directory, though I can still run `airship serve`
 You might have logged in to an airship site in the wrong directory at some point. You may have a `.airship` durectory floating around in your root directory. Find the ghost `.airship` directory and delete it.
