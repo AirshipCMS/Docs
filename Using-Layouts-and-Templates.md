@@ -21,4 +21,4 @@ An email is sent to the Admin Email(s) specified in Airship CMS whenever a publi
 ---
 
 ## Client-Side Rendering for SPAs
-if you are building a single page application, you probably only need a template that loads on the root url for the spa. in airship, you can set which pages should behave like a spa.
+If you are building a single page application, you probably only need a template that loads on the root url for the SPA. In Airship CMS, you can set which pages should behave like a SPA. (Documentation coming soon).
