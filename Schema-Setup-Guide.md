@@ -152,7 +152,18 @@ In this example, the Homepage pulls some posts from the News Collection. On the 
 ## Add Content
 Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
 
+Example:
+- Add some content and images to the Homepage.
+- Add some posts to the News Collection.
+- Go back to the Homepage, and add some posts to the Related News section:
+
+![news-on-homepage](https://user-images.githubusercontent.com/1865400/28741384-c0e70522-73b0-11e7-995c-52aabedb334b.jpg)
+
 ---
 
-## Start Developing
-Link to Developer Guide.
+### Land New Templates
+
+---
+
+## Start Developing!
+Once your pages and collections are set up and demo content is in place, you can start building out your site in your local development environment. See the [Development Guide](/documentation/view/development-guide) for some development guidelines.
