@@ -135,7 +135,8 @@ Items in a collection can be organized into Categories. See the [Categories](/do
 ## Display Order of Collection Items
 In the Admin, items in a collection can be displayed by their Publish Date, Created Date, Permalink or Sort Order.
 
-### Change the Sort Order of Collection Items
+### Set the CMS display order of Collection Items (Admins & Superadmins)
 To change the sort order of collection items, click the `Sort Order` filter, then click the [ICON] Edit Icon that appears within the Sort Order filter. Drag and drop items into the desired order, then click Save Sort Order.
 
-The sort order changes the order of items in the Admin. However, the final display order of items displayed in your project is determined by how the developer chooses to set the sort order for items in a collection.
+### Set the published site display order of Collection Items (Superadmins Only)
+Setting the sort order in the Admin adds a "sorting_position: value to items. However, the display order of items on a published site is determined by how the developer chooses to render items in a collection. See [Collection Templates](/documentation/view/collection-templates) for more information on displaying lists of items in a collection.
