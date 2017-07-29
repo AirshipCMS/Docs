@@ -35,7 +35,14 @@ This is the identifier for the collection.
 #### Public Path
 The Public Path is the identifier for collection following / in the url. The Public Path contains only lowercase letters, numbers, underscores, and dashes. By default, the Public Path is generated from the Title except that it contains only lowercase letters, numbers, underscores, and dashes. You may also modify the Public Path to change the default value.
 
-Example: If you choose the title `Event Services`, the public path will autofill to be `event-services`. The index page of your collection would be accessible at `/yourwebsitename.com/event-services`.
+#### Collection URLs
+For collections utilizing the `show.html` layout, a single item in the collection will render at `http://subdomain.airshipcms.io/public_path/view/permalink`.
+
+For collections utilizing the `categories.html` layout, collection categories will render at `http://subdomain.airshipcms.io/public_path/categories`.
+
+For collections utilizing the `category.html` layout, items in a category will render at `http://subdomain.airshipcms.io/public_path/categories/category-permalink`.
+
+Example: If you choose the title `Event Services` for a collection, the public path will autofill to be `event-services`. The index page of your collection would be accessible at `yourwebsitename.com/event-services`, categories will render at `yourwebsitename.com/event-services/categories`, a list of posts within a category will render at `yourwebsitename.com/event-services/categories/category-permalink`, and a single post will render at `yourwebsitename.com/event-services/view/permalink`.
 
 #### Name
 The Name is what a single item in the collection is called. By default, the name is generated from the Title, except you might want to edit it to be more human-readible.
