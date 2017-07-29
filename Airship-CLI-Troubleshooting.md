@@ -1,18 +1,23 @@
 ## You do not have permission to perform this action.
-you probably have to login again. a session expires after 24 hours.
+A session expired after 24 hours. Login again and continue to run airship cli commands.
 
 ## `airship login` doesn't work
-are you in the right directory?  
-did you forget the subdomain?  
-are you putting in the subdomain correctly?  
-are you logging into the right site?  
+- Are you in the right directory? If you aren't make sure you navigate to the right directory.
+- Did you forget the subdomain in the command?  
+- Did you enter the subdomain correctly?
+- Did you log in to the correct site?
+
+Formats that won't work:
 this won't work: `airship login`  
 this won't work: `airship login www.sitename.com`  
 this won't work: `airship login sitename.com`  
 this won't work: `airship login www.sitename.airshipcms.io`  
-this works: `airship login sitename.airshipcms.io`  
-this works: `airship login sitename` 
 
+Formats that work:
+- `airship login sitename.airshipcms.io`  
+- `airship login sitename` 
+
+## Logged in to the wrong directory but still lets you run `airship serve`
 are you logged into a directory containing the one you really wanted? you might have some .airship directories floatin around.
 
 ## `airship serve` doesn't work
