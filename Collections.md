@@ -90,7 +90,7 @@ The `Type` of the field sets what content fields display in the CMS.
 For more information on datafields and example uses, see the documentation on [Datafields](/documentation/view/datafields).
 
 ### Primary Label
-(describe)
+The only purpose of the `Primary Label` is to identify what field will be set as the "main field" in the list view of items in the CMS. Primary Label can be set to `ID`, `Created At`, `Updated At`, `Permalink`, or any field from the Post Fields that is Type:Text.
 
 ---
 
@@ -139,4 +139,4 @@ In the Admin, items in a collection can be displayed by their Publish Date, Crea
 To change the sort order of collection items, click the `Sort Order` filter, then click the [ICON] Edit Icon that appears within the Sort Order filter. Drag and drop items into the desired order, then click Save Sort Order.
 
 ### Set the published site display order of Collection Items (Superadmins Only)
-Setting the sort order in the Admin adds a "sorting_position: value to items. However, the display order of items on a published site is determined by how the developer chooses to render items in a collection. See [Collection Templates](/documentation/view/collection-templates) for more information on displaying lists of items in a collection.
+Setting the sort order in the Admin adds a "sorting_position" value to items. However, the display order of items on a published site is determined by how the developer chooses to render items in a collection. See [Collection Templates](/documentation/view/collection-templates) for more information on displaying lists of items in a collection.
