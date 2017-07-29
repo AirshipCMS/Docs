@@ -8,14 +8,14 @@ Before starting, be sure to study how [Pages](/documentation/view/pages), [Colle
 ## Draw a Sitemap
 Before you set up anything in the CMS, sketch a sitemap of key pages, collections, and the data contained on each page and collection of your project. If items from one section should reference another section, map out those relationships as well. If you cannot think of a particular project, you can use this sitemap:
 
-![sitemap](https://user-images.githubusercontent.com/1865400/28704107-27985f58-7304-11e7-9593-db9734f8046e.png)  
+![sitemap](https://user-images.githubusercontent.com/1865400/28741054-27d16e00-73aa-11e7-8140-1cd2493d9424.jpg)
 
 ## Draw Wireframes
 Sketch out a wireframe for each page and collection to show what data will be editable and connected to the CMS.
 
 Example "Homepage" and "News" Collection:
 
-![thumbnails](https://user-images.githubusercontent.com/1865400/28706552-857d5b9e-7310-11e7-814f-dc55014b9c78.png)
+![wireframes](https://user-images.githubusercontent.com/1865400/28741053-27b5a33c-73aa-11e7-9bc1-94b9989c2ec4.jpg)
 
 The new "Homepage" will contain the following data:
 - **Header Image** (`image`)
