@@ -44,8 +44,8 @@ The following properties can be rendered on the `show.html` template:
 - `created_at` [single--created_at]
 - `updated_at` [single--updated_at]
 - `aerostat_collection` [show--aerostat_collection]
-- `tags` [show--tags]
-- `categories` [each--categories]
+- `tags [list]` [show--tags]
+- `categories [list]` [each--categories]
 - `related_items` [datafields/related-aerostats]
 - `slug` [single--slug]
 
