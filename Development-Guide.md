@@ -30,7 +30,7 @@ To land your site, ensure you're in the projects root directory, then run `airsh
 
 This will prompt whether or not it's okay to download the sites compartments to your local project directory. This includes all the files for your site, such as the layouts and templates created in the Admin portal.
 
-Note: running `airship land` will overwrite anything you were working on locally that was not published to your site using `airship launch`. Be sure to backup files or use a source management tool to avoid losing any of your hard work!
+**Note**: running `airship land` will overwrite anything you were working on locally that was not published to your site using `airship launch`. Be sure to your backup files or use a source management tool to avoid losing any of your hard work!
 
 Once you have downloaded your sites compartments, your [project directory](/documentation/view/project-directory) should look similar to the following:
 
@@ -51,17 +51,30 @@ Once you have downloaded your sites compartments, your [project directory](/docu
        └── root.html
 ```
 
-You are now ready to [serve](/documentation/view/airship-cli-commands#user-content-airship-serve) your site locally and start developing!
+You are now ready to [serve](/documentation/view/airship-cli-commands#user-content-airship-serve) your site locally.
 
+### 3. Serve
+To view what your site looks like locally, run `airship serve` in your projects root directory, then navigate to http://localhost:9001 in your browser.
 
+This will render any changes you have locally that are not necessarily published on the site. When you make changes, you typically won't have to restart the server. However, if the server must be restarted, simply exit the terminal process and rerun the `airship serve` command.
 
+You are now ready to start developing your site.
 
-Describe workflow more verbosely and with numbered step headers
-- login
-- serve
-- develop (you might also be running other dev processes. see examples below)
-- make backups/commit files
-- launch
+### 4. Developing
+To start developing your site, make a change to the `root.html` file within the `/compartments/templates` directory and save, then refresh the page in your browser at http://localhost:9001 to see the update.
+
+Any changes made locally are viewable when running `airship serve`, and won't be published on your actual site until you explicitly run the [airship launch](/documentation/view/airship-cli-commands#user-content-airship-launch) command. Changes made in the Admin portal, however, will be available on your public site immediately.
+
+To view some examples of development workflows, check out the examples [below](/documentation/view/development-guide#user-content-local-development-flows), or any of the [boilerplates and examples](/documentation/view/boilerplates-examples) from our docs.
+
+### 5. Launch
+When you are ready to publish the new changes to your live site at http://yoursubdomain.airshipcms.io, remember to back up your changes, then run the `airship launch` command in your projects root directory.
+
+This will show a list of actions being requested to update the live site, then prompt whether or not it's okay to make those changes. Enter `y` if these are okay.
+
+You should now be able to see your most recent changes at http://yoursubdomain.airshipcms.io.
+
+Check out the documentation for more information about the [airship launch](/documentation/view/airship-cli-commands#user-content-airship-launch) command.
 
 ---
 
