@@ -1,33 +1,32 @@
-# Categories (Malia)
-(Categories are specific to Collections and Aerostats. before you can set categories for aerostats, you have to set up some categories.)
+# Categories
+Categories are specific to Collections. An item in a collection may belong to one or more categories.
 
-## Create / Edit Categories
-(describe briefly)  
+---
+
+## View Categories (Admins & Superadmins) 
+
+## Create a Category (Admins & Superadmins) 
 
 ### Category Title
 
-### Permalink (or is it path?)
-(what the permalink is)  
+### Permalink
 
-## Modify Category Fields
-(explain how category fields can be modified, like how page and collection categories can be modified).
+## Edit a Category (Admins & Superadmins) 
 
-### Datafields  
-(brief description of Datafields. Link to Datafields page.)  
+## Modify Category Fields (Superadmins only)
 
-## Associating an Aerostat with a Category
-(brief description. Link to Aerostats page).  
+## Delete a Category (Admins & Superadmins) 
+Deleting a category will disassociate the category from any items.
+
+## Adding Items to Categories
 
 ## Category Rendering
 
-### `categories.html` template: Showing all Categories in the Collection
-(brief description. Link to Category Templates page).  
+### `categories.html` template
+The [Collection Categories Template](/documentation/view/collection-categories-template) renders a list of all categories within a collection.
 
-### `category.html` template: Showing all Aerostats in the Category
-(brief description. Link to Category Templates page).  
+### `category.html` template
+The [Collection Category Template](/documentation/view/collection-category-template) renders a list of all items in the collection within th category.
 
-### `show.html` template: Listing Categories associated with the Aerostat
-(brief description. Link to Show Templates page).  
-
-## Delete Category  
-(describe. and it will delete the category from all aerostats associated with it)
+### `show.html` template
+On the collection `index.html`, `category.html`, and `show.html` a list of categories attached to each item can be listed.
