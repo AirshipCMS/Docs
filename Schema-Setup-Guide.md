@@ -138,12 +138,14 @@ Example News Collection:
 - Set "Header" as the primary label. 
 
 ## Set up Relationships
-This needs to be done after colletions are setup. (explain more).
-Can relate a collection to a page, or a collection to items in a collection. Cannot relate a page to a pge.
-Add related datafields to pages and collections in order to set up the framework to create `one-to-many` relationships between pages and collections in your project. If you aren't sure what the relationships are for your project, you can come back to do this later. For more information about relationships, see the [Relationships](/documentation/view/relationships) Docs.
+Relationships should be the last thing you set up for your schema. Review the Docs on [Relationships](/documentation/view/relationships) if you haven't done so yet.
+
+To set up a relationship, add a "Related Aerostats" field to the page or collection you want one or more reference posts to appear on.
 
 Example:
-(talk about the example from the sketches, how posts feed from news and products to homepage). show screenshots of process.
+In this example, the Homepage pulls some posts from the News Collection. On the Homepage, a Field called "Related News" with type "Related Aerostats" and the collection "News":
+
+![related-news](https://user-images.githubusercontent.com/1865400/28741348-fa676a7c-73af-11e7-81d3-3e82ffcec6d1.jpg)
 
 ---
 
