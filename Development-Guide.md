@@ -5,6 +5,8 @@ Before you can begin developing, make sure you have the Airship CLI Tools instal
 
 In order to become more familiar with the development workflow, it might be helpful to review how to [Use Layouts & Templates](/documentation/view/using-layouts-templates), what the [Project Structure](/documentation/view/project-directory) is like, and how to use Airships [Propeller Helpers](/documentation/view/propeller-helpers) to render your site content.
 
+To view some sample projects with different development workflows, check out the [Boilerplates & Examples](/documentation/view/boilerplates-examples) in our Docs.
+
 ---
 
 ## Develop Locally
