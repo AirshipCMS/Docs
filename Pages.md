@@ -26,7 +26,7 @@ To create a new page, click the New Page button at the top right of the Pages se
 This is the identifier for the page.
 
 #### Permalink
-The permalink defines the url for your page following `/` in the web address. When developing locally, the url will read as http://localhost:9001/permalink. When your site is launched, the url will read as http://subdomain.airshipcms.io/permalink (where subdomain is your site subdomain).
+The permalink defines the url for your page following `/` in the web address. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as` http://subdomain.airshipcms.io/permalink` (where subdomain is your site subdomain).
 
 The permalink contains only lowercase letters, numbers, underscores, and dashes. By default, the permalink is generated from the Title except that it contains only lowercase letters, numbers, underscores, and dashes. You may also modify the permalink to change the default value. 
 
