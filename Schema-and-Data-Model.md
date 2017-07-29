@@ -1,15 +1,7 @@
 
 # Schema & Data Model
-Project schema intro
-
-Be sure to study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the Schema & Data Model of a project built with Airship.
+A project schema is the map of pages, collections and connections between those pages and collections. Be sure to study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work before planning the schema of a project built with Airship.
 
 ---
 
-Examples & Possibilities.
-
----
-
-@KELLI Add Use Case Links:
-- Demo Use Cases
-- Demo Schemas
+(examples coming soon)
