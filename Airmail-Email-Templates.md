@@ -6,25 +6,19 @@ Emails are also sent when eCommerce transactions occur (creating Orders, Invoice
 ---
 
 ## Requirements for Using Airmail Email Templates
-Public Make turned on.
-
-When using Airmail Email Templates, you need to `airship launch` templates in order for them to work. Airship will only use launched versions of your email templates.
-
-You need to have BCC Emails Set in Airship Admin.
-
-Syntax must be correct. Or it will break and you won't know it.
-
-## receipt.html
-See the [Receipt Email Template documentation](Airmail-Receipt-Template.md) for more information.
-
-## invoice.html
-See the [Invoice Email Template documentation](Airmail-Invoice-Template.md) for more information.
+- Be sure to turn on the "Public Make" Setting for the collection designated for form submissions.
+- Be sure to have an `airmail.html` layout in your layout directory. This layout does not require any special content in the header, though it is required in order for airmail templates to work.
+- Be sure to `airship launch` all airmail email templates. Airship will only use launched versions of your email templates.
+- Be sure that there is at lease one email set in the BCC Emails list in Airship Admin.
+- Be sure that email propellers syntax is correct. Any errors will cause the email to fail (and you will not receive any notifications).
 
 ## *_email.html
-See the [Public Make Template documentation](Airmail-Public-Make-Template.md) for more information.
+See the [Airmail Public Make Template](/documentation/view/airmail-public-make-template) for more information on emails for form submissions.
 
 ## Additional Templates
 More information coming soon:
+- receipt.html
+- invoice.html
 - shipment.html
 - sub_receipt.html
 - sub_active.html	
