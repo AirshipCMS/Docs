@@ -1,20 +1,22 @@
 # Layouts & Templates
-layouts and templates are for rendering classic websites. 
+Layouts and templates are used for creating classically rendered websites.
+
+---
 
 ## Layouts
-exmplain briefly and link to layouts
+Layouts contain general markup that is shared across the pages and collections where the layout is set.
 
 ## Templates
-exmplain briefly
+Templates contain markup specific to a page or collection.
 
 ### Page Templates
-exmplain briefly and link to page templates
+[Page Templates](/documentation/view/page-templates) contain html and Page Propellers code that renders page content. 
 
 ### Collection Template Directories
-exmplain briefly and link to page templates
+[Collection Templates](/documentation/view/collection-templates) contain html and collection propellers code that renders collection items content. 
 
 ### Airmail Templates
-exmplain briefly and link
+An email is sent to the Admin Email(s) specified in Airship CMS whenever a public post is created for a collection with "public make" enabled. Emails are also sent when eCommerce transactions occur (creating Orders, Invoices, Subscriptions, and Shipments). See [Airmail Email Templates](/documentation/view/airmail-email-templates) for more information.
 
 ---
 
