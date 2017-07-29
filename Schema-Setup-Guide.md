@@ -129,7 +129,7 @@ Define the fields for an item in the collection.
 
 Example News Collection:
 
-[IMAGE]
+![image](https://user-images.githubusercontent.com/1865400/28741262-25d965e0-73ae-11e7-84b5-aeeff2b239e1.png)
 
 #### Primary Label
 The only purpose of the `Primary Label` is to identify what field will be set as the "main field" in the list view of items in the CMS.
