@@ -24,7 +24,7 @@ The directory structure of an Airship Project will look like this:
 Any directories and files may be placed outside of `/compartments`. Files outside `/compartments` will be ignored when your project is published.
 
 ## .airship
-The `.name`  directory contains a file called `name`. The `name` file identifies the subdomain of your project whenever you run `airship serve`, `airship launch`, or `airship land`.
+The `.airship`  directory contains a file called `name`. The `name` file identifies the subdomain of your project whenever you run `airship serve`, `airship launch`, or `airship land`.
 
 ## compartments
 The `compartments` directory should only contain the following subdirectories:
