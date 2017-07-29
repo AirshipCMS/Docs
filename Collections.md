@@ -101,26 +101,21 @@ When deleting a collection, **all** items within the collection will also be del
 
 ---
 
-## Items / Posts / Aerostats in a Collection
+## Collection Items
 An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](/documentation/view/collection-item-properties) Docs.
 
-## View all Items in a Collection (Admins & Superadmins)
+## View all Collection Items (Admins & Superadmins)
 To view all of the items within the collection, navigate to the Admin panel, then click the Collection link on the sidebar at the left then click the [ICON] List All icon for the collection.
 
-# LEFT OFF HERE!
-
 ## Create an Item (Admins & Superadmins)
-To create an item, navigate to the List All view of the collection in which the new Aerostat should belong to, then click `New Item` at the top right. To get to the List All view of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
+To create an item, navigate to the [ICON] List All view of the collection, then click `New Item` at the top right.
+Fill in the desired fields, then click `Create`.
 
-Fill in the desired fields, categories, or tags, then click `Create` at either the top or bottom right of the page.
-
-In order for each item to be publicly available on the site, the item must have a Publish Date set to one that is not in the future. Set a publish date by toggling the `Draft Item` at the right when creating/editing the item, and then choose a date for when it should be published.
-
-See the [Collection Item Properties](/documentation/view/collection-item-properties) documentation for more information.
+In order for each item to be publicly visible on the site, the item must have a Publish Date set to a past or current date. Set a publish date by toggling the `Draft Item` at the right when creating/editing the item, and then choose a date for when it should be published.
 
 ## Edit an Item (Admins & Superadmins)
-To edit an item, navigate to the List All view of the collection in which the Aerostat belongs to, then click the pencil icon at the far right of the item. To get to the List View of the collection, first navigate to the `Collections` page in Admin from the sidebar at the left, then click the list icon on the desired collection. The active tab at the top right should say `List All`.
-
-To save your changes, use either the `Save` button, or the `Save & Close` button. Use `Save` if you would just like to quickly save your changes without leaving the Edit page. Use the `Save & Close` button to save and return to the List All view of the collection.
+To edit an item, navigate to the [ICON] List All view of the collection, then click the [ICON] Edit Content icon for the item.
+Edit the desired files, then click either the `Save` button, or the `Save & Close` button. 
 
 ## Delete an Item (Admins & Superadmins)
+To delete an item, navigate to the [ICON] List All view of the collection, then click the [ICON] Edit Content icon for the item. At the bottom left of the page, then click the `Delete` button, then Confirm to delete.
