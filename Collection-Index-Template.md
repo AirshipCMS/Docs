@@ -34,10 +34,9 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection `index.html` Properties:
 The following properties can be rendered on the `index.html` template:
 
-- `params`
-- `collection`
-- `items [list]`
-- @malia any more?
+- `params` [index--params]
+- `items [list]` [each--items]
+- `collection` [index--collection]
 
 ---
 
