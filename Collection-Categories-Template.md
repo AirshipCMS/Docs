@@ -52,9 +52,9 @@ The following properties can be rendered on the `categories.html` template:
 - `has_products` [has_products]
 - `show_permalink` [show_permalink]
 - `layout` [layout]
-- `primary_label`
-- `template_directory`
+- `primary_label` [primary_label]
+- `template_directory` [template_directory]
 - `created_at` [single--created_at]
 - `updated_at` [single--updated_at]
-- `has_plans`
+- `has_plans` [has_plans]
 - `categories` [single--categories]
