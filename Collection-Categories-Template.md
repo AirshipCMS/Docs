@@ -40,5 +40,21 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 ## Collection `categories.html` Properties:
 The following properties can be rendered on the `categories.html` template:
 
+- `id` [single--id]
+- `site_id` [site_id]
+- `title` [single--title]
+- `name` [categories--name]
+- `public_path` [single--public_path]
+- `has_public_make` [has_public_make]
+- `has_categories` [has_categories]
+- `has_tags` [has_tags]
+- `has_comments` [has_comments]
+- `has_products` [has_products]
+- `show_permalink` [show_permalink]
+- `layout` [layout]
+- `primary_label`
+- `template_directory`
+- `created_at` [single--created_at]
+- `updated_at` [single--updated_at]
+- `has_plans`
 - `categories` [single--categories]
-- @MALIA what other properties render here?
