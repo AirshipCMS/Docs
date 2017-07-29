@@ -1,3 +1,8 @@
+### Airship Launcher CLI
+Airship Launcher is the set of command line tools that allow developers to connect to the Airship CMS server while developing projects locally. Developers can login to their Airship account, serve content from the CMS, and deploy projects from the command line with the Airship Launcher toolkit.
+
+---
+
 ## `airship login`
 Logging into a Project (Malia)  
 
