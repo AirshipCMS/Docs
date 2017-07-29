@@ -10,7 +10,7 @@ In order to become more familiar with the development workflow, it might be help
 ## Develop Locally
 Once you have your pages and collections set up in the Admin portal, you're ready to start developing!
 
-The following is a step by step processes on what the development workflow is typically like for a simple site. For more examples, see the [Local Development Flows](/documentation/view/development-guide#user-content-local-development-flows) below.
+The following is a step by step processes on what the development workflow is typically like for a simple site. For more examples, see different [Project Setups](/documentation/view/development-guide#user-content-project-setups) below.
 
 ### 1. Login
 To begin developing, you must first [login](/documentation/view/airship-cli-commands#user-content-airship-login) to your site using your Super Admin credentials.
