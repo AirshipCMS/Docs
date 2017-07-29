@@ -35,7 +35,7 @@ The `compartments` directory should only contain the following subdirectories:
 - templates
 
 ### Do not add any other directories immediately inside `compartments`.
-Do not add any other directories immediately inside `compartments`. If you do this, your site will behave normally when you are developing locally, however extraneous directories ( not sure: will be ignored? will not launch? will cause errors during launch? ).
+Do not add any other directories immediately inside `compartments`. If you do, your site will behave normally when you are developing locally, however extraneous directories ( not sure: will be ignored? will not launch? will cause errors during launch? ).
 
 ## airmail
 The `airmail` directory contains templates for emails. The `airmail` directory should contain only html files. It should not contain any other filetypes or subdirectories. Every template in the `airmail` has a specific filename and a specific function. See [Airmail Email Templates](/documentation/view/airmail-email-templates) for more information on email templating.
@@ -51,20 +51,23 @@ To reference any files located within assets, referece them with an absolute pat
 
 Anything stored in the `assets` directory uploads to the Airship CDN, hosted on [Cloudinary](http://cloudinary.com).
 
-File Restrictions:
+### File Restrictions:
 - Maximum Filesize: 10MB
 - Most File Types are Allowed. Disallowed File Types: 'action', 'apk', 'app', 'bat', 'bin', 'cmd', 'com', 'command', 'cpl', 'csh', 'exe', 'gadget', 'inf1', 'ins', 'inx', 'ipa', 'isu', 'job', 'jse', 'ksh', 'lnk', 'msc', 'msi', 'msp', 'mst', 'osx', 'out', 'paf', 'pif', 'prg', 'ps1', 'reg', 'rgs', 'run', 'sct', 'shb', 'shs', 'u3p', 'vb', 'vbe', 'vbs', 'vbscript', 'workflow', 'ws', 'wsf'.
 
 ## layouts
-only html. no directories. layouts should match those set in modify in admin panel (or they will simply be unused layouts. see template rendering `application.html` is the only layout you get when you generate an unmodified site.
-
+The `layouts` directory should contain only html templates. It should not contain any subdirectories. Layout filenames should match those set in Modify section for a Page or Collection. Any extraneous layouts in the `layouts` directory will simply be unused layouts. By default, `application.html` is the only layout that is generated with a new site. See the Docs for more information on [Layouts](/documentation/view/layouts).
 
 ## templates
-only html files and directories here. see page templates and template directories. `root.html` is the only template you get when you generate an unmodified site.
+The `templates` directory should contain only html templates and subdirectories containing html temoplates. Template filenames and Template Directory names should match those set in Modify section for a Page or Collection. Any extraneous templates in the `templates` directory will simply be unused templates. By default, `root.html` is the only template that is generated with a new site. See the Docs for more information on [Page Templates](/documentation/view/page-templates) and [Collection Templates](/documentation/view/collection-templates).
 
 ---
 
 ## Other Files
-you can add any custom files outside the compartments directory. etc. they won't be landed/launched with your project. (good idea to use scm)
+Any directories and files may be placed outside of `/compartments`. Files outside `/compartments` will be ignored when your project is published.
 
-see more at boilerplates & examples etc
+If you are using a source code management tool like [Git](https://github.com), include all the contents of the `compartments` directory and `.airship` directory.
+
+---
+
+See some [Boilerplates and Examples](/documentation/view/boilerplates-and-examples) of Airship Projects
