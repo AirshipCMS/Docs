@@ -26,16 +26,19 @@ Formats that work:
 - Run `localStorage.clear();` Does this fix it?  
 - Clear browser cache. Does this fix it?  
 
+## CLI: I'm getting a 413 error for `airship launch`  
+- You might be uploading too many things and have exceeded the cap of 10mb load size per item for assets.
+- You might have exceeded the cap of 5mb for templates & layouts. (This is really hard to do with text files. You may be putting files you aren't supposed be adding in these directories). 
+
+## CLI: I'm logged in to the wrong directory, though I can still run `airship serve`
+You might have logged in to an airship site in the wrong directory at some point. You may have a `.airship` durectory floating around in your root directory. Find the ghost `.airship` directory and delete it.
+
 ## Browser: 401 Unauthorized
 When I refresh the browser, it returns:
 ```
 {"statusCode":401,"error":"Unauthorized","message":"Invalid token","attributes":{"error":"Invalid token"}}
 ```
 Your session expired. Login again and continue to run airship cli commands. Then refresh the browser.
-
-## CLI: I'm getting a 413 error for `airship launch`  
-- You might be uploading too many things and have exceeded the cap of 10mb load size per item for assets.
-- You might have exceeded the cap of 5mb for templates & layouts. (This is really hard to do with text files. You may be putting files you aren't supposed be adding in these directories). 
 
 ## Browser: 501 Not Implemented Error
 When I load a page or collection, I get this error:
@@ -55,6 +58,3 @@ If that doesn't work, you can try running `airship land` then making an arbitrar
 
 ## Browser: My site doesn't load over https
 You may be making calls to the API over an http connection. Always do API calls over an https connection.
-
-## I'm logged in to the wrong directory, though I can still run `airship serve`
-You might have logged in to an airship site in the wrong directory at some point. You may have a `.airship` durectory floating around in your root directory. Find the ghost `.airship` directory and delete it.
