@@ -16,6 +16,11 @@ This is a demo of an Airship CMS project that uses Angular 1.x + Gulp + Babel to
 - [Demo](https://http://angular-1-gulp-babel.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/angular-1.airshipcms.io)
 
+### React + Airship CMS
+This demo project demonstrates an Airship CMS project that uses an React to render all pages.
+- [Demo](http://react-app.airshipcms.io/)
+- [Github](https://github.com/AirshipCMS/react-app.airshipcms.io)
+
 ### Airship Email Template Builder
 This repo inlines CSS into html markup for Airship **Receipt**, **Invoice**, and **Shipment** email templates.
 - [Github](https://github.com/AirshipCMS/Airship-Email-Template-Builder)
