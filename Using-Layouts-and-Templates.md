@@ -4,7 +4,7 @@ Layouts and templates are used for creating classically rendered websites.
 ---
 
 ## Layouts
-Layouts contain general markup that is shared across the pages and collections where the layout is set.
+[Layouts](/documentation/view/layouts) contain general markup that is shared across the pages and collections where the layout is set.
 
 ## Templates
 Templates contain markup specific to a page or collection.
