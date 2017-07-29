@@ -57,4 +57,4 @@ The following properties can be rendered on the `categories.html` template:
 - `created_at` [single--created_at]
 - `updated_at` [single--updated_at]
 - `has_plans` [has_plans]
-- `categories` [single--categories]
+- `categories [list]` [single--categories]
