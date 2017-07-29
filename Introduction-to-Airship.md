@@ -14,7 +14,11 @@ Airship is a Web Development Platform for building websites and client-side appl
 [Airship Layouts & Templates](/documentation/view/using-layouts-templates) allow developers to create classically-rendered websites, blogs, and ecommerce sites that follow a conventional architecture and layout structure. 
 
 ## Airship API
-[Airship API](/documentation/view/introduction-to-airship-api) allows developers to extend xx futher by developing their own custom frontend solutions. [@jon need halp here] Airship allows developers to combine classically rendered content with client-side rendered components that utilize Airship API for fast-loading robust user experiences.
+[Airship API](/documentation/view/introduction-to-airship-api) allows developers to extend the functionality of websites and web applications futher by allowing developers to create their own custom frontend solutions and connect to the Airship database. Airship API allows developers to combine classically rendered content with client-side rendered components to create fast-loading and robust user experiences.
+
+Example: The Airship CMS Admin Portal is an entirely client-side application that interacts with the Airship API to allows you to manage pages and collections on an Airship site. If you wanted to, you could use the Airship API to create your own custom version of the Admin Portal.
+
+Another Example: The Airship Developer Portal is another example of an entirely client-side application hosted on an Airship site. The client-side application utilizes just the Airship API to allow users to sign up and create subscriptions. If you wanted to, you could use the Airship API to create your own custom subscription service signup portal!
 
 ---
 
