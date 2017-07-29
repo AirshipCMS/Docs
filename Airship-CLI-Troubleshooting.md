@@ -1,31 +1,28 @@
 ## You do not have permission to perform this action.
-A session expired after 24 hours. Login again and continue to run airship cli commands.
+A session expires after 24 hours. Login again and continue to run airship cli commands.
 
 ## `airship login` doesn't work
-- Are you in the right directory? If you aren't make sure you navigate to the right directory.
+- Are you in the right directory?
 - Did you forget the subdomain in the command?  
 - Did you enter the subdomain correctly?
 - Did you log in to the correct site?
 
 Formats that won't work:
-this won't work: `airship login`  
-this won't work: `airship login www.sitename.com`  
-this won't work: `airship login sitename.com`  
-this won't work: `airship login www.sitename.airshipcms.io`  
+- `airship login`  
+- `airship login www.sitename.com`  
+- `airship login sitename.com`  
+- `airship login www.sitename.airshipcms.io`  
 
 Formats that work:
 - `airship login sitename.airshipcms.io`  
 - `airship login sitename` 
 
-## Logged in to the wrong directory but still lets you run `airship serve`
-are you logged into a directory containing the one you really wanted? you might have some .airship directories floatin around.
-
 ## `airship serve` doesn't work
-are you serving a different site in another terminal?  
-are you using port 9001 for something else?  
-hard refresh the browser. does this fix it?  
-run `localStorage.clear();` does this fix it?  
-clear browser cache. does this fix it?  
+- Are you serving a different site in another terminal? You can only serve one site at a time.
+- Are you using port 9001 for something else?  
+- Hard refresh the browser. Does this fix it?  
+- Run `localStorage.clear();` Does this fix it?  
+- Clear browser cache. Does this fix it?  
 
 ## 401: Unauthorized
 When I refresh the browser, it returns:
@@ -42,3 +39,6 @@ Debugging after `airship launch`
 If you launched your project and you don't see your changes on the live site, try doing a hard-refresh on the browser for the live site. If that doesn't work, try clearing your browser cache. Your local cache may be very sticky. If that doesn't work either and it has been more than 5 minutes since you have launched your site, there might be some other issue.
 
 hitting api over https
+
+## I'm logged in to the wrong directory, though I can still run `airship serve`
+You might have logged in to an airship site in the wrong directory at some point. You may have a `.airship` durectory floating around in your root directory. Find the ghost `.airship` directory and delete it.
