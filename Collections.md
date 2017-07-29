@@ -109,20 +109,20 @@ When deleting a collection, **all** items within the collection will also be del
 ## Collection Items
 An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](/documentation/view/collection-item-properties) Docs.
 
-## View all Collection Items (Admins & Superadmins)
+### View all Collection Items (Admins & Superadmins)
 To view all of the items within the collection, navigate to the Admin panel, then click the Collection link on the sidebar at the left then click the [ICON] List All icon for the collection.
 
-## Create an Item (Admins & Superadmins)
+### Create an Item (Admins & Superadmins)
 To create an item, navigate to the [ICON] List All view of the collection, then click `New Item` at the top right.
 Fill in the desired fields, then click `Create`.
 
 In order for each item to be publicly visible on the site, the item must have a Publish Date set to a past or current date. Set a publish date by toggling the `Draft Item` at the right when creating/editing the item, and then choose a date for when it should be published.
 
-## Edit an Item (Admins & Superadmins)
+### Edit an Item (Admins & Superadmins)
 To edit an item, navigate to the [ICON] List All view of the collection, then click the [ICON] Edit Content icon for the item.
 Edit the desired files, then click either the `Save` button, or the `Save & Close` button. 
 
-## Delete an Item (Admins & Superadmins)
+### Delete an Item (Admins & Superadmins)
 To delete an item, navigate to the [ICON] List All view of the collection, then click the [ICON] Edit Content icon for the item. At the bottom left of the page, then click the `Delete` button, then Confirm to delete.
 
 ---
