@@ -63,16 +63,18 @@ Click "Delete Collection": ![delete-collection](https://user-images.githubuserco
 Confirm to delete the collection: ![confirm-delete-collection](https://user-images.githubusercontent.com/1865400/28703311-fd539776-72fe-11e7-8292-dbd588f845f2.png)
 
 ## Modify the Homepage
-Modify the "Homepage" fields to add fields appropriate for your project:  
+Modify the "Homepage" fields to add fields appropriate for your project. This example shows the fields added for the Homepage mocked up above.
 
 ![modified_homepage_fields](https://user-images.githubusercontent.com/16835553/28737399-0342c644-738a-11e7-8b96-2b024592eba6.png)
 
 Save the page.
  
-## Create Additional Pages
+## Create Pages
 Create additional pages and define the fields for those pages.
 
 #### Page Setup
+
+##### Page URL
 The permalink defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/permalink` (_where subdomain is your site subdomain_).
 
 #### Page Rendering
@@ -83,7 +85,7 @@ Create a new unique **template** for each new page.
 #### Page Fields
 Define the fields for each page.
 
-These fields will contain all of the data that will be rendered on your site using Airship [Propellers](/documentation/view/propeller-helpers). You can create as many fields as needed as long as each `variable name` is unique. By default, the `variable name` is the `title` in lowercase, with spaces converted to underscores. You may customize each variable name, however, keep in mind that having consistency between the title and variable name makes it easier to remember what value to use when rendering data with Propellers.
+These fields will contain all of the data that will be rendered on your site using Airship Propellers. You can create as many fields as needed as long as each `variable name` is unique. By default, the `variable name` is the `title` in lowercase, with spaces converted to underscores. You may customize each variable name, however, keep in mind that having consistency between the title and variable name makes it easier to remember what value to use when rendering data with Propellers.
 
 While the variable name and field type are not editable, you can edit the field `title` by clicking the <img width="27" alt="grey-pencil" src="https://user-images.githubusercontent.com/16835553/28738624-2d7928f8-7390-11e7-9993-61a68b2844ae.png"> at the right of the field. Each field can also be reordered by clicking and dragging the field into the desired position within the list.
 
@@ -94,10 +96,23 @@ For more information about each field type, check out the documentation on [Data
 ## Create Collections
 Create collections and define the fields for items in those collections.
 
-#### Collection Setup
-- collection title (explain more).
-- collection name (explain more).
-- collection public path (explain more).
+##### Collection Setup
+For each collection, add a Title, Public Path, and Name.
+
+The public path defines the url for the collection. When developing locally, the url will read as `http://localhost:9001/public_path`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/public_path` (_where subdomain is your site subdomain_).
+
+#### Collection URLs
+For collections utilizing the `show.html` layout, a single item in the collection will render at `http://subdomain.airshipcms.io/public_path/view/permalink`.
+
+For collections utilizing the `categories.html` layout, collection categories will render at `http://subdomain.airshipcms.io/public_path/categories`.
+
+For collections utilizing the `category.html` layout, items in a category will render at `http://subdomain.airshipcms.io/public_path/categories/category-permalink`.
+
+Example News Collection:
+- Title: `News`
+- Public Path: `news`
+
+The collection will render at `yourwebsitename.com/news`, categories will render at `yourwebsitename.com/news/categories`, a list of posts within a category will render at `yourwebsitename.com/news/categories/category-permalink`, and a single post will render at `yourwebsitename.com/news/view/permalink`.
 
 #### Collection Rendering
 Set the existing `application.html` **layout** for every collection.
@@ -105,12 +120,23 @@ Create a new unique **template directory** for each new collection.
 
 When you are get familiar with how pages and collections render, you can start to edit your project to more efficiently share layouts and templates accross pages and collections on your site. See [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates) and [Collection Templates](/documentation/view/collection-templates) for more information.
 
+Example News Collection:
+- Layout: `application.html`
+- Template Directory: `news`
+
 #### Collection Fields
-Define the fields for an item in the collection (explain more).
+Define the fields for an item in the collection.
+
+Example News Collection:
+
+[IMAGE]
 
 #### Primary Label
-Set a property for the primary label. This is the main label that will display on the list view for items in this collection in the Admin Panel. (explain more).
- 
+The only purpose of the `Primary Label` is to identify what field will be set as the "main field" in the list view of items in the CMS.
+
+Example News Collection:
+- Set "Header" as the primary label. 
+
 ## Set up Relationships
 This needs to be done after colletions are setup. (explain more).
 Can relate a collection to a page, or a collection to items in a collection. Cannot relate a page to a pge.
