@@ -26,7 +26,7 @@ The following properties can be rendered from an airmail public make template:
 - updated_at [single--updated_at]
 
 
-The following field types can be rendered on a page template:
+The following field types can be rendered on an airmail public make template:
 
 - `text`
 - `textarea`
