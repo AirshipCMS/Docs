@@ -1,6 +1,6 @@
 To use these properties, tags must be enabled in the Admin panel for the collection. The following examples show how to render the available tag properties for each item:
 
-##### `id`
+### `id`
 This is the ID of the tag given by Airship CMS.
 
 Example Markup:
@@ -16,7 +16,7 @@ Example Output:
 <p>593</p>
 ```
 
-##### `site_id`
+### `site_id`
 This is the ID of the website that the tag belongs to.
 
 Example Markup:
@@ -32,7 +32,7 @@ Example Output:
 <p>62</p>
 ```
 
-##### `name`
+### `name`
 This is the tag name.
 
 Example Markup:
@@ -48,7 +48,7 @@ Example Output:
 <p>fluffy</p>
 ```
 
-##### `created_at`
+### `created_at`
 This is the timestamp of when the tag was created.
 
 Example Markup:
@@ -64,7 +64,7 @@ Example Output:
 <p>2017-05-17T04:02:03.1730000+00:00</p>
 ```
 
-##### `updated_at`
+### `updated_at`
 This is the timestamp of when the tag was updated.
 
 Example Markup:
