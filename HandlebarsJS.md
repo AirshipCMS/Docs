@@ -77,3 +77,24 @@ Example Output _only_ if `show_image` was not checked:
 ```
 
 See the [HandlebarsJS #unless documentation](http://handlebarsjs.com/builtin_helpers.html#unless) for more information.
+
+## {{#if @first}}
+This pulls just the first item in a list. This is especially useful when getting the FIRST item in a collection, or the FIRST item in a list of images.
+
+Example Markup:
+```
+{{#each items}}
+  {{#if @first}}
+  <div class="item"">
+    <h3>aerostat_collection.public_path: "{{aerostat_collection.public_path}}"</h3>
+  </div>
+  {{/if}}
+{{/each}}
+```
+
+Example Output:
+```
+<div class="item"">
+  <h3>102</h3>
+</div>
+```
