@@ -40,3 +40,19 @@ This documentation is for airshipcms.io. You can also view it, along with additi
 - [Relationships.md](/Relationships.md)
 - [Users.md](/Users.md)
 - [Making-Your-Site-Live.md](/Making-Your-Site-Live.md)
+
+
+### Adding to examples to /properties
+Conventions for /properties examples:
+
+If a property is specific to a certain template, notate it as `[template--property_name]`, e.g. `[categories--has_categories]`
+
+Properties notated as `single` or `each` are general exapmles that are usable among various templates.
+
+When creating in AirshipCMS:
+
+the field `notation` should be just the notations listed in repo pages, e.g. `[categories--has_categories]`
+
+the `permalink` should match the notation
+
+the `property_name` should be just the property name, without the notation, e.g. `has_categories`
