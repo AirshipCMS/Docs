@@ -1,5 +1,5 @@
 ## 1. Start a Project.
-<p>If you don't have a free Airship account yet, <a href="/signup">sign up</a> for one to access the Skyport Developer Portal. Launch a new site, then follow the link in the confirmation email to the Airship CMS Admin panel. This is where you can manage your users (accounts for content creators or other developers), and set up the data structure for the site.</p>
+// <p>If you don't have a free Airship account yet, <a href="/signup">sign up</a> for one to access the Skyport Developer Portal. Launch a new site, then follow the link in the confirmation email to the Airship CMS Admin panel. This is where you can manage your users (accounts for content creators or other developers), and set up the data structure for the site.</p>
 
 ## 2. Build your schema & relationships.
 <p>Plan out the sitemap and sketch quick wireframes for each unique page or collection in your project. If you need to see some examples, we have some demo <a href="/use-cases">use cases</a> to share that are schemas from our own actual projects.</p>
