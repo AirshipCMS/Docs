@@ -15,6 +15,7 @@ Steps for making your site live.
 - Set "Points to" to **subdomain.airshipcms.io**
   (where "subdomain" is your site subdomain on Airship)
 - Click **Add Record**
+- This will point **www.yourdomain.com** to **subdomain.airshipcms.io**
 
 ## Step 2: Set up a 302 Redirect
 - Click on the **Redirects** subnav link
@@ -25,7 +26,7 @@ Steps for making your site live.
 
 ## Step 3: Wait
 DNS settings can take up to 24 hours to propagate. 
-Periodically check that the plain version of your domain `domain.com` changes to the "www" version of your domain `www.domain.com`, and that the your Airship site loads.
+Periodically check that the plain version of your domain `domain.com` changes to the "www" version of your domain `www.yourdomain.com`, and that the your Airship site loads.
 
 Note for Developers: As the developer of an Airship site, if you don't have access to your client's BlueHost Registrar, you send your client the instructions above, or you can ask your client to change the Name Server settings for the domain to point to a separate DNS Provider that you control. 
 1. Send your client these simple instructions for **Setting Up your BlueHost Domain to point to an external DNS Service**.
