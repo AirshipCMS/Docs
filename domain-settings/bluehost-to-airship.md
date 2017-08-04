@@ -30,8 +30,9 @@ Periodically check that the plain version of your domain `domain.com` changes to
 
 Note for Developers: As the developer of an Airship site, if you don't have access to your client's BlueHost Registrar, you can send your client this page of instructions, or you can ask your client to **Change the Name Server settings for the domain to point to a separate DNS Provider** that you control. 
 
-1. Send your client these simple instructions for **Setting Up your BlueHost Domain to point to an external DNS Service**.
-2. In your own DNS Service, set up a CNAME & 302 Redirect.
+## How to Set up your BlueHost Domain to Point to an External DNS
+- Send your client instructions to **Set Up your BlueHost Domain to Point to an External DNS**.
+- In your own DNS Service, set up a CNAME & 302 Redirect.
 
 Other DNS Services:
 - **Digital Ocean**
