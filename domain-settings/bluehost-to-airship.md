@@ -9,7 +9,7 @@ Steps for making your site live.
 ## Step 1: Set up a CNAME that points to Airship Servers
 - Click on the **Zone Editor** subnav link
 - Select the domain you want to point to Airship Servers
-- Set the **Host Record** to **@**
+- Set the **Host Record** to **www**
 - leave "TTL" as is
 - Set "Type" to **CNAME**
 - Set "Points to" to **subdomain.airshipcms.io**
