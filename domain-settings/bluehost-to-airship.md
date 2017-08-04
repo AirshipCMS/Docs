@@ -9,18 +9,18 @@ Steps for making your site live.
 ## Step 1: Set up a CNAME that points to Airship Servers
 - Click on the **Zone Editor** subnav link
 - Select the domain you want to point to Airship Servers
-- Set the **Host Record** to **www**
+- Set the **Host Record** to `www`
 - leave "TTL" as is
-- Set "Type" to **CNAME**
-- Set "Points to" to **subdomain.airshipcms.io**
+- Set "Type" to `CNAME`
+- Set "Points to" to `subdomain.airshipcms.io`
   (where "subdomain" is your site subdomain on Airship)
 - Click **Add Record**
-- This will point **www.yourdomain.com** to **subdomain.airshipcms.io**
+- This will point `www.yourdomain.com` to `subdomain.airshipcms.io`
 
 ## Step 2: Set up a 302 Redirect
 - Click on the **Redirects** subnav link
-- Select **Temporary (302)** Redirect
-- Select **Do Not Redirect www**
+- Select `Temporary (302)` Redirect
+- Select `Do Not Redirect www`
 - Leave "Make this a Wild Card Redirect" unchecked
 - Click **Add this Redirect**
 
@@ -49,4 +49,4 @@ https://my.bluehost.com/cgi/help/182
 
 ---
 
-In case you are wondering why you cannot just point your root domain to your Airship Site, and then allow either "www" or your plain root domain serve the site, it is beause you cannot set a CNAME for root domains (that's just how domains work). Thus, we need to set a CNAME for "www" and point your root domain to "www."
+In case you are wondering why you cannot just point your root domain to your Airship Site, and then allow either `www` or your plain root domain serve the site, it is beause you cannot set a CNAME for root domains (that's just how domains work). Thus, we need to set a CNAME for `www` and point your root domain `yourdomain.com` to `www`.
