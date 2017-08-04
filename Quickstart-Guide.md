@@ -107,7 +107,7 @@ In SublimeText 3, it will look like this:
 
 ![edit-root](https://user-images.githubusercontent.com/1865400/28699019-c3912dda-72e2-11e7-9787-86059fcc542c.png)
 
-Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there in #11.
+Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there soon!
 
 ### 10. Render `{{{help}}}` on a template to see a list of data.
 On the `root.html` template, replace the header test you did in #9 and add following markup:  
