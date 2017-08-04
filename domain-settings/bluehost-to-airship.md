@@ -28,7 +28,8 @@ Steps for making your site live.
 DNS settings can take up to 24 hours to propagate. 
 Periodically check that the plain version of your domain `domain.com` changes to the "www" version of your domain `www.yourdomain.com`, and that the your Airship site loads.
 
-Note for Developers: As the developer of an Airship site, if you don't have access to your client's BlueHost Registrar, you send your client the instructions above, or you can ask your client to change the Name Server settings for the domain to point to a separate DNS Provider that you control. 
+Note for Developers: As the developer of an Airship site, if you don't have access to your client's BlueHost Registrar, you can send your client this page of instructions, or you can ask your client to **Change the Name Server settings for the domain to point to a separate DNS Provider** that you control. 
+
 1. Send your client these simple instructions for **Setting Up your BlueHost Domain to point to an external DNS Service**.
 2. In your own DNS Service, set up a CNAME & 302 Redirect.
 
