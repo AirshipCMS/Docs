@@ -1,52 +1,51 @@
-# Making Your Site Live
-Simple steps for making your site live.
+# How to Point a Domain registered on BlueHost to an Airship CMS site
+Steps for making your site live.
 
 ---
 
-## DNS Provider
-- Log in to your DNS Provider (Namecheap, GoDaddy, Google Domains, etc).
+## Login to BlueHost
+- Click on the **Domains** nav link.
 
-## 1. Create a CNAME
-Create a CNAME for the `www` subdomain for your domain:  
-- Subdomain: `www`
-- Value: `subdomain.airshipcms.io`
+## Step 1: Set up a CNAME that points to Airship Servers
+- Click on the **Zone Editor** subnav link
+- Select the domain you want to point to Airship Servers
+- Set the **Host Record** to **@**
+- leave "TTL" as is
+- Set "Type" to **CNAME**
+- Set "Points to" to **subdomain.airshipcms.io**
+  (where "subdomain" is your site subdomain on Airship)
+- Click **Add Record**
 
-In the above value, the _subdomain_ is your subdomain on AirshipCMS.io.  
-Settings may take several minutes to hours to take effect, depending on your DNS provider.  
+## Step 2: Set up a 302 Redirect
+- Click on the **Redirects** subnav link
+- Select **Temporary (302)** Redirect
+- Select **Do Not Redirect www**
+- Leave "Make this a Wild Card Redirect" unchecked
+- Click **Add this Redirect**
 
-**Example:**  
-For my site "doodlipoop.com":  
-- Subdomain: `www`
-- Value: `doodlipoop-shop.airshipcms.io`  
+## Step 3: Wait
+DNS settings can take up to 24 hours to propagate. 
+Periodically check that the plain version of your domain `domain.com` changes to the "www" version of your domain `www.domain.com`, and that the your Airship site loads.
 
-Result: `www.doodlipoop.com` points to and serves `doodlipoop-shop.airshipcms.io`.  
-  
-## 2. Create a Redirect (Recommended)
-Create a Temporary 302 Redirect to point your root domain `yourdomain.com` to your `www` subdomain `www.yourdomain.com`  
-Settings may take several minutes to hours to take effect, depending on your DNS provider.  
+Note for Developers: As the developer of an Airship site, if you don't have access to your client's BlueHost Registrar, you send your client the instructions above, or you can ask your client to change the Name Server settings for the domain to point to a separate DNS Provider that you control. 
+1. Send your client these simple instructions for **Setting Up your BlueHost Domain to point to an external DNS Service**.
+2. In your own DNS Service, set up a CNAME & 302 Redirect.
 
-**Example:**  
-For my site "doodlipoop.com", set:
-- Temporary 302 Redirect for `doodlipoop.com`
-- Point to `www.doodlipoop.com`
+Other DNS Services:
+- **Digital Ocean**
+- **Dreamhost**
+- **GoDaddy**
 
-Result: `doodlipoop.com` points to `www.doodlipoop.com` and serves `doodlipoop-shop.airshipcms.io`.
+---
 
-## 2. Cannot Set a Redirect? (Alternative)
-Some DNS providers do not have an option to set a Temporary Redirect for the root domain. In this case, you will need to create an ANAME and point your root domain to a static IP Address. This method is less recommended, becase IP Addresses of servers can change. This seldom happens, though it _can_ happen if there are server upgrades, optimizations, or other system changes.
+## More Resources
 
-For some Airship Sites where we do not have access to the DNS Provider, or the DNS Provider does not have redirect controls, we use the [redirect.name](http://redirect.name) service.
+**Setting up a CNAME on BlueHost**  
+https://my.bluehost.com/cgi/help/cname  
 
-**Example:**
-For my site "doodlipoop.com":
-- I have already set the CNAME for `www` to point to `doodlipoop-shop.airshipcms.io`
-- Following the instructions at [redirect.name](http://redirect.name), I added the TXT record `_redirect` with the value `Redirects to http://www.doodlipoop.com`
-- Following the instructions at [redirect.name](http://redirect.name), I added the A record for the root domain with the value `45.55.72.95`
-
-Result: `doodlipoop.com` points to `45.55.72.95` which is set to redirect to `www.doodlipoop.com` and serves `doodlipoop-shop.airshipcms.io`.
+**Setting up a 302 Redirect on BlueHost**  
+https://my.bluehost.com/cgi/help/182  
 
 ---
 
 In case you are wondering why you cannot just point your root domain to your Airship Site, and then allow either "www" or your plain root domain serve the site, it is beause you cannot set a CNAME for root domains (that's just how domains work). Thus, we need to set a CNAME for "www" and point your root domain to "www."
-
-
