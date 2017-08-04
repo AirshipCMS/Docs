@@ -1,10 +1,10 @@
-## 1. Start a Project.
+## 1. Start a project.
 Sign up for a free Airship account to access the **Airship Developer Portal**, then create your first project. In a few minutes, your site subdomain will be generated, and you can start development.
 
-## 2. Get Familiar with the Airship CMS Admin Portal.
+## 2. Get familiar with the Airship CMS Admin Portal.
 (Something)
 
-## 3. Install Airship Launcher.
+## 3. Install Airship Launcher command line tools.
 Install the Airship Launcher so you have access to the command line tools necessary for serving site content when you are developing locally.
 <pre>
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
@@ -29,11 +29,11 @@ You can start a local development server by using the Airship Launcher serve com
 airship serve
 </pre>
 
-## 7. Change template markup
+## 7. Change template markup.
 While the server is running, you can test out your site locally by navigating to <span class="code">localhost:9001</span>. The local development site pulls live content from the Airship database, so internet access is required. You can add and update layouts, templates, and media assets during development, refresh the local server, and see the local changes right away.
 
-## 7. Change content
-(content editing)
+## 7. Change CMS content.
+Afterall this is a CMS. There is some data you want to link to the CMS. (content editing)
 
 ## 8. <span class="code">airship launch</span>
 Run this command to deploy your templates and assets:
