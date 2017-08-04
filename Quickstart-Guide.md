@@ -162,15 +162,15 @@ airship launch
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
-## 13. Back up files with a source code management tool.
+---
+
+## What's Next?
+(describe)
+
+### Source Code Management
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
-
----
-
-## That's it! 
-That's the basic Airship Developer Workflow! 
 
 ### Templating
 From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
