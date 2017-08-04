@@ -179,4 +179,6 @@ From here you might want to learn more about [Layouts](/documentation/view/layou
 Study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
 
 ### XHR, Angular, React, and Single-Page Applications
-(describe)
+(describe) Some projects may not need classic website rendering, or Classic Rendering is not able to handle complex logic. For the most power, it is useful to combine classically rendered page elements with client-side rendered components. 
+
+If you want to use Airship CMS more like a headless CMS to construct your database/project schema and then build your application using a framework like Angular or React, then see the (Something Guide) and some of our Demo Projects.
