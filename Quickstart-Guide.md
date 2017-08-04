@@ -141,9 +141,20 @@ Take a look at all the markup on the `root.html` template, and you can see which
 
 You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. In fact, `{{{help}}}` will not render anything when you launch a site. It will only render a list of properties in local development.
 
-See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
+## 11. Change the Page.
 
-## 11. `airship launch` to publish your project.
+### Change the Page.
+See what you can change about the Page Template. Add some fields, change the markup. For more detailed information on each property and datafield type that can be rendered on a page, see the [Page Templates](/documentation/view/page-templates) Docs.
+
+### Change the Layout.
+(Layout Quickstart -->).
+See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts).
+
+### Change the Collection.
+The sample collection doesn't have rendered pages. (Collection Quickstart -->).
+[Collection Templates](/documentation/view/collection-templates).
+
+## 12. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
@@ -151,7 +162,7 @@ airship launch
 
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
-## 12. Back up files with a source code management tool.
+## 13. Back up files with a source code management tool.
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
