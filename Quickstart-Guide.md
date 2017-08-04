@@ -141,9 +141,9 @@ Take a look at all the markup on the `root.html` template, and you can see which
 
 You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. In fact, `{{{help}}}` will not render anything when you launch a site. It will only render a list of properties in local development.
 
-## 11. Change the Page.
+## 11. Change the Root Page
 
-### Change the Page.
+### Change the Root Page.
 See what you can change about the Page Template. Add some fields, change the markup. For more detailed information on each property and datafield type that can be rendered on a page, see the [Page Templates](/documentation/view/page-templates) Docs.
 
 ### Change the Layout.
@@ -172,6 +172,11 @@ When you use a SCM tool, commit all Airship files with your project, including `
 ## That's it! 
 That's the basic Airship Developer Workflow! 
 
+### Templating
 From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
 
+### Project Schema
 Study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
+
+### XHR, Angujar, React, and Single-Page Applications
+(describe)
