@@ -178,5 +178,5 @@ From here you might want to learn more about [Layouts](/documentation/view/layou
 ### Project Schema
 Study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
 
-### XHR, Angujar, React, and Single-Page Applications
+### XHR, Angular, React, and Single-Page Applications
 (describe)
