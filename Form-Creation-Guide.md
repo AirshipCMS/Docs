@@ -4,6 +4,7 @@ Download the repository files at [https://github.com/AirshipCMS/endtoend.airship
 ---
 
 ## Step 1. Set up the Collection
+In Airship CMS Admin, set up a new collection.
 
 ### Collection Setup
 Pay attention to the **Public Path**. This is important for creating the email template for this form.
@@ -32,22 +33,31 @@ Field types that have not been tested with forms: Multiselect, Richtext Area, Im
 ---
 
 ## Step 2. Set a BCC Public Make Email
-Go to **Settings** and add an email to BCC Public Make in order to receive emails when someone enters a form submission.
+In Airship CMS Admin, go to **Settings** and add an email to BCC Public Make in order to receive emails when someone enters a form submission.
 
 ![bcc-publicmakesetting](https://user-images.githubusercontent.com/1865400/29060444-8078786a-7bb5-11e7-86ce-3d953ef88e52.png)
 
 ---
 
-## Step 3. Set up the Page for the form to render on.
-For this example, a Page called "Contact" with permalink "/contact" and template "contact.html" was created.
+## Step 3. Create a Page for the form to render on.
+In Airship CMS Admin, create a Page called "Contact" with permalink "/contact" and template "contact.html".
 
 ![contact-page](https://user-images.githubusercontent.com/1865400/29060965-a47f227a-7bb7-11e7-88dc-10880e1ebf92.png)
 
 ---
 
-## Step 4: Set up Page Template & Javascript to render & submit the form.
-The javascript in `/assets/scripts/contact.js` is necessary for the form submission.
-The above script file, and the referenced `jQuery` file are referenced at the bottom of the markup on the `contact.html` template.
+## Step 4: Set up the Contact Form Page Template
+In your text editor, create the `contact.html` page template, and add the form fields you need. Reference the `contact.html` template in the example repository.
+
+Be sure to add links to the necessary scripts to make the form work:
+```
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/assets/scripts/contact.js"></script>
+```
+
+---
+
+## Step 5: Modify the Contact Form Javascript
 
 ### Find the Collection ID.
 In Airship CMS, click the wrench icon to Modify the Collection, and find the **Collection ID**.
@@ -63,7 +73,9 @@ In your text editor, modify the `contact.js` so that the form submits to the pro
 url: "/api/aerostat_collections/373",
 ```
 
-### Test the Contact Form
+---
+
+## Step 6: Test the Contact Form
 With this markup & script, you can test locally that the form creates a post in the Contact Form Example collection.
 
 If everything is set up properly, hitting the Submit button on your local form will create an example post in your collection:
@@ -78,17 +90,26 @@ You will notice that even though the post has been created, you haven't received
 
 ---
 
-## Step 5: Create Email Templates
+## Step 7: Create Email Templates
 Before setting up the email template, make sure everything else is set up properly.
 - [x] You have added at least one BCC Public Make Email
 - [x] Submissions are being created in your collection when you Submit them though your local form.
 
-### `airmail.html` Layout
+### `airmail.html`
 This layout is required in order for email submissions to work. It is just a container layout and does not contain any markup that will be used in the actual email.
 
-### `contact-form-example_email.html` Template
+### `contact-form-example_email.html`
 This template is required in order for email submissions to work. This template contains markup that will be used in the email template. **Note: the email template name is the collection public path with `_email.html` appended to the end.**
 
-**You must `airship launch` the email templates in order for the email notification to work. Changes to local airmail templates have no effect. Only LAUNCHED email templates will be read by the email server.**
+---
 
+## Step 8: Launch your Form Files
+You must `airship launch` the email templates in order for the email notification to work. Changes to local airmail templates have no effect. Only LAUNCHED email templates will be read by the email server.
+
+---
+
+## Step 9: Test your Form
+Test the form on your launched website. You should see a post in the collection in Airship CMS Admin, and you should also receive an email submission notifying you about the submission.
+
+---
 For security reasons and to prevent abuse, you cannot send public make submission notifications to arbitrary emails. Emails will only send to the emails listed in the BCC Public Make Email List in the Admin Panel.
