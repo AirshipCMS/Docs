@@ -72,7 +72,7 @@ If everything is set up properly, hitting the Submit button on your local form w
 
 When you view the post, it will look something like this:
 
-![post-fields](https://user-images.githubusercontent.com/1865400/29060442-806f825a-7bb5-11e7-9397-a5d28f5cba0c.png)
+![post-example](https://user-images.githubusercontent.com/1865400/29060443-807042bc-7bb5-11e7-8c9b-811b61d48186.png)
 
 You will notice that even though the post has been created, you haven't received any email notifications.
 
