@@ -26,11 +26,6 @@ Leave it as Created At.
 
 ![primary-label](https://user-images.githubusercontent.com/1865400/29060439-805c424e-7bb5-11e7-94df-29c382b55dd1.png)
 
-### Find the Collection ID.
-Save the Collection. Then reopen the Modify View, and find the **Collection ID**.
-
-![collection-id](https://user-images.githubusercontent.com/1865400/29060438-805c1918-7bb5-11e7-8030-0488b826b0ee.png)
-
 ---
 
 ## Step 2. Set a BCC Public Make Email
@@ -54,13 +49,28 @@ For this example, a Page called "Contact" with permalink "/contact" and template
 The javascript in `/assets/scripts/contact.js` is necessary for the form submission.
 The above script file, and the referenced `jQuery` file are referenced at the bottom of the markup on the `contact.html` template.
 
-With this markup & script, you can test that the form creates a post in the Contact Form Example collection.
+### Find the Collection ID.
+In Airship CMS, click the wrench icon to Modify the Collection, and find the **Collection ID**.
 
-An example post in the collection will look like this:
+![collection-id](https://user-images.githubusercontent.com/1865400/29060438-805c1918-7bb5-11e7-8030-0488b826b0ee.png)
+
+Remember the ID number. You don't need to save any changes.
+
+### Modify the Javascript
+In your text editor, modify the `contact.js` so that the form submits to the proper collection on your site. In the javascript file on `line 7` change the Collection ID to the ID for your collection.
+
+```
+url: "/api/aerostat_collections/373",
+```
+
+### Test the Contact Form
+With this markup & script, you can test locally that the form creates a post in the Contact Form Example collection.
+
+If everything is set up properly, hitting the Submit button on your local form will create an example post in your collection:
 
 ![submission-example](https://user-images.githubusercontent.com/1865400/29060885-5a3a62d8-7bb7-11e7-92cf-ef0b37837be7.png)
 
-When you view the post fields, it will look something like this:
+When you view the post, it will look something like this:
 
 ![post-fields](https://user-images.githubusercontent.com/1865400/29060442-806f825a-7bb5-11e7-9397-a5d28f5cba0c.png)
 
@@ -69,7 +79,16 @@ You will notice that even though the post has been created, you haven't received
 ---
 
 ## Step 5: Create Email Templates
-must add bcc public make email
-or will submit without notifying
-cannot email user for security
-must launch templaees
+Before setting up the email template, make sure everything else is set up properly.
+- [x] You have added at least one BCC Public Make Email
+- [x] Submissions are being created in your collection when you Submit them though your local form.
+
+### `airmail.html` Layout
+This layout is required in order for email submissions to work. It is just a container layout and does not contain any markup that will be used in the actual email.
+
+### `contact-form-example_email.html` Template
+This template is required in order for email submissions to work. This template contains markup that will be used in the email template. **Note: the email template name is the collection public path with `_email.html` appended to the end.**
+
+**You must `airship launch` the email templates in order for the email notification to work. Changes to local airmail templates have no effect. Only LAUNCHED email templates will be read by the email server.**
+
+For security reasons and to prevent abuse, you cannot send public make submission notifications to arbitrary emails. Emails will only send to the emails listed in the BCC Public Make Email List in the Admin Panel.
