@@ -26,15 +26,15 @@ Leave it as Created At.
 
 ![primary-label](https://user-images.githubusercontent.com/1865400/29060439-805c424e-7bb5-11e7-94df-29c382b55dd1.png)
 
+### Untested Field Types
+Field types that have not been tested with forms: Multiselect, Richtext Area, Image, Link, List of Images, List of Links, Related Aerostats, Date.
+
 ---
 
 ## Step 2. Set a BCC Public Make Email
 Go to **Settings** and add an email to BCC Public Make in order to receive emails when someone enters a form submission.
 
 ![bcc-publicmakesetting](https://user-images.githubusercontent.com/1865400/29060444-8078786a-7bb5-11e7-86ce-3d953ef88e52.png)
-
-### Untested Field Types
-Field types that have not been tested with forms: Multiselect, Richtext Area, Image, Link, List of Images, List of Links, Related Aerostats, Date.
 
 ---
 
