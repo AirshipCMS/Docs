@@ -99,7 +99,9 @@ Before setting up the email template, make sure everything else is set up proper
 This layout is required in order for email submissions to work. It is just a container layout and does not contain any markup that will be used in the actual email.
 
 ### `contact-form-example_email.html`
-This template is required in order for email submissions to work. This template contains markup that will be used in the email template. **Note: the email template name is the collection public path with `_email.html` appended to the end.**
+This template is required in order for email submissions to work. This template contains markup that will be used in the email template. **Note: the email template name is the collection public path with `_email.html` appended to the end.** In this example collection, the public path is `contact-form-example`, so the email template name needs to be `contact-form-example_email.html`.
+
+![email-name](https://user-images.githubusercontent.com/1865400/29061827-20c8b366-7bbb-11e7-804c-3c22d4cadbe4.png)
 
 ---
 
