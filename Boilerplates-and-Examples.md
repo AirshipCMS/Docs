@@ -18,7 +18,7 @@ This is a demo of an Airship CMS project that uses Angular 1.x + Gulp + Babel to
 
 ### Angular 4
 This is a demo of an Airship CMS project that uses Angular 4 to render all pages.
-- [Demo](https://http://angular-app.airshipcms.io)
+- [Demo](https://angular-app.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/angular-app.airshipcms.io)
 
 ### React + Airship CMS
