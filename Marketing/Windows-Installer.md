@@ -1,4 +1,7 @@
 ## Auto Install Instructions
+<button id="windows-installer-download-button" class="button windows-installer-download-button">
+Download Latest Installer for Win64
+</button>
 Click the above button to start the CLI installation on your Win64 machine. 
 
 (You will get a warning that this installer is not signed with a digital signature. This is expected behavior. If you prefer, you may follow the manual install instructions below instead.)
