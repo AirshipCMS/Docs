@@ -1,17 +1,7 @@
-# Windows Installer (beta)
-Get the Beta Win64 Installer
+## Auto Install Instructions
+Click the above button to start the CLI installation on your Win64 machine. (You will get a warning that this installer is not signed with a digital signature. This is expected behavior. If you choose to, you may follow the manual install instructions below.)
 
-Note:
-You will get a warning that this installer is not signed with a digital signature. This is expected behavior. If you choose to, you may follow the manual install instructions below.
-
-### Manual Install instructions
-
-There should be a link or button named "Manual Install Instructions" that when clicked, reveals all the instructions below. While the instructions are clicked, this page url should have a hash location of `#manual-install`.
-Loading this page with `#manual-install` will automatically expand the region below.
-
-These instructions will also contain dynamic version numbers, need to use the version fetched previously. 
-Wherever you see "2.3.1" below, it should be dynamic based on LATEST
-
+## Manual Install Instructions
 1. Download https://install.airshipcms.io/Win64/2.3.1/airship.exe
 2. Download https://install.airshipcms.io/Win64/2.3.1/airship-server.exe
 3. Create a new folder `C:\AirshipLauncher`
@@ -30,5 +20,4 @@ Wherever you see "2.3.1" below, it should be dynamic based on LATEST
 10. In the CLI, run `airship version` and `airship help`
 
 ## Screenshots and review of instructions
-
 assign Nao to create these screenshots, then after this page is created, to test the instructions.
