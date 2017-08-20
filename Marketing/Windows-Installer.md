@@ -1,14 +1,26 @@
 ## Auto Install Instructions
+```
 <button id="windows-installer-download-button" class="button windows-installer-download-button">
 Download Latest Installer for Win64
 </button>
+```
 Click the above button to start the CLI installation on your Win64 machine. 
 
 (You will get a warning that this installer is not signed with a digital signature. This is expected behavior. If you prefer, you may follow the manual install instructions below instead.)
 
 ## Manual Install Instructions
-1. Download https://install.airshipcms.io/Win64/2.3.1/airship.exe
-2. Download https://install.airshipcms.io/Win64/2.3.1/airship-server.exe
+1. Download https://install.airshipcms.io/Win64/2.3.1/airship.exe.
+```
+<a id="windows-airship-server-link" class="button windows-airship-server-link" target="_blank>
+dynamically generate URL here
+</a>
+```
+2. Download https://install.airshipcms.io/Win64/2.3.1/airship-server.exe.
+```
+<a id="windows-airship-server-link" class="button windows-airship-server-link" target="_blank>
+dynamically generate URL here
+</a>
+```
 3. Create a new folder `C:\AirshipLauncher`.
    [include screenshots of the new folder]
 4. Move `airship.exe` and `airship-server.exe` into the `C:\AirshipLauncher\` folder.
