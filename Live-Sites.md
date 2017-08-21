@@ -1,7 +1,7 @@
 # Live Sites
 Live Sites developed by our team:
 
-# Applications / eCommerce Sites
+## Applications / eCommerce Sites
 
 ### Truffaux
 - A Boutique Hat Company
@@ -24,11 +24,12 @@ Live Sites developed by our team:
 - [beyondvtmarketing.com](https://www.beyondvtmarketing.com)
 
 ### Skyport - Airship CMS Developer Portal
-- Surfboard Manufacturer & Retailer website, with eCommerce enabled.
-- Custom Surfboards List display built with JS and utilizes Airship API.
-- [hicsurfboards.com](https://www.hicsurfboards.com)
+- Custom Angular 4 Application that utilizes Airship API for entirely custom interface.
+- User Login Portal for Subscription Management.
+- Utilizes webhooks for custom actions associated with order creation.
+- (launching August 31)
 
-# Websites
+## Websites
 
 ### Hawaii International Film Festival
 - Film Festival Informational Website.
@@ -52,18 +53,18 @@ Live Sites developed by our team:
 # Featured Sites
 Live Sites developed by other teams:
 
-## DevLeague
+### DevLeague
 - Website for Hawaii's First Coding Bootcamp Program.
 - [devleague.com](https://www.devleague.com)
 
-## Jr. DevLeague
+### Jr. DevLeague
 - Website for Programming Courses for Students, with eCommerce enabled.
 - [jrdevleague.com](https://www.jrdevleague.com)
 
-## Waimea Valley
+### Waimea Valley
 - Website for Waimea Valley Organization
 - [waimeavalley.net](https://www.waimeavalley.net)
 
-## Shirt Connect
+### Shirt Connect
 - Prototype for Application.
 - [shirtconnect.airshipcms.io](https://shirtconnect.airshipcms.io)
