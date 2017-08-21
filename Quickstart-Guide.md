@@ -153,12 +153,12 @@ You can comment out or delete the help markup if you don't need it anymore. This
 See what you can change about the Page Template. Add some fields, change the markup. For more detailed information on each property and datafield type that can be rendered on a page, see the [Page Templates](/documentation/view/page-templates) Docs.
 
 ### Change the Layout.
-(Layout Quickstart -->).
+(@TODO: Layout Quickstart)
 See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts).
 
 ### Change the Collection.
-The sample collection doesn't have rendered pages. (Collection Quickstart -->).
-[Collection Templates](/documentation/view/collection-templates).
+(@TODO: Collection Quickstart)
+See the Airship Documentation for what can be rendered on [Collection Templates](/documentation/view/collection-templates).
 
 ## 12. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
@@ -171,7 +171,7 @@ In your terminal, you will be presented with a preview of the actions that will 
 ---
 
 ## What's Next?
-(describe)
+(@TODO)
 
 ### Source Code Management
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
