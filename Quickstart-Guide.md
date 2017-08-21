@@ -1,6 +1,6 @@
 NOTES!
 - Open Source projects can be downloaded, though you won't yet be able to locally run them. We are still building out 'open source viewing' capabilities.
-- The Airship CMS Developer Portal is in a private beta. If you would like a demo website, contact us and we will be happy to set up a demo site for you!
+- The Airship CMS Developer Portal is in a private beta, so you won't be able to do Step 1. If you would like a demo website, contact us and we will be happy to set up a demo site for you!
 
 ---
 
