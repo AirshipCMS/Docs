@@ -1,8 +1,14 @@
+NOTES!
+- Open Source projects can be downloaded, though you won't yet be able to locally run them. We are still building out 'open source viewing' capabilities.
+- The Airship CMS Developer Portal is in a private beta. If you would like a demo website, contact us and we will be happy to set up a demo site for you!
+
+---
+
 Follow this Quickstart Guide to set up your first project with Airship CMS. 
 
 Not quite ready to create a project yet? Just create a Free login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io) then and try out the Developer Workflow and CLI tools using one of our [Open Source Demo Projects](#).
 
-Note: In the following guide, replace all instances of "subdomain" with your actual subdomain for the site:  
+In the following guide, replace all instances of "subdomain" with your actual subdomain for the site:  
 - `https://subdomain.airshipcms.io`
 - `https://subdomain.airshipcms.io/admin`
 - `airship login subdomain`
