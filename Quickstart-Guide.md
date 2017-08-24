@@ -90,21 +90,10 @@ Go to the Airship CMS admin panel for your site, and click the pencil icon <img 
 
 Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
-## 9. Edit templates & files. See it update locally (and _not_ update live).
-Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some markup on the file. Save the file.
+## 9. Edit the Homepage template. See it update locally (and _not_ update live).
+Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some static text on the file. Save the file.
 
-On the `root.html` template, add a new header above all the other page content:
-```
-<!--start test-->
-<h1>Hello! I'm testing out Airship CMS! ^__^</h1>
-<hr>
-<!--end test-->
-```
-In SublimeText 3, it will look like this:
-
-![edit-root](https://user-images.githubusercontent.com/1865400/28699019-c3912dda-72e2-11e7-9787-86059fcc542c.png)
-
-Be sure your file is Saved. Then, refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there soon!
+Refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there soon!
 
 ### 10. Render `{{{help}}}` on a template to see a list of data.
 On the `root.html` template, replace the header test you did in #9 and add following markup:  
