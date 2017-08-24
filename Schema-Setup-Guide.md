@@ -150,6 +150,7 @@ Example:
 ---
 
 ### Land New Templates
+Locally, login to your airship site through the CLI and `airship land` the templates for your new collections and pages. Be sure your local files are backed up first!! Landing will overwrite any local files (though that is OK, if you are using source code management, since you can just revert to the previous set of committed files).
 
 ---
 
