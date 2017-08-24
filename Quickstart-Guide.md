@@ -109,7 +109,7 @@ In SublimeText 3, it will look like this:
 
 <img width="500" alt="Text Editor Help" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-help.jpg">
 
-Refresh your local site url `(http://localhost:9001)` and you will see a list of properties. In your browser, it will look like this:  
+In your browser, refresh your local site url `(http://localhost:9001)` and you will see a list of properties:  
 
 <img width="500" alt="Browser Help" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-help.jpg">
 
@@ -127,22 +127,18 @@ Will output:
 ```
 Take a look at all the markup on the `root.html` template, and you can see which parts of the page are hardcoded in the markup, versus pulled from the CMS.
 
-You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. In fact, `{{{help}}}` will not render anything when you launch a site. It will only render a list of properties in local development.
+You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. `{{{help}}}` will not render anything on published sites.
 
-## 11. Change the Root Page
+## 11. Change the Page.
+- Add new fields through the CMS, and add markup to render the data on the `root.html` template. 
+- Add assets to the `/assets/` directory and link to them in your template or through a stylesheet.
 
-### Change the Root Page.
-See what you can change about the Page Template. Add some fields, change the markup. For more detailed information on each property and datafield type that can be rendered on a page, see the [Page Templates](/documentation/view/page-templates) Docs.
+See the [Page Templates](https://airshipcms.io/documentation/view/page-templates) Docs for details on how to render fields and properties on a page.
 
-### Change the Layout.
-(@TODO: Layout Quickstart)
+## 12. Change the Layout.
 See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts).
 
-### Change the Collection.
-(@TODO: Collection Quickstart)
-See the Airship Documentation for what can be rendered on [Collection Templates](/documentation/view/collection-templates).
-
-## 12. `airship launch` to publish your project.
+## 13. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
@@ -151,9 +147,6 @@ airship launch
 In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
 
 ---
-
-## What's Next?
-(@TODO)
 
 ### Source Code Management
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
