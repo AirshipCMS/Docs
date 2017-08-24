@@ -22,7 +22,7 @@ In the following guide, replace all instances of "mysite" with your actual subdo
 4. After a few minutes, you will receive a notification that your project is ready.
 5. When you navigate to your project url `(https://mysite.airshipcms.io)`, it will look something like this:  
 
-<img width="500" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
+<img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29646934-27ce4f72-8822-11e7-9987-d71940dd6a74.png">
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](/mac-linux-installer) or [Windows](/windows-installer) (beta).
@@ -81,7 +81,7 @@ Leave this terminal open during development in order to maintain an active conne
 ## 7. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-<img width="500" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
+<img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29646934-27ce4f72-8822-11e7-9987-d71940dd6a74.png">
 
 ## 8. Edit content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
