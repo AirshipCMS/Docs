@@ -130,10 +130,9 @@ Take a look at all the markup on the `root.html` template, and you can see which
 You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. `{{{help}}}` will not render anything on published sites.
 
 ## 11. Change the Page.
+See the [Page Templates](https://airshipcms.io/documentation/view/page-templates) Docs for details on how to render fields and properties on a page. Some things you can try:
 - Add new fields through the CMS, and add markup to render the data on the `root.html` template. 
 - Add assets to the `/assets/` directory and link to them in your template or through a stylesheet.
-
-See the [Page Templates](https://airshipcms.io/documentation/view/page-templates) Docs for details on how to render fields and properties on a page.
 
 ## 12. Change the Layout.
 See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts).
