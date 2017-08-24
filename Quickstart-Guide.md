@@ -81,7 +81,7 @@ Leave this terminal open during development in order to maintain an active conne
 ## 7. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
+<img width="504" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
 
 ## 8. Edit content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
