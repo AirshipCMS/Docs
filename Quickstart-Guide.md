@@ -129,11 +129,12 @@ Take a look at all the markup on the `root.html` template, and you can see which
 
 You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. `{{{help}}}` will not render anything on published sites.
 
-## 11. Change the Page.
+## 11. Change the page & add more pages.
 Review Docs on [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Page Properties](https://airshipcms.io/documentation/view/page-properties) for details on how to set a page template and how to render fields and properties on a page. Some things you can try:
 - Add new fields through the CMS, and add markup to render the data on the `root.html` template. 
 - Add assets to the `/assets/` directory and link to them in your template or through a stylesheet.
-- Change the [Layout](https://airshipcms.io/documentation/view/layouts).
+- Add more pages.
+- Add a global nav of links to your new pages in the [Layout](https://airshipcms.io/documentation/view/layouts).
 
 ## 13. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
@@ -150,13 +151,11 @@ Part of your regular development workflow probably involves using a Source Code 
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
-### Templating
-From here you might want to learn more about [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates), and [Collection Templates](/documentation/view/collection-templates).
-
 ### Project Schema
-Study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
+Study how [Pages](/documentation/view/pages), [Collections](https://airshipcms.io/documentation/view/collections), and [Relationships](https://airshipcms.io/documentation/view/relationships) work to form the [Schema & Data Model](https://airshipcms.io/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](https://airshipcms.io/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
+
+### Templating
+Learn more about [Layouts](https://airshipcms.io/documentation/view/layouts), [Page Templates](https://airshipcms.io/documentation/view/page-templates), and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates).
 
 ### XHR, Angular, React, and Single-Page Applications
-(describe) Some projects may not need classic website rendering, or Classic Rendering is not able to handle complex logic. For the most power, it is useful to combine classically rendered page elements with client-side rendered components. 
-
-If you want to use Airship CMS more like a headless CMS to construct your database/project schema and then build your application using a framework like Angular or React, then see the (Something Guide) and some of our Demo Projects.
+If you have custom components that require XHR requests, or if you prefer to build your project or a project component as a Single-Page Application with [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples). You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications. Every Airship project has API access. Let us know you are working on a custom component, and we will send you the documentation for the API!
