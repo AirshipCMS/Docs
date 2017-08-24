@@ -22,7 +22,7 @@ In the following guide, replace all instances of "mysite" with your actual subdo
 4. After a few minutes, you will receive a notification that your project is ready.
 5. When you navigate to your project url `(https://mysite.airshipcms.io)`, it will look something like this:  
 
-<img width="504" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
+<img width="500" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](/mac-linux-installer) or [Windows](/windows-installer) (beta).
@@ -34,7 +34,7 @@ mkdir ~/MyFirstAirshipSite
 ```
 If you use a source code management tool like Git, then you can initialize this directory as a versioned project.
 
-## 4. `airship login`to access your project content.
+## 4. `airship login` to access your project content.
 Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
@@ -69,7 +69,7 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 In SublimeText 3 it looks like this:
 
-<img width="507" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646676-98367020-8820-11e7-81c8-4f4f92e9eb9f.jpg">
+<img width="500" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646676-98367020-8820-11e7-81c8-4f4f92e9eb9f.jpg">
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
@@ -81,12 +81,12 @@ Leave this terminal open during development in order to maintain an active conne
 ## 7. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-<img width="504" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
+<img width="500" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
 
 ## 8. Edit content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
 
-![page-edit](https://user-images.githubusercontent.com/1865400/28547379-4a21a35a-706a-11e7-875b-1b317bdf5185.png)
+<img width="500" alt="airshipcms" src="https://user-images.githubusercontent.com/1865400/29646793-36ffe1e6-8821-11e7-9e7a-b14379517277.png">
 
 Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
