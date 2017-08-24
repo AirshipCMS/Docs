@@ -83,7 +83,7 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 
 <img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29647018-8cb91908-8822-11e7-8664-b284a7def4f5.jpg">
 
-## 8. Edit content. See it update locally & live.
+## 8. Edit Homepage content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
 
 <img width="500" alt="airshipcms" src="https://user-images.githubusercontent.com/1865400/29646793-36ffe1e6-8821-11e7-9e7a-b14379517277.png">
