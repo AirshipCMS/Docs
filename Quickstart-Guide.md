@@ -22,7 +22,7 @@ In the following guide, replace all instances of "subdomain" with your actual su
 4. After a few minutes, you will receive a notification that your project is ready.
 5. When you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
 
-![first-site-wider](https://user-images.githubusercontent.com/1865400/28547862-9d65786e-706c-11e7-9bc2-bc989dae7299.png)  
+![first-site-wider](https://user-images.githubusercontent.com/1865400/29646158-83a21ac2-881d-11e7-9a49-83877733ffc1.png)  
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are currently available for _Mac_ and _Linux_ development environments. You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools.
