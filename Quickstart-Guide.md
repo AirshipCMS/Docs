@@ -55,7 +55,7 @@ Inside of the `~/MyFirstAirshipSite directory`, run this command to download the
 ```
 airship land
 ```  
-This command will generate a `compartments`directory containing all the Airship files that are necessary for building out your project templates. 
+This command will generate a `compartments` directory containing very basic Airship files that are necessary for building out your project templates. 
 
 ## 6. Open your local files in a text editor.
 Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
@@ -89,16 +89,16 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
 ## 8. Edit the Homepage content. See it update locally & live.
-Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
+Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to edit the content on the "Homepage" of your site. It should look like this:  
 
 <img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-initial.jpg">
 
-Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
+Edit content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. You will see the content update in both instances of the site. Sometimes it takes a few refreshes or a hard refresh to show content changes.
 
 ## 9. Edit the Homepage template. See it update locally (and _not_ update live).
 Back in your text editor, open the `root.html` template located in `/compartments/templates`. Edit some static text on the file. Save the file.
 
-Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **live content**, compared to the published site where the page is rendered based on **live files** & **live content**. How do you upload your local files to your live site? We will get there soon!
+Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **published content**, whereas the published site renders **published files** & **published content**. 
 
 ### 10. See available properties for a page with `{{{help}}}`.
 On the `root.html` template and add following markup at the very top of your page. Save the file.
