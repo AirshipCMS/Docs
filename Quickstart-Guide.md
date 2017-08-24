@@ -83,31 +83,28 @@ In a browser, navigate to `localhost:9001`. You will see actual site content, re
 
 <img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29647018-8cb91908-8822-11e7-8664-b284a7def4f5.jpg">
 
-## 8. Edit Homepage content. See it update locally & live.
+## 8. Edit the Homepage content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
 
 <img width="500" alt="airshipcms" src="https://user-images.githubusercontent.com/1865400/29646793-36ffe1e6-8821-11e7-9e7a-b14379517277.png">
 
-Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
+Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
 ## 9. Edit the Homepage template. See it update locally (and _not_ update live).
-Back in your text editor, open the `root.html` template located in `/compartments/templates`. This template contains the markup that renders on the Homepage of your site. Edit some static text on the file. Save the file.
+Back in your text editor, open the `root.html` template located in `/compartments/templates`. Edit some static text on the file. Save the file.
 
-Refresh both your live site url in one tab `(https://subdomain.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files & live content**, compared to the published site where the page is rendered based on **live files & live content**. How do you upload your local files to your live site? We will get there soon!
+Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **live content**, compared to the published site where the page is rendered based on **live files** & **live content**. How do you upload your local files to your live site? We will get there soon!
 
-### 10. Render `{{{help}}}` on a template to see a list of data.
-On the `root.html` template, replace the header test you did in #9 and add following markup:  
+### 10. See available properties for a page with `{{{help}}}`.
+On the `root.html` template and add following markup at the very top of your page. Save the file.
 ```
-<!--start test-->
 {{{help}}}
-<hr>
-<!--end test-->
 ```
 In SublimeText 3, it will look like this:
 
 ![help-root](https://user-images.githubusercontent.com/1865400/28699367-c7d8e75a-72e4-11e7-916b-271a62b36cd8.png)
 
-Be sure your file is Saved. Then, refresh your local site url `(http://localhost:9001)` and you will see a list of properties. In your browser, it will look like this:  
+Refresh your local site url `(http://localhost:9001)` and you will see a list of properties. In your browser, it will look like this:  
 
 ![help](https://user-images.githubusercontent.com/1865400/28548652-de46ac96-7070-11e7-8bba-32de4d1268b3.png)  
 
