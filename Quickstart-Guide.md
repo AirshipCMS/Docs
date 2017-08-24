@@ -43,7 +43,7 @@ airship login mysite
 ```
 A browser window will pop up prompting you to login.
 
-<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-initial.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/auth0-login.jpg">
 
 Once you log in successfully, you can close the browser window. Your terminal should read:
 ```
