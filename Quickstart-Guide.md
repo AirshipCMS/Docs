@@ -6,7 +6,7 @@ NOTES!
 
 Follow this Quickstart Guide to set up your first project with Airship CMS. 
 
-Not quite ready to create a project yet? Just create a Free login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io) then and try out the Developer Workflow and CLI tools using one of our [Open Source Demo Projects](#).
+Not quite ready to create a project yet? Just create a Free login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io) then and try out the Developer Workflow and CLI tools using one of our [Open Source Demo Projects](/documentation/view/boilerplates-examples).
 
 In the following guide, replace all instances of "subdomain" with your actual subdomain for the site:  
 - `https://subdomain.airshipcms.io`
