@@ -18,6 +18,10 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
 
+Once you log in successfully, you should see a welcome message:
+
+<img width="500" alt="CMS Dashboard" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-dashboard.jpg">
+
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta).
 
