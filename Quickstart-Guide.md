@@ -133,9 +133,7 @@ You can comment out or delete the help markup if you don't need it anymore. This
 See the [Page Templates](https://airshipcms.io/documentation/view/page-templates) Docs for details on how to render fields and properties on a page. Some things you can try:
 - Add new fields through the CMS, and add markup to render the data on the `root.html` template. 
 - Add assets to the `/assets/` directory and link to them in your template or through a stylesheet.
-
-## 12. Change the Layout.
-See the Airship Documentation for what can be rendered on [Layouts](/documentation/view/layouts).
+- Change the [Layout](https://airshipcms.io/documentation/view/layouts).
 
 ## 13. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
