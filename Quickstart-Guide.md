@@ -19,7 +19,7 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
 
 ## 2. Install Airship Launcher CLI Tools.
-Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](/mac-linux-installer) or [Windows](/windows-installer) (beta).
+Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta).
 
 ## 3. Create a local directory for your project.
 Create a new empty directory for your project.
@@ -37,7 +37,14 @@ Inside your project directory, run this command (_replace "mysite" with your act
 ```
 airship login mysite
 ```
-A browser window will pop up prompting you to login. Once you log in successfully, you can close the browser window.
+A browser window will pop up prompting you to login.
+
+<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-initial.jpg">
+
+Once you log in successfully, you can close the browser window. Your terminal should read:
+```
+Successful Authentication.
+```
 
 ## 5. `airship land` to retrieve files.
 Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
