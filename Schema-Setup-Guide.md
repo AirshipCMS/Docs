@@ -1,7 +1,7 @@
 # Schema Setup Guide
-This schema setup guide is for someone who has completed the [Quickstart Guide](/documentation/view/quickstart-guide) and is ready to set up their first actual project. 
+This schema setup guide is for someone who has completed the [Quickstart Guide](https://airshipcms.io/documentation/view/quickstart-guide) and is ready to set up their first actual project. 
 
-Before starting, be sure to study how [Pages](/documentation/view/pages), [Collections](/documentation/view/collections), and [Relationships](/documentation/view/relationships) work to form the [Schema & Data Model](/documentation/view/schema-and-data-model) of a project built with Airship.
+Before starting, be sure to study how [Pages](https://airshipcms.io/documentation/view/pages), [Collections](https://airshipcms.io/documentation/view/collections), and [Relationships](https://airshipcms.io/documentation/view/relationships) work to form the [Schema & Data Model](https://airshipcms.io/documentation/view/schema-and-data-model) of a project built with Airship.
 
 ---
 
@@ -47,22 +47,10 @@ Log in to the Airship CMS admin panel `(https://subdomain.airshipcms.io/admin)` 
 ## Remove Demo Content from Airship CMS
 The `root` page (title "Homepage") is the only page you cannot delete in an Airship project. In Airship CMS, click the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> to Modify the page.
 
-![demo-page](https://user-images.githubusercontent.com/1865400/28703362-56aa7844-72ff-11e7-910e-b0d69899fa28.png)
-
 Delete all the demo fields. Only the uneditable properties should be left:
 
 ![uneditable-fields](https://user-images.githubusercontent.com/1865400/28703393-7f098f50-72ff-11e7-9ac1-ed4cb1cf0d11.png)
 
-Save the page.
-Go to Collections and click the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> to Modify the demo "Articles" Collection.
-
-![articles-collection](https://user-images.githubusercontent.com/1865400/28703286-cef5e7ee-72fe-11e7-982e-cf7ad896dc6b.png)
-
-Click "Delete Collection": ![delete-collection](https://user-images.githubusercontent.com/1865400/28703307-ecadaede-72fe-11e7-8985-2ad9a1c881b0.png)
-
-Confirm to delete the collection: ![confirm-delete-collection](https://user-images.githubusercontent.com/1865400/28703311-fd539776-72fe-11e7-8292-dbd588f845f2.png)
-
-## Modify the Homepage
 Modify the "Homepage" fields to add fields appropriate for your project. This example shows the fields added for the Homepage mocked up above.
 
 ![modified_homepage_fields](https://user-images.githubusercontent.com/16835553/28737399-0342c644-738a-11e7-8b96-2b024592eba6.png)
@@ -91,7 +79,7 @@ While the variable name and field type are not editable, you can edit the field 
 
 Pages that share the same template should have consistent fields in order to use the same Propeller markup.
 
-For more information about each field type, check out the documentation on [Datafields](/documentation/view/datafields).
+For more information about each field type, check out the documentation on [Datafields](https://airshipcms.io/documentation/view/datafields).
 
 ## Create Collections
 Create collections and define the fields for items in those collections.
@@ -118,7 +106,7 @@ The collection will render at `yourwebsitename.com/news`, categories will render
 Set the existing `application.html` **layout** for every collection.
 Create a new unique **template directory** for each new collection.
 
-When you are get familiar with how pages and collections render, you can start to edit your project to more efficiently share layouts and templates accross pages and collections on your site. See [Layouts](/documentation/view/layouts), [Page Templates](/documentation/view/page-templates) and [Collection Templates](/documentation/view/collection-templates) for more information.
+When you are get familiar with how pages and collections render, you can start to edit your project to more efficiently share layouts and templates accross pages and collections on your site. See [Layouts](https://airshipcms.io/documentation/view/layouts), [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more information.
 
 Example News Collection:
 - Layout: `application.html`
@@ -138,7 +126,7 @@ Example News Collection:
 - Set "Header" as the primary label. 
 
 ## Set up Relationships
-Relationships should be the last thing you set up for your schema. Review the Docs on [Relationships](/documentation/view/relationships) if you haven't done so yet.
+Relationships should be the last thing you set up for your schema. Review the Docs on [Relationships](https://airshipcms.io/documentation/view/relationships) if you haven't done so yet.
 
 To set up a relationship, add a "Related Aerostats" field to the page or collection you want one or more reference posts to appear on.
 
@@ -166,4 +154,4 @@ Example:
 ---
 
 ## Start Developing!
-Once your pages and collections are set up and demo content is in place, you can start building out your site in your local development environment. See the [Development Guide](/documentation/view/development-guide) for some development guidelines.
+Once your pages and collections are set up and demo content is in place, you can start building out your site in your local development environment. See the [Development Guide](https://airshipcms.io/documentation/view/development-guide) for some development guidelines.
