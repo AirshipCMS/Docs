@@ -69,7 +69,7 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 In SublimeText 3 it looks like this:
 
-<img width="507" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646613-46c1b01a-8820-11e7-9484-26327303bac3.png">
+<img width="507" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646676-98367020-8820-11e7-81c8-4f4f92e9eb9f.jpg">
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
