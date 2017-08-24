@@ -146,6 +146,9 @@ In your terminal, you will be presented with a preview of the actions that will 
 
 ---
 
+## Next Steps
+After testing the very basic development cycle, you can start building more complex projects!
+
 ### Source Code Management
 Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
@@ -158,4 +161,4 @@ Study how [Pages](/documentation/view/pages), [Collections](https://airshipcms.i
 Learn more about [Layouts](https://airshipcms.io/documentation/view/layouts), [Page Templates](https://airshipcms.io/documentation/view/page-templates), and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates).
 
 ### XHR, Angular, React, and Single-Page Applications
-If you have custom components that require XHR requests, or if you prefer to build your project or a project component as a Single-Page Application with [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples). You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications. Every Airship project has API access. Let us know you are working on a custom component, and we will send you the documentation for the API!
+If you want to build custom javascript components that require XHR requests, or if you prefer to build a component or even the entire project as a Single-Page Application using [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) that use React & Angular. You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications that access Airship CMS content. We will be launching Swagger Documentation very soon, though in the meantime, please contact us for the most up-to-date list of API endpoints!
