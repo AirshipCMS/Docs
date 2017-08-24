@@ -8,10 +8,10 @@ Follow this Quickstart Guide to set up your first project with Airship CMS.
 
 Not quite ready to create a project yet? Just create a Free login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io) then and try out the Developer Workflow and CLI tools using one of our [Open Source Demo Projects](/documentation/view/boilerplates-examples).
 
-In the following guide, replace all instances of "subdomain" with your actual subdomain for the site:  
-- `https://subdomain.airshipcms.io`
-- `https://subdomain.airshipcms.io/admin`
-- `airship login subdomain`
+In the following guide, replace all instances of "mysite" with your actual subdomain for the site:  
+- `https://mysite.airshipcms.io`
+- `https://mysite.airshipcms.io/admin`
+- `airship login mysite`
 
 ---
 
@@ -20,7 +20,7 @@ In the following guide, replace all instances of "subdomain" with your actual su
 2. Check your email to verify your account, then log in to the [Airship CMS Developer Portal](https://skyport.airshipcms.io).
 3. Choose a Plan and create your first project.
 4. After a few minutes, you will receive a notification that your project is ready.
-5. When you navigate to your project url `(https://subdomain.airshipcms.io)`, it will look something like this:  
+5. When you navigate to your project url `(https://mysite.airshipcms.io)`, it will look something like this:  
 
 <img width="504" alt="new-site-small" src="https://user-images.githubusercontent.com/1865400/29646477-64891a26-881f-11e7-9024-170c1249e4af.png">
 
@@ -39,9 +39,9 @@ Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
 ```
-Inside your project directory, run this command (_replace "subdomain" with your actual subdomain_):
+Inside your project directory, run this command (_replace "mysite" with your actual subdomain_):
 ```
-airship login subdomain
+airship login mysite
 ```
 A browser window will pop up prompting you to login. Once you log in successfully, you can close the browser window.
 
@@ -69,7 +69,7 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 In SublimeText 3 it looks like this:
 
-![open-sublime](https://user-images.githubusercontent.com/1865400/28698994-97c1f0c2-72e2-11e7-9ecf-25cc0c9d9cb9.png)
+<img width="507" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646613-46c1b01a-8820-11e7-9484-26327303bac3.png">
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
