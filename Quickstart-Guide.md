@@ -22,7 +22,7 @@ In the following guide, replace all instances of "mysite" with your actual subdo
 4. After a few minutes, you will receive a notification that your project is ready.
 5. When you navigate to your project url `(https://mysite.airshipcms.io)`, it will look something like this:  
 
-<img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29647018-8cb91908-8822-11e7-8664-b284a7def4f5.jpg">
+<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](/mac-linux-installer) or [Windows](/windows-installer) (beta).
@@ -69,7 +69,7 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 In SublimeText 3 it looks like this:
 
-<img width="500" alt="sublime" src="https://user-images.githubusercontent.com/1865400/29646676-98367020-8820-11e7-81c8-4f4f92e9eb9f.jpg">
+<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-initial.jpg">
 
 ## 6. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
@@ -81,12 +81,12 @@ Leave this terminal open during development in order to maintain an active conne
 ## 7. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-<img width="500" alt="new-teal-site" src="https://user-images.githubusercontent.com/1865400/29647018-8cb91908-8822-11e7-8664-b284a7def4f5.jpg">
+<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
 ## 8. Edit the Homepage content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to go to the content editing section of the "Homepage" of your site. It should look like this:  
 
-<img width="500" alt="airshipcms" src="https://user-images.githubusercontent.com/1865400/29646793-36ffe1e6-8821-11e7-9e7a-b14379517277.png">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-initial.jpg">
 
 Edit some content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the content updates in both instances of the site, after a few seconds.
 
@@ -102,15 +102,15 @@ On the `root.html` template and add following markup at the very top of your pag
 ```
 In SublimeText 3, it will look like this:
 
-![help-root](https://user-images.githubusercontent.com/1865400/28699367-c7d8e75a-72e4-11e7-916b-271a62b36cd8.png)
+<img width="500" alt="Text Editor Help" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-help.jpg">
 
 Refresh your local site url `(http://localhost:9001)` and you will see a list of properties. In your browser, it will look like this:  
 
-![help](https://user-images.githubusercontent.com/1865400/28548652-de46ac96-7070-11e7-8bba-32de4d1268b3.png)  
+<img width="500" alt="Browser Help" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-help.jpg">
 
 Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> Page Modify section in Airship CMS admin:  
 
-![page-setup](https://user-images.githubusercontent.com/1865400/28547380-4a2518c8-706a-11e7-8a9c-2652b4752009.png)  
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modify.jpg">
 
 Content from Airship CMS is rendered by adding markup with the exact variable name listed in the `{{{help}}}` list, contained by double curly braces. For example:
 ```
