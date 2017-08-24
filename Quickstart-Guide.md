@@ -7,8 +7,8 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 
 ---
 
-## 1. Test out your Login.
-1. Navigate to your project url `(https://mysite.airshipcms.io)`, and check that your temporary landig page is ready. It will look something like this:  
+## 1. Log in to your site.
+1. Airship is currently available by Private Invitation Only! Request a [Test Pilot's License](https://airshipcms.io/signup), and we will contact you when a seat opens up! Once you have site access, navigate to your project url `(https://mysite.airshipcms.io)`, and check that your temporary landing page is ready. It will look something like this:  
 
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
