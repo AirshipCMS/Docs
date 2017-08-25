@@ -8,19 +8,21 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 ---
 
 ## 1. Log in to your site.
-1. Airship is currently available by Private Invitation Only! Request a [Test Pilot's License](https://airshipcms.io/signup), and we will contact you when a seat opens up! 
+1. Airship is currently available by Private Invitation. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up. 
 
 2. Once we set up a site for you, navigate to your project url `(https://mysite.airshipcms.io)`. It will look something like this:  
 
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
-2. Log in to your project admin `(https://mysite.airshipcms.io/admin)`, and check that your login & password work.
+2. Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
 
 Once you log in successfully, you should see a welcome message:
 
 <img width="500" alt="CMS Dashboard" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-dashboard.jpg">
+
+Keep this window open. You will need to access it later.
 
 ## 2. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta).
