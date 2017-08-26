@@ -1,5 +1,5 @@
-# Live Sites
-Live Sites developed by our team:
+# Featured Projects
+Live Sites developed by our team & Featured Projects developed by other teams:
 
 ## Applications / eCommerce Sites
 
