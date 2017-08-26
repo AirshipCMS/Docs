@@ -34,7 +34,7 @@ Live Sites developed by our team & Featured Projects developed by other teams:
 ### Hawaii International Film Festival
 - Film Festival Informational Website.
 - Integrates with external films resource API.
-- (launching September 1)
+- (launching September 15)
 
 ### Airship CMS Marketing Site
 - Marketing Website & Platform Documentation Resource
