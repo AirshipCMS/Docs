@@ -133,8 +133,8 @@ You can comment out or delete the help markup if you don't need it anymore. This
 
 ## 11. Change the page & add more pages.
 Review Docs on [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Page Properties](https://airshipcms.io/documentation/view/page-properties) for details on how to set a page template and how to render fields and properties on a page. Some things you can try:
-- Add new fields through the CMS, and add markup to render the data on the `root.html` template. 
-- Add assets to the `/assets/` directory and link to them in your template or through a stylesheet.
+- Add new fields through the CMS, and add markup to render the data on the `root.html` template. See the Docs about [Page Properties](https://airshipcms.io/documentation/view/page-properties) for examples of rendering each field type.
+- Add assets to the `/assets/` directory and link to them in your template or through a stylesheet. See the Docs about [Project Directory Structure](https://www.airshipcms.io/documentation/view/project-directory#user-content-assets) for more on assets and how to link to them.
 - Add more pages.
 - Add a global nav of links to your new pages in the [Layout](https://airshipcms.io/documentation/view/layouts).
 
