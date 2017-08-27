@@ -149,10 +149,10 @@ In your terminal, you will be presented with a preview of the actions that will 
 ---
 
 ## Next Steps
-After testing the very basic development cycle, you can start building more complex projects!
+Once you have familiarized yourself with this very basic development cycle, you can start building more complex projects. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows. 
 
 ### Source Code Management
-Part of your regular development workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
+Part of your workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
 When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
@@ -163,4 +163,4 @@ Study how [Pages](/documentation/view/pages), [Collections](https://airshipcms.i
 Learn more about [Layouts](https://airshipcms.io/documentation/view/layouts), [Page Templates](https://airshipcms.io/documentation/view/page-templates), and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates).
 
 ### XHR, Angular, React, and Single-Page Applications
-If you want to build a custom javascript component that does an XHR request, or if you prefer to build a component or your entire project as a Single-Page Application using [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) that use React & Angular. You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications that access Airship CMS content. We will be launching Swagger Documentation for all API endpoints in September 2017. In the meantime, contact us to get the most up-to-date list of API endpoints.
+If you want to build a custom javascript component that does an XHR request, or if you prefer to build some or all of your  project as a Single-Page Application using [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) that use React & Angular. You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications that access Airship CMS content. We will be launching Swagger Documentation for all API endpoints in September 2017. In the meantime, contact us to get the most up-to-date list of API endpoints.
