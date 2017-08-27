@@ -132,8 +132,6 @@ In this example, the Homepage pulls some posts from the News Collection. On the 
 
 ![related-news](https://user-images.githubusercontent.com/1865400/28741348-fa676a7c-73af-11e7-81d3-3e82ffcec6d1.jpg)
 
----
-
 ## Add Content
 Add some placeholder content to each page you created, and add items with placeholder content to every collection you created. _You need to add placeholder content so that something renders on the page when you run the site locally._
 
@@ -144,9 +142,7 @@ Example:
 
 ![news-on-homepage](https://user-images.githubusercontent.com/1865400/28741384-c0e70522-73b0-11e7-995c-52aabedb334b.jpg)
 
----
-
-### Land New Templates
+## Land New Templates
 In your terminal, login to your airship site and `airship land` the templates for your new collections and pages. Be sure to git commit or backup your local files _before_ you land. Landing will sync files from the live site to your local development site and overwrite any local files you may have. If you are not using a source control management tool, you can alernatively manually create new templates for your site. See [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more on templates.
 
 ---
