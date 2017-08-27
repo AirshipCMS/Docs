@@ -39,10 +39,10 @@ Each item in the "News" collection will contian the following data:
 - **Body** (`richtext area`)
 - **Short Description** (`textarea`)
 
-For more examples, see some [Use Cases](/use-cases) and [Site Map Sketches](/site-map-sketches).
+For more examples, see some [Use Cases](https://airshipcms.io/use-cases).
 
 ## Log in to Airship CMS
-Log in to the Airship CMS admin panel `(https://subdomain.airshipcms.io/admin)` for your project.  
+Log in to the Airship CMS admin panel `(https://mysite.airshipcms.io/admin)` for your project.  
 
 ## Remove Demo Content from Airship CMS
 The `root` page (title "Homepage") is the only page you cannot delete in an Airship project. In Airship CMS, click the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> to Modify the page.
@@ -60,17 +60,15 @@ Save the page.
 ## Create Pages
 Create additional pages and define the fields for those pages.
 
-#### Page Setup
+### Page Setup
+The permalink defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://mysite.airshipcms.io/permalink` (_where mysite is your site subdomain_).
 
-##### Page URL
-The permalink defines the url for your page. When developing locally, the url will read as `http://localhost:9001/permalink`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/permalink` (_where subdomain is your site subdomain_).
-
-#### Page Rendering
+### Page Rendering
 Set the existing `application.html` **layout** for every page. This means all pages in the site will reference the same outer "container" markup typically used for the header and footer of the page. You can change this later, though it's easiest to set it to use the default `application.html` layout for now.
 
 Create a new unique **template** for each new page.
 
-#### Page Fields
+### Page Fields
 Define the fields for each page.
 
 These fields will contain all of the data that will be rendered on your site using Airship Propellers. You can create as many fields as needed as long as each `variable name` is unique. By default, the `variable name` is the `title` in lowercase, with spaces converted to underscores. You may customize each variable name, however, keep in mind that having consistency between the title and variable name makes it easier to remember what value to use when rendering data with Propellers.
@@ -84,17 +82,16 @@ For more information about each field type, check out the documentation on [Data
 ## Create Collections
 Create collections and define the fields for items in those collections.
 
-##### Collection Setup
+### Collection Setup
 For each collection, add a Title, Public Path, and Name.
 
-The public path defines the url for the collection. When developing locally, the url will read as `http://localhost:9001/public_path`. When your site is launched, the url will read as `http://subdomain.airshipcms.io/public_path` (_where subdomain is your site subdomain_).
+The public path defines the url for the collection. When developing locally, the url will read as `http://localhost:9001/public_path`. When your site is launched, the url will read as `http://mysite.airshipcms.io/public_path` (_where mysite is your site subdomain_).
 
-#### Collection URLs
-For collections utilizing the `show.html` layout, a single item in the collection will render at `http://subdomain.airshipcms.io/public_path/view/permalink`.
+For collections utilizing the `show.html` layout, a single item in the collection will render at `http://mysite.airshipcms.io/public_path/view/permalink`.
 
-For collections utilizing the `categories.html` layout, collection categories will render at `http://subdomain.airshipcms.io/public_path/categories`.
+For collections utilizing the `categories.html` layout, collection categories will render at `http://mysite.airshipcms.io/public_path/categories`.
 
-For collections utilizing the `category.html` layout, items in a category will render at `http://subdomain.airshipcms.io/public_path/categories/category-permalink`.
+For collections utilizing the `category.html` layout, items in a category will render at `http://mysite.airshipcms.io/public_path/categories/category-permalink`.
 
 Example News Collection:
 - Title: `News`
@@ -102,7 +99,7 @@ Example News Collection:
 
 The collection will render at `yourwebsitename.com/news`, categories will render at `yourwebsitename.com/news/categories`, a list of posts within a category will render at `yourwebsitename.com/news/categories/category-permalink`, and a single post will render at `yourwebsitename.com/news/view/permalink`.
 
-#### Collection Rendering
+### Collection Rendering
 Set the existing `application.html` **layout** for every collection.
 Create a new unique **template directory** for each new collection.
 
@@ -112,14 +109,14 @@ Example News Collection:
 - Layout: `application.html`
 - Template Directory: `news`
 
-#### Collection Fields
+### Collection Fields
 Define the fields for an item in the collection.
 
 Example News Collection:
 
 ![image](https://user-images.githubusercontent.com/1865400/28741262-25d965e0-73ae-11e7-84b5-aeeff2b239e1.png)
 
-#### Primary Label
+### Primary Label
 The only purpose of the `Primary Label` is to identify what field will be set as the "main field" in the list view of items in the CMS.
 
 Example News Collection:
@@ -150,7 +147,7 @@ Example:
 ---
 
 ### Land New Templates
-Locally, login to your airship site through the CLI and `airship land` the templates for your new collections and pages. Be sure your local files are backed up first!! Landing will overwrite any local files (though that is OK, if you are using source code management, since you can just revert to the previous set of committed files).
+In your terminal, login to your airship site and `airship land` the templates for your new collections and pages. Be sure to git commit or backup your local files _before_ you land. Landing will sync files from the live site to your local development site and overwrite any local files you may have. If you are not using a source control management tool, you can alernatively manually create new templates for your site. See [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more on templates.
 
 ---
 
