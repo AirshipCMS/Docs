@@ -25,9 +25,9 @@ If this is a new directory, you will be asked to set the current directory to yo
 
 After validating connection to your site, this will open a new window in your browser with a login prompt. Remember to login with your Superadmin credentials or you will not be able to land your site in the next step. Check out the [Airship CLI Troubleshooting Information](/documentation/view/airship-cli-troubleshooting) if you experience any authentication issues.
 
+### 2. Land
 Once you have successfully authenticated, you're ready to [`airship land`](/documentation/view/airship-cli-commands#user-content-airship-land).
 
-### 2. Land
 If this is a new project, you will need to land your project files. If you have already started working on your site, or you have your project backed up with an SCM tool, you probably only need to land once, when you are starting your project. After that, you can pretty much just use your SCM tool for backing up files, and `airship launch` to publish files.
 
 To land your site, ensure that you are in the project root directory, then run `airship land`.
