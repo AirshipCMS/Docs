@@ -19,7 +19,7 @@ To begin developing, you must first [`airship login`](/documentation/view/airshi
 
 First, create or navigate to the desired project directory in your terminal. This is where all the files for your site will live locally.
 
-Run the `airship login mysite` command, where _subdomain_ is the subdomain of your site.
+Run the `airship login mysite` command, where _mysite_ is the subdomain of your site.
 
 If this is a new directory, you will be asked to set the current directory to your sites project root. Enter `y` if this is okay.
 
