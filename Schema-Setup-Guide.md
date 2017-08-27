@@ -128,7 +128,7 @@ Relationships should be the last thing you set up for your schema. Review the Do
 To set up a relationship, add a "Related Aerostats" field to the page or collection you want one or more reference posts to appear on.
 
 Example:
-In this example, the Homepage pulls some posts from the News Collection. On the Homepage, a Field called "Related News" with type "Related Aerostats" and the collection "News":
+In this example, the Homepage pulls some posts from the News Collection. On the **Homepage**, add a Field called "Related News" with type "Related Aerostats" and the collection "News":
 
 ![related-news](https://user-images.githubusercontent.com/1865400/28741348-fa676a7c-73af-11e7-81d3-3e82ffcec6d1.jpg)
 
