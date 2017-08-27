@@ -14,7 +14,7 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
 
-2. Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
+3. Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
 
