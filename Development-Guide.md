@@ -12,14 +12,14 @@ To view some sample projects with different development workflows, check out the
 ## Develop Locally
 Once you have your pages and collections set up in the Admin portal, you're ready to start developing! 
 
-The following is a step by step processes on what the development workflow is typically like for a simple site.
+The following is the general development workflow for a simple website.
 
 ### 1. Login
 To begin developing, you must first [`airship login`](/documentation/view/airship-cli-commands#user-content-airship-login) to your site using your Superadmin credentials.
 
 First, create or navigate to the desired project directory in your terminal. This is where all the files for your site will live locally.
 
-Run the `airship login subdomain` command, where _subdomain_ is the subdomain of your site.
+Run the `airship login mysite` command, where _subdomain_ is the subdomain of your site.
 
 If this is a new directory, you will be asked to set the current directory to your sites project root. Enter `y` if this is okay.
 
@@ -28,11 +28,13 @@ After validating connection to your site, this will open a new window in your br
 Once you have successfully authenticated, you're ready to [`airship land`](/documentation/view/airship-cli-commands#user-content-airship-land).
 
 ### 2. Land
-To land your site, ensure you're in the projects root directory, then run `airship land`.
+If this is a new project, you will need to land your project files. If you have already started working on your site, or you have your project backed up with an SCM tool, you probably only need to land once, when you are starting your project. After that, you can pretty much just use your SCM tool for backing up files, and `airship launch` to publish files.
 
-This will prompt whether or not it's okay to download the sites compartments to your local project directory. This includes all the files for your site, such as the layouts and templates created in the Admin portal.
+To land your site, ensure that you are in the project root directory, then run `airship land`.
 
-**Note**: running `airship land` will overwrite anything you were working on locally that was not published to your site using `airship launch`. Be sure to your backup files or use a source management tool to avoid losing any of your hard work!
+This will show a prompt asking whether or not it is okay to download the site's compartments to your local project directory. This includes all the files for your site, such as the layouts and templates created in the Admin portal.
+
+**Note**: running `airship land` will overwrite anything you were working on locally that was not published to your site using `airship launch` or backed up with source code management. Be sure to your backup files or use a source management tool to avoid losing any of your hard work!
 
 Once you have downloaded your sites compartments, your [Project Directory](/documentation/view/project-directory) should look similar to the following:
 
