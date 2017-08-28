@@ -102,7 +102,7 @@ Back in your text editor, open the `root.html` template located in `/compartment
 
 Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **published content**, whereas the published site renders **published files** & **published content**. 
 
-### 10. See available properties for a page with `{{{help}}}`.
+## 10. See available properties for a page with `{{{help}}}`.
 On the `root.html` template and add following markup at the very top of your page. Save the file.
 ```
 {{{help}}}
