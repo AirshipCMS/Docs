@@ -17,7 +17,7 @@ In the context of a website, a Relationship could be used to show "similar proje
 
 In the context of a web application, a Relationship could be used to associate "favorite genres" from a Genres Collection a Public User Profile in a "Public User Profiles" Collection.
 
-To see how Related Items render on a page or post, see the [Related Items](/documentation/view/related-items) Docs.
+To see how Related Items render on a page or post, see the [Related Items](https://airshipcms.io/documentation/view/related-items) Docs.
 
 ---
 
