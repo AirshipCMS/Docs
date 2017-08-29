@@ -1,18 +1,18 @@
 # Propeller Helpers
-While these helpers are not available in the [layout](/documentation/view/layouts) level, they are available in all template files such as [page](/documentation/view/page-templates) or [collection](/documentation/view/collection-templates) templates.
+While these helpers are not available in the [layout](https://airshipcms.io/documentation/view/layouts) level, they are available in all template files such as [page](https://airshipcms.io/documentation/view/page-templates) or [collection](https://airshipcms.io/documentation/view/collection-templates) templates.
 
 A propeller helper is an expression wrapped in curly braces, such as `{{format_date}}`.
 
-When using these helpers within nested context, such as when rendering [image](/documentation/view/datafields#user-content-image) or [link](/documentation/view/datafields#user-content-link) fields, the syntax has a `#` preceeding the expression. See [#each](/documentation/view/handlebarsjs#user-content-each), or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) for examples. 
+When using these helpers within nested context, such as when rendering [image](https://airshipcms.io/documentation/view/datafields#user-content-image) or [link](https://airshipcms.io/documentation/view/datafields#user-content-link) fields, the syntax has a `#` preceeding the expression. See [#each](https://airshipcms.io/documentation/view/handlebarsjs#user-content-each), or [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) for examples. 
 
-Check out the [HandlebarsJS](/documentation/view/handlebarsjs) documentation for more helpers.
+Check out the [HandlebarsJS](https://airshipcms.io/documentation/view/handlebarsjs) documentation for more helpers.
 
 ## {{{help}}}
 Add `{{{help}}}` to any of the template files to see which properties and fields are available for that page. All available properties and fields render as a bulleted list. Items in collections must be published in order to be accessible.
 
 This does not render in production.
 
-Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](/documentation/view/handlebarsjs#user-content-each) or [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propellers.
+Variable names with `[list]` indicate that the field is an array of items. These fields require either the [#each](https://airshipcms.io/documentation/view/handlebarsjs#user-content-each) or [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) propellers.
 
 Any desired properties or fields that are not listed when rendering help must be accessed via API calls or other methods.
 
@@ -201,9 +201,9 @@ This is used to render items in a list. For more control use `{{#sort_list}}` in
 [BUG --- retrieves first 50 items created, then sorts. instead of sorting then retrieving]
 
 ## {{#sort_list}}
-This is used to sort items in lists. It is used in place of the [#each](/documentation/view/handlebarsjs#user-content-each) helper.
+This is used to sort items in lists. It is used in place of the [#each](https://airshipcms.io/documentation/view/handlebarsjs#user-content-each) helper.
 
-When using this helper, you can set the list to sort by any "first level" alphabetical or date properties such as [permalink](/documentation/view/collection-item-properties#user-content-permalink), [public path](/documentation/view/collection-item-properties#user-content-public-path), [published_on](/documentation/view/collection-item-properties#user-content-published-on) or [created_at](/documentation/view/collection-item-properties#user-content-created-at). Currently, it is not possible to use any nested properties for sorting, such as those in `fields`. Use the [help propeller](/documentation/view/propeller-helpers#user-content-help) to check for available first level properties.
+When using this helper, you can set the list to sort by any "first level" alphabetical or date properties such as [permalink](https://airshipcms.io/documentation/view/collection-item-properties#user-content-permalink), [public path](https://airshipcms.io/documentation/view/collection-item-properties#user-content-public-path), [published_on](https://airshipcms.io/documentation/view/collection-item-properties#user-content-published-on) or [created_at](https://airshipcms.io/documentation/view/collection-item-properties#user-content-created-at). Currently, it is not possible to use any nested properties for sorting, such as those in `fields`. Use the [help propeller](https://airshipcms.io/documentation/view/propeller-helpers#user-content-help) to check for available first level properties.
 
 The syntax is as follows:
 ```
