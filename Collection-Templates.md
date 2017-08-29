@@ -1,7 +1,7 @@
 # Collection Templates
 Collection Templates contain html and collection propellers code that renders collection items content. 
 
-Collection Templates include a pre-determined set of the following templates: [`index.html`](/documentation/view/collection-index-template), [`show.html`](/documentation/view/collection-show-template), [`categories.html`](/documentation/view/collection-categories-template), and [`category.html`](/documentation/view/collection-category-template). 
+Collection Templates include a pre-determined set of the following templates: [`index.html`](https://airshipcms.io/documentation/view/collection-index-template), [`show.html`](https://airshipcms.io/documentation/view/collection-show-template), [`categories.html`](https://airshipcms.io/documentation/view/collection-categories-template), and [`category.html`](https://airshipcms.io/documentation/view/collection-category-template). 
 
 Collection Templates are not generated with any pre-defined markup in order to give developers the most flexibility when structuring content on a page.
 
@@ -24,7 +24,7 @@ compartments
 ---
 
 ## Setting a Collection Template Directory in Airship CMS
-By default, a layout and template directory are not automatically set when you create a new collection. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template directory for the collection you are creating.
+By default, a layout and template directory are not automatically set when you create a new collection. If you are building a classically rendered website, you will need to set both a [layout](https://airshipcms.io/documentation/view/layouts) and template directory for the collection you are creating.
 
 In Airship CMS, in the `Collection Rendering` section of the collection you are creating or modifying, the `Template Directory` path should be written exactly the way you want it to appear when you reference the collection template files in your local project directory. In this example, the template directory is named `blog`:
 
@@ -109,22 +109,22 @@ Some fields that include a list of content require an `{{#each}}` helper. When r
 The `index.html` template is used to display all items within a collection.
 The public path of the collection, e.g. `/blog`, routes to this page.
 
-Check out the docs for rendering [`index.html`](/documentation/view/collection-index-template), and all available properties and fields that can be accessed from this template.
+Check out the docs for rendering [`index.html`](https://airshipcms.io/documentation/view/collection-index-template), and all available properties and fields that can be accessed from this template.
 
 ## `show.html` template:
 The `show.html` template renders a single item in a collection.
 The url for a post is a collection follows the format: `/collection-public-path/view/item-permalink`.
 
-Check out the docs for rendering [`show.html`](/documentation/view/collection-show-template), and all available properties and fields that can be accessed from this template.
+Check out the docs for rendering [`show.html`](https://airshipcms.io/documentation/view/collection-show-template), and all available properties and fields that can be accessed from this template.
 
 ## `categories.html` template:
 The `categories.html` template is used as an index for all categories within a collection.
 The url for the categories in a collection follows the format: `/collection-public-path/categories`.
 
-Check out the docs for rendering [`categories.html`](/documentation/view/collection-categories-template), and all available properties and fields that can be accessed from this template.
+Check out the docs for rendering [`categories.html`](https://airshipcms.io/documentation/view/collection-categories-template), and all available properties and fields that can be accessed from this template.
 
 ## `category.html` template:
 The `category.html` template is used as an index for a sinle category within a collection.
 The url for a category in a collection follows the format: `/collection-public-path/categories/category-permalink`.
 
-Check out the docs for rendering [`category.html`](/documentation/view/collection-category-template), and all available properties and fields that can be accessed from this template.
+Check out the docs for rendering [`category.html`](https://airshipcms.io/documentation/view/collection-category-template), and all available properties and fields that can be accessed from this template.
