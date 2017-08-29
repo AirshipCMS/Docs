@@ -1,7 +1,7 @@
 # HandlebarsJS
 See the [HandlebarsJS documentation](http://handlebarsjs.com/builtin_helpers.html) for their available built in helpers.
 
-Be sure to check out the [Propeller Helpers documentation](/documentation/view/propeller-helpers) for custom Airship CMS helpers such as [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list).
+Be sure to check out the [Propeller Helpers documentation](https://airshipcms.io/documentation/view/propeller-helpers) for custom Airship CMS helpers such as [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list).
 
 The following are some examples of using built in HandlebarsJS helpers to render Airship CMS content:
 
