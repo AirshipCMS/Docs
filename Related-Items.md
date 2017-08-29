@@ -1,11 +1,11 @@
 # Related Items
-Related items are the items selected in [related aerostat](/documentation/view/datafields#user-content-related-items) fields.
+Related items are the items selected in [related aerostat](https://airshipcms.io/documentation/view/datafields#user-content-related-items) fields.
 
-Each item is an item within a collection. Items must be published in order to be available for rendering. The content entered in Admin for each item is accessible through the `related_items.related_aerostats_variable_name` field. The order of which the items are rendered can be controlled by either dragging each item into the proper order while editing the page, or by using the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller.
+Each item is an item within a collection. Items must be published in order to be available for rendering. The content entered in Admin for each item is accessible through the `related_items.related_aerostats_variable_name` field. The order of which the items are rendered can be controlled by either dragging each item into the proper order while editing the page, or by using the [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) propeller.
 
 
 ## Using `{{#each}}` to render
-See the [#each](/documentation/view/handlebarsjs#user-content-each) propeller documentation for more information.
+See the [#each](https://airshipcms.io/documentation/view/handlebarsjs#user-content-each) propeller documentation for more information.
 
 Example markup rendering related aerostats with the variable name `similar_animals`:
 ```
@@ -25,7 +25,7 @@ Example Output:
 ```
 
 ## Using `{{#sort_list}}` to render
-See the [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) propeller documentation for more information.
+See the [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) propeller documentation for more information.
 
 Example Markup:
 ```
