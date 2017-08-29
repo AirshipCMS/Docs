@@ -13,7 +13,7 @@ This is a demo of an Airship CMS project that uses Angular 1.x to render all pag
 
 ### Angular 1.x + Gulp + Babel + Airship CMS
 This is a demo of an Airship CMS project that uses Angular 1.x + Gulp + Babel to render all pages.
-- [Demo](https://http://angular-1-gulp-babel.airshipcms.io)
+- [Demo](https://angular-1-gulp-babel.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/angular-1.airshipcms.io)
 
 ### Angular 4
