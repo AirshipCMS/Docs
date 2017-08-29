@@ -37,14 +37,14 @@ If you choose the title "About the Company" , the permalink will then become `ab
 The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
 #### Layout
-A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](/documentation/view/layouts).
+A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](https://airshipcms.io/documentation/view/layouts).
 
 Choose an existing layout, or create a new one.
 
 When you create a new layout, it will automatically be generated on the Airship Server. When you execute the command `airship land` the file will download to the `/compartments/layouts/` directory.
 
 #### Template
-A template contains markup unique to the page. Templates can display page properties and fields that are set for the page. For more information, see [Page Templates](/documentation/view/page-templates).
+A template contains markup unique to the page. Templates can display page properties and fields that are set for the page. For more information, see [Page Templates](https://airshipcms.io/documentation/view/page-templates).
 
 Choose an existing template, or create a new one.
 
@@ -74,7 +74,7 @@ By default, the `Variable Name` is the title in lowercase, with spaces converted
 #### Type
 The `Type` of the field sets what content fields display in the CMS. Once set, the variable type is not editable.
 
-For more information on datafields and example uses, see the documentation on [Datafields](/documentation/view/datafields).
+For more information on datafields and example uses, see the documentation on [Datafields](https://airshipcms.io/documentation/view/datafields).
 
 ---
 
