@@ -20,7 +20,7 @@ compartments
 
 ---
 
-See [Collection Templates](/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
+See [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more information on how to set the collection template directory for a collection.
 
 When you are developing locally the url of the categories page will be `localhost:9001/public_path/categories`, where `public_path` is the value you set for the collection in Airship CMS.
 
@@ -35,7 +35,7 @@ On the collection `categories.html`, you can add the code `{{{help}}}` within th
 
 Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
-Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [#sort_list](/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
+Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
 
 ## Collection `categories.html` Properties:
 The following properties can be rendered on the `categories.html` template:
