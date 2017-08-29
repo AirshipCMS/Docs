@@ -58,3 +58,5 @@ The following are example projects! These projects are actually in use. Please d
 Website for the local Global Game Jam hackathon.
 - [Demo](https://ggj.airshipcms.io)
 - [Github](https://github.com/AirshipCMS/Global-Game-Jam-Honolulu)
+
+For a list of Published & Featured Projects, check out the [Featured Projects](https://airshipcms.io/featured-projects) page.
