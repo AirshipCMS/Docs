@@ -23,10 +23,10 @@ Deleting a category will disassociate the category from any items.
 ## Category Rendering
 
 ### `categories.html` template
-The [Collection Categories Template](/documentation/view/collection-categories-template) renders a list of all categories within a collection.
+The [Collection Categories Template](https://airshipcms.io/documentation/view/collection-categories-template) renders a list of all categories within a collection.
 
 ### `category.html` template
-The [Collection Category Template](/documentation/view/collection-category-template) renders a list of all items in the collection within th category.
+The [Collection Category Template](https://airshipcms.io/documentation/view/collection-category-template) renders a list of all items in the collection within th category.
 
 ### `show.html` template
 On the collection `index.html`, `category.html`, and `show.html` a list of categories attached to each item can be listed.
