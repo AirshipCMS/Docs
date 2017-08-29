@@ -17,7 +17,7 @@ compartments
 ---
 
 ## Setting a Page Template in Airship CMS
-By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](/documentation/view/layouts) and template for the page you are creating.
+By default, a layout and template are not automatically set when you create a new page. If you are building a classically rendered website, you will need to set both a [layout](https://airshipcms.io/documentation/view/layouts) and template for the page you are creating.
 
 In Airship CMS, in the `Page Rendering` section of the page you are creating or modifying, the `Template` filename should be written exactly the way you want it to appear when you reference the file in your local project directory. In this example, the template is named `about.html`:
 
@@ -70,7 +70,7 @@ When you are developing locally, the url of the page will be `localhost:9001/per
 ## Page Propellers
 "Propellers" is the Airship name for the markup used to render CMS content. Propellers markup follows [HandlebarsJS](http://handlebarsjs.com/) syntax. 
 
-On any page, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the [Page Properties](#user-content-page-properties) and [Page Datafields](#user-content-page-datafields) that can be rendered on a page. 
+On any page, you can add the code `{{{help}}}` within the html markup. This will render a list of all data that is available for rendering. The following sections list the [Page Properties](https://airshipcms.io/documentation/view/page-properties) and [Datafields](https://airshipcms.io/documentation/view/datafields) that can be rendered on a page. 
 
 Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
@@ -105,7 +105,7 @@ The following field types can be rendered on a page template:
 - `list of links`
 - `date`
 
-To see examples of how each property and field renders, see [Page Properties](/documentation/view/page-properties).
+To see examples of how each property and field renders, see [Page Properties](https://airshipcms.io/documentation/view/page-properties).
 
 ---
 
