@@ -53,14 +53,14 @@ Example: If you choose the title `Event Services`, the Name will autofill to be 
 The values set for Layouts and Templates correspond to the html files that are used to render the page.
 
 #### Layout
-A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages and collections of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](/documentation/view/layouts).
+A layout is the outer HTML wrapper of content on an Airship site. The layout usually contains static content that is repeated across many pages and collections of a site (such as headers, navigation bars, or footers). A single layout can be used for multiple pages and collections on an Airship site. For more information, see [Layouts](https://airshipcms.io/documentation/view/layouts).
 
 Choose an existing layout, or create a new one.
 
 When you create a new layout, it will automatically be generated on the Airship Server. When you execute the command `airship land` the file will download to the `/compartments/layouts/` directory.
 
 #### Template Directory
-A template directory contains a set of four templates specific to the collection: `index.html`, `show.html`, `categories.html`, and `category.html`. Each template displays properties and fields for the collection. For more information, see [Collection Templates](/documentation/view/collection-templates).
+A template directory contains a set of four templates specific to the collection: `index.html`, `show.html`, `categories.html`, and `category.html`. Each template displays properties and fields for the collection. For more information, see [Collection Templates](https://airshipcms.io/documentation/view/collection-templates).
 
 Choose an existing template directory, or create a new one.
 
@@ -104,7 +104,7 @@ By default, the `Variable Name` is the title in lowercase, with spaces converted
 #### Type
 The `Type` of the field sets what content fields display in the CMS. Once set, the variable type is not editable.
 
-For more information on datafields and example uses, see the documentation on [Datafields](/documentation/view/datafields).
+For more information on datafields and example uses, see the documentation on [Datafields](https://airshipcms.io/documentation/view/datafields).
 
 ### Primary Label
 The only purpose of the `Primary Label` is to identify what field will be set as the "main field" in the list view of items in the CMS. Primary Label can be set to `ID`, `Created At`, `Updated At`, `Permalink`, or any field from the Post Fields that is Type:Text.
@@ -119,12 +119,12 @@ To change properties and fields for a page, click the [ICON] Modify icon of the 
 ## Delete a Collection (Superadmins Only)
 To change properties and fields for a page, click the [ICON] Modify icon of the page you want to delete. At the bottom of the page, click the `Delete Collection` link. When prompted, click `Confirm Delete`.
 
-When deleting a collection, **all** items within the collection will also be deleted. If any of the items are being referenced by a [related aerostats field](/documentation/view/datafields#user-content-related-items), they will be deleted as well.
+When deleting a collection, **all** items within the collection will also be deleted. If any of the items are being referenced by a [related aerostats field](https://airshipcms.io/documentation/view/datafields#user-content-related-items), they will be deleted as well.
 
 ---
 
 ## Collection Items
-An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](/documentation/view/collection-item-properties) Docs.
+An item in a collection is sometimes referred to as a "post", or the Airship term for a item is an "aerostat". For more information on item properties, see the [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties) Docs.
 
 ### View all Collection Items (Admins & Superadmins)
 To view all of the items within the collection, navigate to the Admin panel, then click the Collection link on the sidebar at the left then click the [ICON] List All icon for the collection.
@@ -145,7 +145,7 @@ To delete an item, navigate to the [ICON] List All view of the collection, then 
 ---
 
 ## Collection Categories
-Items in a collection can be organized into Categories. See the [Categories](/documentation/view/categories) Docs for more information.
+Items in a collection can be organized into Categories. See the [Categories](https://airshipcms.io/documentation/view/categories) Docs for more information.
 
 ---
 
@@ -156,4 +156,4 @@ In the Admin, items in a collection can be displayed by their Publish Date, Crea
 To change the sort order of collection items, click the `Sort Order` filter, then click the [ICON] Edit Icon that appears within the Sort Order filter. Drag and drop items into the desired order, then click Save Sort Order.
 
 ### Set the published site display order of Collection Items (Superadmins Only)
-Setting the sort order in the Admin adds a "sorting_position" value to items. However, the display order of items on a published site is determined by how the developer chooses to render items in a collection. See [Collection Templates](/documentation/view/collection-templates) for more information on displaying lists of items in a collection.
+Setting the sort order in the Admin adds a "sorting_position" value to items. However, the display order of items on a published site is determined by how the developer chooses to render items in a collection. See [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more information on displaying lists of items in a collection.
