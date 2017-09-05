@@ -49,8 +49,20 @@ It really only makes sense to run `airship land` **once**, _at the very beginnin
 
 Again: Always back up files with Git!
 
-## Page Fields
+## Image Assets
 - [ ] Place an image into the `/assets/` directory, within an `/images/` subdirectory.
-- [ ] Include the image with an `<img>` tag somewhere on the root page.
+- [ ] Include the image with an `<img>` tag somewhere on the root page. (Reference the file with the relative reference `/assets/images/...`).
 - [ ] Commit your changes.
 - [ ] Launch your changes.
+
+Files in the `/assets/` directory are specifically for development. As a developer, you can reference files and make changes to them, however users with "Admin" access won't be able to add/edit/delete any files within this directory.
+
+Unlike files uploaded through the Admin Portal, files launched trhough the CLI  are _not optimized_ , so it is important to manually keep file sizes optimized.
+
+## Page Modify: Editing a Field
+- [ ] _Modify_ the Abut Page, and add a new field called "Header", type "Text". _Edit_ the page to add some placeholder content, then _Render_ the field content on the About Page template.
+- [ ] _Modify_ the Abut Page, and change the label for the "Header" field to "Title". Notice that the label for the field changes on the _Edit_ view, however the original variable name `header` does not change.
+
+Lesson: The text label for a field can be edited so it displays with a different label in the Admin Edit view, however the variable name and type cannot be changed once they are set. (You have to delete the original field and add a new field if you really want a different variable name).
+
+## Page Modify: Add More Fields
