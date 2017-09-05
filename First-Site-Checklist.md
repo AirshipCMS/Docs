@@ -19,36 +19,6 @@ Complete this checklist after completing the Quickstart Guide. Each task is mean
 
 - [ ] Git commit your files.
 
-## Land & Launch Conflicts
-- [ ] In your terminal, run `airship land`.
-
-The CLI should show you a preview of the following actions that will happen:
-- layout `checklist-layout.html` will be updated.
-- template `about.html` will be created.
-- asset `styles.css` will be deleted.
- 
-- [ ] Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
-
-After running `airship land`, you will probably end up with:
-- changes to `homepage.html` layout that you _don't want_
-- a brand new `about.html` template that you _do want_
-- deletion of `styles.css`that you _don't want_
-
-### Fix changes in Git
-- [ ] Revert to the good version of the `homepage.html` layout.
-- [ ] Retrieve the `styles.css` file that was deleted.
-- [ ] Commit the new `about.html` template.
-
-- [ ] Run `airship launch` to publish all your _good_ changes.
-
-### Lessons: 
-
-Always back up files with Git. Airship commands are not meant to replace smart source code management tools that have features like merges and branch management. `airship land` replaces _all local files_ with versions of files from the Airship server so it should only be reserved for syncing initial project files. `airship launch` replaces _all live files_ with versions of files that you have locally, so it should be reserved only for deployment. These actions are "all or nothing" so be very careful and conscious when running these commands.
-
-It really only makes sense to run `airship land` **once**, _at the very beginning of your project_ or _right after you have set up all the pages and collections for your project_. If you are midway through development, you typically don't want to run `airship land`. If you create pages and collections midway through development, you can set the templates and layouts in the Admin Portal, though it is a better idea to manually create layouts & templates in your local project directory, rather than run `airship land` to pull down generated files.
-
-Again: Always back up files with Git!
-
 ## Image Assets
 - [ ] Place an image into the `/assets/` directory, within an `/images/` subdirectory.
 - [ ] Include the image with an `<img>` tag somewhere on the root page. (Reference the file with the relative reference `/assets/images/...`).
@@ -96,6 +66,40 @@ Lesson: The text label for a field can be edited so it displays with a different
 ### Date
 - [ ] Add "Year Started" field type "date"
 - [ ] Use a `{{format_date}}` helper to render the date.
+
+- [ ] Commit all changes!
+
+---
+
+## Land & Launch Conflicts
+- [ ] In your terminal, run `airship land`.
+
+The CLI should show you a preview of the following actions that will happen:
+- layout `checklist-layout.html` will be updated.
+- template `about.html` will be created.
+- asset `styles.css` will be deleted.
+ 
+- [ ] Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
+
+After running `airship land`, you will probably end up with:
+- changes to `homepage.html` layout that you _don't want_
+- a brand new `about.html` template that you _do want_
+- deletion of `styles.css`that you _don't want_
+
+### Fix changes in Git
+- [ ] Revert to the good version of the `homepage.html` layout.
+- [ ] Retrieve the `styles.css` file that was deleted.
+- [ ] Commit the new `about.html` template.
+
+- [ ] Run `airship launch` to publish all your _good_ changes.
+
+### Lessons: 
+
+Always back up files with Git. Airship commands are not meant to replace smart source code management tools that have features like merges and branch management. `airship land` replaces _all local files_ with versions of files from the Airship server so it should only be reserved for syncing initial project files. `airship launch` replaces _all live files_ with versions of files that you have locally, so it should be reserved only for deployment. These actions are "all or nothing" so be very careful and conscious when running these commands.
+
+It really only makes sense to run `airship land` **once**, _at the very beginning of your project_ or _right after you have set up all the pages and collections for your project_. If you are midway through development, you typically don't want to run `airship land`. If you create pages and collections midway through development, you can set the templates and layouts in the Admin Portal, though it is a better idea to manually create layouts & templates in your local project directory, rather than run `airship land` to pull down generated files.
+
+Again: Always back up files with Git!
 
 ---
 
