@@ -60,7 +60,7 @@ The text label for a field can be edited so it displays with a different label i
 - [ ] Be sure to use the `{{secure_url}}` property instead of `{{url}}` for the most secure delivery of content.
 - [ ] Git Commit your changes.
 
-## Link & List of Links
+### Link & List of Links
 - [ ] Add "Favorite Places" field type "list of links"
 - [ ] Edit the page and save some placeholder links with a title, subtitle, url, and captions.
 - [ ] Render the field content on the About page. Use an `{{#each}}` propeller helper.
@@ -83,7 +83,7 @@ The CLI should show you a preview of the following actions that will happen:
 - template `about.html` will be created.
 - asset `styles.css` will be deleted.
  
-- [ ] Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
+Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
 
 After running `airship land`, you will probably end up with:
 - changes to the `checklist-layout.html` that you _don't want_
