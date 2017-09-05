@@ -25,7 +25,9 @@ Once you log in successfully, you should see a welcome message:
 Keep this window open. You will need to access it later.
 
 ## 2. Install Airship Launcher CLI Tools.
-Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta).
+Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta) install instructions.
+
+You only need to install the CLI tools once on your machine. If you have already done this, you can skip this step.
 
 ## 3. Create a local directory for your project.
 Create a new empty directory for your project.
