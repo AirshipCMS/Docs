@@ -7,31 +7,41 @@ Complete this checklist after completing the Quickstart Guide. Each task is mean
 - [ ] If you haven't already, set up your site as a Git repository and commit your files.
 
 ## Layouts & Templates
-- [ ] Move the contents of the embedded stylesheet located in the `application.html` into a `styles.css` external stylesheet located in the `/assets/` directory. Within the `application.html` layout, link to the external stylesheet. All files within the assets directory can be accessed with a link that starts with the relative reference `/assets/...`.
+- [ ] In your local project, move the contents of the embedded stylesheet located in the `application.html` into a `styles.css` external stylesheet located in the `/assets/` directory within a subdirectory called `/styles`. Within the `application.html` layout, be sure to link to the external stylesheet. (All files within the assets directory can be accessed with a link that starts with the relative reference `/assets/...`).
 
-- [ ] In your local project directory, manually create a new **Layout** named `homepage.html` that is a copy of `application.html`, then in the Admin Portal, set it as the layout for the `root.html` page.
+- [ ] In your local project, manually create a new layout named `checklist-layout.html` that is a copy of `application.html`.
 
-- [ ] In the Airship Admin Portal, add a new "About" page to the site. Set the layout for the new page to be `homepage.html` and set a new template called `about.html`.
+- [ ] In the Airship CMS Admin Portal, set `checklist-layout.html` as the layout for the `root.html` page.
 
-- [ ] Edit the new `homepage.html` layout, so that it has a `<nav>` with a list of links to the root page and the about page.  Page links should always be relative to the subdomain, so instead of `<a href="http://localhost:9001/about">About</a>` or `<a href="https://mysite.airshipcms.io/about">About</a>`, set the link to be  `<a href="/about">About</a>`
+- [ ] In the Airship CMS Admin Portal, add a new "About" page to the site. Set the layout for the new page to be `checklist-layout.html` and set a new template called `about.html`. You can add fields later. Save the page.
+
+- [ ] Edit the new `checklist-layout.html` layout, so that it has a `<nav>` with links to the root page and the about page.  (Page links should always be relative to the subdomain, so instead of `<a href="http://localhost:9001/about">About</a>` or `<a href="https://mysite.airshipcms.io/about">About</a>`, set the link to be  `<a href="/about">About</a>`).
 
 - [ ] Git commit your files.
 
+## Landing & Launching
 - [ ] In your terminal, run `airship land`. The CLI should show you a preview of the following actions that will happen:
- - layout `homepage.html` will be updated.
+ - layout `checklist-layout.html` will be updated.
  - template `about.html` will be created.
  - asset `styles.css` will be deleted.
  
-Since you have everything backed up with Git and you can retrieve the previous versions of files, go ahead and enter `y` to run the `airship land` command.
+Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
 
-You will see that you probably have a version of the `homepage.html` layout that you _don't want_, and a brand new `about.html` template that you _do want_. Your `styles.css` has also been deleted, and you probably _don't want_ that change either.
+After running `airship land`, you will probably end up with:
+- changes to `homepage.html` layout that you _don't want_
+- a brand new `about.html` template that you _do want_
+- deletion of `styles.css`that you _don't want_
 
-Fix the unwanted changes in Git.
+Fix changes in Git.
 - [ ] Revert to the good version of the `homepage.html` layout.
-- [ ] Retrive the `styles.css` file that was deleted.
+- [ ] Retrieve the `styles.css` file that was deleted.
+- [ ] Commit the new `about.html` template.
+
+- [ ] Run `airship launch` to publish all your _good_ changes.
 
 Lessons: 
-- Always back up files with Git. Airship commands are not meant to replace smart source code management tools that have features like merges and branch management. `airship land` should be reserved for syncing initial project files. Landing replaces _all local files_ with versions of files from the Airship server. `airship launch` should be reserved for deployment. Launching replaces _all live files_ with versions of files that you have locally. These actions are "all or nothing" so be very careful and conscious when running these commands.
-- If you want to grab generated layouts and templates from the live Airship server, it really only makes the most sense to do so _at the very beginning of your project_ or _right after you have set up all the pages and collections for your project_. If you are midway through development, you typically don't want to run `airship land`. It is a better idea to manually create layouts & templates in your local project directory, and keep the best versions of files backed up with Git.
+- Always back up files with Git. Airship commands are not meant to replace smart source code management tools that have features like merges and branch management. `airship land` replaces _all local files_ with versions of files from the Airship server so it should only be reserved for syncing initial project files. `airship launch` replaces _all live files_ with versions of files that you have locally, so it should be reserved only for deployment. These actions are "all or nothing" so be very careful and conscious when running these commands.
+- It really only makes sense to run `airship land` **once**, _at the very beginning of your project_ or _right after you have set up all the pages and collections for your project_. If you are midway through development, you typically don't want to run `airship land`. If you create pages and collections midway through development, you can set the templates and layouts in the Admin Portal, though it is a better idea to manually create layouts & templates in your local project directory, rather than run `airship land` to pull down generated files.
+- Again: Always back up files with Git!
 
 ## Files & File Structure
