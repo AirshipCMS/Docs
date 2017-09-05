@@ -4,7 +4,7 @@ Complete this checklist after completing the Quickstart Guide. Each task is mean
 ---
 
 ## Source Code Management
-- [ ] If you haven't already, set up your site as a Git repository and commit your files.
+- [ ] Set up your site as a Git repository and commit your files.
 
 ## Layouts & Templates
 - [ ] In your local project, move the contents of the embedded stylesheet located in the `application.html` into a `styles.css` external stylesheet located in the `/assets/` directory within a subdirectory called `/styles`. Within the `application.html` layout, be sure to link to the external stylesheet. (All files within the assets directory can be accessed with a link that starts with the relative reference `/assets/...`).
