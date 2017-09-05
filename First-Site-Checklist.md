@@ -27,7 +27,7 @@ The CLI should show you a preview of the following actions that will happen:
 - template `about.html` will be created.
 - asset `styles.css` will be deleted.
  
-Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
+- [ ] Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
 
 After running `airship land`, you will probably end up with:
 - changes to `homepage.html` layout that you _don't want_
