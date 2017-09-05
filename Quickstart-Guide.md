@@ -233,10 +233,13 @@ Refresh the browser for the live site, and it should match your local site.
 
 ## Next Steps
 
-### Junior Developers:
+### Source Code Management
 Part of your workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
 When you use a source code management tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
+### Junior Developers:
+boop. schema setup guide.
+
 ### Experienced Developers:
-Once you have familiarized yourself with the basic login/serve/launch development cycle, you can start building much more complex projects using the Airship API and XHR requests. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows. Airship is also compatible to work with frameworks such as [React](https://facebook.github.io/react/) and [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/) that utilize XXXX and a templating engines to generate minified javascript and html output. Airship lets you set up "SPA Routes" specifically for routes on your site that are rendered as single-page applications. As long as your final minified files are contained within the `/assets/` directory, Airship can flexibly handle frontend code.
+Once you have familiarized yourself with the basic login/serve/launch development cycle, you can start building much more complex projects using the Airship API and XHR requests. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows. Airship CMS is also compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or frontend templating engines such as XXXX that can generate minified html markup, javascript, and css.
