@@ -7,13 +7,18 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 
 ---
 
-## 1. Log in to your site.
-1. Airship is currently available by Private Invitation. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up. 
+## 1. Create your site.
+_Note: Airship is currently available by Private Invitation. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up._
 
-2. Once we set up a site for you, navigate to your project url `(https://mysite.airshipcms.io)`. It will look something like this:  
+1. Create a new Airship site at the Airship Developer Poral [!!PRIVATE INVITES ONLY!!].
 
-<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
+<img width="500" alt="Skyport Developer Portal" src="https://airshipcms.io/assets/media/quickstart-guide/skyport.jpg">
 
+2. Once your site is provisioned, navigate to your project url `(https://mysite.airshipcms.io)`. It will look something like this:  
+
+<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-initial.jpg">
+
+## 2. Log in to your site.
 3. Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
@@ -24,19 +29,19 @@ Once you log in successfully, you should see a welcome message:
 
 Keep this window open. You will need to access it later.
 
-## 2. Install Airship Launcher CLI Tools.
+## 3. Install Airship Launcher CLI Tools.
 Command line tools are available for Mac, Linux, and Windows(beta). You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators don't need to install the CLI tools. See the Install page for [_Mac_ and _Linux_](https://airshipcms.io/mac-linux-installer) or [Windows](https://airshipcms.io/windows-installer) (beta) install instructions.
 
 You only need to install the CLI tools once on your machine. If you have already done this, you can skip this step.
 
-## 3. Create a local directory for your project.
+## 4. Create a local directory for your project.
 Create a new empty directory for your project.
 ```
 mkdir ~/MyFirstAirshipSite
 ```
-If you use a source code management tool like Git, then you can initialize this directory as a versioned project.
+If you use a source code management tool like Git, you can initialize this directory as a versioned project. Commit all files, including the hidden `.airship` directory.
 
-## 4. `airship login` to access your project content.
+## 5. `airship login` to access your project content.
 Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
@@ -45,6 +50,9 @@ Inside your project directory, run this command (_replace "mysite" with your act
 ```
 airship login mysite
 ```
+
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-02-logging-in.jpg">
+
 A browser window will pop up prompting you to login.
 
 <img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/auth0-login.jpg">
@@ -54,14 +62,25 @@ Once you log in successfully, you can close the browser window. Your terminal sh
 Successful Authentication.
 ```
 
-## 5. `airship land` to retrieve files.
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-03-logged-in.jpg">
+
+## 6. `airship land` to retrieve files.
 Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
 ```  
-This command will generate a `compartments` directory containing very basic Airship files that are necessary for building out your project templates. 
 
-## 6. Open your local files in a text editor.
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-04-land.jpg">
+
+Enter `y` to the prompt.
+
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-05-landing.jpg">
+
+Running `airship land` will generate a `compartments` directory containing very basic Airship files that are necessary for building out your project templates. 
+
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-06-landed.jpg">
+
+## 7. Open your local files in a text editor.
 Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
 ```
 .
@@ -78,33 +97,52 @@ Open your entire directory in a text editor. This Quickstart Guide uses [Sublime
 ```
 In SublimeText 3 it looks like this:
 
-<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-terminal-initial.jpg">
+<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-initial.jpg">
 
-## 6. `airship serve` to run your site locally.
+## 8. `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
 ```
 airship serve
 ```
+
+<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-07-serve.jpg">
+
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
-## 7. View your local site in a browser.
+## 9. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/tiny-browser-initial.jpg">
+<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local.jpg">
 
-## 8. Edit the Homepage content. See it update locally & live.
-Go to the Airship CMS admin panel for your site, and click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> to edit the content on the "Homepage" of your site. It should look like this:  
+## 10. Edit the Homepage content. See it update locally & live.
+Go to the Airship CMS admin panel for your site, and click on "Pages" in the sidebar.
+
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-pages.jpg">
+
+Click the pencil icon <img width="27" alt="pencil" src="https://user-images.githubusercontent.com/1865400/28548078-afea5594-706d-11e7-99e6-4d023d4bca84.png"> for the "Homepage" of your site. It should look like this:  
 
 <img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-initial.jpg">
 
-Edit content. Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. You will see the content update in both instances of the site. Sometimes it takes a few refreshes or a hard refresh to show content changes.
+Edit content. 
 
-## 9. Edit the Homepage template. See it update locally (and _not_ update live).
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-edit.jpg">
+
+Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. You will see the content update in both instances of the site. Sometimes it takes a few refreshes or a hard refresh to show content changes.
+
+Local Site: 
+
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-content.jpg">
+
+Live Site:
+
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
+
+## 11. Edit the Homepage template. See it update locally (and _not_ update live).
 Back in your text editor, open the `root.html` template located in `/compartments/templates`. Edit some static text on the file. Save the file.
 
 Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)` and you will see the markup changes only update in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **published content**, whereas the published site renders **published files** & **published content**. 
 
-## 10. See available properties for a page with `{{{help}}}`.
+## 12. See available properties for a page with `{{{help}}}`.
 On the `root.html` template and add following markup at the very top of your page. Save the file.
 ```
 {{{help}}}
@@ -133,14 +171,14 @@ Take a look at all the markup on the `root.html` template, and you can see which
 
 You can comment out or delete the help markup if you don't need it anymore. This list is meant to be a useful reference to help you while you are developing locally. `{{{help}}}` will not render anything on published sites.
 
-## 11. Change the page & add more pages.
+## 13. Change the page & add more pages.
 Review Docs on [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Page Properties](https://airshipcms.io/documentation/view/page-properties) for details on how to set a page template and how to render fields and properties on a page. Some things you can try:
 - Add new fields through the CMS, and add markup to render the data on the `root.html` template. See the Docs about [Page Properties](https://airshipcms.io/documentation/view/page-properties) for examples of rendering each field type.
 - Add assets to the `/assets/` directory and link to them in your template or through a stylesheet. See the Docs about [Project Directory Structure](https://www.airshipcms.io/documentation/view/project-directory#user-content-assets) for more on assets and how to link to them.
 - Add more pages.
 - Add a global nav of links to your new pages in the [Layout](https://airshipcms.io/documentation/view/layouts).
 
-## 13. `airship launch` to publish your project.
+## 14. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
 ```
 airship launch
