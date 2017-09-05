@@ -1,5 +1,9 @@
 Follow this Quickstart Guide to set up your first project with Airship CMS. Not quite ready to create a project yet? Take a look at some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples).
 
+[VIDEO FORMAT]
+
+---
+
 In the following guide, be sure to replace all instances of "mysite" with your actual subdomain for the site:  
 - `https://mysite.airshipcms.io`
 - `https://mysite.airshipcms.io/admin`
