@@ -1,8 +1,9 @@
 # First Site Checklist
-Complete this checklist after completing the Quickstart Guide. Each item is meant to introduct you to a new part of the Airship file structure or CMS, and challenge you to find relevant Documentation to help you complete the task. Once all items are checked, you should be fairly comfortable with basic Airship templating, rendering, asset management, and deployment patterns.
+Complete this checklist after completing the Quickstart Guide. Each task is meant to introduce you to a new part of Airship file structure or the content management system, and challenge you to find relevant Documentation to help you complete the challenge. Once all items are checked, you should be fairly comfortable with basic Airship templating, rendering, asset management, and deployment patterns.
 
 ---
 
+## Source Code Management
 - [ ] If you haven't already, set up your site as a Git repository and commit your files.
 
 ## Layouts & Templates
