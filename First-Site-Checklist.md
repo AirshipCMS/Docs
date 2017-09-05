@@ -65,4 +65,38 @@ Unlike files uploaded through the Admin Portal, files launched trhough the CLI  
 
 Lesson: The text label for a field can be edited so it displays with a different label in the Admin Edit view, however the variable name and type cannot be changed once they are set. (You have to delete the original field and add a new field if you really want a different variable name).
 
-## Page Modify: Add More Fields
+## Add Fields to the About Page
+- [ ] Delete the "Title" field.
+
+### Text & Text Area
+- [ ] Add "Company Name" field type "text".
+- [ ] Edit the page and save some placeholder content.
+
+### Richtext Area
+- [ ] Add "Company Background" field type "richtext area"
+- [ ] Edit the page and save some placeholder content.
+- [ ] Use triple curly brackets to render html content.
+
+### Image
+- [ ] Add "Company Photo" field type "image"
+- [ ] Edit the page and save a placeholder image with a title, subtitle, and caption.
+- [ ] Use an `{{#each}}` propeller helper to render the image and list of images.
+
+### List of Images
+- [ ] Add "Employees" field type "list of images"
+- [ ] Edit the page and save some placeholder images with a title, subtitle, and captions.
+- [ ] Use an `{{#each}}` propeller helper to render the image and list of images.
+- [ ] Use the `{{secure_url}}` property instead of `{{url}}` for the most secure delivery of content.
+
+## Link & List of Links
+- [ ] Add "Favorite Places" field type "list of links"
+- [ ] Edit the page and save some placeholder links with a title, subtitle, url, and captions.
+- [ ] Use an `{{#each}}` propeller helper to render the list of links.
+
+### Date
+- [ ] Add "Year Started" field type "date"
+- [ ] Use a `{{format_date}}` helper to render the date.
+
+---
+
+That's it!
