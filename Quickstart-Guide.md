@@ -236,12 +236,13 @@ Refresh the browser for the live site, and it should match your local site.
 ---
 
 ## Next Steps
-Airship allows you to build a project using classically rendered templates, or client-side rendered SPA applications (or a combination of both server-side and client-side rendering). 
 
 ### New Developers:
 Start with the [Developer Launch Test](#) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML, CSS, and [Airship CLI Commands](#) to complete the Launch Test.
 
-Then follow the [Schema Setup Guide](#) to set up an easy demo project. 
+Then follow the [Schema Setup Guide](#) to set up your first demo site. 
 
 ### Experienced Developers:
-Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed the [Documentation](https://airshipcms.io/documentation/view/introduction), you can start building much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and pull content from the CMS and generate custom templates, styles, and scripts. Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering instead of classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) and our [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) for examples of how to set up a SPA Application on Airship to easily create a fully-hosted SPA site.
+Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed the [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and render content from the CMS with custom templates, styles, and scripts. 
+
+Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering alongside classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) and our [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) for examples of projects built as javascript single-page applications that pull content from the CMS.
