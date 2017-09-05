@@ -103,4 +103,4 @@ Again: Always back up files with Git!
 
 ---
 
-That's it! Checklist Complete!
+Yay! You completed the First Site checklist! Move on to the [Schema Setup Guide](https://airshipcms.io/documentation/view/schema-setup-guide) to see an example that turns a project sitemap into an Airship project.
