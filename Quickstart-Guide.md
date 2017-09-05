@@ -233,11 +233,6 @@ Refresh the browser for the live site, and it should match your local site.
 
 ## Next Steps
 
-### Source Code Management
-Part of your workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
-
-When you use a source code management tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
-
 ### Junior Developers:
 boop. schema setup guide.
 
