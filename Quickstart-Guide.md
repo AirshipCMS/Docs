@@ -165,7 +165,7 @@ In your browser, refresh your local site url `(http://localhost:9001)` and you w
 
 <img width="500" alt="Browser Help" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-help.jpg">
 
-Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the <img width="26" alt="wrench" src="https://user-images.githubusercontent.com/1865400/28548077-afe52966-706d-11e7-93f0-ce9e958ec070.png"> Page Modify section in Airship CMS admin:  
+Items in this list are the variable names for data that can be rendered on the _root_ page. The items listed inside the `fields` property correspond to fields that are set for the _root_ page in the <img width="26" alt="wrench" src="https://airshipcms.io/assets/media/quickstart-guide/icon-wrench.png"> Page Modify section in Airship CMS admin:  
 
 <img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modify.jpg">
 
@@ -207,13 +207,11 @@ You can comment out or delete the help markup if you don't need it anymore. The 
 <img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-new-box.jpg">
 
 ### Refresh the browser for your local site
+Refresh the browser for the local site. You will now see the content rendered for the new field.
 
-## 13. Change the page & add more pages.
-Review Docs on [Page Templates](https://airshipcms.io/documentation/view/page-templates) and [Page Properties](https://airshipcms.io/documentation/view/page-properties) for details on how to set a page template and how to render fields and properties on a page. Some things you can try:
-- Add new fields through the CMS, and add markup to render the data on the `root.html` template. See the Docs about [Page Properties](https://airshipcms.io/documentation/view/page-properties) for examples of rendering each field type.
-- Add assets to the `/assets/` directory and link to them in your template or through a stylesheet. See the Docs about [Project Directory Structure](https://www.airshipcms.io/documentation/view/project-directory#user-content-assets) for more on assets and how to link to them.
-- Add more pages.
-- Add a global nav of links to your new pages in the [Layout](https://airshipcms.io/documentation/view/layouts).
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-new-box.jpg">
+
+If you refresh the browser for the live site, you won't see the new field. You will need to run `airship launch` to make your changes live.
 
 ## 14. `airship launch` to publish your project.
 Once you are ready to launch your site, run this command to upload your local templates, layouts, and files to the live airship server:
@@ -221,7 +219,15 @@ Once you are ready to launch your site, run this command to upload your local te
 airship launch
 ```
 
-In your terminal, you will be presented with a preview of the actions that will occur. Review the actions carefully before confirming. When you are ready, enter `y` or `yes` and in seconds, your project will be published!
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-08-launch.jpg">
+
+When you are ready, enter `y` or `yes` to launch the project. In seconds, your project will be published!
+
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-09-launched.jpg">
+
+Refresh the browser for the live site, and it should match your local site.
+
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-new-box.jpg">
 
 ---
 
