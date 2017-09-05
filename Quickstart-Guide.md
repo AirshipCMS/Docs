@@ -232,18 +232,14 @@ Refresh the browser for the live site, and it should match your local site.
 ---
 
 ## Next Steps
-Once you have familiarized yourself with this very basic development cycle, you can start building more complex projects. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows. 
 
-### Source Code Management
+### Junior Developers:
 Part of your workflow probably involves using a Source Code Management tool like [Git](https://github.com), where you can maintain your own versioning and backups of files. SCM tools work seamlessly with Airship projects. You can also store any extra source files you want in your project repository, as long as all non-essential files are located outside of the `compartments` directory.
 
-When you use a SCM tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
+When you use a source code management tool, commit all Airship files with your project, including `compartments` and the `.airship` directory.
 
-### Project Schema
-Study how [Pages](/documentation/view/pages), [Collections](https://airshipcms.io/documentation/view/collections), and [Relationships](https://airshipcms.io/documentation/view/relationships) work to form the [Schema & Data Model](https://airshipcms.io/documentation/view/schema-and-data-model) of a project built with Airship. Then follow the [Schema Setup Guide](https://airshipcms.io/documentation/view/schema-setup-guide) to turn your project plan into an actual project.
-
-### Templating
-Learn more about [Layouts](https://airshipcms.io/documentation/view/layouts), [Page Templates](https://airshipcms.io/documentation/view/page-templates), and [Collection Templates](https://airshipcms.io/documentation/view/collection-templates).
+### Experienced Developers:
+Once you have familiarized yourself with this very basic development cycle, you can start building much more complex projects. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows. Airship is also compatible with pre-processor workflows such as XXXX and XXXX that use templating engines to generate html output. Utilize Sass or post-css alongside custom frontend frameworks like Angular or React for even more power. As long as your final files are minified and contained within the `/assets/` directory, it will render on your launched site. Airship lets you set up "SPA Routes" specifically for routes on your site that are rendered as single-page applications.
 
 ### XHR, Angular, React, and Single-Page Applications
 If you want to build a custom javascript component that does an XHR request, or if you prefer to build some or all of your  project as a Single-Page Application using [React](https://facebook.github.io/react/), [Angular](https://angular.io/), [Angular 1.x](https://angularjs.org/), or any other frontend framework, check out some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) that use React & Angular. You will need to access the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) to build custom applications that access Airship CMS content. We will be launching Swagger Documentation for all API endpoints in September 2017. In the meantime, contact us to get the most up-to-date list of API endpoints.
