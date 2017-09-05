@@ -238,9 +238,12 @@ Refresh the browser for the live site, and it should match your local site.
 ## Next Steps
 
 ### New Developers:
-Start with the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
+Build your first classically-rendered Airship project containing 4 pages and 1 collection. Replicate the [Demo](https://classic-rendering.airshipcms.io/), by cloning/downloading the [Github Repo](https://github.com/AirshipCMS/classic-rendering.airshipcms.io) as a reference....
 
-[First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist)
+Build a blog...
+
+Once you are comfortable
+[First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
 
 ### Experienced Developers:
 Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and render content from the CMS with custom templates, styles, and scripts. 
