@@ -6,17 +6,16 @@ Complete this checklist after completing the Quickstart Guide. Each task is mean
 ## Source Code Management
 - [ ] Set up your site as a Git repository and commit your files.
 
-## Layouts & Templates
-- [ ] In your local project, move the contents of the embedded stylesheet located in the `application.html` into a `styles.css` external stylesheet located in the `/assets/` directory within a subdirectory called `/styles`. Within the `application.html` layout, be sure to link to the external stylesheet. (All files within the assets directory can be accessed with a link that starts with the relative reference `/assets/...`).
-
+## Layouts
 - [ ] In your local project, manually create a new layout named `checklist-layout.html` that is a copy of `application.html`.
-
+- [ ] Move the contents of the embedded stylesheet located in the `checklist-layout.html` into a `styles.css` external stylesheet located in the `/assets/` directory within a subdirectory called `/styles`. Within the `checklist-layout.html` layout, be sure to link to the external stylesheet. (All files within the assets directory can be accessed with a link that starts with the relative reference `/assets/...`).
 - [ ] In the Airship CMS Admin Portal, set `checklist-layout.html` as the layout for the `root.html` page.
+- [ ] Git commit your files.
 
-- [ ] In the Airship CMS Admin Portal, add a new "About" page to the site. Set the layout for the new page to be `checklist-layout.html` and set a new template called `about.html`. You can add fields later. Save the page.
-
-- [ ] Edit the new `checklist-layout.html` layout, so that it has a `<nav>` with links to the root page and the about page.  (Page links should always be relative to the subdomain, so instead of `<a href="http://localhost:9001/about">About</a>` or `<a href="https://mysite.airshipcms.io/about">About</a>`, set the link to be  `<a href="/about">About</a>`).
-
+## Pages & Navigation
+- [ ] In the Airship CMS Admin Portal, add a new "About" page to the site. Set the layout for the new page to be `checklist-layout.html` and set a new template called `about.html`. Skip the fields section for now. Save the page.
+- [ ] In your local project, manually create a new template named `about.html` to match the file set in the Airship CMS Admin Portal.
+- [ ] Edit the `checklist-layout.html` layout, so that it has a `<nav>` with links to the homepage and about page.  (Page links should always be relative to the subdomain, so instead of `<a href="http://localhost:9001/about">About</a>` or `<a href="https://mysite.airshipcms.io/about">About</a>`, set the link to be  `<a href="/about">About</a>`).
 - [ ] Git commit your files.
 
 ## Image Assets
@@ -32,45 +31,51 @@ Unlike files uploaded through the Admin Portal, files launched trhough the CLI  
 - [ ] _Modify_ the Abut Page, and add a new field called "Header", type "Text". _Edit_ the page to add some placeholder content, then _Render_ the field content on the About Page template.
 - [ ] _Modify_ the Abut Page, and change the label for the "Header" field to "Title". Notice that the label for the field changes on the _Edit_ view, however the original variable name `header` does not change.
 
-Lesson: The text label for a field can be edited so it displays with a different label in the Admin Edit view, however the variable name and type cannot be changed once they are set. (You have to delete the original field and add a new field if you really want a different variable name).
-
-## Add Fields to the About Page
-- [ ] Delete the "Title" field.
+The text label for a field can be edited so it displays with a different label in the Admin Edit view, however the variable name and type cannot be changed once they are set. (You have to delete the original field and add a new field if you really want a different variable name).
 
 ### Text & Text Area
+- [ ] Delete the "Title" field.
 - [ ] Add "Company Name" field type "text".
 - [ ] Edit the page and save some placeholder content.
+- [ ] Render the field content on the About page.
+- [ ] Git Commit your changes.
 
 ### Richtext Area
 - [ ] Add "Company Background" field type "richtext area"
 - [ ] Edit the page and save some placeholder content.
-- [ ] Use triple curly brackets to render html content.
+- [ ] Render the field content on the About page. Be sure to use triple curly brackets since the field contains html markup.
+- [ ] Git Commit your changes.
 
 ### Image
 - [ ] Add "Company Photo" field type "image"
 - [ ] Edit the page and save a placeholder image with a title, subtitle, and caption.
-- [ ] Use an `{{#each}}` propeller helper to render the image and list of images.
+- [ ] Render the field content on the About page. Be sure to use an `{{#each}}` propeller helper to render the image.
+- [ ] Be sure to use the `{{secure_url}}` property instead of `{{url}}` for the most secure delivery of content.
+- [ ] Git Commit your changes.
 
 ### List of Images
 - [ ] Add "Employees" field type "list of images"
 - [ ] Edit the page and save some placeholder images with a title, subtitle, and captions.
-- [ ] Use an `{{#each}}` propeller helper to render the image and list of images.
-- [ ] Use the `{{secure_url}}` property instead of `{{url}}` for the most secure delivery of content.
+- [ ] Render the field content on the About page. Be sure to use an `{{#each}}` propeller helper to render the images.
+- [ ] Be sure to use the `{{secure_url}}` property instead of `{{url}}` for the most secure delivery of content.
+- [ ] Git Commit your changes.
 
 ## Link & List of Links
 - [ ] Add "Favorite Places" field type "list of links"
 - [ ] Edit the page and save some placeholder links with a title, subtitle, url, and captions.
-- [ ] Use an `{{#each}}` propeller helper to render the list of links.
+- [ ] Render the field content on the About page. Use an `{{#each}}` propeller helper.
+- [ ] Git Commit your changes.
 
 ### Date
 - [ ] Add "Year Started" field type "date"
-- [ ] Use a `{{format_date}}` helper to render the date.
-
-- [ ] Commit all changes!
+- [ ] Edit the page and save a date.
+- [ ] Render the field content on the About page. Use a `{{format_date}}` helper to render the date.
+- [ ] Git Commit your changes.
 
 ---
 
-## Land & Launch Conflicts
+## Handling Land & Launch Conflicts
+
 - [ ] In your terminal, run `airship land`.
 
 The CLI should show you a preview of the following actions that will happen:
@@ -81,18 +86,14 @@ The CLI should show you a preview of the following actions that will happen:
 - [ ] Since you have everything backed up with Git and you can retrieve the previous versions of files, enter `y` to run the `airship land` command and perform the changes.
 
 After running `airship land`, you will probably end up with:
-- changes to `homepage.html` layout that you _don't want_
-- a brand new `about.html` template that you _do want_
-- deletion of `styles.css`that you _don't want_
+- changes to the `checklist-layout.html` that you _don't want_
+- changes to the `about.html` template that you _don't want_
+- deletion of `styles.css`, and an image that you _don't want_
 
-### Fix changes in Git
-- [ ] Revert to the good version of the `homepage.html` layout.
-- [ ] Retrieve the `styles.css` file that was deleted.
-- [ ] Commit the new `about.html` template.
-
+### Fix Changes in Git & Launch
+- [ ] Revert changes to the `homepage.html` layout and `about.html` template.
+- [ ] Retrieve deleted files.
 - [ ] Run `airship launch` to publish all your _good_ changes.
-
-### Lessons: 
 
 Always back up files with Git. Airship commands are not meant to replace smart source code management tools that have features like merges and branch management. `airship land` replaces _all local files_ with versions of files from the Airship server so it should only be reserved for syncing initial project files. `airship launch` replaces _all live files_ with versions of files that you have locally, so it should be reserved only for deployment. These actions are "all or nothing" so be very careful and conscious when running these commands.
 
@@ -102,4 +103,4 @@ Again: Always back up files with Git!
 
 ---
 
-That's it!
+That's it! Checklist Complete!
