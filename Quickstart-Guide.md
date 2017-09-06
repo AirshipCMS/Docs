@@ -23,7 +23,7 @@ Once your site is provisioned, navigate to your project url `(https://mysite.air
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-initial.jpg">
 
 ## 2. Log in to your site.
-3. Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
+Log in to the admin portal `(https://mysite.airshipcms.io/admin)` with your login credentials.
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/cms-login.jpg">
 
@@ -149,15 +149,17 @@ Back in your text editor, open the `root.html` template located in `/compartment
 Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. 
 
 Local Site:
+
 <img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-template.jpg">
 
 Live Site (same as before):
+
 <img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
 
 You will see that the markup has changed only in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **published content**, whereas the published site renders **published files** & **published content**. 
 
 ## 12. See available properties and fields for a page with `{{{help}}}`.
-On the `root.html` template and add following markup at the very top of your page. Save the file.
+On the `root.html` template add following markup at the very top of your page. Save the file.
 ```
 {{{help}}}
 ```
@@ -238,12 +240,8 @@ Refresh the browser for the live site, and it should match your local site.
 ## Next Steps
 
 ### New Developers:
-Build your first classically-rendered Airship project containing 4 pages and 1 collection. Replicate the [Demo](https://classic-rendering.airshipcms.io/), by cloning/downloading the [Github Repo](https://github.com/AirshipCMS/classic-rendering.airshipcms.io) as a reference....
-
-Build a blog...
-
-Once you are comfortable
-[First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
+- Download the Repository for a [Classically-Rendered Site](https://classic-rendering.airshipcms.io/) or [Classically-Rendered Blog](https://classic-blog.airshipcms.io/) and follow the guide to recreate one of these demo projects.
+- Complete the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
 
 ### Experienced Developers:
 Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and render content from the CMS with custom templates, styles, and scripts. 
