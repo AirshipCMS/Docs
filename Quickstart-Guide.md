@@ -256,5 +256,5 @@ Airship is compatible with javascript frameworks such as [React](https://faceboo
 - [Angular 1.x + Gulp + Babel + Airship CMS](https://angular-1-gulp-babel.airshipcms.io/)
 - [Angular 4 + Airship CMS](https://angular-app.airshipcms.io/)
 - [React + Airship CMS](http://react-app.airshipcms.io/)
-- React Blog (coming soon)
-- Angular 4 Blog (coming soon)
+- React Blog + Airship CMS (coming soon)
+- Angular 4 Blog + Airship CMS (coming soon)
