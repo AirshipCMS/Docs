@@ -238,17 +238,20 @@ Refresh the browser for the live site, and it should match your local site.
 ---
 
 ## You're Done!
-That's all it takes to edit content, create pages, and publish a project! From here, it's up to you to decide how small or large your project will be.
+That's all it takes to edit content, create pages, and publish a project! From here, it's up to you to decide how small or large you want to make your project!
 
 ### New Developers:
-Brand new developers may find it easiest to understand how a project works by building a sample project. Dowload the files from the project repo, and follow a guide for creating a Classically-Rendered Site or Classically-Rendered Blog:
+Brand new developers are encouraged to clone a repository follow the guide for building a sample project. See our examples of a Classically-Rendered Site or Classically-Rendered Blog:
 - [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
 - [Classically-Rendered Blog](https://classic-blog.airshipcms.io/)
 
-Complete the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
+Once you have built a clone of one of the demo sites, review the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to make sure you are comfortable with rendering and file management. 
 
 ### Experienced Developers:
-Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and render content from the CMS with custom templates, styles, and scripts. 
+Once you have familiarized yourself with the basic land/serve/launch development cycle, and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers use client-side frameworks and libraries with Airship CMS, or utilize `gulp` or `npm` processes to create custom development workflows or render content from the CMS with custom templates, styles, and scripts. 
 
-Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering alongside classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) and our [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples) for examples of projects built as javascript single-page applications that pull content from the CMS.
- 
+Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering alongside classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) or recreate one of our examples projects built as javascript single-page applications that pull content from the CMS:
+- [Angular 1.X](https://angular-1.airshipcms.io/)
+- [Angular 1.x + Gulp + Babel + Airship CMS](https://angular-1-gulp-babel.airshipcms.io/)
+- [Angular 4](https://angular-app.airshipcms.io/)
+- [React](http://react-app.airshipcms.io/)
