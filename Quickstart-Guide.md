@@ -249,7 +249,7 @@ Once you have built a clone of one of the demo sites, review the First Site Chec
 - [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist)
 
 ### Experienced Developers:
-Once you have familiarized yourself with the basic land/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers use client-side frameworks and libraries with Airship CMS, or utilize `gulp` or `npm` processes to create custom development workflows and render content from the CMS. 
+Once you have familiarized yourself with the basic land/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers use client-side frameworks and libraries with Airship CMS, or utilize `gulp` or `npm` processes to create custom development workflows that dynamically render content from the CMS. 
 
 Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering alongside classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) or recreate one of our examples projects built as a javascript single-page application that pulls content from the CMS:
 - [Angular 1.X](https://angular-1.airshipcms.io/)
