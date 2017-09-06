@@ -247,7 +247,7 @@ Brand new developers are encouraged to clone a repository follow the guide for b
 - [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
 - Classically-Rendered Blog (coming soon)
 
-Once you have built a clone of one of the demo sites, review the First Site Checklist to make sure you are comfortable with rendering and file management. 
+Once you have built a clone of one of the demo sites, review the First Site Checklist to make sure you are comfortable with rendering, file management, source code management, and deployment
 - [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist)
 
 ### Experienced Developers:
