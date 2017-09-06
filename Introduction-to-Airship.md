@@ -19,7 +19,7 @@ Airship is a Web Development Platform for building websites and client-side appl
 ---
 
 ## From the Creators 
-We built Airship because we wanted a better workflow for building rich, dynamic user-experiences. We also _tested our product_ by building components of this website _on our own product_.
+We built Airship because we wanted a better workflow for building rich, dynamic user-experiences. We also tested our product by building out services related to our product _using our own product_.
 - The Airship CMS Admin Portal is an Angular 1 Application that pulls content from the Airship database to allow you to manage pages and collections on your Airship site.
 - The Airship Developer Portal an Angular 4 application hosted on very typical 'Professional Plan' instance of an Airship site. This app allow users to sign up for a user account and manage subscriptions to a digital product.
 - The Airship Documentation section of this site uses a classically rendered template for the initial load of a page, then switches to a dynamically-rendered single-page application once you click on a different page in the documentation. The result is a _fast initial load, and instant loading of subsequent pages without a page refresh_.
