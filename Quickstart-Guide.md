@@ -1,4 +1,4 @@
-Follow this Quickstart Guide to set up your first project with Airship CMS. Not quite ready to create a project yet? Take a look at some of our [Featured Projects](https://airshipcms.io/featured-projects) &amp; [Open Source Demos & Boilerplates](https://airshipcms.io/documentation/view/boilerplates-examples).
+Follow this Quickstart Guide to set up your first project with Airship CMS. Watch the video, or follow the written instructions below.
 
 [ VIDEO ]
 
