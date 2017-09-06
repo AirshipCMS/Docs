@@ -240,6 +240,8 @@ Refresh the browser for the live site, and it should match your local site.
 ## You're Done!
 That's all it takes to edit content, create pages, and publish a project! From here, it's up to you to decide how small or large you want to make your project!
 
+---
+
 ### New Developers:
 Brand new developers are encouraged to clone a repository follow the guide for building a sample project. See our examples of a Classically-Rendered Site or Classically-Rendered Blog:
 - [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
