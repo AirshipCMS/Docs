@@ -245,7 +245,7 @@ That's all it takes to edit content, create pages, and publish a project! From h
 ### New Developers:
 Brand new developers are encouraged to clone a repository follow the guide for building a sample project. See our examples of a Classically-Rendered Site or Classically-Rendered Blog:
 - [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
-- [Classically-Rendered Blog](https://classic-blog.airshipcms.io/)
+- Classically-Rendered Blog (coming soon)
 
 Once you have built a clone of one of the demo sites, review the First Site Checklist to make sure you are comfortable with rendering and file management. 
 - [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist)
