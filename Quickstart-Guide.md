@@ -252,7 +252,9 @@ Once you have built a clone of one of the demo sites, review the First Site Chec
 Once you have familiarized yourself with the basic land/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers use client-side frameworks and libraries with Airship CMS, or utilize `gulp` or `npm` processes to create custom development workflows that dynamically render content from the CMS. 
 
 Airship is compatible with javascript frameworks such as [React](https://facebook.github.io/react/), [Angular](https://angular.io/), and [Angular 1.x](https://angularjs.org/), so you can build project components or entire sites that use client-side rendering alongside classically-rendered templating. Study the [Airship API](https://airshipcms.io/documentation/view/introduction-to-airship-api) or recreate one of our examples projects. These sites are fully rendered as javascript single-page applications that pull content from the CMS using Airship API:
-- [Angular 1.X](https://angular-1.airshipcms.io/)
+- [Angular 1.X + Airship CMS](https://angular-1.airshipcms.io/)
 - [Angular 1.x + Gulp + Babel + Airship CMS](https://angular-1-gulp-babel.airshipcms.io/)
-- [Angular 4](https://angular-app.airshipcms.io/)
-- [React](http://react-app.airshipcms.io/)
+- [Angular 4 + Airship CMS](https://angular-app.airshipcms.io/)
+- [React + Airship CMS](http://react-app.airshipcms.io/)
+- React Blog (coming soon)
+- Angular 4 Blog (coming soon)
