@@ -243,7 +243,7 @@ That's all it takes to edit content, create pages, and publish a project! From h
 ---
 
 ### New Developers:
-Brand new developers are encouraged to build a sample project before starting on your actual project. Download the Git Repository & follow the guide for one of these example projects:
+Brand new developers are encouraged to build a small sample project before starting on a big project. Download the Git Repository & follow the guide for one of these example projects:
 - [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
 - Classically-Rendered Blog (coming soon)
 
