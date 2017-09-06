@@ -7,7 +7,7 @@ In order to build an Airship project, you will need to be comfortable with using
 For those using a Mac, you can use the built-in `Terminal` utility to perform all command-line functions. Alternatively, [iTerm2](https://www.iterm2.com/version3.html) is a popular CLI tool that can be used. iTerm2 has some extra shortcuts and features for developers.
 
 ## Tools for Linux
-For those using Linux, you can use (?).
+For those using Linux, you can use the built-in `Terminal` utility.
 
 ## Quick Install
 Easily install the Airship command line tools by entering this into your terminal on Mac or Linux:
@@ -23,6 +23,7 @@ After completing the installation, you should see the following success message:
 Airship Launcher X.X.X has been successfully installed
 Take to the skies! by using the `airship` command
 ```
+In iTerm2 on a Mac, it will look like this:
 
 <img width="500" alt="CMS Login" src="https://airshipcms.io/assets/media/quickstart-guide/mac-terminal-install-3.jpg">
 
