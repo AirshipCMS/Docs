@@ -55,7 +55,7 @@ Inside your project directory, run this command (_replace "mysite" with your act
 airship login mysite
 ```
 
-<img width="500" alt="Login" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-02-logging-in.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-02-logging-in.jpg">
 
 A browser window will pop up prompting you to login.
 
@@ -66,7 +66,7 @@ Once you log in successfully, you can close the browser window. Your terminal sh
 Successful Authentication.
 ```
 
-<img width="500" alt="Successful Authentication" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-03-logged-in.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-03-logged-in.jpg">
 
 ## 6. `airship land` to retrieve files.
 Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
@@ -74,15 +74,15 @@ Inside of the `~/MyFirstAirshipSite directory`, run this command to download the
 airship land
 ```  
 
-<img width="500" alt="Terminal Airship Land" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-04-land.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-04-land.jpg">
 
 Enter `y` to the prompt.
 
-<img width="500" alt="Terminal Landing Files" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-05-landing.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-05-landing.jpg">
 
 Running `airship land` will generate a `compartments` directory containing very basic Airship files that are necessary for building out your project templates. 
 
-<img width="500" alt="Terminal Landed" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-06-landed.jpg">
+<img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-06-landed.jpg">
 
 ## 7. Open your local files in a text editor.
 Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
@@ -109,52 +109,52 @@ Start a local development server by using the Airship Launcher serve command.
 airship serve
 ```
 
-<img width="500" alt="Airship Serve" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-07-serve.jpg">
+<img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-07-serve.jpg">
 
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
 ## 9. View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
-<img width="500" alt="Browser Local" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local.jpg">
+<img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local.jpg">
 
 ## 10. Edit the Homepage content. See it update locally & live.
 Go to the Airship CMS admin panel for your site, and click on "Pages" in the sidebar.
 
-<img width="500" alt="CMS Pages" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-pages.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-pages.jpg">
 
 Click the pencil icon <img width="27" alt="pencil" src="https://airshipcms.io/assets/media/quickstart-guide/icon-pencil.png"> for the "Homepage" of your site. It should look like this:  
 
-<img width="500" alt="CMS Homepage" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-initial.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-initial.jpg">
 
 Edit content. 
 
-<img width="500" alt="CMS Homepage Content Edited" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-edit.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-edit.jpg">
 
 Save the page. Wait a few seconds, then refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. You will see the content update in both instances of the site. Sometimes it takes a few refreshes or a hard refresh to show content changes.
 
 Local Site: 
 
-<img width="500" alt="Browser Local with Edited Content" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-content.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-content.jpg">
 
 Live Site:
 
-<img width="500" alt="Browser Live with Edited Content" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
 
 ## 11. Edit the Homepage template. See it update locally (and _not_ update live).
 Back in your text editor, open the `root.html` template located in `/compartments/templates`. Edit the button text. Save the file.
 
-<img width="500" alt="Text Editor - Edited Template" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-edit-template.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-edit-template.jpg">
 
 Refresh both your live site url in one tab `(https://mysite.airshipcms.io)` and your local site url in another tab `(http://localhost:9001)`. 
 
 Local Site:
 
-<img width="500" alt="Browser Local with Edited Template" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-template.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-edit-template.jpg">
 
 Live Site (same as before):
 
-<img width="500" alt="Browser Live with Edited Content" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
+<img width="500" alt="CMS Homepage Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-edit-content.jpg">
 
 You will see that the markup has changed only in the _local instance of your site_. This is because in your local site, the page is rendered based on **local files** & **published content**, whereas the published site renders **published files** & **published content**. 
 
@@ -182,23 +182,23 @@ Content from Airship CMS is rendered by adding markup with the exact variable na
 ### Add a New Field
 On the Page Modify view in Airship CMS admin, add a new field to the page. This example adds the field `New Box`, type `text`.
 
-<img width="500" alt="Add New Field" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modify-add-field.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modify-add-field.jpg">
 
 Once the field is added to the list of fields, it will look like this:
 
-<img width="500" alt="CMS Modified" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modified.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-modified.jpg">
 
 Save the Modify view. If you refresh any browsers (locally or live), the new field _will not show_ because it has no value set, and it has not been added to the page markup.
 
 ### Add a Value for the New Field
 Click the pencil icon <img width="27" alt="pencil" src="https://airshipcms.io/assets/media/quickstart-guide/icon-pencil.png"> for the "Homepage". Add some text for the new field "New Box":
 
-<img width="500" alt="CMS New Box Added" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/cms-homepage-new-box.jpg">
 
 ### Refresh the browser for your local site
 Refresh the browser for the local site. You will see the new field "new_box" added to the list of available page properties.
 
-<img width="500" alt="CMS New Box Added to Help" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-help-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-help-new-box.jpg">
 
 ### Add markup for the new field
 In your text editor, add markup to render the new field content:
@@ -206,16 +206,16 @@ In your text editor, add markup to render the new field content:
 {{fields.new_box}}
 ```
 
-<img width="500" alt="Add Field to Markup" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-help-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-help-new-box.jpg">
 
 You can comment out or delete the help markup if you don't need it anymore. The help list is meant to be a useful reference to help you while you are developing locally. `{{{help}}}` will not render anything on published sites.
 
-<img width="500" alt="Remove Help from Markup" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-new-box.jpg">
 
 ### Refresh the browser for your local site
 Refresh the browser for the local site. You will now see the content rendered for the new field.
 
-<img width="500" alt="Browser Local with New Box" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local-new-box.jpg">
 
 If you refresh the browser for the live site, you won't see the new field. You will need to run `airship launch` to make your changes live.
 
@@ -225,23 +225,27 @@ Once you are ready to launch your site, run this command to upload your local te
 airship launch
 ```
 
-<img width="500" alt="Terminal Launch" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-08-launch.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-08-launch.jpg">
 
 When you are ready, enter `y` or `yes` to launch the project. In seconds, your project will be published!
 
-<img width="500" alt="Terminal Launched" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-09-launched.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-09-launched.jpg">
 
 Refresh the browser for the live site, and it should match your local site.
 
-<img width="500" alt="Browser Live New Box" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-new-box.jpg">
+<img width="500" alt="CMS Modify" src="https://airshipcms.io/assets/media/quickstart-guide/browser-live-new-box.jpg">
 
 ---
 
-## Next Steps
+## You're Done!
+That's all it takes to edit content, create pages, and publish a project! From here, it's up to you to decide how small or large your project will be.
 
 ### New Developers:
-- Download the Repository for a [Classically-Rendered Site](https://classic-rendering.airshipcms.io/) or [Classically-Rendered Blog](https://classic-blog.airshipcms.io/) and follow the guide to recreate one of these demo projects.
-- Complete the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
+Brand new developers may find it easiest to understand how a project works by building a sample project. Dowload the files from the project repo, and follow a guide for creating a Classically-Rendered Site or Classically-Rendered Blog:
+- [Classically-Rendered Site](https://classic-rendering.airshipcms.io/)
+- [Classically-Rendered Blog](https://classic-blog.airshipcms.io/)
+
+Complete the [First Site Checklist](https://airshipcms.io/documentation/view/first-site-checklist) to familiarize yourself with how layouts, templates, asset management, and classic rendering works. You just need a basic understanding of HTML and CSS to complete the Checklist Test.
 
 ### Experienced Developers:
 Once you have familiarized yourself with the basic login/serve/launch development cycle and have reviewed Airship [Documentation](https://airshipcms.io/documentation/view/introduction), you can build much more complex projects using the Airship API. Many Airship Developers utilize `gulp` or `npm` processes to create their own custom development workflows to perform XHR requests and render content from the CMS with custom templates, styles, and scripts. 
