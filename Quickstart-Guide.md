@@ -12,13 +12,13 @@ In the following guide, be sure to replace all instances of "mysite" with your a
 ---
 
 ## 1. Create your site.
-_Note: Airship is currently available by Private Invitation. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up._
+_Note: Airship is currently available by Private Invitation only. You won't yet be able to login at the developer portal. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up!_
 
-1. Create a new Airship site at the Airship Developer Portal [!!PRIVATE INVITES ONLY!!].
+Create a new Airship site at the Airship Developer Portal.
 
 <img width="500" alt="Skyport Developer Portal" src="https://airshipcms.io/assets/media/quickstart-guide/skyport.jpg">
 
-2. Once your site is provisioned, navigate to your project url `(https://mysite.airshipcms.io)`. It will look something like this:  
+Once your site is provisioned, navigate to your project url `(https://mysite.airshipcms.io)`. It will look something like this:  
 
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-initial.jpg">
 
