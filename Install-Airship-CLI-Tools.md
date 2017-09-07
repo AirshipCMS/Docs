@@ -10,8 +10,7 @@ Easily install the command line tools by entering this into your terminal:
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
 ```
 
-### Slow Install on Linux
-Developers that want to see exactly what tools are being installed can read and follow the instructions at [install.airshipcms.io](https://install.airshipcms.io).
+That's it! You can also see the step-by-step instructions for Linux at [https://airshipcms.io/mac-linux-installer](https://airshipcms.io/mac-linux-installer).
 
 ---
 
@@ -23,8 +22,7 @@ Easily install the command line tools by entering this into your terminal:
 /bin/sh -c "$(curl -fsS https://install.airshipcms.io)"
 ```
 
-### Slow Install on Mac
-Developers that want to see exactly what tools are being installed can read and follow the instructions at [install.airshipcms.io](https://install.airshipcms.io).
+That's it! You can also see the step-by-step instructions for Linux at [https://airshipcms.io/mac-linux-installer](https://airshipcms.io/mac-linux-installer).
 
 ---
 
