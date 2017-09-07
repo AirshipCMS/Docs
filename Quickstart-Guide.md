@@ -1,6 +1,6 @@
-_Note: Airship is currently available by Private Invitation only. You won't yet be able to generate your own site yet. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up!_
-
 Follow this Quickstart Guide to set up your first project with Airship CMS.
+
+_Note: Airship is currently available by Private Invitation only. You won't yet be able to generate your own site yet. Request a [Test Pilot License](https://airshipcms.io/signup), and we will contact you when a seat opens up!_
 
 ---
 
