@@ -82,6 +82,8 @@ Example markup using dot notation to render the second item in a list of images 
 </div>
 ```
 
+You may also optionally wrap the item's index with brackets: `{{fields.additional_animal_images.[1].title}}`
+
 Example Output:
 ```
 <div class="image-container">
