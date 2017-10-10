@@ -1,4 +1,4 @@
-The `list of links` field requires the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the order of items set in Airship CMS.
+The `list of links` field can be rendered using the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the sorting position of the items set in Airship CMS. If dot notation for rendering is preferred, the item's sorting position (array index) is required in the markup.
 
 Example markup using a `list of links` with the variable name `additional_links`:
 ```
@@ -65,3 +65,25 @@ Example Output:
 ```
 
 Note: Fields such as `{{permalink}}` which contain content outside the `{{#each}}` can still be accessed by prepending `../` to the variable name, like this: `{{../permalink}}`
+
+Example markup using dot notation to render the second item in a list of links with variable name `additional_links`:
+```
+<div class="additional-links">
+  <div class="link">
+    <a href="{{fields.additional_resource_links.1.url}}">Resource: {{fields.additional_resource_links.1.title}}</a>
+    <p>{{fields.additional_resource_links.1.subtitle}}</p>
+    <p>{{fields.additional_resource_links.1.caption}}</p>
+  </div>
+</div>
+```
+
+Example Output:
+```
+<div class="additional-links">
+  <div class="link">
+    <a href="http://marketing.airshipcms.io">Resource: other link</a>
+    <p>Lorem ipsum dolor rem nam sequi ea</p>
+    <p>Lorem adipisci iusto quia quibusdam rem dicta voluptates, placeat similique quas minima!</p>
+  </div>
+</div>
+```
