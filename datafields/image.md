@@ -36,6 +36,8 @@ Example markup using dot notation:
 </div>
 ```
 
+You may also optionally wrap the item's index with brackets: `{{fields.animal_image.[0].title}}`
+
 Example Output:
 ```
 <div class="animal-image">
