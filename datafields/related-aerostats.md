@@ -43,6 +43,8 @@ Example markup using dot notation to render the second item in related aerostats
 </div>
 ```
 
+You may also optionally wrap the item's index with brackets: `{{related_items.similar_animals.[1].fields.name}}`
+
 Example Output:
 ```
 <div class="similar-animals">
