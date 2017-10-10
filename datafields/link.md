@@ -37,6 +37,8 @@ Example markup using dot notation and the item's index in the array:
 </div>
 ```
 
+You may also optionally wrap the item's index with brackets: `{{fields.resource_link.[0].title}}`
+
 Example Output:
 ```
 <div class="link">
