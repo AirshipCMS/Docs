@@ -1,6 +1,6 @@
 The `related_items` field is useful for creating relationships between pages and collections, or collections and collections.
 
-When rendering `{{{help}}}`, related items appears in a list of `related_items` instead of in `{{fields}}`. The `related aerostats` field requires the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the order of items set in Airship CMS.
+When rendering `{{{help}}}`, related items appears in a list of `related_items` instead of in `{{fields}}`. The `related aerostats` field can be rendered with the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the sorting position of the items set in Airship CMS. If dot notation for rendering is preferred, the item's sorting position (array index) is required in the markup.
 
 Example markup using related aerostats with the variable name `similar_animals`:
 ```
@@ -33,6 +33,20 @@ Example Output:
 <div class="similar-animals">
   <h4><a href="/mammals/view/bobcat">Bobcat</a></h4>
   <h4><a href="/mammals/view/hedgehog">Hedgehog</a></h4>
+</div>
+```
+
+Example markup using dot notation to render the second item in related aerostats with variable name `similar_animals`:
+```
+<div class="similar-animals">
+  <h4><a href="{{related_items.similar_animals.1.slug}}">{{related_items.similar_animals.1.fields.name}}</a></h4>
+</div>
+```
+
+Example Output:
+```
+<div class="similar-animals">
+  <h4><a href="/mammals/view/bobcat">Bobcat</a></h4>
 </div>
 ```
 
