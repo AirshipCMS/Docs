@@ -1,7 +1,7 @@
 # Airship Launcher CLI
 Airship Launcher is the set of command line tools that allow developers to connect to the Airship CMS server while developing projects locally. Developers can login to their Airship account, serve content from the CMS, and deploy projects from the command line with the Airship Launcher toolkit.
 
-**Only users with superadmin access can use the CLI.**
+**Only users with superadmin access can use the CLI to run projects and develop locally.**
 
 ---
 
@@ -19,13 +19,13 @@ airship login subdomain.airshipcms.io
 This will connect you to the airship server for your project.
 
 ## `airship land`
-This downloads all server templates and files and replaces your local copies.
+This downloads all server templates and files and **completely overwrites** your local copies.
 ```
 airship land
 ```
-Do this the first time you work on the project. This pulls down necessary Airship config files and initial project structure. After your initial land, you probably have all your files frequently backed up in Git, so you won't have to run `airship land` anymore, and you can simply create and launch new files.
+`airship land` the first time you set up your local development workflow. `airship land` pulls down necessary Airship config files and your initial project structure. After your initial land, you probably have all your files frequently backed up in Git, so you won't have to run `airship land` anymore, and you can simply create new files locally and launch them.
 
-If for some reason you need to re-sync files, you can run `airship land`. Be sure you have backed up your local files because airship land will overwrite them.
+If for some reason you need to re-sync files, you can run `airship land`. Be sure you have backed up your local files because `airship land` will overwrite them.
 
 ## `airship launch`
 This uploads all local templates and files and replaces the server copies.
