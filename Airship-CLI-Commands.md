@@ -37,7 +37,7 @@ When you are ready to launch your local changes to production, run `airship laun
 
 **Tip!** If for some reason you need to back up the current state of production `compartments`, you can `airship land` all production files into a separate directory for storage before launching your new set of files. Alternatively, if you are using a source code management system, you probably have a "production" branch and a "development" branch to organize live versus development files.
 
-### `airship land` and `airship lauch` are not replacements for Git
+### Airship Commands are not replacements for Git Commands
 `airship land` and `airship launch` are meant to be publishing tools only. They do not replace the purpose of a source code management tool.
 
 ## `airship serve`
