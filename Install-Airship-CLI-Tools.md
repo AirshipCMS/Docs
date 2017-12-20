@@ -27,4 +27,4 @@ Visit the [https://airshipcms.io/windows-installer](https://airshipcms.io/window
 
 ---
 
-Ready to enter some CLI commands? Check out the [https://airshipcms.io/documentation/view/airship-cli-commands](Airship CLI Commands) page for more.
+Ready to start using Airship CLI commands? Check out the [https://airshipcms.io/documentation/view/airship-cli-commands](Airship CLI Commands) page for documentation on all Airship CLI commands.
