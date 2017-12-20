@@ -1,7 +1,7 @@
 # Airship Launcher CLI
 Airship Launcher is the set of command line tools that allow developers to connect to the Airship CMS server while developing projects locally. Developers can login to their Airship account, serve content from the CMS, and deploy projects from the command line with the Airship Launcher toolkit.
 
-Only users with superadmin access can use the CLI.
+**Only users with superadmin access can use the CLI.**
 
 ---
 
@@ -16,14 +16,6 @@ airship login subdomain.airshipcms.io
 ```
 (_replace subdomain with your actual subdomain_). 
 
-Example: If your airshipcms.io project subdomain is "marketing" and the site is "marketing.airshipcms.io", you would enter 
-```
-airship login marketing
-```
-or
-```
-airship login marketing.airshipcms.io
-```
 This will connect you to the airship server for your project.
 
 ## `airship land`
