@@ -24,3 +24,7 @@ Easily install the command line tools by entering this into your terminal:
 
 ## Windows
 Visit the [https://airshipcms.io/windows-installer](https://airshipcms.io/windows-installer) to download the latest version of Airship Launcher.
+
+---
+
+Ready to enter some CLI commands? Check out the [https://airshipcms.io/documentation/view/airship-cli-commands](Airship CLI Commands) page for more.
