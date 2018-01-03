@@ -1,6 +1,6 @@
 Command line tools can be installed via command line for _Mac_ and _Linux_ development environments. For _Windows_ development environment, we have a beta version of the installer that you can use. You must install the Airship Launcher in order to be able to login and sync files between your local development environment and the Airship server. Non-developer admins and content creators do not need to install the CLI tools.
 
-Install instructions can also be found on the the [Quickstart Guide CLI Tools](https://airshipcms.io/quickstart-guide/view/get-the-cli-tools) Install step.
+Install instructions can also be found in the [Quickstart Guide CLI Tools](https://airshipcms.io/quickstart-guide/view/get-the-cli-tools) Install step.
 
 ---
 
