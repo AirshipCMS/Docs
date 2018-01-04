@@ -2,13 +2,25 @@
 Custom Fields added to a Page, Collection, or Category can be rendered with datafield propellers. 
 
 ## Plain Rendering
-Custom field content is typically rendered with double curly braces (`{{fields.variable_name}}`). 
+Custom field content is typically rendered with double curly braces.
+```
+{{fields.variable_name}}
+```
 
 ## HTML Rendering
-For Custom Field content that contains HTML, use triple curly braces (`{{fields.variable_name}}`).
+For Custom Field content that contains HTML, use triple curly braces.
+```
+{{{fields.variable_name}}}
+```
 
 ## Rendering Lists
-Some custom fields require an `{{#each}}` helper for rendering. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of accessible properties:
+Some custom fields require an `{{#each}}` helper for rendering. 
+```
+{{#each fields.variable_name}}
+  ...
+{{/each}}
+```
+When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of accessible properties:
 - [image](https://airshipcms.io/documentation/view/datafields#user-content-image)
 - [link](https://airshipcms.io/documentation/view/datafields#user-content-link)
 - [list of links](https://airshipcms.io/documentation/view/datafields#user-content-list-of-links)
