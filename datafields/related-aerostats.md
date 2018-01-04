@@ -1,8 +1,8 @@
 The `related_items` field is useful for creating relationships between pages and collections, or collections and collections.
 
-When rendering `{{{help}}}`, related items appears in a list of `related_items` instead of in `{{fields}}`. The `related aerostats` field can be rendered with the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is controlled by the sorting position of the items set in Airship CMS. If dot notation for rendering is preferred, the item's sorting position (array index) is required in the markup.
+When rendering `{{{help}}}`, related items appears in list of `related_items` instead of within `{{fields}}`. Related items can be rendered with the `{{#each}}` helper, since it is an array of items. When the `{{#each}}` propeller is used, the order that items are rendered is set by the sorting position of the items set in Airship CMS. If dot notation for rendering is preferred, the item's sorting position (array index) is required in the markup.
 
-Example markup using related aerostats with the variable name `similar_animals`:
+Example markup using related items with the variable name `similar_animals`:
 ```
 <div class="similar-animals">
   {{#each related_items.similar_animals}}
@@ -52,9 +52,11 @@ Example Output:
 </div>
 ```
 
+Limitations:
+- `related_items` data attached to collection items will not render on a collection `index.html` template.
+- `related_items` data attached to collection items will not render on a collection `category.html` template.
+- `related_items` data attached to a page will not render on a page template.
+
 Notes: 
 - Fields such as `{{permalink}}` which contain content outside the `{{#each}}` can still be accessed by prepending `../` to the variable name, like this: `{{../permalink}}`
 - On an `index.html` and `category.html` the list of `items` will hide `related_items` content.
-
----
-MORE: Schema Creation
