@@ -1,17 +1,27 @@
 # Datafields
-Content entered in the Admin panel can be rendered using Propellers.
+Custom Fields added to a Page, Collection, or Category can be rendered with datafield propellers. 
 
-Propellers follow syntax similar to: `{{variable_name}}`.
+## Plain Rendering
+Custom field content is typically rendered with double curly braces (`{{fields.variable_name}}`). 
 
-For fields that contain HTML, use triple braces: `{{{variable_name}}}`.
+## HTML Rendering
+For Custom Field content that contains HTML, use triple curly braces (`{{fields.variable_name}}`).
 
-Some fields that include multiple inputs for content require the `{{#each}}` helper. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of fields to access. Some examples of these fields are [image](https://airshipcms.io/documentation/view/datafields#user-content-image), [link](https://airshipcms.io/documentation/view/datafields#user-content-link), or [related aerostats](https://airshipcms.io/documentation/view/datafields#user-content-related-items).
+## Rendering Lists
+Some custom fields require an `{{#each}}` helper for rendering. When rendering `{{{help}}}`, these fields are notated with `[list]` next to the field's variable name, followed by a bulleted list of accessible properties:
+- [image](https://airshipcms.io/documentation/view/datafields#user-content-image)
+- [link](https://airshipcms.io/documentation/view/datafields#user-content-link)
+- [list of links](https://airshipcms.io/documentation/view/datafields#user-content-list-of-links)
+- [list of images](https://airshipcms.io/documentation/view/datafields#user-content-list-of-images)
+- [multiselect](https://airshipcms.io/documentation/view/datafields#user-content-multiselect)
 
-`List of` fields also require the `{{#each}}` helper. These fields, e.g. [list of images](https://airshipcms.io/documentation/view/datafields#user-content-list-of-images) or [list of links](https://airshipcms.io/documentation/view/datafields#user-content-list-of-links), are arrays of items. The order of which these items are rendered can be controlled either in Admin, or using the [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
+List of Images, List of Links, and Multiselect are arrays of items. The order of which these items are rendered can be controlled either in Admin, or by using the [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) propeller. The `{{#sort_list}}` propeller takes precedence over the order determined in Admin.
 
+## Related Items
+While the `related aerostats` field is attached to a page, collection, or category as a datafield, it is rendered as a separate property rather than within the `fields` list.
+- [related items](https://airshipcms.io/documentation/view/datafields#user-content-related-items)
 
-The following field types are available:
-
+## Datafields
 - text
 - textarea
 - richtext area
