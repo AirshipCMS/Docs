@@ -23,7 +23,7 @@ The following properties can be rendered on the `index.html` template:
 - `collection` [index--collection]
 
 ## Property: items
-Within an `{{#each items}}` propeller, collection item `properties` and `fields` can be rendered as a list. See [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties). 
+Within an `{{#each items}}` propeller, collection item `properties` and `fields` can be rendered as a list. See [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties) for the full list of renderable properties and fields. 
 
 ## Excluded Properties
 - items in the collection that are in Draft Mode will not render on the `index.html` template.
