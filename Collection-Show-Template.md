@@ -17,4 +17,4 @@ See [Collection Templates](https://airshipcms.io/documentation/view/collection-t
 See [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties) for the full list of properties and fields renderable on the `show.html` template.
 
 ## Excluded Properties
-There are no excluded properties on the `show.html` template.
+Data from pages or other collections will not render on a collection, unless a relationship is created with a "related datafield." Alternatively, if you want to render content that exists outside of the collection, you can do an Airship API call and render the content with a script.
