@@ -17,9 +17,7 @@ See [Collection Templates](https://airshipcms.io/documentation/view/collection-t
 
 ---
 
-# Classical Rendering
-
-## Collection `index.html` Rendering
+# Renderable Properties
 The following properties can be rendered on the `index.html` template:
 
 - `params` [index--params]
@@ -31,7 +29,7 @@ The following properties can be rendered on the `index.html` template:
 ## Property: items
 On the Collection `index.html` template, Collection Item `properties` and `fields` can be rendered within an `{{#each items}}` propeller. See [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties) for a full list. 
 
-## Exclusions
+## Excluded Properties
 - items in the collection that are in Draft Mode will not render on the `index.html` template.
 - items exceeding the Collection Limit that is set in the Airship CMS Admin will not render on the `index.html` template.
 - `related_items` data attached to items will not render on the `index.html` template.
