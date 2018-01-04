@@ -29,7 +29,7 @@ On the collection `index.html`, you can add the code `{{{help}}}` within the htm
 
 Propellers markup is wrapped by double or triple curly brackets. Properties and Fields typically use double curly brackets like this: `{{variable_name}}` unless the content of the field contains HTML, in which case triple curly brackets should be used: `{{{variable_name}}}`.
 
-Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [#sort_list](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
+Some fields that include a list of content require an `{{#each}}` helper. When rendering `{{{help}}}` on the page, fields that require the `{{#each}}` helper are notated with the `[list]` marker next to the field's variable name, followed by a bulleted list of fields to access. The [`{{#sort_list}}`](https://airshipcms.io/documentation/view/propeller-helpers#user-content-sort_list) helper may also be used in place of the `{{#each}}` helper.
 
 ## Collection `index.html` Properties:
 The following properties can be rendered on the `index.html` template:
@@ -41,7 +41,7 @@ The following properties can be rendered on the `index.html` template:
 ---
 
 ## Data rendered inside `{{#each items}}` on the `index.html` template
-For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for `Collection Item Properties`. Most `properties` and `fields` renderable on the `show.html` template can be rendered on the `index.html` template when wrapped in an `{{#each items}}` or `{{#sort_list}}` helper (see below for exceptions).
+For a list of all `properties` and `fields` that can be rendered within `{{#each items}}`, see the docs for [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties). All Collection Item `properties` and `fields` can be rendered inside an `{{#each items}}` or `{{#sort_list}}` helper except for `{{#related_items}}`. Related Items data attached to an item can only be rendered from the item `show.html` template.
 
 ### Not renderable inside `{{#each items}}` on the `index.html` template
 - any items in the collection that are in _Draft Mode_ will not render on the template.
