@@ -1,4 +1,4 @@
-# Collection Item Properties
+# Page Properties
 The following are properties available for page. 
 
 ## Renderable Properties
