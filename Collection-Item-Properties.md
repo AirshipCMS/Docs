@@ -1,9 +1,9 @@
 # Collection Item Properties
-Description. The following are properties available for Items within in a Collection.
+The following are properties available for an item within in a collection. 
 
----
+## Renderable Properties
+The following properties will render on the `show.html` template or within an `{{#each}}` block on the collection `index.html` or collection `category.html` template:
 
-The following properties can be rendered for items on a collection `show.html` template, or within an `each` block on the collection `index.html`, collection `category.html`, or if the items are in a `related` block:
 - `params` [index--params]
 - `id` [each--id]
 - `aerostat_collection_id` [each--aerostat_collection_id]
@@ -18,19 +18,11 @@ The following properties can be rendered for items on a collection `show.html` t
 - `categories [list]` (if categories are enabled) [index--categories]
 - `product_variations[list]` (if the item is a product) [index--product_variations]
 - `slug` [each--slug]
+- `related_items[list]` (if the item has related items) ???
 
-The following fields can be rendered for items on a collection `show.html` template, or within an `each` block on the collection `index.html`, collection `category.html`, or if the items are in a `related` block:
-- `text`
-- `textarea`
-- `richtext area`
-- `image`
-- `link`
-- `number`
-- `radio`
-- `select`
-- `multiselect`
-- `checkbox`
-- `list of images`
-- `list of links`
-- `date`
-- `related aerostats`
+## Renderable Datafields
+Datafields are also renderable for an item within in a collection. For a list of datafields that will render on the `show.html` template or within an `{{#each}}` block on the collection `index.html` or collection `category.html` template, see [Datafields](https://airshipcms.io/documentation/view/datafields)
+
+---
+
+Note 1/3/2018: Remove all fields. Add Related Items to Properties.
