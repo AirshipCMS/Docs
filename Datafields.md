@@ -34,6 +34,7 @@ While the `related aerostats` field is attached to a page, collection, or catego
 - related items
 
 ## Datafields
+The following are all all the datafields that can be added to pages, collections, and categories:
 - text
 - textarea
 - richtext area
@@ -46,5 +47,4 @@ While the `related aerostats` field is attached to a page, collection, or catego
 - checkbox
 - list of images
 - list of links
-- related aerostats
 - date
