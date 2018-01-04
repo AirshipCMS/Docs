@@ -1,7 +1,7 @@
 # Collection `index.html` Template
 The `index.html` template is used to display a list of items within a collection. 
 
-The `public_path` of a collection (such as `/blog`), will render content from the `index.html` template.
+The url for the `index.html` is the `public_path` of the collection (such as `/blog`).
 
 ## Template Setup
 The `index.html` template for a collection should be located in the appropriate subdirectory within the `templates` directory. For a collection named `blog`, the `index.html` template location would be:
