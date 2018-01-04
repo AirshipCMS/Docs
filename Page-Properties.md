@@ -1,9 +1,8 @@
-# Page Properties
-Description.
+# Collection Item Properties
+The following are properties available for page. 
 
----
-
-The following properties can be rendered on a page template:
+## Renderable Properties
+The following properties will render on the page template:
 - `id` [single--id]
 - `site_id` [single--site_id]
 - `name` [single--name]
@@ -15,18 +14,5 @@ The following properties can be rendered on a page template:
 - `updated_at` [single--updated_at]
 - `slug` [single--slug]
 
-The following field types can be rendered on a page template:
-- `text`
-- `textarea`
-- `richtext area`
-- `image`
-- `link`
-- `number`
-- `radio`
-- `select`
-- `multiselect`
-- `checkbox`
-- `list of images`
-- `list of links`
-- `related`
-- `date`
+## Renderable Datafields
+Datafields are also renderable for page. For a list of datafields that will render on a page template, see [Datafields](https://airshipcms.io/documentation/view/datafields).
