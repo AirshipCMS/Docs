@@ -49,7 +49,7 @@ The following properties can be rendered on the `show.html` template:
 - `related_items` [datafields/related-aerostats]
 - `slug` [single--slug]
 
-The following field types can be rendered on a page template:
+The following field types can be rendered on a Collection `show.html` template:
 - `text`
 - `textarea`
 - `richtext area`
