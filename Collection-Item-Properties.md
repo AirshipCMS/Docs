@@ -21,7 +21,7 @@ The following properties will render on the `show.html` template or within an `{
 - `related_items[list]` (if the item has related items) ???
 
 ## Renderable Datafields
-Datafields are also renderable for an item within in a collection. For a list of datafields that will render on the `show.html` template or within an `{{#each}}` block on the collection `index.html` or collection `category.html` template, see [Datafields](https://airshipcms.io/documentation/view/datafields)
+Datafields are also renderable for an item within in a collection. For a list of datafields that will render on the `show.html` template or within an `{{#each}}` block on the collection `index.html` or collection `category.html` template, see [Datafields](https://airshipcms.io/documentation/view/datafields).
 
 ---
 
