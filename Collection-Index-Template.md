@@ -15,16 +15,12 @@ compartments
 
 See [Collection Templates](https://airshipcms.io/documentation/view/collection-templates) for more information on how to automatically generate or manually create a set of collection templates for a collection.
 
----
-
-# Renderable Properties
+## Renderable Properties
 The following properties can be rendered on the `index.html` template:
 
 - `params` [index--params]
 - `items [list]` [each--items]
 - `collection` [index--collection]
-
----
 
 ## Property: items
 Within an `{{#each items}}` propeller, collection item `properties` and `fields` can be rendered as a list. See [Collection Item Properties](https://airshipcms.io/documentation/view/collection-item-properties). 
