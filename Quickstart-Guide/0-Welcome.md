@@ -14,3 +14,9 @@ This guide will show you the very basics of:
 ---
 
 Next: Sign up for a Developer Account
+
+---
+
+#### Skip to
+Developer Log in
+Documentation
