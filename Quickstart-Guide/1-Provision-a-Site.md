@@ -1,4 +1,4 @@
-# Provision an Airship CMS Site
+# 1. Provision an Airship CMS Site
 
 Sign up with a free Developer login at the [Airship CMS Developer Portal](https://skyport.airshipcms.io). 
 
