@@ -4,14 +4,14 @@ For your first website, this checklist will help you to get oriented with the ba
 
 ---
 
-## 4. Create a local directory for your project.
+## Create a local directory for your project.
 Create a new empty directory for your project.
 ```
 mkdir ~/MyFirstAirshipSite
 ```
 If you use a source code management tool like Git, you can initialize this directory as a versioned project. Commit all files, including the hidden `.airship` directory.
 
-## 5. `airship login` to access your project content.
+## `airship login` to access your project content.
 Navigate to your project directory:
 ```
 cd ~/MyFirstAirshipSite
@@ -34,7 +34,7 @@ Successful Authentication.
 
 <img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-03-logged-in.jpg">
 
-## 6. `airship land` to retrieve files.
+## `airship land` to retrieve files.
 Inside of the `~/MyFirstAirshipSite directory`, run this command to download the base set of files that were generated when you set layouts and templates for your pages and collections:  
 ```
 airship land
@@ -50,7 +50,7 @@ Running `airship land` will generate a `compartments` directory containing very 
 
 <img width="500" alt="Auth0 Popup" src="https://airshipcms.io/assets/media/quickstart-guide/site-terminal-06-landed.jpg">
 
-## 7. Open your local files in a text editor.
+## Open your local files in a text editor.
 Open your entire directory in a text editor. This Quickstart Guide uses [SublimeText 3](https://www.sublimetext.com/3). Your local directory structure should look something like this:
 ```
 .
@@ -69,7 +69,7 @@ In SublimeText 3 it looks like this:
 
 <img width="500" alt="Text Editor Initial" src="https://airshipcms.io/assets/media/quickstart-guide/sublime-initial.jpg">
 
-## 8. `airship serve` to run your site locally.
+## `airship serve` to run your site locally.
 Start a local development server by using the Airship Launcher serve command.
 ```
 airship serve
@@ -79,7 +79,7 @@ airship serve
 
 Leave this terminal open during development in order to maintain an active connection to the airship server.
 
-## 9. View your local site in a browser.
+## View your local site in a browser.
 In a browser, navigate to `localhost:9001`. You will see actual site content, rendered with your local layouts, templates, and  assets. It should look exactly the same as the content on the live site:  
 
 <img width="500" alt="Browser Initial" src="https://airshipcms.io/assets/media/quickstart-guide/browser-local.jpg">
