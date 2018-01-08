@@ -18,5 +18,5 @@ Next: Sign up for a Developer Account
 ---
 
 #### Skip to
-Developer Log in
+Developer Log in  
 Documentation
