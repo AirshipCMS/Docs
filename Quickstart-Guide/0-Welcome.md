@@ -22,6 +22,6 @@ Developer Log in
 Documentation
 
 #### FAQ
-Do you need to be a developer to create an Airship CMS site?
-What frontend stack can I use?
-Is my site fully-hosted?
+Do you need to be a developer to create an Airship CMS site?  
+What frontend stack can I use?  
+Is my site fully-hosted?  
