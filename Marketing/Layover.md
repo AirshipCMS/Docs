@@ -24,18 +24,16 @@ Create a CNAME Record where:
 - You can use `www` or some other subdomain that you want to point to your Airship Site subdomain. 
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
 
-#### Example for a subdomain of `completelyfabricated.com`:
+#### Example CNAME Record for a subdomain of `completelyfabricated.com`:
 This creates a `CNAME` that points `www.completelyfabricated.com` to `completely-fabricated.airshipcms.io`.
 ```
-CNAME:
 www  CNAME  completelyfabricated.airshipcms.io  600
 ```
 The site will render over https at `https://www.completelyfabricated.com`.
 
-#### Example for a subdomain of `hiarmymuseumsoc.org`:
+#### Example CNAME Record for a subdomain of `hiarmymuseumsoc.org`:
 This creates a `CNAME` that points `shop.hiarmymuseumsoc.org` to `completely-fabricated.airshipcms.io`.
 ```
-CNAME:
 shop  CNAME  hams.airshipcms.io  600
 ```
 The site will render over https at `https://shop.hiarmymuseumsoc.org`.
@@ -46,9 +44,8 @@ If you are not pointing your primary apex domain to your Airship site, you can s
 - Value is `34.214.155.73`. This is the IP for the Layover service.
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
 
-#### Example for domain `completelyfabricated.com`:
+#### Example A Record for domain `completelyfabricated.com`:
 ```
-A RECORD:
 @   A   34.214.155.73   600
 ```
 This will make the apex domain `completelyfabricated.com` route to `www.completelyfabricated.com`. 
