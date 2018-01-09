@@ -57,9 +57,10 @@ This will also enforce `https://` for the apex domain.
 
 ## Step 3. Wait for DNS Propagation
 It takes some time for DNS settings to propagate. Once all records have propagated the following things should be happening (in the background).
-- `http://completelyfabricated.com` will enforce `https` to `https://completelyfabricated.com`.
-- `completelyfabricated.com` will route to `https://www.completelyfabricated.com`.
-- `https://www.completelyfabricated.com` will be serving the content of `https://completely-fabricated.airshipcms.io`.
+- `http://completelyfabricated.com` will enforce `https` and serves `https://completelyfabricated.com`.
+- `https://completelyfabricated.com` will route to `http://www.completelyfabricated.com`.
+- `http://www.completelyfabricated.com`will enforce `https` and serves `https://www.completelyfabricated.com`.
+- `https://www.completelyfabricated.com` serves the content of your Airship-hosted site.
 If everything is set up properly, then entering any domain/subdomain above should route to `https://www.completelyfabricated.com`.
 
 ---
