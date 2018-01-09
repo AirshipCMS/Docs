@@ -7,9 +7,9 @@ This 10-minute Step-by-Step Guide will walk you through a stripped-down, simple 
 This Guide will walk you through the very basics of:
 1. Provisioning your first Airship-hosted site
 2. Setting up the command-line tools
-3. "Landing" your project for local development
+3. Local development ("Landing" your project)
 4. Using the Airship CMS online admin portal
-5. Deployment
+5. Deployment ("Launching" your project)
 
 ---
 
