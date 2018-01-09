@@ -1,7 +1,5 @@
 # Layover
-_or, secure Apex Domain A Records as a service._
-
-You have probably experienced many instances where you simply needed to point your naked, apex domain to "www", and discovered that it actually takes several steps to make that happen. **Layover** simplifies those steps for you to provide secure Apex Domain Domain A Records, as a service.
+You have probably experienced many instances where you simply needed to point your naked, apex domain to "www", and discovered that it actually takes several steps to make that happen. **Layover** simplifies those steps for you, and provides secure Apex Domain Domain A Records, as a service.
 
 **Why would you want to point your Apex Domain to "www" instead of the other way around?**  
 For externally hosted services like Shopify, Big Cartel, Big Commerce, or Airship CMS, you need to point a subdomain such as `www` or `shop` to their service. As much as you want to, these services don't seem to allow you to enter your apex domain as the main domain for your externally-hosted site. Why is that? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a restriction put in place by the hosted service; it is a limitation of all DNS Providers, period. 
