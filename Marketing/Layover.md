@@ -1,13 +1,19 @@
 # Layover
 _or, secure Apex Domain A Records as a service._
 
-You have probably experienced _many many instances_ where you simply need to point your naked, apex domain to "www". Why is this necessary? Because many hosted services like Shopify, Big Cartel, Big Commerce, or Airship CMS require you to use a subdomain or `www` for your site, and not your primary domain. Why don't these services let you use your primary domain? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a service restriction, it is a limitation of DNS Providers, period. That is why we built Layover to be a service that can handle this type of routing.
+You have probably experienced _many many instances_ where you simply need to point your naked, apex domain to "www". 
 
-## Other Services like Layover
-There are probably many other services like Layover. Many of them are probably
+Why do I have to point my Apex Domain to "www" instead of the other way around?
+For externally hosted services like Shopify, Big Cartel, Big Commerce, or Airship CMS, you need to point a subdomain such as `www` or `shop` to their service. You _can't_ simply create a CNAME Record to point your primary domain to your externally hosted site. Why not? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a restriction put in place by the hosted service; it is a limitation of all DNS Providers, period. 
 
-## HTTPS on your apex domain, for free!
+So we built Layover to be a service that can handle the routing.
+
+### HTTPS on your apex domain, for free!
 Layover handles https:// for your apex domain, _and more_!
+
+
+### Other Services like Layover
+There are probably many other services like Layover. Many of them are probably
 
 
 Notes
