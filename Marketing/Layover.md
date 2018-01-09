@@ -9,7 +9,7 @@ _So_, instead of forwarding `www` to your Apex domain, you need to forward your 
 It can be a headache. _We_ don't even like setting everything up every  time we are ready to launch a project. So to make our lives easier, we built **Layover** as a service that can handle some of this redundant and complex routing. Simply follow the steps on this page to point your naked, apex domain to "www". 
 
 **HTTPS for your apex domain, for Free!**  
-Layover automatically handles `https://` for your apex domain, so you don't have to worry about setting up an SSL certificate. If your site is hosted on Airship CMS, your Airship subdomain and any CNAMEs pointing to your Airship subdomain will automatically enforce `https://` as well. Your DNS Provider may already have their own forwarding service that points your apex domain to `www`. However, the service may not automatically enforce `https://`.
+Layover automatically handles `https://` for your apex domain, so you don't have to worry about setting up an SSL certificate. If your site is hosted on Airship CMS, your Airship subdomain and any CNAMEs pointing to your Airship subdomain will automatically enforce `https://` as well. 
 
 **Usage**  
 This service is Free. You do not have to use Airship CMS in order to use Layover (simply set the CNAME to another externally-hosted site). You also do not have to use Layover to use Airship CMS. This service will be actively maintained and updated as long as this webpage is active. Last Update: 1/9/2018.
