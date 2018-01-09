@@ -8,7 +8,7 @@ For externally hosted services like Shopify, Big Cartel, Big Commerce, or Airshi
 
 _So_, instead of forwarding `www` to your Apex domain, you need to point your Apex domain to `www` and _then_ `www` can point to your externally-hosted service. 
 
-For those not familiar with DNS Providers, it's a big confusing headache. We don't even like setting everything up every single time we build another site. Therefore, we built **Layover** to be a service that can handle some of the routing for you! Simply follow the steps on this page to point your naked, apex domain to "www". 
+For those not familiar with DNS Providers, it's a big confusing headache. _We_ don't even like setting everything up every  time we are ready to launch a project. Therefore, we built **Layover** to be a service that can handle some of the routing for you! Simply follow the steps on this page to point your naked, apex domain to "www". 
 
 ### HTTPS on your apex domain, for free!
 Layover handles https:// for your apex domain, _and more_!
