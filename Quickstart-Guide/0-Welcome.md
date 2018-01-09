@@ -2,14 +2,14 @@
 
 We love efficiency. So we built Airship to be a CMS with a focus on developer workflow so we could get a project started instantly, developed quickly, and launched painlessly. 
 
-This 10-minute Step-by-Step Guide will walk you through the development workflow with Airship CMS. Test it out to see if it integrates with your dev workflow. 
+This 10-minute Step-by-Step Guide will walk you through a _really basic example_ of development workflow using Airship CMS. Once you've mastered the basics, _create your own frontend dev workflow_ that works for you!
 
 This Guide will walk you through the very basics of:
-- provisioning your first Airship-hosted site
-- setting up the command-line tools
-- integrating Airship into your local dev workflow
-- using the Airship CMS online admin portal
-- deployment
+1. Provisioning your first Airship-hosted site
+2. Setting up the command-line tools
+3. "Landing" your project for local development
+4. Using the Airship CMS online admin portal
+5. Deployment
 
 ---
 
