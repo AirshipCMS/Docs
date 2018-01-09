@@ -51,7 +51,14 @@ If you are not pointing your primary apex domain to your Airship site, you can s
 A RECORD:
 @   A   34.214.155.73   600
 ```
-This will make the apex domain `completelyfabricated.com` route to `www.completelyfabricated.com`. In addition, `completelyfabricated.com` will work as both `http://completelyfabricated.com` and `https://completelyfabricated.com`.
+This will make the apex domain `completelyfabricated.com` route to `www.completelyfabricated.com`. 
+
+## Step 3. Wait for DNS Propagation
+It takes some time for DNS settings to propagate. Once all records have propagated the following things should be happening (in the background).
+- `http://completelyfabricated.com` will enforce `https` to `https://completelyfabricated.com`.
+- `completelyfabricated.com` will route to `https://www.completelyfabricated.com`.
+- `https://www.completelyfabricated.com` will be serving the content of `https://completely-fabricated.airshipcms.io`.
+If everything is set up properly, then entering any domain/subdomain above should route to `https://www.completelyfabricated.com`.
 
 ---
 
