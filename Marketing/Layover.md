@@ -64,5 +64,11 @@ This will make the apex domain `completelyfabricated.com` route to `www.complete
 
 ---
 
-**Alternate to Step 2**
-Some DNS Providers have a "Domain Forwarding" service where you can simply tell the service to forward your apex domain to "www". If this service exists, you can use it. Note that you will want to forward the apex domain to "www", and not the other way around (do not point "www" to your apex domain). These services are probably not set up to automatically serve your site over https.
+**Alternates**
+Some DNS Providers have a "Domain Forwarding" service where you can simply tell the service to forward your apex domain to "www". If this service exists, you can use it. Note that you will want to forward the apex domain to "www", and not the other way around (do not point "www" to your apex domain). These services are probably not set up to automatically serve your site over https. / If you are super server-side-savvy, you can even create your own service. Though if that's the case, you will probably know what's best :]
+
+Some DNS Providers don't let you set some values for certain record types. (You should really use a different DNS provider).
+
+---
+
+Add TXT Record part when that is ready.
