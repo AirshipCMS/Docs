@@ -1,7 +1,7 @@
 # Layover
 _or, secure Apex Domain A Records as a service._
 
-You have probably experienced _many many instances_ where you simply need to point your naked, apex domain to "www". 
+You have probably experienced _many instances_ where you simply need to point your naked, apex domain to "www". 
 
 Why do I have to point my Apex Domain to "www" instead of the other way around?
 For externally hosted services like Shopify, Big Cartel, Big Commerce, or Airship CMS, you need to point a subdomain such as `www` or `shop` to their service. You _can't_ simply create a CNAME Record to point your primary domain to your externally hosted site. Why not? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a restriction put in place by the hosted service; it is a limitation of all DNS Providers, period. 
