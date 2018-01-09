@@ -18,7 +18,7 @@ This service is Free. You do not have to use Airship CMS in order to use Layover
 
 # Layover with an Airship CMS Site
 
-## Step 1. Create a CNAME Record for _your_ subdomain that points to `airshipsubdomain.airshipcms.io`.
+## Step 1. Create a CNAME Record for your subdomain that points to `airshipsubdomain.airshipcms.io`.
 Create a CNAME Record where:
 - `airshipsubdomain` is your actual Airship Site subdomain. 
 - You can use `www` or some other subdomain that you want to point to your Airship Site subdomain. 
