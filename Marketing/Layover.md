@@ -2,24 +2,17 @@
 You have probably experienced many instances where you simply needed to point your naked, apex domain to "www", and discovered that it actually takes several steps to make that happen. **Layover** simplifies those steps for you, and provides secure Apex Domain Domain A Records, as a service.
 
 **Why would you want to point your Apex Domain to "www" instead of the other way around?**  
-Shopify, Big Commerce, Airship CMS, and other externally-hosted services require that you point a subdomain such as `www` or `shop` to their servers. These services don't seem to allow you to enter your apex domain as the main domain for your externally-hosted site. Why is that? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a restriction put in place by the hosted service; it is a limitation of all DNS Providers, period. 
+Shopify, Big Commerce, Airship CMS, and other externally-hosted services require that you point a subdomain such as `www` or `shop` to their servers. These services don't allow you to enter your apex domain as the main domain for your externally-hosted site. Why is that? **Because _it is simply not possible_ to create a CNAME Record for an Apex Domain.** It's not a restriction put in place by the hosted service; it is a limitation of all DNS Providers, period. 
 
-_So_, instead of forwarding `www` to your Apex domain, you need to point your Apex domain to `www` and _then_ `www` can point to your externally-hosted service. 
+_So_, instead of forwarding `www` to your Apex domain, you need to forward your Apex domain to `www` and then `www` can point to your externally-hosted service. 
 
-For those not familiar with DNS Providers, it's a big confusing headache. _We_ don't even like setting everything up every  time we are ready to launch a project. Therefore, we built **Layover** to be a service that can handle some of the routing for you! Simply follow the steps on this page to point your naked, apex domain to "www". 
+It can be a headache. _We_ don't even like setting everything up every  time we are ready to launch a project. So to make our lives easier, we built **Layover** as a service that can handle some of this redundant and complex routing. Simply follow the steps on this page to point your naked, apex domain to "www". 
 
-### HTTPS on your apex domain, for free!
-Layover handles https:// for your apex domain, _and more_!
+**HTTPS for your apex domain, for Free!**  
+Layover automatically handles `https://` for your apex domain, so you don't have to worry about setting up an SSL certificate. If your site is hosted on Airship CMS, your Airship subdomain and any CNAMEs pointing to your Airship subdomain will automatically enforce `https://` as well. Your DNS Provider may already have their own forwarding service that points your apex domain to `www`. However, the service may not automatically enforce `https://`.
 
-
-### Other Services like Layover
-There are probably many other services like Layover. Many of them are probably
-
-
-Notes
-- This service is FREE, and will be up as long as we exist.
-- You don't have to use Airship CMS in order to use this service.
-- You don't have to use this service, to use Airship CMS.
+**Usage**  
+This service is Free. You do not have to use Airship CMS in order to use Layover. You also do not have to use Layover to use Airship CMS. This service will be actively maintained and updated as long as this webpage is active. Last Update: 1/9/2018.
 
 ---
 
@@ -62,11 +55,11 @@ This will make the apex domain `completelyfabricated.com` route to `www.complete
 
 ---
 
-**Alternates**
+**Alternates**  
 Some DNS Providers have a "Domain Forwarding" service where you can simply tell the service to forward your apex domain to "www". If this service exists, you can use it. Note that you will want to forward the apex domain to "www", and not the other way around (do not point "www" to your apex domain). These services are probably not set up to automatically serve your site over https. / If you are super server-side-savvy, you can even create your own service. Though if that's the case, you will probably know what's best :]
 
+**Limited DNS**  
 Some DNS Providers don't let you set some values for certain record types. (You should really use a different DNS provider).
 
----
-
+**TXT Step**  
 Add TXT Record part when that is ready.
