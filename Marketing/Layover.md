@@ -22,15 +22,15 @@ Create a CNAME Record for your subdomain that points to `airshipsubdomain.airshi
 - You can use `www` or some other subdomain that you want to point to your Airship Site subdomain. 
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
 
-### Example CNAME Record for a subdomain of `completelyfabricated.com`:
-This creates a `CNAME` that points `www.completelyfabricated.com` to `completely-fabricated.airshipcms.io`.
+### Example CNAME Record for subdomain `www.completelyfabricated.com`:
+This creates a `CNAME` for subdomain `www` that points `www.completelyfabricated.com` to `completely-fabricated.airshipcms.io`.
 ```
 www  CNAME  completelyfabricated.airshipcms.io  600
 ```
 The site will render over https at `https://www.completelyfabricated.com`.
 
-### Example CNAME Record for a subdomain of `hiarmymuseumsoc.org`:
-This creates a `CNAME` that points `shop.hiarmymuseumsoc.org` to `hams.airshipcms.io`.
+### Example CNAME Record for subdomain `shop.hiarmymuseumsoc.org`:
+This creates a `CNAME` for subdomain `shop` that points `shop.hiarmymuseumsoc.org` to `hams.airshipcms.io`.
 ```
 shop  CNAME  hams.airshipcms.io  600
 ```
