@@ -1,6 +1,6 @@
 # Welcome to Airship CMS!
 
-We love efficiency! So we built a CMS focused on _developer workflow_ so we could get projects started instantly, developed quickly, and launched painlessly. 
+We love efficiency! So we built a CMS focused on _developer workflow & deployment_ so we could get projects started instantly, developed quickly, and launched painlessly. 
 
 This 10-minute Step-by-Step Guide will walk you through a simple development workflow using Airship CMS. Once you've mastered the basics, _create your own frontend dev workflow_ that works for you! 
 
