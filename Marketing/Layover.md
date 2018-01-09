@@ -51,6 +51,7 @@ Create an A Record:
 @   A   34.214.155.73   600
 ```
 This will make the apex domain `completelyfabricated.com` route to `www.completelyfabricated.com`. 
+This will also enforce `https://` for the apex domain.
 
 ---
 
