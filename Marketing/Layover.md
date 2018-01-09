@@ -16,27 +16,27 @@ This service is Free. You do not have to use Airship CMS in order to use Layover
 
 ---
 
-# Layover with an Airship CMS Site
-
 ## Step 1. Create a CNAME Record for your subdomain that points to `airshipsubdomain.airshipcms.io`.
 Create a CNAME Record where:
 - `airshipsubdomain` is your actual Airship Site subdomain. 
 - You can use `www` or some other subdomain that you want to point to your Airship Site subdomain. 
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
 
-#### Example CNAME Record for a subdomain of `completelyfabricated.com`:
+### Example CNAME Record for a subdomain of `completelyfabricated.com`:
 This creates a `CNAME` that points `www.completelyfabricated.com` to `completely-fabricated.airshipcms.io`.
 ```
 www  CNAME  completelyfabricated.airshipcms.io  600
 ```
 The site will render over https at `https://www.completelyfabricated.com`.
 
-#### Example CNAME Record for a subdomain of `hiarmymuseumsoc.org`:
-This creates a `CNAME` that points `shop.hiarmymuseumsoc.org` to `completely-fabricated.airshipcms.io`.
+### Example CNAME Record for a subdomain of `hiarmymuseumsoc.org`:
+This creates a `CNAME` that points `shop.hiarmymuseumsoc.org` to `hams.airshipcms.io`.
 ```
 shop  CNAME  hams.airshipcms.io  600
 ```
 The site will render over https at `https://shop.hiarmymuseumsoc.org`.
+
+---
 
 ## Step 2. Create an A Record for your Apex Domain
 If you are not pointing your primary apex domain to your Airship site, you can stop at Step 1. If you _are_ pointing your primary apex domain to your Airship Site, then Create an A Record:
@@ -44,11 +44,13 @@ If you are not pointing your primary apex domain to your Airship site, you can s
 - Value is `34.214.155.73`. This is the IP for the Layover service.
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
 
-#### Example A Record for domain `completelyfabricated.com`:
+### Example A Record for domain `completelyfabricated.com`:
 ```
 @   A   34.214.155.73   600
 ```
 This will make the apex domain `completelyfabricated.com` route to `www.completelyfabricated.com`. 
+
+---
 
 ## Step 3. Wait for DNS Propagation
 It takes some time for DNS settings to propagate. Once all records have propagated the following things should be happening (in the background).
