@@ -16,8 +16,8 @@ This service is Free. You do not have to use Airship CMS in order to use Layover
 
 ---
 
-## Step 1. Create a CNAME Record for your subdomain that points to `airshipsubdomain.airshipcms.io`.
-Create a CNAME Record where:
+## Step 1. Create a CNAME Record for your subdomain
+Create a CNAME Record for your subdomain that points to `airshipsubdomain.airshipcms.io`, where:
 - `airshipsubdomain` is your actual Airship Site subdomain. 
 - You can use `www` or some other subdomain that you want to point to your Airship Site subdomain. 
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
@@ -36,10 +36,12 @@ shop  CNAME  hams.airshipcms.io  600
 ```
 The site will render over https at `https://shop.hiarmymuseumsoc.org`.
 
+_If you are not pointing your primary apex domain to an Airship site, you can stop at Step 1._
+
 ---
 
 ## Step 2. Create an A Record for your Apex Domain
-If you are not pointing your primary apex domain to your Airship site, you can stop at Step 1. If you _are_ pointing your primary apex domain to your Airship Site, then Create an A Record:
+Create an A Record:
 - Use the Apex Domain (`@`) as the name.
 - Value is `34.214.155.73`. This is the IP for the Layover service.
 - Set the TTL to `600`, or as short as your DNS provider will allow. @jon?
@@ -61,7 +63,9 @@ If everything is set up properly, then entering any domain/subdomain above shoul
 
 ---
 
-**Alternates**  
+Add later:
+
+**Alternate Step 2.**  
 Some DNS Providers have a "Domain Forwarding" service where you can simply tell the service to forward your apex domain to "www". If this service exists, you can use it. Note that you will want to forward the apex domain to "www", and not the other way around (do not point "www" to your apex domain). These services are probably not set up to automatically serve your site over https. / If you are super server-side-savvy, you can even create your own service. Though if that's the case, you will probably know what's best :]
 
 **Limited DNS**  
