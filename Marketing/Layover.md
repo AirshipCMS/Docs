@@ -12,7 +12,7 @@ It can be a headache. _We_ don't even like setting everything up every  time we 
 Layover automatically handles `https://` for your apex domain, so you don't have to worry about setting up an SSL certificate. If your site is hosted on Airship CMS, your Airship subdomain and any CNAMEs pointing to your Airship subdomain will automatically enforce `https://` as well. Your DNS Provider may already have their own forwarding service that points your apex domain to `www`. However, the service may not automatically enforce `https://`.
 
 **Usage**  
-This service is Free. You do not have to use Airship CMS in order to use Layover. You also do not have to use Layover to use Airship CMS. This service will be actively maintained and updated as long as this webpage is active. Last Update: 1/9/2018.
+This service is Free. You do not have to use Airship CMS in order to use Layover (simply set the CNAME to another externally-hosted site). You also do not have to use Layover to use Airship CMS. This service will be actively maintained and updated as long as this webpage is active. Last Update: 1/9/2018.
 
 ---
 
